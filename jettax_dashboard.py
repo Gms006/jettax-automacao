@@ -7,6 +7,7 @@ from __future__ import annotations
 
 import json
 import subprocess
+import sys
 from pathlib import Path
 from typing import Iterable, List, Optional
 
@@ -144,7 +145,7 @@ def sidebar_controls() -> dict:
 
 
 def build_command(config: dict) -> List[str]:
-    cmd: List[str] = ["python", "main.py", config["modo"], "--planilha", config["planilha"]]
+    cmd: List[str] = [sys.executable, "main.py", config["modo"], "--planilha", config["planilha"]]
 
     if config.get("dry_run"):
         cmd.append("--dry-run")

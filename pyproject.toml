@@ -1,0 +1,28 @@
+[project]
+name = "jettax-automacao"
+version = "0.0.0"
+requires-python = ">=3.12"
+dependencies = [
+  "pandas>=2.2.0",
+  "numpy>=2.1.0",
+  "openpyxl>=3.1.5",
+  "requests>=2.31.0",
+  "python-dotenv==1.0.0",
+  "pydantic>=2.7.0,<3.0.0",
+  "python-dateutil==2.8.2",
+  "pyyaml==6.0.1",
+  "colorama==0.4.6",
+  "tqdm==4.66.1",
+  "streamlit>=1.30.0",
+  "cryptography>=43.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest==7.4.3",
+  "black==23.12.1",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
