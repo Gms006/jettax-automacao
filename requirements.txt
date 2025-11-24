@@ -5,8 +5,8 @@ openpyxl==3.1.2
 requests==2.31.0
 python-dotenv==1.0.0
 
-# Validação (fixado para Python 3.12; evite 3.13 por falta de wheel do pydantic-core)
-pydantic==2.10.6 ; python_version < "3.13"
+# Validação
+pydantic==2.10.6
 python-dateutil==2.8.2
 
 # Utilitários
@@ -17,7 +17,3 @@ streamlit>=1.30.0
 
 # Certificados digitais
 cryptography==41.0.7
-
-# Dependências de desenvolvimento (instale apenas se precisar)
-# pytest==7.4.3
-# black==23.12.1
