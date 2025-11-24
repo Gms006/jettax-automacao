@@ -17,6 +17,6 @@ streamlit>=1.30.0
 # Certificados digitais
 cryptography==41.0.7
 
-# Opcional (desenvolvimento)
-pytest==7.4.3
-black==23.12.1
+# Dependências de desenvolvimento (instale apenas se precisar)
+# pytest==7.4.3
+# black==23.12.1

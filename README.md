@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# jettax-automacao
-=======
 # Sistema de Automação JETTAX 360
 
 Sistema profissional de automação para cadastro e atualização de clientes no JETTAX 360.
@@ -25,9 +22,18 @@ Sistema profissional de automação para cadastro e atualização de clientes no
 
 ### 2. Instalar Dependências
 
+Use apenas as dependências de runtime para deploys (ex.: Streamlit Cloud):
+
 ```bash
 cd "G:\- CONTABILIDADE -\Automação\JETTAX"
 pip install -r requirements.txt
+```
+
+Ferramentas de desenvolvimento (lint/tests) ficam em `requirements-dev.txt` para não
+quebrar instalações em ambientes de produção/hosting:
+
+```bash
+pip install -r requirements-dev.txt  # opcional, só para quem for desenvolver
 ```
 
 ### 3. Configuração
@@ -129,6 +135,16 @@ python main.py cadastro --limit 10
 ```bash
 python main.py sync --intervalo 2.0
 ```
+
+### Painel Streamlit (dashboard web)
+
+Para usar a interface web de testes no Streamlit (localmente ou no Streamlit Cloud), o entrypoint é o arquivo `jettax_dashboard.py` na raiz do repositório. Execute:
+
+```bash
+streamlit run jettax_dashboard.py
+```
+
+O painel assume a planilha `RELAÇÃO DE EMPRESAS.xlsx` na raiz (pode ser alterada na sidebar) e tenta carregar variáveis do `.env` em `config/.env` ou `./.env` se existirem. Em deployments como Streamlit Cloud, basta subir esses arquivos e rodar o comando acima como o "main" da aplicação.
 
 ## 📁 Estrutura do Projeto
 
