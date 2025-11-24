@@ -12,7 +12,7 @@ def check_package(name):
 
 def main():
     print("Python version:", sys.version)
-    for package in ("requests", "pandas"):
+    for package in ("requests", "pandas", "pydantic"):
         check_package(package)
 
 
