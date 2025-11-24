@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# jettax-automacao
-=======
 # Sistema de Automação JETTAX 360
 
 Sistema profissional de automação para cadastro e atualização de clientes no JETTAX 360.
@@ -19,15 +16,26 @@ Sistema profissional de automação para cadastro e atualização de clientes no
 
 ### 1. Pré-requisitos
 
-- Python 3.8 ou superior
+- Python **3.12.x** (evite 3.13: o `pydantic-core` ainda não fornece wheel estável e tenta compilar)
 - Acesso à planilha `RELAÇÃO DE EMPRESAS.xlsx`
 - Credenciais do JETTAX 360
 
 ### 2. Instalar Dependências
 
+Use apenas as dependências de runtime para deploys (ex.: Streamlit Cloud) e garanta o Python 3.12.
+
 ```bash
 cd "G:\- CONTABILIDADE -\Automação\JETTAX"
 pip install -r requirements.txt
+```
+
+> Nota: o `pydantic` está fixado em uma versão que tem wheel pronto para Python 3.12. Em Python 3.13 a lib tenta compilar o `pydantic-core` e falha, então force 3.12 em produção/Streamlit Cloud.
+
+Ferramentas de desenvolvimento (lint/tests) ficam em `requirements-dev.txt` para não
+quebrar instalações em ambientes de produção/hosting:
+
+```bash
+pip install -r requirements-dev.txt  # opcional, só para quem for desenvolver
 ```
 
 ### 3. Configuração
@@ -129,6 +137,16 @@ python main.py cadastro --limit 10
 ```bash
 python main.py sync --intervalo 2.0
 ```
+
+### Painel Streamlit (dashboard web)
+
+Para usar a interface web de testes no Streamlit (localmente ou no Streamlit Cloud), o entrypoint é o arquivo `jettax_dashboard.py` na raiz do repositório. Execute:
+
+```bash
+streamlit run jettax_dashboard.py
+```
+
+O painel assume a planilha `RELAÇÃO DE EMPRESAS.xlsx` na raiz (pode ser alterada na sidebar) e tenta carregar variáveis do `.env` em `config/.env` ou `./.env` se existirem. Em deployments como Streamlit Cloud, mantenha o `runtime.txt` com Python 3.12.x, suba os arquivos `.env` e a planilha, e rode o comando acima como o "main" da aplicação.
 
 ## 📁 Estrutura do Projeto
 

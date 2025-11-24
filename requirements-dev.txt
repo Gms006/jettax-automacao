@@ -1,0 +1,5 @@
+-r requirements.txt
+
+# Ferramentas de desenvolvimento
+pytest==7.4.3
+black==23.12.1
