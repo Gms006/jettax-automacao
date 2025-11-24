@@ -1,0 +1,170 @@
+{
+  "client_id": "68c0375514866ec0850fdd18",
+  "cnpj": "24742881000184",
+  "razao_social": "DROGARIA ATUAL LTDA",
+  "payload": {
+    "id": "68c0375514866ec0850fdd18",
+    "name": "DROGARIA ATUAL LTDA",
+    "enable360": false,
+    "enableModuleERP": false,
+    "enableModulePrevention": false,
+    "enableModuleHubFederal": true,
+    "enableModuleHubNFSe": false,
+    "enableModuleHubNFSeOutCity": false,
+    "enableConvertOutSideCityAbrasf": false,
+    "enableConvertOutSideCityAbrasfAt": "",
+    "enableModuleHubNFSeIss": false,
+    "enableModuleDCTFWEB": false,
+    "enableModuleHubDas": false,
+    "enableImporterCompany": false,
+    "taxRegime": "60d53314200e556dc277ac20",
+    "taxRegimeCode": "SN",
+    "phone": "",
+    "whatsApp": "",
+    "municipalIntegration": {
+      "login": "",
+      "password": "",
+      "createISS": false,
+      "municipalRegistration": "91860981",
+      "gissonlineLogin": "",
+      "gissonlinePassword": ""
+    },
+    "simpleNationalIntegration": {
+      "accessCode": "",
+      "documentResponsible": "",
+      "manualBilling": false,
+      "hasEmployyes": false,
+      "onlyCommercialBilling": false,
+      "typeRegime": [
+        {
+          "competence": "01/2025",
+          "code": 2,
+          "name": "Competência"
+        }
+      ]
+    },
+    "moduleFederalConfiguration": {
+      "downloadNFeWithAccountingCertificate": false,
+      "downloadPurchaseNFeInvoices": false,
+      "downloadCTeInvoices": false,
+      "downloadSalesNFeInvoices": false,
+      "downloadCFeInvoices": false,
+      "downloadCFeWithAccountingCertificate": false,
+      "enablePisCofinsAudit": false
+    },
+    "email": null,
+    "emails": [],
+    "document": "24.742.881/0001-84",
+    "address": {
+      "type": "R",
+      "address": "R JOSE C. BORGES",
+      "number": 163,
+      "zip": "75170-000",
+      "district": "CENTRO",
+      "state": "GO",
+      "complement": "",
+      "city": {
+        "ibgeCode": 5208400,
+        "name": "Goianapolis"
+      }
+    },
+    "cnaes": [
+      {
+        "name": "Comércio varejista de produtos farmacêuticos, sem manipulação de fórmulas",
+        "code": 4771701,
+        "primary": true
+      },
+      {
+        "name": "Comércio varejista de cosméticos, produtos de perfumaria e de higiene pessoal",
+        "code": 4772500,
+        "primary": false
+      }
+    ],
+    "status": 1,
+    "startCompetence": "07/2025",
+    "digitalCertificate": "https://jettax360.s3.us-west-2.amazonaws.com/offices/68b1e4d38c0ec913a50e4bd5/clients/68c0375514866ec0850fdd18/certificate.pfx",
+    "digitalCertificatePassword": "Ricardo@2025",
+    "digitalCertificateDate": "03/02/2026",
+    "digitalCertificateDocument": "24742881000184",
+    "legalNature": "206-2",
+    "stateRegistration": 106616382,
+    "openDate": "05/05/2016",
+    "createdAt": "09/09/2025",
+    "updatedAt": "11/09/2025",
+    "headquarter": "",
+    "efdReinf": {
+      "startDate": "",
+      "partnerId": "",
+      "partnerAdmin": "",
+      "phone": "",
+      "email": "",
+      "document": "",
+      "taxClassification": "",
+      "errorMessage": ""
+    },
+    "ecdOption": "",
+    "enableEfdReinf": false,
+    "enableEfdReinfAt": "",
+    "registrationStatus": "620d000954060f3cff779903",
+    "typeRegime": {
+      "name": "Competência",
+      "code": 2,
+      "competence": "01/2025"
+    },
+    "payroll": {
+      "eletronicPoint": "",
+      "fpas": "",
+      "rat": "",
+      "fap": 0.5,
+      "taxClassification": "",
+      "enableESocial": null,
+      "lastEventStatus": null,
+      "lastMessage": ""
+    },
+    "erp": {
+      "nick": "",
+      "enableContmaticIntegration": false,
+      "enableContmaticIntegrationAt": "",
+      "contmaticIntegration": false,
+      "syncAt": ""
+    },
+    "enableModuleERPAt": "",
+    "enabledESocialAt": "",
+    "enableModuleHubFederalAt": "09/09/2025 11:19:01",
+    "enableModuleHubNFSeAt": "",
+    "enableModuleHubNFSeOutCityAt": "",
+    "enableModuleHubNFSeIssAt": "",
+    "enableModulePreventionAt": "",
+    "enable360At": "",
+    "enableModuleHubDasAt": "",
+    "enableModuleDCTFWEBAt": "",
+    "federalConfig": {
+      "enableCFE": false,
+      "enableCFEAt": "",
+      "enableNFCE": false,
+      "enableNFCEAt": "",
+      "enableSefazOnline": false,
+      "enableSefazOnlineAt": "",
+      "automationICMS": false,
+      "automationICMSAt": "",
+      "enableCertificateA3": false,
+      "enableCertificateA3At": "",
+      "enableNFeEmitted": true,
+      "enableNFeEmittedAt": "11/09/2025 10:35:54",
+      "searchWithOfficeCertificate": false,
+      "searchWithOfficeCertificateAt": "",
+      "enableAutomaticCorrections": true,
+      "enableAutomaticCorrectionsAt": "11/09/2025 10:35:54",
+      "enableAutomaticCorrectionPisCofins": true,
+      "enableAutomaticCorrectionPisCofinsAt": "11/09/2025 10:35:54"
+    },
+    "enableImporterCompanyAt": "",
+    "accountingPlanConfig": []
+  },
+  "diferencas": [
+    "Tributação: '' → 'Simples Nacional - Comércio e Industria'",
+    "IE: '' → '106616382'",
+    "IM: '' → '91860981'",
+    "E-mail: '' → 'drogaria_atual@outlook.com'"
+  ]
+}

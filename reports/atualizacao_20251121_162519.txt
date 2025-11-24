@@ -1,0 +1,41 @@
+RELATÓRIO DE ATUALIZAÇÃO
+============================================================
+
+Data: 21/11/2025 16:25:19
+
+Total: 3
+✓ Atualizados: 0
+= Sem alteração: 0
+⚠ Não cadastrados: 0
+✗ Erros: 3
+
+============================================================
+DETALHES
+============================================================
+
+46149398000123 - 3TB PRODUCOES ARTISTICAS LTDA
+  Status: ✗ ERRO
+  Mensagem: Regime 'Simples Nacional - Serviços' não encontrado no JETTAX
+  Diferenças:
+    - Tributação: '' → 'Simples Nacional - Serviços'
+    - IM: '' → '103416'
+    - E-mail: '' → '3tbproducoesartisticasltda@gmail.com'
+
+29413500000137 - A A DE MATOS RESENDE - SUPERMERCADO SANTO ANTONIO
+  Status: ✗ ERRO
+  Mensagem: Regime 'Simples Nacional - Comércio e Industria' não encontrado no JETTAX
+  Diferenças:
+    - Tributação: '' → 'Simples Nacional - Comércio e Industria'
+    - IE: '' → '107145197'
+    - IM: '' → '85025'
+    - E-mail: '' → 'julianarfmatos85@outlook.com'
+
+06936057000183 - A C MELO LTDA
+  Status: ✗ ERRO
+  Mensagem: Regime 'Simples Nacional - Comércio e Industria' não encontrado no JETTAX
+  Diferenças:
+    - Tributação: '' → 'Simples Nacional - Comércio e Industria'
+    - IE: '' → '104033371'
+    - IM: '' → '1496'
+    - E-mail: '' → 'acemello1966@gmail.com'
+

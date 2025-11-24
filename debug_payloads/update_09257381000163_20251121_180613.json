@@ -1,0 +1,165 @@
+{
+  "client_id": "68c041c69d26523cd40d8f69",
+  "cnpj": "09257381000163",
+  "razao_social": "S.J.M. - MAQUINAS LTDA",
+  "payload": {
+    "id": "68c041c69d26523cd40d8f69",
+    "name": "S.J.M. - MAQUINAS LTDA",
+    "enable360": false,
+    "enableModuleERP": false,
+    "enableModulePrevention": false,
+    "enableModuleHubFederal": true,
+    "enableModuleHubNFSe": true,
+    "enableModuleHubNFSeOutCity": false,
+    "enableConvertOutSideCityAbrasf": false,
+    "enableConvertOutSideCityAbrasfAt": "",
+    "enableModuleHubNFSeIss": false,
+    "enableModuleDCTFWEB": false,
+    "enableModuleHubDas": false,
+    "enableImporterCompany": false,
+    "taxRegime": "62d9471420ba2a79cd31c162",
+    "taxRegimeCode": "LP",
+    "phone": "",
+    "whatsApp": "",
+    "municipalIntegration": {
+      "login": "05279792870",
+      "password": "052797",
+      "createISS": true,
+      "municipalRegistration": "8549429",
+      "gissonlineLogin": "",
+      "gissonlinePassword": ""
+    },
+    "simpleNationalIntegration": {
+      "accessCode": "",
+      "documentResponsible": "",
+      "manualBilling": false,
+      "hasEmployyes": false,
+      "onlyCommercialBilling": false,
+      "typeRegime": [
+        {
+          "competence": "01/2025",
+          "code": 2,
+          "name": "Competência"
+        }
+      ]
+    },
+    "moduleFederalConfiguration": {
+      "downloadNFeWithAccountingCertificate": false,
+      "downloadPurchaseNFeInvoices": false,
+      "downloadCTeInvoices": false,
+      "downloadSalesNFeInvoices": false,
+      "downloadCFeInvoices": false,
+      "downloadCFeWithAccountingCertificate": false,
+      "enablePisCofinsAudit": false
+    },
+    "email": null,
+    "emails": [],
+    "document": "09.257.381/0001-63",
+    "address": {
+      "type": "R",
+      "address": "R MARGINAL IPE",
+      "number": 0,
+      "zip": "75460-000",
+      "district": "SETOR RECANTO MIRIM",
+      "state": "GO",
+      "complement": "QUADRA02 LOTE 07",
+      "city": {
+        "ibgeCode": 5214507,
+        "name": "Neropolis"
+      }
+    },
+    "cnaes": [
+      {
+        "name": "Fabricação de outras máquinas e equipamentos de uso geral não especificados anteriormente, peças e acessórios",
+        "code": 2829199,
+        "primary": true
+      }
+    ],
+    "status": 1,
+    "startCompetence": "07/2025",
+    "digitalCertificate": "https://jettax360.s3.us-west-2.amazonaws.com/offices/68b1e4d38c0ec913a50e4bd5/clients/68c041c69d26523cd40d8f69/certificate.pfx",
+    "digitalCertificatePassword": "Mauro@2025",
+    "digitalCertificateDate": "15/05/2026",
+    "digitalCertificateDocument": "09257381000163",
+    "legalNature": "206-2",
+    "stateRegistration": 104208082,
+    "openDate": "13/12/2007",
+    "createdAt": "09/09/2025",
+    "updatedAt": "04/11/2025",
+    "headquarter": "",
+    "efdReinf": {
+      "startDate": "",
+      "partnerId": "",
+      "partnerAdmin": "",
+      "phone": "",
+      "email": "",
+      "document": "",
+      "taxClassification": "",
+      "errorMessage": ""
+    },
+    "ecdOption": "",
+    "enableEfdReinf": false,
+    "enableEfdReinfAt": "",
+    "registrationStatus": "620d000954060f3cff779903",
+    "typeRegime": {
+      "name": "Competência",
+      "code": 2,
+      "competence": "01/2025"
+    },
+    "payroll": {
+      "eletronicPoint": "",
+      "fpas": "",
+      "rat": "",
+      "fap": 0.5,
+      "taxClassification": "",
+      "enableESocial": null,
+      "lastEventStatus": null,
+      "lastMessage": ""
+    },
+    "erp": {
+      "nick": "",
+      "enableContmaticIntegration": false,
+      "enableContmaticIntegrationAt": "",
+      "contmaticIntegration": false,
+      "syncAt": ""
+    },
+    "enableModuleERPAt": "",
+    "enabledESocialAt": "",
+    "enableModuleHubFederalAt": "09/09/2025 12:03:34",
+    "enableModuleHubNFSeAt": "04/11/2025 16:56:16",
+    "enableModuleHubNFSeOutCityAt": "",
+    "enableModuleHubNFSeIssAt": "",
+    "enableModulePreventionAt": "",
+    "enable360At": "",
+    "enableModuleHubDasAt": "",
+    "enableModuleDCTFWEBAt": "",
+    "federalConfig": {
+      "enableCFE": false,
+      "enableCFEAt": "",
+      "enableNFCE": false,
+      "enableNFCEAt": "",
+      "enableSefazOnline": false,
+      "enableSefazOnlineAt": "",
+      "automationICMS": false,
+      "automationICMSAt": "",
+      "enableCertificateA3": false,
+      "enableCertificateA3At": "",
+      "enableNFeEmitted": true,
+      "enableNFeEmittedAt": "11/09/2025 13:24:23",
+      "searchWithOfficeCertificate": false,
+      "searchWithOfficeCertificateAt": "",
+      "enableAutomaticCorrections": true,
+      "enableAutomaticCorrectionsAt": "04/11/2025 16:56:16",
+      "enableAutomaticCorrectionPisCofins": true,
+      "enableAutomaticCorrectionPisCofinsAt": "04/11/2025 16:56:16"
+    },
+    "enableImporterCompanyAt": "",
+    "accountingPlanConfig": []
+  },
+  "diferencas": [
+    "Tributação: '' → 'Lucro Presumido - Industria e Serviços'",
+    "IE: '' → '104208082'",
+    "IM: '' → '8549429'",
+    "E-mail: '' → 'pedrina@usimaq.com'"
+  ]
+}

@@ -1,0 +1,292 @@
+{
+  "modulo": "Geral - Upload de Certificado Digital",
+  "descricao": "Procedimento completo para extrair certificados digitais (.pfx) de uma pasta, validar e inserir no sistema JETTAX via API.",
+  "origem_aprendizado": "Script: C:\\JETTAX\\Jettax automaçao\\jettax_sync.py",
+  "estrutura_arquivos": {
+    "pasta_certificados": "G:\\CERTIFICADOS DIGITAIS",
+    "planilha_metadados": "C:\\JETTAX\\Jettax automaçao\\CERTIFICADOS.xlsm",
+    "planilha_empresas": "G:\\- CONTABILIDADE -\\Automação\\JETTAX\\RELAÇÃO DE EMPRESAS.xlsx",
+    "observacoes": [
+      "Pasta de certificados pode conter subpastas (indexação recursiva).",
+      "Planilha CERTIFICADOS.xlsm contém metadados (CNPJ, senha, situação).",
+      "Planilha RELAÇÃO DE EMPRESAS.xlsx será a fonte principal de dados."
+    ]
+  },
+  "arquitetura_sistema": {
+    "indexacao_certificados": {
+      "funcao": "index_certificates_from_folder(base_dir: Path) -> dict",
+      "descricao": "Percorre recursivamente a pasta de certificados e indexa arquivos .pfx por documento (CNPJ/CPF).",
+      "logica": [
+        "Varrer pasta G:\\CERTIFICADOS DIGITAIS recursivamente (os.walk).",
+        "Filtrar apenas arquivos .pfx (fname.lower().endswith('.pfx')).",
+        "Extrair sequências de 8+ dígitos do nome do arquivo (regex: \\d{8,}).",
+        "Tentar extrair senha do nome do arquivo (regex: Senha[_\\s-]*([^\\s_.-]+)).",
+        "Criar múltiplas chaves de índice: CNPJ completo, 14 dígitos, 12 dígitos, 11 dígitos, 8 dígitos.",
+        "Retornar dict: {documento_digitos: [{path: Path, filename: str, password_from_filename: str}]}"
+      ],
+      "exemplo_retorno": {
+        "12345678000199": [
+          {
+            "path": "G:\\CERTIFICADOS DIGITAIS\\2024\\12345678000199_Senha123456.pfx",
+            "filename": "12345678000199_Senha123456.pfx",
+            "password_from_filename": "123456",
+            "raw_doc": "12345678000199"
+          }
+        ]
+      }
+    },
+    "metadados_planilha": {
+      "funcao": "load_certificate_metadata_from_excel(path_xlsm: Path) -> dict",
+      "descricao": "Lê a planilha CERTIFICADOS.xlsm e extrai metadados (senha, situação).",
+      "aba_esperada": "Certificados",
+      "colunas_esperadas": [
+        "Certificado (formato: 'RazaoSocial: CNPJ' ou 'CNPJ_RazaoSocial')",
+        "Senha",
+        "Situação (Válido, Vencido, Cancelado, etc.)"
+      ],
+      "logica": [
+        "Ler Excel usando pandas: pd.read_excel(path_xlsm, sheet_name='Certificados', dtype=str).",
+        "Normalizar nomes de colunas (normalize_key: lowercase, sem acentos, sem espaços extras).",
+        "Extrair CNPJ da coluna 'Certificado' usando regex: \\d{11}|\\d{14}.",
+        "Armazenar senha e situação em dict: {cnpj_digitos: {senha_planilha: str, situacao: str}}"
+      ],
+      "exemplo_retorno": {
+        "12345678000199": {
+          "senha_planilha": "123456",
+          "situacao": "Válido"
+        }
+      }
+    },
+    "resolucao_certificado": {
+      "funcao": "resolve_certificate_for_company(doc_digits: str, folder_index: dict, cert_metadata: dict) -> tuple",
+      "descricao": "Combina índice de arquivos e metadados para resolver caminho e senha do certificado.",
+      "logica": [
+        "Gerar chaves candidatas em ordem de prioridade: CNPJ completo → 14 dígitos → 12 → 11 → 8.",
+        "Buscar no folder_index usando chaves candidatas (priorizar mais específica).",
+        "Se múltiplos candidatos, escolher por:",
+        "  - Senha da planilha presente no nome do arquivo (target.lower() in filename.lower()).",
+        "  - CNPJ presente no nome do arquivo.",
+        "  - Fallback: primeiro candidato ordenado alfabeticamente.",
+        "Determinar senha: Prioridade 1 = senha da planilha, Prioridade 2 = senha do nome do arquivo.",
+        "Se senha não encontrada, retornar None (impede upload sem senha).",
+        "Retornar tupla: (Path do .pfx, senha, situação)"
+      ],
+      "exemplo_retorno": [
+        "G:\\CERTIFICADOS DIGITAIS\\2024\\12345678000199_Senha123456.pfx",
+        "123456",
+        "Válido"
+      ]
+    },
+    "validacao_certificado": {
+      "funcao": "validar_certificado_pfx(caminho_pfx: Path, senha: str) -> tuple[bool, str]",
+      "descricao": "Valida se certificado está dentro da validade usando biblioteca cryptography.",
+      "dependencia": "cryptography.hazmat.primitives.serialization.pkcs12",
+      "logica": [
+        "Ler arquivo .pfx em modo binário.",
+        "Carregar certificado usando pkcs12.load_key_and_certificates(pfx_data, senha.encode('utf-8')).",
+        "Verificar datas de validade: not_valid_before_utc e not_valid_after_utc.",
+        "Comparar com datetime.now(timezone.utc).",
+        "Se now < not_valid_before: retornar (False, 'Certificado ainda não é válido').",
+        "Se now > not_valid_after: retornar (False, 'Certificado expirado em DD/MM/YYYY').",
+        "Se válido: retornar (True, 'Válido até DD/MM/YYYY').",
+        "Se biblioteca cryptography não instalada: retornar (True, 'Validação desabilitada')."
+      ],
+      "exemplo_retorno": [
+        true,
+        "Válido até 15/12/2025"
+      ]
+    },
+    "conversao_base64": {
+      "funcao": "certificado_para_base64(caminho_pfx: Path) -> str",
+      "descricao": "Converte arquivo .pfx para string base64 para envio via API.",
+      "logica": [
+        "Abrir arquivo em modo binário: with caminho_pfx.open('rb') as f: pfx_data = f.read()",
+        "Codificar em base64: base64.b64encode(pfx_data).decode('utf-8')",
+        "Retornar string base64 (pronta para inserir no payload JSON)"
+      ],
+      "exemplo_retorno": "MIIKPAIBAzCCCfoGCSqGSIb3DQEHAaCCCesEggnnMIIJ4zCCBW8GCSqGSI..."
+    }
+  },
+  "fluxo_completo_upload": {
+    "etapa_1_indexacao": {
+      "descricao": "Indexar certificados da pasta G:\\CERTIFICADOS DIGITAIS",
+      "codigo_python": "folder_index = index_certificates_from_folder(Path(r'G:\\CERTIFICADOS DIGITAIS'))",
+      "saida": "Dict com todas as chaves possíveis por CNPJ/CPF"
+    },
+    "etapa_2_metadados": {
+      "descricao": "Carregar metadados da planilha CERTIFICADOS.xlsm",
+      "codigo_python": "cert_metadata = load_certificate_metadata_from_excel(Path(r'C:\\JETTAX\\Jettax automaçao\\CERTIFICADOS.xlsm'))",
+      "saida": "Dict com senha e situação por CNPJ"
+    },
+    "etapa_3_resolucao": {
+      "descricao": "Para cada empresa, resolver caminho e senha do certificado",
+      "codigo_python": "cert_result = resolve_certificate_for_company(cnpj_digits, folder_index, cert_metadata)",
+      "saida": "(Path, senha, situacao) ou None se não encontrado"
+    },
+    "etapa_4_validacao": {
+      "descricao": "Validar certificado antes de enviar",
+      "codigo_python": "is_valid, msg = validar_certificado_pfx(cert_path, cert_senha)",
+      "observacao": "Se não for válido, NÃO incluir no payload (ou gerar placeholder)"
+    },
+    "etapa_5_conversao": {
+      "descricao": "Converter .pfx para base64",
+      "codigo_python": "cert_base64 = certificado_para_base64(cert_path)",
+      "saida": "String base64 do certificado"
+    },
+    "etapa_6_payload": {
+      "descricao": "Adicionar certificado ao payload de criação de empresa",
+      "codigo_python": "payload.certificado_base64 = cert_base64; payload.certificado_senha = cert_senha",
+      "endpoint_destino": "POST https://api.jettax360.com.br/api/v1/clients",
+      "campos_payload": {
+        "digitalCertificate": "String base64 do certificado",
+        "digitalCertificatePassword": "Senha do certificado (plaintext)"
+      }
+    },
+    "etapa_7_post_api": {
+      "descricao": "Enviar payload para API JETTAX",
+      "codigo_python": "resp = jettax.session.post(url, json=payload_dict, timeout=30)",
+      "observacao": "Certificado é enviado INLINE no payload de criação (não há upload separado)"
+    }
+  },
+  "tratamento_erros": {
+    "certificado_nao_encontrado": {
+      "situacao": "resolve_certificate_for_company retorna None",
+      "acao": [
+        "Registrar em lista inscricoes_placeholders:",
+        "  - CNPJ, Razão Social, Certificado='PENDENTE', Caminho_Esperado, Acao='Obter certificado e anexar via interface web'",
+        "Permitir criação da empresa SEM certificado (campos digitalCertificate/Password vazios).",
+        "Incrementar contador certs_not_found."
+      ]
+    },
+    "certificado_invalido": {
+      "situacao": "validar_certificado_pfx retorna (False, msg)",
+      "acao": [
+        "Log warning com mensagem de erro.",
+        "NÃO incluir certificado no payload (campos digitalCertificate/Password vazios).",
+        "Registrar em inscricoes_placeholders para ação manual."
+      ]
+    },
+    "senha_incorreta": {
+      "situacao": "API retorna erro 400/401 ao tentar usar certificado",
+      "acao": [
+        "Log error completo da resposta.",
+        "Salvar payload em debug_payloads/{cnpj}_{timestamp}.json para análise.",
+        "Sugerir verificação manual da senha na planilha CERTIFICADOS.xlsm."
+      ]
+    },
+    "arquivo_corrompido": {
+      "situacao": "Erro ao ler .pfx (OSError, PermissionError, etc.)",
+      "acao": [
+        "Log error com caminho completo do arquivo.",
+        "Tentar candidatos alternativos do folder_index (se houver).",
+        "Se todos falharem, seguir fluxo de 'certificado_nao_encontrado'."
+      ]
+    }
+  },
+  "boas_praticas": {
+    "seguranca": [
+      "NUNCA logar senhas de certificados em logs ou console.",
+      "Usar getpass.getpass() para entrada de senhas via CLI.",
+      "Armazenar senhas SOMENTE em planilhas locais protegidas (CERTIFICADOS.xlsm).",
+      "Transmitir senha via HTTPS (API JETTAX usa TLS).",
+      "Evitar salvar certificados em debug_payloads (apenas metadados)."
+    ],
+    "performance": [
+      "Indexar certificados UMA VEZ no início do script (não por empresa).",
+      "Usar cache de metadados (carregar planilha apenas uma vez).",
+      "Paralelizar validações de certificado (se processar muitas empresas).",
+      "Limitar profundidade de os.walk se pasta de certificados for muito grande."
+    ],
+    "manutencao": [
+      "Manter CERTIFICADOS.xlsm atualizada com novas senhas.",
+      "Organizar certificados em subpastas por ano (ex: G:\\CERTIFICADOS DIGITAIS\\2024).",
+      "Padronizar nomes de arquivos: {CNPJ}_Senha{senha}.pfx ou {CNPJ}_{RazaoSocial}_Senha{senha}.pfx.",
+      "Executar validação em lote periodicamente para identificar certificados vencidos."
+    ],
+    "auditoria": [
+      "Registrar TODAS as ações em logs/app.log com nível INFO.",
+      "Salvar relatório de inscricoes_placeholders em Excel (InscricoesPlaceholder.xlsx).",
+      "Gerar relatório de certs_not_found ao final da execução.",
+      "Manter histórico de payloads em debug_payloads/ (excluindo certificados)."
+    ]
+  },
+  "exemplo_codigo_completo": {
+    "descricao": "Exemplo de uso integrado das funções para upload de certificado",
+    "codigo_python": [
+      "# 1. Configuração inicial",
+      "from pathlib import Path",
+      "import base64",
+      "from jettax_sync import (",
+      "    index_certificates_from_folder,",
+      "    load_certificate_metadata_from_excel,",
+      "    resolve_certificate_for_company,",
+      "    validar_certificado_pfx,",
+      "    certificado_para_base64",
+      ")",
+      "",
+      "# 2. Indexar certificados",
+      "cert_dir = Path(r'G:\\CERTIFICADOS DIGITAIS')",
+      "folder_index = index_certificates_from_folder(cert_dir)",
+      "",
+      "# 3. Carregar metadados",
+      "cert_planilha = Path(r'C:\\JETTAX\\Jettax automaçao\\CERTIFICADOS.xlsm')",
+      "cert_metadata = load_certificate_metadata_from_excel(cert_planilha)",
+      "",
+      "# 4. Para cada empresa (loop)",
+      "cnpj_empresa = '12345678000199'  # Apenas dígitos",
+      "",
+      "# 5. Resolver certificado",
+      "cert_result = resolve_certificate_for_company(cnpj_empresa, folder_index, cert_metadata)",
+      "",
+      "if cert_result is None:",
+      "    print(f'Certificado não encontrado para {cnpj_empresa}')",
+      "    # Registrar em inscricoes_placeholders",
+      "else:",
+      "    cert_path, cert_senha, cert_situacao = cert_result",
+      "    ",
+      "    # 6. Validar certificado",
+      "    is_valid, msg = validar_certificado_pfx(cert_path, cert_senha)",
+      "    ",
+      "    if not is_valid:",
+      "        print(f'Certificado inválido: {msg}')",
+      "        # Registrar em inscricoes_placeholders",
+      "    else:",
+      "        # 7. Converter para base64",
+      "        cert_base64 = certificado_para_base64(cert_path)",
+      "        ",
+      "        # 8. Adicionar ao payload",
+      "        payload = {",
+      "            'document': '12.345.678/0001-99',",
+      "            'name': 'Empresa LTDA',",
+      "            'digitalCertificate': cert_base64,",
+      "            'digitalCertificatePassword': cert_senha,",
+      "            # ... outros campos",
+      "        }",
+      "        ",
+      "        # 9. Enviar para API",
+      "        # resp = jettax.session.post(url, json=payload, timeout=30)"
+    ]
+  },
+  "planilha_relacao_empresas": {
+    "caminho": "G:\\- CONTABILIDADE -\\Automação\\JETTAX\\RELAÇÃO DE EMPRESAS.xlsx",
+    "descricao": "Planilha principal com dados de todas as empresas (substitui Empresas.xlsx do script original)",
+    "colunas_esperadas": [
+      "CNPJ (formato: 00.000.000/0000-00 ou 00000000000000)",
+      "Razão Social",
+      "Regime Tributário (texto completo do JETTAX)",
+      "Login Prefeitura (opcional)",
+      "Senha Prefeitura (opcional)",
+      "Inscrição Estadual (opcional)",
+      "Inscrição Municipal (opcional)",
+      "CEP",
+      "Cidade",
+      "UF"
+    ],
+    "observacoes": [
+      "Esta planilha será a fonte de dados para criação de empresas no JETTAX.",
+      "Certificados virão da pasta G:\\CERTIFICADOS DIGITAIS (indexação automática).",
+      "Senhas de certificados virão da planilha CERTIFICADOS.xlsm.",
+      "Agente IA deve LER esta planilha antes de iniciar o cadastro."
+    ]
+  }
+}

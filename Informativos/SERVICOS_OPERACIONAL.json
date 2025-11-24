@@ -1,0 +1,299 @@
+{
+  "categoria": "Operacional",
+  "modulo": "Serviços",
+  "descricao": "Operações diárias do módulo de Serviços (NFS-e): captura, consulta e gestão de notas fiscais de serviço.",
+  "funcionalidades": [
+    {
+      "nome": "Dashboard de Serviços",
+      "descricao": "Visão consolidada das notas de serviço com indicadores principais.",
+      "tipo_automacao": "API",
+      "fluxo_operacional": [
+        "Acessar dashboard fiscal.",
+        "Visualizar totalizadores de NFS-e (prestadas/tomadas).",
+        "Verificar top clientes e prestadores de serviço."
+      ],
+      "detalhes_tecnicos": {
+        "endpoints_principais": [
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/fiscal/dashboard",
+            "descricao": "Dashboard fiscal geral"
+          },
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/hub/nfses/dashboard-totalizers",
+            "descricao": "Totalizadores específicos de NFS-e"
+          },
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/hub/nfses/dashboard-top-clients",
+            "descricao": "Top clientes que mais tomaram serviços"
+          },
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/hub/nfses/dashboard-top-sellers",
+            "descricao": "Top prestadores de serviço"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "Gestão de NFS-e Prestados",
+      "descricao": "Consulta e gestão de notas fiscais de serviço emitidas (vendas).",
+      "tipo_automacao": "API",
+      "fluxo_operacional": [
+        "Listar todas as notas fiscais de serviço prestadas.",
+        "Filtrar por período, cliente ou status.",
+        "Consultar totalizadores da consulta."
+      ],
+      "detalhes_tecnicos": {
+        "endpoints_principais": [
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/fiscal/nfses/all/sale",
+            "descricao": "Listar NFS-e prestadas (emitidas)"
+          },
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/fiscal/nfses/totalizers/{id}",
+            "descricao": "Totalizadores de uma consulta específica"
+          },
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/fiscal/nfses/receipt/saleReceipt",
+            "descricao": "Recibo de serviços prestados"
+          }
+        ],
+        "parametros_consulta": {
+          "page": "Número da página (paginação)",
+          "per_page": "Itens por página",
+          "clientId": "Filtrar por ID do cliente",
+          "startDate": "Data inicial (YYYY-MM-DD)",
+          "endDate": "Data final (YYYY-MM-DD)",
+          "status": "Status da nota (Autorizada, Cancelada, etc)"
+        }
+      }
+    },
+    {
+      "nome": "Gestão de NFS-e Tomados",
+      "descricao": "Consulta e gestão de notas fiscais de serviço recebidas (compras).",
+      "tipo_automacao": "API",
+      "fluxo_operacional": [
+        "Listar todas as notas fiscais de serviço tomadas.",
+        "Filtrar por período, fornecedor ou status.",
+        "Verificar retenções aplicadas."
+      ],
+      "detalhes_tecnicos": {
+        "endpoints_principais": [
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/fiscal/nfses/all/purchase",
+            "descricao": "Listar NFS-e tomadas (recebidas)"
+          },
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/fiscal/nfses/totalizers/{id}",
+            "descricao": "Totalizadores de uma consulta específica"
+          },
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/fiscal/nfses/receipt/purchaseReceipt",
+            "descricao": "Recibo de serviços tomados"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "Apurações de ISS",
+      "descricao": "Cálculo automático do Imposto Sobre Serviços para empresas prestadoras.",
+      "tipo_automacao": "HIBRIDO",
+      "fluxo_operacional": [
+        "Selecionar cliente e competência.",
+        "Iniciar cálculo da apuração.",
+        "Conferir base de cálculo e impostos.",
+        "Gerar guia de recolhimento."
+      ],
+      "detalhes_tecnicos": {
+        "endpoints_principais": [
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/fiscal/nfse-tax",
+            "descricao": "Listar apurações de ISS"
+          },
+          {
+            "metodo": "POST",
+            "url": "https://api.jettax360.com.br/api/v1/fiscal/nfse-tax/create",
+            "descricao": "Criar nova apuração de ISS"
+          },
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/fiscal/nfse-tax/clients",
+            "descricao": "Listar clientes aptos para apuração"
+          }
+        ],
+        "pontos_atencao": "A geração da guia pode requerer interação via UI caso o endpoint de finalização não esteja disponível na API."
+      }
+    },
+    {
+      "nome": "Downloads de Documentos",
+      "descricao": "Baixar XMLs e PDFs das notas fiscais de serviço.",
+      "tipo_automacao": "API",
+      "fluxo_operacional": [
+        "Listar downloads anteriores.",
+        "Solicitar novo pacote de download.",
+        "Aguardar processamento.",
+        "Baixar arquivo ZIP gerado."
+      ],
+      "detalhes_tecnicos": {
+        "endpoints_principais": [
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/hub/download/list",
+            "descricao": "Histórico de downloads"
+          },
+          {
+            "metodo": "POST",
+            "url": "https://api.jettax360.com.br/api/v1/hub/download",
+            "descricao": "Solicitar download de NFS-e"
+          },
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/hub/download/loadData",
+            "descricao": "Carregar dados para formulário de download"
+          },
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/hub/download/{id}",
+            "descricao": "Detalhes de um download específico"
+          }
+        ],
+        "payload_exemplo": {
+          "type": "4",
+          "clients": ["clientId1", "clientId2"],
+          "filters": {
+            "invoiceType": "1",
+            "startDate": "2025-10-01 00:00:00",
+            "endDate": "2025-10-31 23:59:59"
+          }
+        }
+      }
+    },
+    {
+      "nome": "Status de Carregamento",
+      "descricao": "Monitorar o status da captura automática de notas das prefeituras.",
+      "tipo_automacao": "API",
+      "fluxo_operacional": [
+        "Consultar status de carregamento.",
+        "Identificar prefeituras com erro.",
+        "Verificar última atualização."
+      ],
+      "detalhes_tecnicos": {
+        "endpoints_principais": [
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/fiscal/nfses/load-status",
+            "descricao": "Status da captura de NFS-e por prefeitura"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "Pacote de Prefeituras",
+      "descricao": "Consultar o pacote de prefeituras suportadas para captura automática.",
+      "tipo_automacao": "API",
+      "fluxo_operacional": [
+        "Verificar quais prefeituras estão disponíveis.",
+        "Identificar prefeituras com integração ativa."
+      ],
+      "detalhes_tecnicos": {
+        "endpoints_principais": [
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/hub/nfses/package-process/list",
+            "descricao": "Listar pacotes de prefeituras"
+          }
+        ]
+      }
+    }
+  ],
+  "procedimentos": [
+    {
+      "id": "PROC-SERV-OP-001",
+      "nome": "Consultar NFS-e de um Cliente",
+      "objetivo": "Listar todas as notas fiscais de serviço (prestadas ou tomadas) de um cliente específico.",
+      "passo_a_passo": [
+        {
+          "passo": 1,
+          "acao": "Obter ID do Cliente",
+          "endpoint": "GET https://api.jettax360.com.br/api/v1/clients/all",
+          "instrucao_ia": "Encontre o cliente desejado pelo nome ou documento. Extraia o campo '_id'."
+        },
+        {
+          "passo": 2,
+          "acao": "Listar Notas Prestadas",
+          "endpoint": "GET https://api.jettax360.com.br/api/v1/fiscal/nfses/all/sale?clientId={id}",
+          "instrucao_ia": "Substitua {id} pelo ID do cliente. A resposta retornará array 'data' com as notas."
+        },
+        {
+          "passo": 3,
+          "acao": "Listar Notas Tomadas (Opcional)",
+          "endpoint": "GET https://api.jettax360.com.br/api/v1/fiscal/nfses/all/purchase?clientId={id}",
+          "instrucao_ia": "Para notas recebidas, use este endpoint com o mesmo clientId."
+        }
+      ]
+    },
+    {
+      "id": "PROC-SERV-OP-002",
+      "nome": "Solicitar Download de Notas",
+      "objetivo": "Baixar XMLs e PDFs de notas fiscais de serviço de múltiplos clientes.",
+      "passo_a_passo": [
+        {
+          "passo": 1,
+          "acao": "Preparar Lista de Clientes",
+          "logica_local": "Crie um array com os IDs dos clientes desejados."
+        },
+        {
+          "passo": 2,
+          "acao": "Enviar Solicitação",
+          "endpoint": "POST https://api.jettax360.com.br/api/v1/hub/download",
+          "instrucao_ia": "Payload: { 'type': '4', 'clients': [ids], 'filters': { 'startDate': 'YYYY-MM-DD', 'endDate': 'YYYY-MM-DD' } }"
+        },
+        {
+          "passo": 3,
+          "acao": "Aguardar Processamento",
+          "logica_local": "Implemente polling consultando GET /hub/download/list até status='Concluído'."
+        },
+        {
+          "passo": 4,
+          "acao": "Baixar Arquivo",
+          "instrucao_ia": "Extraia a URL do campo 's3File' e baixe o ZIP."
+        }
+      ]
+    },
+    {
+      "id": "PROC-SERV-OP-003",
+      "nome": "Gerar Apuração de ISS",
+      "objetivo": "Calcular o imposto sobre serviços para um cliente prestador.",
+      "passo_a_passo": [
+        {
+          "passo": 1,
+          "acao": "Verificar Clientes Aptos",
+          "endpoint": "GET https://api.jettax360.com.br/api/v1/fiscal/nfse-tax/clients",
+          "instrucao_ia": "Liste os clientes que podem ter apuração de ISS."
+        },
+        {
+          "passo": 2,
+          "acao": "Criar Apuração",
+          "endpoint": "POST https://api.jettax360.com.br/api/v1/fiscal/nfse-tax/create",
+          "instrucao_ia": "Payload: { 'clientId': 'xxx', 'competence': '10/2025' }"
+        },
+        {
+          "passo": 3,
+          "acao": "Consultar Resultado",
+          "endpoint": "GET https://api.jettax360.com.br/api/v1/fiscal/nfse-tax",
+          "instrucao_ia": "Filtre pelo clientId e competência para obter detalhes do cálculo."
+        }
+      ]
+    }
+  ]
+}

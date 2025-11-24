@@ -1,0 +1,225 @@
+{
+  "client_id": "68bf63336dc0bc30e7091de5",
+  "cnpj": "51037239000177",
+  "razao_social": "AGROPECUARIA FAZENDAS RENASCER LTDA",
+  "payload": {
+    "id": "68bf63336dc0bc30e7091de5",
+    "name": "AGROPECUARIA FAZENDAS RENASCER LTDA",
+    "enable360": false,
+    "enableModuleERP": false,
+    "enableModulePrevention": false,
+    "enableModuleHubFederal": true,
+    "enableModuleHubNFSe": true,
+    "enableModuleHubNFSeOutCity": false,
+    "enableConvertOutSideCityAbrasf": false,
+    "enableConvertOutSideCityAbrasfAt": "",
+    "enableModuleHubNFSeIss": false,
+    "enableModuleDCTFWEB": false,
+    "enableModuleHubDas": false,
+    "enableImporterCompany": false,
+    "taxRegime": "62d9471420ba2a79cd31c162",
+    "taxRegimeCode": "LP",
+    "phone": "(62) 9973-9995",
+    "whatsApp": "",
+    "municipalIntegration": {
+      "login": "80863442153",
+      "password": "808634",
+      "createISS": true,
+      "municipalRegistration": "2010130130",
+      "gissonlineLogin": "",
+      "gissonlinePassword": ""
+    },
+    "simpleNationalIntegration": {
+      "accessCode": "",
+      "documentResponsible": "",
+      "manualBilling": false,
+      "hasEmployyes": false,
+      "onlyCommercialBilling": false,
+      "typeRegime": [
+        {
+          "competence": "01/2025",
+          "code": 2,
+          "name": "Competência"
+        }
+      ]
+    },
+    "moduleFederalConfiguration": {
+      "downloadNFeWithAccountingCertificate": false,
+      "downloadPurchaseNFeInvoices": false,
+      "downloadCTeInvoices": false,
+      "downloadSalesNFeInvoices": false,
+      "downloadCFeInvoices": false,
+      "downloadCFeWithAccountingCertificate": false,
+      "enablePisCofinsAudit": false
+    },
+    "email": null,
+    "emails": [],
+    "document": "51.037.239/0001-77",
+    "address": {
+      "type": "",
+      "address": "RODOVIA GOIANESIA BARRO ALTO KM 17",
+      "number": 0,
+      "zip": "76393-000",
+      "district": "ZONA RURAL",
+      "state": "GO",
+      "complement": "",
+      "city": {
+        "ibgeCode": 5222302,
+        "name": "Vila Propicio"
+      }
+    },
+    "cnaes": [
+      {
+        "name": "Cultivo de arroz",
+        "code": 111301,
+        "primary": false
+      },
+      {
+        "name": "Cultivo de milho",
+        "code": 111302,
+        "primary": false
+      },
+      {
+        "name": "Cultivo de outras fibras de lavoura temporária não especificadas anteriormente",
+        "code": 112199,
+        "primary": false
+      },
+      {
+        "name": "Cultivo de cana-de-açúcar",
+        "code": 113000,
+        "primary": true
+      },
+      {
+        "name": "Cultivo de soja",
+        "code": 115600,
+        "primary": false
+      },
+      {
+        "name": "Cultivo de girassol",
+        "code": 116402,
+        "primary": false
+      },
+      {
+        "name": "Criação de bovinos para corte",
+        "code": 151201,
+        "primary": false
+      },
+      {
+        "name": "Criação de bovinos para leite",
+        "code": 151202,
+        "primary": false
+      },
+      {
+        "name": "Criação de bovinos, exceto para corte e leite",
+        "code": 151203,
+        "primary": false
+      },
+      {
+        "name": "Criação de equinos",
+        "code": 152102,
+        "primary": false
+      },
+      {
+        "name": "Criação de asininos e muares",
+        "code": 152103,
+        "primary": false
+      },
+      {
+        "name": "Criação de ovinos, inclusive para produção de lã",
+        "code": 153902,
+        "primary": false
+      },
+      {
+        "name": "Criação de peixes em água doce",
+        "code": 322101,
+        "primary": false
+      }
+    ],
+    "status": 1,
+    "startCompetence": "07/2025",
+    "digitalCertificate": "https://jettax360.s3.us-west-2.amazonaws.com/offices/68b1e4d38c0ec913a50e4bd5/clients/68bf63336dc0bc30e7091de5/certificate.pfx",
+    "digitalCertificatePassword": "Edward@2025",
+    "digitalCertificateDate": "13/08/2026",
+    "digitalCertificateDocument": "51037239000177",
+    "legalNature": "206-2",
+    "stateRegistration": 200475380,
+    "openDate": "14/06/2023",
+    "createdAt": "08/09/2025",
+    "updatedAt": "04/11/2025",
+    "headquarter": "",
+    "efdReinf": {
+      "startDate": "",
+      "partnerId": "",
+      "partnerAdmin": "",
+      "phone": "",
+      "email": "",
+      "document": "",
+      "taxClassification": "",
+      "errorMessage": ""
+    },
+    "ecdOption": "",
+    "enableEfdReinf": false,
+    "enableEfdReinfAt": "",
+    "registrationStatus": "620d000954060f3cff779903",
+    "typeRegime": {
+      "name": "Competência",
+      "code": 2,
+      "competence": "01/2025"
+    },
+    "payroll": {
+      "eletronicPoint": "",
+      "fpas": "",
+      "rat": "",
+      "fap": 0.5,
+      "taxClassification": "",
+      "enableESocial": null,
+      "lastEventStatus": null,
+      "lastMessage": ""
+    },
+    "erp": {
+      "nick": "",
+      "enableContmaticIntegration": false,
+      "enableContmaticIntegrationAt": "",
+      "contmaticIntegration": false,
+      "syncAt": ""
+    },
+    "enableModuleERPAt": "",
+    "enabledESocialAt": "",
+    "enableModuleHubFederalAt": "08/09/2025 20:13:55",
+    "enableModuleHubNFSeAt": "04/11/2025 16:48:54",
+    "enableModuleHubNFSeOutCityAt": "",
+    "enableModuleHubNFSeIssAt": "",
+    "enableModulePreventionAt": "",
+    "enable360At": "",
+    "enableModuleHubDasAt": "",
+    "enableModuleDCTFWEBAt": "",
+    "federalConfig": {
+      "enableCFE": false,
+      "enableCFEAt": "",
+      "enableNFCE": false,
+      "enableNFCEAt": "",
+      "enableSefazOnline": false,
+      "enableSefazOnlineAt": "",
+      "automationICMS": false,
+      "automationICMSAt": "",
+      "enableCertificateA3": false,
+      "enableCertificateA3At": "",
+      "enableNFeEmitted": true,
+      "enableNFeEmittedAt": "11/09/2025 10:26:44",
+      "searchWithOfficeCertificate": false,
+      "searchWithOfficeCertificateAt": "",
+      "enableAutomaticCorrections": true,
+      "enableAutomaticCorrectionsAt": "04/11/2025 16:48:54",
+      "enableAutomaticCorrectionPisCofins": true,
+      "enableAutomaticCorrectionPisCofinsAt": "04/11/2025 16:48:54"
+    },
+    "enableImporterCompanyAt": "",
+    "accountingPlanConfig": []
+  },
+  "diferencas": [
+    "Tributação: '' → 'Lucro Presumido - Comércio e Serviços'",
+    "IE: '' → '200475380'",
+    "IM: '' → '2010130130'",
+    "E-mail: '' → 'AGROPECUARIARENASCER@GMAIL.COM.BR'"
+  ]
+}

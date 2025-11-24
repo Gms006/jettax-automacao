@@ -1,0 +1,268 @@
+{
+  "client_id": "691b8c875d4e1f28ea0bce31",
+  "cnpj": "01706965000167",
+  "razao_social": "COEPI - COMUNIDADE EDUCACIONAL DE PIRENOPOLIS",
+  "payload": {
+    "id": "691b8c875d4e1f28ea0bce31",
+    "name": "COEPI - COMUNIDADE EDUCACIONAL DE PIRENOPOLIS",
+    "enable360": false,
+    "enableModuleERP": false,
+    "enableModulePrevention": false,
+    "enableModuleHubFederal": true,
+    "enableModuleHubNFSe": false,
+    "enableModuleHubNFSeOutCity": false,
+    "enableConvertOutSideCityAbrasf": false,
+    "enableConvertOutSideCityAbrasfAt": "",
+    "enableModuleHubNFSeIss": false,
+    "enableModuleDCTFWEB": false,
+    "enableModuleHubDas": false,
+    "enableImporterCompany": false,
+    "taxRegime": "60d53314200e556dc277ac20",
+    "taxRegimeCode": "SN",
+    "phone": "",
+    "whatsApp": "",
+    "municipalIntegration": {
+      "login": "",
+      "password": "",
+      "createISS": false,
+      "municipalRegistration": "674",
+      "gissonlineLogin": "",
+      "gissonlinePassword": ""
+    },
+    "simpleNationalIntegration": {
+      "accessCode": "",
+      "documentResponsible": "",
+      "manualBilling": false,
+      "hasEmployyes": false,
+      "onlyCommercialBilling": false,
+      "typeRegime": [
+        {
+          "competence": "11/2025",
+          "code": 2,
+          "name": "Competência"
+        }
+      ]
+    },
+    "moduleFederalConfiguration": {
+      "downloadNFeWithAccountingCertificate": false,
+      "downloadPurchaseNFeInvoices": false,
+      "downloadCTeInvoices": false,
+      "downloadSalesNFeInvoices": false,
+      "downloadCFeInvoices": false,
+      "downloadCFeWithAccountingCertificate": false,
+      "enablePisCofinsAudit": false
+    },
+    "email": null,
+    "emails": [],
+    "document": "01.706.965/0001-67",
+    "address": {
+      "type": "R",
+      "address": "RUA DO CARMO",
+      "number": 0,
+      "zip": "72980-515",
+      "district": "ALTO DO CARMO",
+      "state": "GO",
+      "complement": "",
+      "city": {
+        "ibgeCode": 5217302,
+        "name": "Pirenopolis"
+      }
+    },
+    "cnaes": [
+      {
+        "name": "Produção de mudas e outras formas de propagação vegetal, certificadas",
+        "code": 142300,
+        "primary": false
+      },
+      {
+        "name": "Fabricação de instrumentos musicais, peças e acessórios",
+        "code": 3220500,
+        "primary": false
+      },
+      {
+        "name": "Comércio atacadista de sementes, flores, plantas e gramas",
+        "code": 4623106,
+        "primary": false
+      },
+      {
+        "name": "Comércio varejista especializado de instrumentos musicais e acessórios",
+        "code": 4756300,
+        "primary": false
+      },
+      {
+        "name": "Comércio varejista de suvenires, bijuterias e artesanatos",
+        "code": 4789001,
+        "primary": false
+      },
+      {
+        "name": "Comércio varejista de plantas e flores naturais",
+        "code": 4789002,
+        "primary": false
+      },
+      {
+        "name": "Atividades de produção cinematográfica, de vídeos e de programas de televisão não especificadas anteriormente",
+        "code": 5911199,
+        "primary": false
+      },
+      {
+        "name": "Atividades de produção de fotografias, exceto aérea e submarina",
+        "code": 7420001,
+        "primary": false
+      },
+      {
+        "name": "Aluguel de palcos, coberturas e outras estruturas de uso temporário, exceto andaimes",
+        "code": 7739003,
+        "primary": false
+      },
+      {
+        "name": "Operadores turísticos",
+        "code": 7912100,
+        "primary": false
+      },
+      {
+        "name": "Serviços de reservas e outros serviços de turismo não especificados anteriormente",
+        "code": 7990200,
+        "primary": false
+      },
+      {
+        "name": "Serviços de organização de feiras, congressos, exposições e festas",
+        "code": 8230001,
+        "primary": false
+      },
+      {
+        "name": "Casas de festas e eventos",
+        "code": 8230002,
+        "primary": false
+      },
+      {
+        "name": "Ensino de arte e cultura não especificado anteriormente",
+        "code": 8592999,
+        "primary": false
+      },
+      {
+        "name": "Atividades de práticas integrativas e complementares em saúde humana",
+        "code": 8690901,
+        "primary": false
+      },
+      {
+        "name": "Atividades de sonorização e de iluminação",
+        "code": 9001906,
+        "primary": false
+      },
+      {
+        "name": "Artes cênicas, espetáculos e atividades complementares não especificados anteriormente",
+        "code": 9001999,
+        "primary": false
+      },
+      {
+        "name": "Atividades de bibliotecas e arquivos",
+        "code": 9101500,
+        "primary": false
+      },
+      {
+        "name": "Atividades de museus e de exploração de lugares e prédios históricos e atrações similares",
+        "code": 9102301,
+        "primary": false
+      },
+      {
+        "name": "Atividades de jardins botânicos, zoológicos, parques nacionais, reservas ecológicas e áreas de proteção ambiental",
+        "code": 9103100,
+        "primary": false
+      },
+      {
+        "name": "Atividades de associações de defesa de direitos sociais",
+        "code": 9430800,
+        "primary": false
+      },
+      {
+        "name": "Atividades de organizações associativas ligadas à cultura e à arte",
+        "code": 9493600,
+        "primary": true
+      }
+    ],
+    "status": 1,
+    "startCompetence": "11/2025",
+    "digitalCertificate": "https://jettax360.s3.us-west-2.amazonaws.com/offices/68b1e4d38c0ec913a50e4bd5/clients/691b8c875d4e1f28ea0bce31/certificate.pfx",
+    "digitalCertificatePassword": "Patricia@2025",
+    "digitalCertificateDate": "01/09/2026",
+    "digitalCertificateDocument": "01706965000167",
+    "legalNature": "399-9",
+    "stateRegistration": 9700845243,
+    "openDate": "01/09/2025",
+    "createdAt": "17/11/2025",
+    "updatedAt": "17/11/2025",
+    "headquarter": "",
+    "efdReinf": {
+      "startDate": "",
+      "partnerId": "",
+      "partnerAdmin": "",
+      "phone": "",
+      "email": "",
+      "document": "",
+      "taxClassification": "",
+      "errorMessage": ""
+    },
+    "ecdOption": "",
+    "enableEfdReinf": false,
+    "enableEfdReinfAt": "",
+    "registrationStatus": "",
+    "typeRegime": {
+      "name": "Competência",
+      "code": 2,
+      "competence": "11/2025"
+    },
+    "payroll": {
+      "eletronicPoint": null,
+      "fpas": "",
+      "rat": "",
+      "fap": 0.5,
+      "taxClassification": "",
+      "competence": ""
+    },
+    "erp": {
+      "nick": "",
+      "enableContmaticIntegration": false,
+      "enableContmaticIntegrationAt": "",
+      "contmaticIntegration": false,
+      "syncAt": ""
+    },
+    "enableModuleERPAt": "",
+    "enabledESocialAt": "",
+    "enableModuleHubFederalAt": "17/11/2025 17:58:47",
+    "enableModuleHubNFSeAt": "",
+    "enableModuleHubNFSeOutCityAt": "",
+    "enableModuleHubNFSeIssAt": "",
+    "enableModulePreventionAt": "",
+    "enable360At": "",
+    "enableModuleHubDasAt": "",
+    "enableModuleDCTFWEBAt": "",
+    "federalConfig": {
+      "enableCFE": false,
+      "enableCFEAt": "",
+      "enableNFCE": false,
+      "enableNFCEAt": "",
+      "enableSefazOnline": false,
+      "enableSefazOnlineAt": "",
+      "automationICMS": false,
+      "automationICMSAt": "",
+      "enableCertificateA3": false,
+      "enableCertificateA3At": "",
+      "enableNFeEmitted": true,
+      "enableNFeEmittedAt": "17/11/2025 17:58:47",
+      "searchWithOfficeCertificate": false,
+      "searchWithOfficeCertificateAt": "",
+      "enableAutomaticCorrections": true,
+      "enableAutomaticCorrectionsAt": "17/11/2025 17:58:47",
+      "enableAutomaticCorrectionPisCofins": true,
+      "enableAutomaticCorrectionPisCofinsAt": "17/11/2025 17:58:47"
+    },
+    "enableImporterCompanyAt": "",
+    "accountingPlanConfig": []
+  },
+  "diferencas": [
+    "Tributação: '' → 'Imune/Isenta'",
+    "IE: '' → '203115244'",
+    "IM: '' → '674'",
+    "E-mail: '' → 'patriciaferraz007@gmail.com'"
+  ]
+}

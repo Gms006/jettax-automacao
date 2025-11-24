@@ -1,0 +1,23 @@
+RELATÓRIO DE ATUALIZAÇÃO
+============================================================
+
+Data: 21/11/2025 17:08:17
+
+Total: 1
+✓ Atualizados: 1
+= Sem alteração: 0
+⚠ Não cadastrados: 0
+✗ Erros: 0
+
+============================================================
+DETALHES
+============================================================
+
+46149398000123 - 3TB PRODUCOES ARTISTICAS LTDA
+  Status: ✓ OK
+  Mensagem: Atualizado com sucesso (3 campos alterados)
+  Diferenças:
+    - Tributação: '' → 'Simples Nacional - Serviços'
+    - IM: '' → '103416'
+    - E-mail: '' → '3tbproducoesartisticasltda@gmail.com'
+

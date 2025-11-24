@@ -1,0 +1,170 @@
+{
+  "client_id": "68bf740cea6d2f3715098f2d",
+  "cnpj": "46757883000180",
+  "razao_social": "GONDIM E GONDIM LTDA",
+  "payload": {
+    "id": "68bf740cea6d2f3715098f2d",
+    "name": "GONDIM E GONDIM LTDA",
+    "enable360": false,
+    "enableModuleERP": false,
+    "enableModulePrevention": false,
+    "enableModuleHubFederal": true,
+    "enableModuleHubNFSe": false,
+    "enableModuleHubNFSeOutCity": false,
+    "enableConvertOutSideCityAbrasf": false,
+    "enableConvertOutSideCityAbrasfAt": "",
+    "enableModuleHubNFSeIss": false,
+    "enableModuleDCTFWEB": false,
+    "enableModuleHubDas": false,
+    "enableImporterCompany": false,
+    "taxRegime": "60d53314200e556dc277ac20",
+    "taxRegimeCode": "SN",
+    "phone": "(62) 99559-7979",
+    "whatsApp": "",
+    "municipalIntegration": {
+      "login": "",
+      "password": "",
+      "createISS": false,
+      "municipalRegistration": "104309",
+      "gissonlineLogin": "",
+      "gissonlinePassword": ""
+    },
+    "simpleNationalIntegration": {
+      "accessCode": "",
+      "documentResponsible": "",
+      "manualBilling": false,
+      "hasEmployyes": false,
+      "onlyCommercialBilling": false,
+      "typeRegime": [
+        {
+          "competence": "01/2025",
+          "code": 2,
+          "name": "Competência"
+        }
+      ]
+    },
+    "moduleFederalConfiguration": {
+      "downloadNFeWithAccountingCertificate": false,
+      "downloadPurchaseNFeInvoices": false,
+      "downloadCTeInvoices": false,
+      "downloadSalesNFeInvoices": false,
+      "downloadCFeInvoices": false,
+      "downloadCFeWithAccountingCertificate": false,
+      "enablePisCofinsAudit": false
+    },
+    "email": null,
+    "emails": [],
+    "document": "46.757.883/0001-80",
+    "address": {
+      "type": "",
+      "address": "PRACA GENERAL CURADO",
+      "number": 0,
+      "zip": "75110-280",
+      "district": "JUNDIAÍ",
+      "state": "GO",
+      "complement": "QUADRA29 LOTE 16",
+      "city": {
+        "ibgeCode": 5201108,
+        "name": "Anapolis"
+      }
+    },
+    "cnaes": [
+      {
+        "name": "Restaurantes e similares",
+        "code": 5611201,
+        "primary": true
+      },
+      {
+        "name": "Lanchonetes, casas de chá, de sucos e similares",
+        "code": 5611203,
+        "primary": false
+      }
+    ],
+    "status": 1,
+    "startCompetence": "07/2025",
+    "digitalCertificate": null,
+    "digitalCertificatePassword": "",
+    "digitalCertificateDate": "",
+    "digitalCertificateDocument": "",
+    "legalNature": "206-2",
+    "stateRegistration": 109382110,
+    "openDate": "13/06/2022",
+    "createdAt": "08/09/2025",
+    "updatedAt": "21/11/2025",
+    "headquarter": "",
+    "efdReinf": {
+      "startDate": "",
+      "partnerId": "",
+      "partnerAdmin": "",
+      "phone": "",
+      "email": "",
+      "document": "",
+      "taxClassification": "",
+      "errorMessage": ""
+    },
+    "ecdOption": "",
+    "enableEfdReinf": false,
+    "enableEfdReinfAt": "",
+    "registrationStatus": "620d000954060f3cff779903",
+    "typeRegime": {
+      "name": "Competência",
+      "code": 2,
+      "competence": "01/2025"
+    },
+    "payroll": {
+      "eletronicPoint": "",
+      "fpas": "",
+      "rat": "",
+      "fap": 0.5,
+      "taxClassification": "",
+      "enableESocial": null,
+      "lastEventStatus": null,
+      "lastMessage": ""
+    },
+    "erp": {
+      "nick": "",
+      "enableContmaticIntegration": false,
+      "enableContmaticIntegrationAt": "",
+      "contmaticIntegration": false,
+      "syncAt": ""
+    },
+    "enableModuleERPAt": "",
+    "enabledESocialAt": "",
+    "enableModuleHubFederalAt": "08/09/2025 21:25:48",
+    "enableModuleHubNFSeAt": "",
+    "enableModuleHubNFSeOutCityAt": "",
+    "enableModuleHubNFSeIssAt": "",
+    "enableModulePreventionAt": "",
+    "enable360At": "",
+    "enableModuleHubDasAt": "",
+    "enableModuleDCTFWEBAt": "",
+    "federalConfig": {
+      "enableCFE": false,
+      "enableCFEAt": "",
+      "enableNFCE": false,
+      "enableNFCEAt": "",
+      "enableSefazOnline": false,
+      "enableSefazOnlineAt": "",
+      "automationICMS": false,
+      "automationICMSAt": "",
+      "enableCertificateA3": false,
+      "enableCertificateA3At": "",
+      "enableNFeEmitted": false,
+      "enableNFeEmittedAt": "",
+      "searchWithOfficeCertificate": false,
+      "searchWithOfficeCertificateAt": "",
+      "enableAutomaticCorrections": true,
+      "enableAutomaticCorrectionsAt": "21/11/2025 17:23:19",
+      "enableAutomaticCorrectionPisCofins": true,
+      "enableAutomaticCorrectionPisCofinsAt": "21/11/2025 17:23:19"
+    },
+    "enableImporterCompanyAt": "",
+    "accountingPlanConfig": []
+  },
+  "diferencas": [
+    "Tributação: '' → 'Simples Nacional - Comércio e Industria'",
+    "IE: '' → '109382110'",
+    "IM: '' → '104309'",
+    "E-mail: '' → 'gustavo.gondim@icloud.com'"
+  ]
+}

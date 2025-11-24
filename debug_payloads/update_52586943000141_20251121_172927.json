@@ -1,0 +1,175 @@
+{
+  "client_id": "68bf7dabeb099d8a27079512",
+  "cnpj": "52586943000141",
+  "razao_social": "MARIETTA BAR E RESTAURANTE LTDA",
+  "payload": {
+    "id": "68bf7dabeb099d8a27079512",
+    "name": "MARIETTA BAR E RESTAURANTE LTDA",
+    "enable360": false,
+    "enableModuleERP": false,
+    "enableModulePrevention": false,
+    "enableModuleHubFederal": true,
+    "enableModuleHubNFSe": false,
+    "enableModuleHubNFSeOutCity": false,
+    "enableConvertOutSideCityAbrasf": false,
+    "enableConvertOutSideCityAbrasfAt": "",
+    "enableModuleHubNFSeIss": false,
+    "enableModuleDCTFWEB": false,
+    "enableModuleHubDas": false,
+    "enableImporterCompany": false,
+    "taxRegime": "60d53314200e556dc277ac20",
+    "taxRegimeCode": "SN",
+    "phone": "(62) 8140-2782",
+    "whatsApp": "",
+    "municipalIntegration": {
+      "login": "",
+      "password": "",
+      "createISS": false,
+      "municipalRegistration": "91861866",
+      "gissonlineLogin": "",
+      "gissonlinePassword": ""
+    },
+    "simpleNationalIntegration": {
+      "accessCode": "",
+      "documentResponsible": "",
+      "manualBilling": false,
+      "hasEmployyes": false,
+      "onlyCommercialBilling": false,
+      "typeRegime": [
+        {
+          "competence": "01/2025",
+          "code": 2,
+          "name": "Competência"
+        }
+      ]
+    },
+    "moduleFederalConfiguration": {
+      "downloadNFeWithAccountingCertificate": false,
+      "downloadPurchaseNFeInvoices": false,
+      "downloadCTeInvoices": false,
+      "downloadSalesNFeInvoices": false,
+      "downloadCFeInvoices": false,
+      "downloadCFeWithAccountingCertificate": false,
+      "enablePisCofinsAudit": false
+    },
+    "email": null,
+    "emails": [],
+    "document": "52.586.943/0001-41",
+    "address": {
+      "type": "R",
+      "address": "R ALAOR DE SA ABREU",
+      "number": 163,
+      "zip": "75170-000",
+      "district": "SETOR CENTRAL",
+      "state": "GO",
+      "complement": "",
+      "city": {
+        "ibgeCode": 5208400,
+        "name": "Goianapolis"
+      }
+    },
+    "cnaes": [
+      {
+        "name": "Restaurantes e similares",
+        "code": 5611201,
+        "primary": false
+      },
+      {
+        "name": "Lanchonetes, casas de chá, de sucos e similares",
+        "code": 5611203,
+        "primary": false
+      },
+      {
+        "name": "Bares e outros estabelecimentos especializados em servir bebidas, com entretenimento",
+        "code": 5611205,
+        "primary": true
+      }
+    ],
+    "status": 1,
+    "startCompetence": "07/2025",
+    "digitalCertificate": null,
+    "digitalCertificatePassword": "",
+    "digitalCertificateDate": "",
+    "digitalCertificateDocument": "",
+    "legalNature": "206-2",
+    "stateRegistration": 200869523,
+    "openDate": "19/10/2023",
+    "createdAt": "08/09/2025",
+    "updatedAt": "12/11/2025",
+    "headquarter": "",
+    "efdReinf": {
+      "startDate": "",
+      "partnerId": "",
+      "partnerAdmin": "",
+      "phone": "",
+      "email": "",
+      "document": "",
+      "taxClassification": "",
+      "errorMessage": ""
+    },
+    "ecdOption": "",
+    "enableEfdReinf": false,
+    "enableEfdReinfAt": "",
+    "registrationStatus": "620d000954060f3cff779903",
+    "typeRegime": {
+      "name": "Competência",
+      "code": 2,
+      "competence": "01/2025"
+    },
+    "payroll": {
+      "eletronicPoint": "",
+      "fpas": "",
+      "rat": "",
+      "fap": 0.5,
+      "taxClassification": "",
+      "enableESocial": null,
+      "lastEventStatus": null,
+      "lastMessage": ""
+    },
+    "erp": {
+      "nick": "",
+      "enableContmaticIntegration": false,
+      "enableContmaticIntegrationAt": "",
+      "contmaticIntegration": false,
+      "syncAt": ""
+    },
+    "enableModuleERPAt": "",
+    "enabledESocialAt": "",
+    "enableModuleHubFederalAt": "08/09/2025 22:06:51",
+    "enableModuleHubNFSeAt": "",
+    "enableModuleHubNFSeOutCityAt": "",
+    "enableModuleHubNFSeIssAt": "",
+    "enableModulePreventionAt": "",
+    "enable360At": "",
+    "enableModuleHubDasAt": "",
+    "enableModuleDCTFWEBAt": "",
+    "federalConfig": {
+      "enableCFE": false,
+      "enableCFEAt": "",
+      "enableNFCE": false,
+      "enableNFCEAt": "",
+      "enableSefazOnline": false,
+      "enableSefazOnlineAt": "",
+      "automationICMS": false,
+      "automationICMSAt": "",
+      "enableCertificateA3": false,
+      "enableCertificateA3At": "",
+      "enableNFeEmitted": true,
+      "enableNFeEmittedAt": "11/09/2025 13:07:00",
+      "searchWithOfficeCertificate": false,
+      "searchWithOfficeCertificateAt": "",
+      "enableAutomaticCorrections": true,
+      "enableAutomaticCorrectionsAt": "12/11/2025 17:26:34",
+      "enableAutomaticCorrectionPisCofins": true,
+      "enableAutomaticCorrectionPisCofinsAt": "12/11/2025 17:26:34"
+    },
+    "enableImporterCompanyAt": "",
+    "accountingPlanConfig": []
+  },
+  "diferencas": [
+    "Tributação: '' → 'Simples Nacional - Comércio e Industria'",
+    "IE: '' → '200869523'",
+    "IM: '' → '91861866'",
+    "E-mail: '' → 'marietta.barrt@gmail.com'"
+  ]
+}

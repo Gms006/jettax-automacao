@@ -1,0 +1,170 @@
+{
+  "client_id": "68bf79d14a1b1de3ab0158a2",
+  "cnpj": "13781288000120",
+  "razao_social": "LC DISTRIBUIDORA DE CIMENTOS LTDA",
+  "payload": {
+    "id": "68bf79d14a1b1de3ab0158a2",
+    "name": "LC DISTRIBUIDORA DE CIMENTOS LTDA",
+    "enable360": false,
+    "enableModuleERP": false,
+    "enableModulePrevention": false,
+    "enableModuleHubFederal": true,
+    "enableModuleHubNFSe": false,
+    "enableModuleHubNFSeOutCity": false,
+    "enableConvertOutSideCityAbrasf": false,
+    "enableConvertOutSideCityAbrasfAt": "",
+    "enableModuleHubNFSeIss": false,
+    "enableModuleDCTFWEB": false,
+    "enableModuleHubDas": false,
+    "enableImporterCompany": false,
+    "taxRegime": "62d9471420ba2a79cd31c163",
+    "taxRegimeCode": "LR",
+    "phone": "(62) 3943-2162",
+    "whatsApp": "",
+    "municipalIntegration": {
+      "login": "",
+      "password": "",
+      "createISS": false,
+      "municipalRegistration": "63906",
+      "gissonlineLogin": "",
+      "gissonlinePassword": ""
+    },
+    "simpleNationalIntegration": {
+      "accessCode": "",
+      "documentResponsible": "",
+      "manualBilling": false,
+      "hasEmployyes": false,
+      "onlyCommercialBilling": false,
+      "typeRegime": [
+        {
+          "competence": "01/2025",
+          "code": 2,
+          "name": "Competência"
+        }
+      ]
+    },
+    "moduleFederalConfiguration": {
+      "downloadNFeWithAccountingCertificate": false,
+      "downloadPurchaseNFeInvoices": false,
+      "downloadCTeInvoices": false,
+      "downloadSalesNFeInvoices": false,
+      "downloadCFeInvoices": false,
+      "downloadCFeWithAccountingCertificate": false,
+      "enablePisCofinsAudit": false
+    },
+    "email": null,
+    "emails": [],
+    "document": "13.781.288/0001-20",
+    "address": {
+      "type": "R",
+      "address": "R AGENOR BORGES JUNIOR",
+      "number": 0,
+      "zip": "75135-573",
+      "district": "VIVIAN PARQUE",
+      "state": "GO",
+      "complement": "QUADRA62 LOTE 17",
+      "city": {
+        "ibgeCode": 5201108,
+        "name": "Anapolis"
+      }
+    },
+    "cnaes": [
+      {
+        "name": "Comércio atacadista de cimento",
+        "code": 4674500,
+        "primary": true
+      },
+      {
+        "name": "Transporte rodoviário de carga, exceto produtos perigosos e mudanças, intermunicipal, interestadual e internacional",
+        "code": 4930202,
+        "primary": false
+      }
+    ],
+    "status": 1,
+    "startCompetence": "07/2025",
+    "digitalCertificate": "https://jettax360.s3.us-west-2.amazonaws.com/offices/68b1e4d38c0ec913a50e4bd5/clients/68bf79d14a1b1de3ab0158a2/certificate.pfx",
+    "digitalCertificatePassword": "Wellington@2025",
+    "digitalCertificateDate": "30/10/2026",
+    "digitalCertificateDocument": "13781288000120",
+    "legalNature": "206-2",
+    "stateRegistration": 105030899,
+    "openDate": "07/06/2011",
+    "createdAt": "08/09/2025",
+    "updatedAt": "05/11/2025",
+    "headquarter": "",
+    "efdReinf": {
+      "startDate": "",
+      "partnerId": "",
+      "partnerAdmin": "",
+      "phone": "",
+      "email": "",
+      "document": "",
+      "taxClassification": "",
+      "errorMessage": ""
+    },
+    "ecdOption": "",
+    "enableEfdReinf": false,
+    "enableEfdReinfAt": "",
+    "registrationStatus": "620d000954060f3cff779903",
+    "typeRegime": {
+      "name": "Competência",
+      "code": 2,
+      "competence": "01/2025"
+    },
+    "payroll": {
+      "eletronicPoint": "",
+      "fpas": "",
+      "rat": "",
+      "fap": 0.5,
+      "taxClassification": "",
+      "enableESocial": null,
+      "lastEventStatus": null,
+      "lastMessage": ""
+    },
+    "erp": {
+      "nick": "",
+      "enableContmaticIntegration": false,
+      "enableContmaticIntegrationAt": "",
+      "contmaticIntegration": false,
+      "syncAt": ""
+    },
+    "enableModuleERPAt": "",
+    "enabledESocialAt": "",
+    "enableModuleHubFederalAt": "08/09/2025 21:50:25",
+    "enableModuleHubNFSeAt": "",
+    "enableModuleHubNFSeOutCityAt": "",
+    "enableModuleHubNFSeIssAt": "",
+    "enableModulePreventionAt": "",
+    "enable360At": "",
+    "enableModuleHubDasAt": "",
+    "enableModuleDCTFWEBAt": "",
+    "federalConfig": {
+      "enableCFE": false,
+      "enableCFEAt": "",
+      "enableNFCE": false,
+      "enableNFCEAt": "",
+      "enableSefazOnline": false,
+      "enableSefazOnlineAt": "",
+      "automationICMS": false,
+      "automationICMSAt": "",
+      "enableCertificateA3": false,
+      "enableCertificateA3At": "",
+      "enableNFeEmitted": true,
+      "enableNFeEmittedAt": "11/09/2025 13:03:24",
+      "searchWithOfficeCertificate": false,
+      "searchWithOfficeCertificateAt": "",
+      "enableAutomaticCorrections": true,
+      "enableAutomaticCorrectionsAt": "05/11/2025 09:01:54",
+      "enableAutomaticCorrectionPisCofins": true,
+      "enableAutomaticCorrectionPisCofinsAt": "05/11/2025 09:01:54"
+    },
+    "enableImporterCompanyAt": "",
+    "accountingPlanConfig": []
+  },
+  "diferencas": [
+    "Tributação: '' → 'Lucro Real - Comércio e Industria'",
+    "IE: '' → '105030899'",
+    "IM: '' → '63906'",
+    "E-mail: '' → 'lccimentos.financeiro@hotmail.com'"
+  ]
+}

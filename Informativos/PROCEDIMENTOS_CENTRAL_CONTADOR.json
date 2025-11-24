@@ -1,0 +1,131 @@
+{
+  "modulo": "Central do Contador",
+  "descricao": "Guia procedural para agentes de IA sobre como executar tarefas de gestão e análise no módulo Central do Contador.",
+  "procedimentos": [
+    {
+      "id": "PROC-001",
+      "nome": "Analisar Status da Carteira de Clientes",
+      "objetivo": "Identificar a distribuição de clientes ativos, inativos e pendentes para relatórios gerenciais.",
+      "passo_a_passo": [
+        {
+          "passo": 1,
+          "acao": "Consultar Resumo Executivo",
+          "endpoint": "GET https://api.jettax360.com.br/api/v1/dashboard/header",
+          "instrucao_ia": "Faça uma requisição GET. No JSON de resposta, extraia os valores das chaves 'activeClients', 'inactiveClients' e 'pendingClients'. Calcule o total somando-os ou use 'totalClients' para validação."
+        },
+        {
+          "passo": 2,
+          "acao": "Listar Clientes Detalhados (Opcional)",
+          "endpoint": "GET https://api.jettax360.com.br/api/v1/clients/all",
+          "instrucao_ia": "Se precisar dos nomes específicos, chame este endpoint. Itere sobre o array 'data'. O status de cada cliente está no objeto 'status': { 'code': 1, 'text': 'Ativo' }. Filtre conforme necessário."
+        }
+      ]
+    },
+    {
+      "id": "PROC-002",
+      "nome": "Segmentar Clientes por Regime Tributário",
+      "objetivo": "Classificar a base de clientes entre Simples Nacional, Lucro Presumido, Lucro Real e MEI.",
+      "passo_a_passo": [
+        {
+          "passo": 1,
+          "acao": "Obter Contagem Rápida",
+          "endpoint": "GET https://api.jettax360.com.br/api/v1/dashboard/header",
+          "instrucao_ia": "Extraia os contadores: 'simpleNational' (Simples), 'predictedProfit' (Presumido), 'realProfit' (Real) e 'mei' (MEI)."
+        },
+        {
+          "passo": 2,
+          "acao": "Obter Mapeamento de IDs de Regime",
+          "endpoint": "GET https://api.jettax360.com.br/api/v1/offices/load",
+          "instrucao_ia": "Consulte o array 'taxRegime'. Armazene o '_id' correspondente a cada 'code' (ex: SN, LP, LR). Isso é necessário para filtrar clientes na listagem detalhada."
+        },
+        {
+          "passo": 3,
+          "acao": "Identificar Regime por Cliente",
+          "endpoint": "GET https://api.jettax360.com.br/api/v1/clients/all",
+          "instrucao_ia": "Na lista de clientes, verifique o campo 'taxRegime'. Compare o ID encontrado com o mapeamento do passo 2 para determinar o regime legível."
+        }
+      ]
+    },
+    {
+      "id": "PROC-003",
+      "nome": "Monitorar Certificados Digitais Vencidos",
+      "objetivo": "Listar certificados que já expiraram ou estão prestes a expirar para ação preventiva.",
+      "passo_a_passo": [
+        {
+          "passo": 1,
+          "acao": "Verificar Alerta Geral",
+          "endpoint": "GET https://api.jettax360.com.br/api/v1/dashboard/header",
+          "instrucao_ia": "Verifique se 'expiredCertificates' > 0 ou 'expiringCertificates' > 0. Se ambos forem 0, encerre o processo."
+        },
+        {
+          "passo": 2,
+          "acao": "Listar Credenciais",
+          "endpoint": "GET https://api.jettax360.com.br/api/v1/offices/credentials",
+          "instrucao_ia": "Itere sobre o array 'data'. Para cada item, verifique os booleanos 'isExpired' (Vencido) e 'expiring' (Vencendo). A data de validade está em 'digitalCertificateDate'."
+        },
+        {
+          "passo": 3,
+          "acao": "Notificar Responsável (Ação Sugerida)",
+          "logica_local": "Se encontrar certificados críticos, gere um relatório ou alerta contendo o nome da credencial ('name') e a data de vencimento."
+        }
+      ]
+    },
+    {
+      "id": "PROC-004",
+      "nome": "Verificar Pendências e Notificações",
+      "objetivo": "Identificar erros de processamento ou ações pendentes no escritório.",
+      "passo_a_passo": [
+        {
+          "passo": 1,
+          "acao": "Consultar Notificações Recentes",
+          "endpoint": "GET https://api.jettax360.com.br/api/v1/notifications",
+          "instrucao_ia": "Liste as notificações. Filtre por 'notificationType.code' == 3 (Erro/Danger) ou 'notificationType.code' == 2 (Aviso). O campo 'message' contém o detalhe do problema."
+        },
+        {
+          "passo": 2,
+          "acao": "Consultar Lista de Pendências do Hub",
+          "endpoint": "GET https://api.jettax360.com.br/api/v1/hub/pendencies/list/",
+          "instrucao_ia": "Verifique se há itens retornados. Estes geralmente indicam falhas em downloads ou processamentos automáticos."
+        }
+      ]
+    },
+    {
+      "id": "PROC-005",
+      "nome": "Exportar Guias em Lote",
+      "objetivo": "Gerar e baixar pacotes de guias fiscais para múltiplos clientes.",
+      "passo_a_passo": [
+        {
+          "passo": 1,
+          "acao": "Verificar Exportações Anteriores",
+          "endpoint": "GET https://api.jettax360.com.br/api/v1/hub/bill-export/list",
+          "instrucao_ia": "Liste as exportações para evitar duplicidade. Verifique o status das solicitações recentes."
+        },
+        {
+          "passo": 2,
+          "acao": "Solicitar Nova Exportação",
+          "endpoint": "POST https://api.jettax360.com.br/api/v1/hub/bill-export",
+          "instrucao_ia": "Envie um payload JSON contendo os IDs dos clientes e o período desejado. (Consulte a documentação do endpoint para o schema exato do body)."
+        }
+      ]
+    },
+    {
+      "id": "PROC-006",
+      "nome": "Auditar Integração com Acessórias",
+      "objetivo": "Garantir que a sincronização com o sistema Acessórias está ativa e funcional.",
+      "passo_a_passo": [
+        {
+          "passo": 1,
+          "acao": "Verificar Status da Integração",
+          "endpoint": "GET https://api.jettax360.com.br/api/v1/offices",
+          "instrucao_ia": "No objeto 'data', acesse a chave 'acessorias'. Verifique se 'acessoriasIntegration' é true e se 'apiToken' está preenchido."
+        },
+        {
+          "passo": 2,
+          "acao": "Listar Módulos Integrados",
+          "endpoint": "GET https://api.jettax360.com.br/api/v1/integration-acessorias/list",
+          "instrucao_ia": "Confirme quais módulos (ex: 'taxSituation', 'cnd') estão ativos na lista de integrações."
+        }
+      ]
+    }
+  ]
+}

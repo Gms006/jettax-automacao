@@ -1,0 +1,164 @@
+{
+  "client_id": "68bf7eea27f1ae172c034832",
+  "cnpj": "34589805000134",
+  "razao_social": "MASTOLOGIA CAETANO LTDA",
+  "payload": {
+    "id": "68bf7eea27f1ae172c034832",
+    "name": "MASTOLOGIA CAETANO LTDA",
+    "enable360": false,
+    "enableModuleERP": false,
+    "enableModulePrevention": false,
+    "enableModuleHubFederal": true,
+    "enableModuleHubNFSe": true,
+    "enableModuleHubNFSeOutCity": false,
+    "enableConvertOutSideCityAbrasf": false,
+    "enableConvertOutSideCityAbrasfAt": "",
+    "enableModuleHubNFSeIss": false,
+    "enableModuleDCTFWEB": false,
+    "enableModuleHubDas": false,
+    "enableImporterCompany": false,
+    "taxRegime": "60d53314200e556dc277ac20",
+    "taxRegimeCode": "SN",
+    "phone": "(62) 98100-0043",
+    "whatsApp": "",
+    "municipalIntegration": {
+      "login": "03704200123",
+      "password": "037042",
+      "createISS": true,
+      "municipalRegistration": "91202",
+      "gissonlineLogin": "",
+      "gissonlinePassword": ""
+    },
+    "simpleNationalIntegration": {
+      "accessCode": "",
+      "documentResponsible": "",
+      "manualBilling": false,
+      "hasEmployyes": false,
+      "onlyCommercialBilling": false,
+      "typeRegime": [
+        {
+          "competence": "01/2025",
+          "code": 2,
+          "name": "Competência"
+        }
+      ]
+    },
+    "moduleFederalConfiguration": {
+      "downloadNFeWithAccountingCertificate": false,
+      "downloadPurchaseNFeInvoices": false,
+      "downloadCTeInvoices": false,
+      "downloadSalesNFeInvoices": false,
+      "downloadCFeInvoices": false,
+      "downloadCFeWithAccountingCertificate": false,
+      "enablePisCofinsAudit": false
+    },
+    "email": null,
+    "emails": [],
+    "document": "34.589.805/0001-34",
+    "address": {
+      "type": "R",
+      "address": "R AV 10",
+      "number": 0,
+      "zip": "75102-050",
+      "district": "RESIDENCIAL ANAVILLE",
+      "state": "GO",
+      "complement": "QUADRA17 LOTE 08",
+      "city": {
+        "ibgeCode": 5201108,
+        "name": "Anapolis"
+      }
+    },
+    "cnaes": [
+      {
+        "name": "Atividades de atenção ambulatorial não especificadas anteriormente",
+        "code": 8630599,
+        "primary": true
+      }
+    ],
+    "status": 1,
+    "startCompetence": "07/2025",
+    "digitalCertificate": "https://jettax360.s3.us-west-2.amazonaws.com/offices/68b1e4d38c0ec913a50e4bd5/clients/68bf7eea27f1ae172c034832/certificate.pfx",
+    "digitalCertificatePassword": "Kauana@2025",
+    "digitalCertificateDate": "31/10/2026",
+    "digitalCertificateDocument": "34589805000134",
+    "legalNature": "206-2",
+    "stateRegistration": "",
+    "openDate": "20/08/2019",
+    "createdAt": "08/09/2025",
+    "updatedAt": "05/11/2025",
+    "headquarter": "",
+    "efdReinf": {
+      "startDate": "",
+      "partnerId": "",
+      "partnerAdmin": "",
+      "phone": "",
+      "email": "",
+      "document": "",
+      "taxClassification": "",
+      "errorMessage": ""
+    },
+    "ecdOption": "",
+    "enableEfdReinf": false,
+    "enableEfdReinfAt": "",
+    "registrationStatus": "620d000954060f3cff779903",
+    "typeRegime": {
+      "name": "Competência",
+      "code": 2,
+      "competence": "01/2025"
+    },
+    "payroll": {
+      "eletronicPoint": "",
+      "fpas": "",
+      "rat": "",
+      "fap": 0.5,
+      "taxClassification": "",
+      "enableESocial": null,
+      "lastEventStatus": null,
+      "lastMessage": ""
+    },
+    "erp": {
+      "nick": "",
+      "enableContmaticIntegration": false,
+      "enableContmaticIntegrationAt": "",
+      "contmaticIntegration": false,
+      "syncAt": ""
+    },
+    "enableModuleERPAt": "",
+    "enabledESocialAt": "",
+    "enableModuleHubFederalAt": "08/09/2025 22:12:10",
+    "enableModuleHubNFSeAt": "04/11/2025 16:53:37",
+    "enableModuleHubNFSeOutCityAt": "",
+    "enableModuleHubNFSeIssAt": "",
+    "enableModulePreventionAt": "",
+    "enable360At": "",
+    "enableModuleHubDasAt": "",
+    "enableModuleDCTFWEBAt": "",
+    "federalConfig": {
+      "enableCFE": false,
+      "enableCFEAt": "",
+      "enableNFCE": false,
+      "enableNFCEAt": "",
+      "enableSefazOnline": false,
+      "enableSefazOnlineAt": "",
+      "automationICMS": false,
+      "automationICMSAt": "",
+      "enableCertificateA3": false,
+      "enableCertificateA3At": "",
+      "enableNFeEmitted": true,
+      "enableNFeEmittedAt": "11/09/2025 13:09:03",
+      "searchWithOfficeCertificate": false,
+      "searchWithOfficeCertificateAt": "",
+      "enableAutomaticCorrections": true,
+      "enableAutomaticCorrectionsAt": "05/11/2025 09:03:22",
+      "enableAutomaticCorrectionPisCofins": true,
+      "enableAutomaticCorrectionPisCofinsAt": "05/11/2025 09:03:22"
+    },
+    "enableImporterCompanyAt": "",
+    "accountingPlanConfig": []
+  },
+  "diferencas": [
+    "Tributação: '' → 'Simples Nacional - Serviços'",
+    "IM: '' → '91202'",
+    "E-mail: '' → 'kauanacsn@gmail.com'"
+  ]
+}

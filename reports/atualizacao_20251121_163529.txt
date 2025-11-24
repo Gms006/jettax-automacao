@@ -1,0 +1,19 @@
+RELATÓRIO DE ATUALIZAÇÃO
+============================================================
+
+Data: 21/11/2025 16:35:29
+
+Total: 1
+✓ Atualizados: 0
+= Sem alteração: 0
+⚠ Não cadastrados: 0
+✗ Erros: 1
+
+============================================================
+DETALHES
+============================================================
+
+46149398000123 - 3TB PRODUCOES ARTISTICAS LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 500 Server Error: Internal Server Error for url: https://api.jettax360.com.br/api/v1/clients/68c011f49a213ccebf0463a2
+

@@ -1,0 +1,203 @@
+{
+  "client_id": "691b8e955cb6a24bff0ac9d2",
+  "cnpj": "10608734000292",
+  "razao_social": "GREEN AMBIENTAL EIRELI",
+  "payload": {
+    "id": "691b8e955cb6a24bff0ac9d2",
+    "name": "GREEN AMBIENTAL LTDA",
+    "enable360": false,
+    "enableModuleERP": false,
+    "enableModulePrevention": false,
+    "enableModuleHubFederal": true,
+    "enableModuleHubNFSe": false,
+    "enableModuleHubNFSeOutCity": false,
+    "enableConvertOutSideCityAbrasf": false,
+    "enableConvertOutSideCityAbrasfAt": "",
+    "enableModuleHubNFSeIss": false,
+    "enableModuleDCTFWEB": false,
+    "enableModuleHubDas": false,
+    "enableImporterCompany": false,
+    "taxRegime": "60d53314200e556dc277ac20",
+    "taxRegimeCode": "SN",
+    "phone": "",
+    "whatsApp": "",
+    "municipalIntegration": {
+      "login": "",
+      "password": "",
+      "createISS": false,
+      "municipalRegistration": "FALSE",
+      "gissonlineLogin": "",
+      "gissonlinePassword": ""
+    },
+    "simpleNationalIntegration": {
+      "accessCode": "",
+      "documentResponsible": "",
+      "manualBilling": false,
+      "hasEmployyes": false,
+      "onlyCommercialBilling": false,
+      "typeRegime": [
+        {
+          "competence": "11/2025",
+          "code": 2,
+          "name": "Competência"
+        }
+      ]
+    },
+    "moduleFederalConfiguration": {
+      "downloadNFeWithAccountingCertificate": false,
+      "downloadPurchaseNFeInvoices": false,
+      "downloadCTeInvoices": false,
+      "downloadSalesNFeInvoices": false,
+      "downloadCFeInvoices": false,
+      "downloadCFeWithAccountingCertificate": false,
+      "enablePisCofinsAudit": false
+    },
+    "email": null,
+    "emails": [],
+    "document": "10.608.734/0002-92",
+    "address": {
+      "type": "R",
+      "address": "AVENIDA PRESIDENTE JUSCELINO KUBITSCHEK",
+      "number": 2450,
+      "zip": "75105-770",
+      "district": "ALTO DA BELA VISTA",
+      "state": "GO",
+      "complement": "QUADRAT LOTE 05",
+      "city": {
+        "ibgeCode": 5201108,
+        "name": "Anapolis"
+      }
+    },
+    "cnaes": [
+      {
+        "name": "Coleta de resíduos não perigosos",
+        "code": 3811400,
+        "primary": false
+      },
+      {
+        "name": "Tratamento e disposição de resíduos não perigosos",
+        "code": 3821100,
+        "primary": false
+      },
+      {
+        "name": "Obras de urbanização - ruas, praças e calçadas",
+        "code": 4213800,
+        "primary": true
+      },
+      {
+        "name": "Obras de terraplenagem",
+        "code": 4313400,
+        "primary": false
+      },
+      {
+        "name": "Serviços especializados para construção não especificados anteriormente",
+        "code": 4399199,
+        "primary": false
+      },
+      {
+        "name": "Aluguel de máquinas e equipamentos para construção sem operador, exceto andaimes",
+        "code": 7732201,
+        "primary": false
+      },
+      {
+        "name": "Locação de mão de obra temporária",
+        "code": 7820500,
+        "primary": false
+      },
+      {
+        "name": "Medição de consumo de energia elétrica, gás e água",
+        "code": 8299701,
+        "primary": false
+      },
+      {
+        "name": "Outras atividades de serviços prestados principalmente às empresas não especificadas anteriormente",
+        "code": 8299799,
+        "primary": false
+      }
+    ],
+    "status": 1,
+    "startCompetence": "11/2025",
+    "digitalCertificate": "https://jettax360.s3.us-west-2.amazonaws.com/offices/68b1e4d38c0ec913a50e4bd5/clients/691b8e955cb6a24bff0ac9d2/certificate.pfx",
+    "digitalCertificatePassword": "Wendell@2025",
+    "digitalCertificateDate": "08/07/2026",
+    "digitalCertificateDocument": "10608734000101",
+    "legalNature": "206-2",
+    "stateRegistration": 9453521102,
+    "openDate": "01/09/2025",
+    "createdAt": "17/11/2025",
+    "updatedAt": "17/11/2025",
+    "headquarter": "",
+    "efdReinf": {
+      "startDate": "",
+      "partnerId": "",
+      "partnerAdmin": "",
+      "phone": "",
+      "email": "",
+      "document": "",
+      "taxClassification": "",
+      "errorMessage": ""
+    },
+    "ecdOption": "",
+    "enableEfdReinf": false,
+    "enableEfdReinfAt": "",
+    "registrationStatus": "",
+    "typeRegime": {
+      "name": "Competência",
+      "code": 2,
+      "competence": "11/2025"
+    },
+    "payroll": {
+      "eletronicPoint": null,
+      "fpas": "",
+      "rat": "",
+      "fap": 0.5,
+      "taxClassification": "",
+      "competence": ""
+    },
+    "erp": {
+      "nick": "",
+      "enableContmaticIntegration": false,
+      "enableContmaticIntegrationAt": "",
+      "contmaticIntegration": false,
+      "syncAt": ""
+    },
+    "enableModuleERPAt": "",
+    "enabledESocialAt": "",
+    "enableModuleHubFederalAt": "17/11/2025 18:07:33",
+    "enableModuleHubNFSeAt": "",
+    "enableModuleHubNFSeOutCityAt": "",
+    "enableModuleHubNFSeIssAt": "",
+    "enableModulePreventionAt": "",
+    "enable360At": "",
+    "enableModuleHubDasAt": "",
+    "enableModuleDCTFWEBAt": "",
+    "federalConfig": {
+      "enableCFE": false,
+      "enableCFEAt": "",
+      "enableNFCE": false,
+      "enableNFCEAt": "",
+      "enableSefazOnline": false,
+      "enableSefazOnlineAt": "",
+      "automationICMS": false,
+      "automationICMSAt": "",
+      "enableCertificateA3": false,
+      "enableCertificateA3At": "",
+      "enableNFeEmitted": true,
+      "enableNFeEmittedAt": "17/11/2025 18:07:33",
+      "searchWithOfficeCertificate": false,
+      "searchWithOfficeCertificateAt": "",
+      "enableAutomaticCorrections": true,
+      "enableAutomaticCorrectionsAt": "17/11/2025 18:07:33",
+      "enableAutomaticCorrectionPisCofins": true,
+      "enableAutomaticCorrectionPisCofinsAt": "17/11/2025 18:07:33"
+    },
+    "enableImporterCompanyAt": "",
+    "accountingPlanConfig": []
+  },
+  "diferencas": [
+    "Razão Social: 'GREEN AMBIENTAL LTDA' → 'GREEN AMBIENTAL EIRELI'",
+    "Tributação: '' → 'Filial - Regime Normal'",
+    "IM: '' → 'FALSE'",
+    "Município: 'ANAPOLIS' → 'VALPARAISO DE GOIAS'"
+  ]
+}

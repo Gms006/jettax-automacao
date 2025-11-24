@@ -1,0 +1,180 @@
+{
+  "client_id": "68bf647af8b3fc4f34049bd2",
+  "cnpj": "33562384000195",
+  "razao_social": "ANHANGUERA PASTAGEM COMERCIO LTDA",
+  "payload": {
+    "id": "68bf647af8b3fc4f34049bd2",
+    "name": "ANHANGUERA PASTAGEM COMERCIO LTDA",
+    "enable360": false,
+    "enableModuleERP": false,
+    "enableModulePrevention": false,
+    "enableModuleHubFederal": true,
+    "enableModuleHubNFSe": true,
+    "enableModuleHubNFSeOutCity": false,
+    "enableConvertOutSideCityAbrasf": false,
+    "enableConvertOutSideCityAbrasfAt": "",
+    "enableModuleHubNFSeIss": false,
+    "enableModuleDCTFWEB": false,
+    "enableModuleHubDas": false,
+    "enableImporterCompany": false,
+    "taxRegime": "62d9471420ba2a79cd31c162",
+    "taxRegimeCode": "LP",
+    "phone": "(62) 8100-8114",
+    "whatsApp": "",
+    "municipalIntegration": {
+      "login": "34965165187",
+      "password": "349651",
+      "createISS": true,
+      "municipalRegistration": "555874 - Não está no Portal",
+      "gissonlineLogin": "",
+      "gissonlinePassword": ""
+    },
+    "simpleNationalIntegration": {
+      "accessCode": "",
+      "documentResponsible": "",
+      "manualBilling": false,
+      "hasEmployyes": false,
+      "onlyCommercialBilling": false,
+      "typeRegime": [
+        {
+          "competence": "01/2025",
+          "code": 2,
+          "name": "Competência"
+        }
+      ]
+    },
+    "moduleFederalConfiguration": {
+      "downloadNFeWithAccountingCertificate": false,
+      "downloadPurchaseNFeInvoices": false,
+      "downloadCTeInvoices": false,
+      "downloadSalesNFeInvoices": false,
+      "downloadCFeInvoices": false,
+      "downloadCFeWithAccountingCertificate": false,
+      "enablePisCofinsAudit": false
+    },
+    "email": null,
+    "emails": [],
+    "document": "33.562.384/0001-95",
+    "address": {
+      "type": "",
+      "address": "RUA 12",
+      "number": 0,
+      "zip": "75133-150",
+      "district": "SAO JOAO",
+      "state": "GO",
+      "complement": "QUADRAB LOTE 9/10",
+      "city": {
+        "ibgeCode": 5201108,
+        "name": "Anapolis"
+      }
+    },
+    "cnaes": [
+      {
+        "name": "Comércio atacadista de sementes, flores, plantas e gramas",
+        "code": 4623106,
+        "primary": true
+      },
+      {
+        "name": "Comércio atacadista de máquinas, aparelhos e equipamentos para uso agropecuário; partes e peças",
+        "code": 4661300,
+        "primary": false
+      },
+      {
+        "name": "Comércio atacadista de ferragens e ferramentas",
+        "code": 4672900,
+        "primary": false
+      },
+      {
+        "name": "Comércio varejista de madeira e artefatos",
+        "code": 4744002,
+        "primary": false
+      }
+    ],
+    "status": 1,
+    "startCompetence": "07/2025",
+    "digitalCertificate": "https://jettax360.s3.us-west-2.amazonaws.com/offices/68b1e4d38c0ec913a50e4bd5/clients/68bf647af8b3fc4f34049bd2/certificate.pfx",
+    "digitalCertificatePassword": "Ademir@2025",
+    "digitalCertificateDate": "08/07/2026",
+    "digitalCertificateDocument": "33562384000195",
+    "legalNature": "206-2",
+    "stateRegistration": 107683148,
+    "openDate": "08/05/2019",
+    "createdAt": "08/09/2025",
+    "updatedAt": "04/11/2025",
+    "headquarter": "",
+    "efdReinf": {
+      "startDate": "",
+      "partnerId": "",
+      "partnerAdmin": "",
+      "phone": "",
+      "email": "",
+      "document": "",
+      "taxClassification": "",
+      "errorMessage": ""
+    },
+    "ecdOption": "",
+    "enableEfdReinf": false,
+    "enableEfdReinfAt": "",
+    "registrationStatus": "620d000954060f3cff779903",
+    "typeRegime": {
+      "name": "Competência",
+      "code": 2,
+      "competence": "01/2025"
+    },
+    "payroll": {
+      "eletronicPoint": "",
+      "fpas": "",
+      "rat": "",
+      "fap": 0.5,
+      "taxClassification": "",
+      "enableESocial": null,
+      "lastEventStatus": null,
+      "lastMessage": ""
+    },
+    "erp": {
+      "nick": "",
+      "enableContmaticIntegration": false,
+      "enableContmaticIntegrationAt": "",
+      "contmaticIntegration": false,
+      "syncAt": ""
+    },
+    "enableModuleERPAt": "",
+    "enabledESocialAt": "",
+    "enableModuleHubFederalAt": "08/09/2025 20:19:22",
+    "enableModuleHubNFSeAt": "04/11/2025 16:49:08",
+    "enableModuleHubNFSeOutCityAt": "",
+    "enableModuleHubNFSeIssAt": "",
+    "enableModulePreventionAt": "",
+    "enable360At": "",
+    "enableModuleHubDasAt": "",
+    "enableModuleDCTFWEBAt": "",
+    "federalConfig": {
+      "enableCFE": false,
+      "enableCFEAt": "",
+      "enableNFCE": false,
+      "enableNFCEAt": "",
+      "enableSefazOnline": false,
+      "enableSefazOnlineAt": "",
+      "automationICMS": false,
+      "automationICMSAt": "",
+      "enableCertificateA3": false,
+      "enableCertificateA3At": "",
+      "enableNFeEmitted": true,
+      "enableNFeEmittedAt": "11/09/2025 10:28:30",
+      "searchWithOfficeCertificate": false,
+      "searchWithOfficeCertificateAt": "",
+      "enableAutomaticCorrections": true,
+      "enableAutomaticCorrectionsAt": "04/11/2025 16:49:08",
+      "enableAutomaticCorrectionPisCofins": true,
+      "enableAutomaticCorrectionPisCofinsAt": "04/11/2025 16:49:08"
+    },
+    "enableImporterCompanyAt": "",
+    "accountingPlanConfig": []
+  },
+  "diferencas": [
+    "Tributação: '' → 'Lucro Presumido - Comércio e Serviços'",
+    "IE: '' → '107683148'",
+    "IM: '' → '555874 - Não está no Portal'",
+    "E-mail: '' → 'arq.lorrainny@gmail.com'"
+  ]
+}

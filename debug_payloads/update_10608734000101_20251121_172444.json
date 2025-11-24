@@ -1,0 +1,208 @@
+{
+  "client_id": "691b2cd27ca4d33d5609c7b7",
+  "cnpj": "10608734000101",
+  "razao_social": "GREEN AMBIENTAL LTDA",
+  "payload": {
+    "id": "691b2cd27ca4d33d5609c7b7",
+    "name": "GREEN AMBIENTAL EIRELI",
+    "enable360": false,
+    "enableModuleERP": false,
+    "enableModulePrevention": false,
+    "enableModuleHubFederal": true,
+    "enableModuleHubNFSe": false,
+    "enableModuleHubNFSeOutCity": false,
+    "enableConvertOutSideCityAbrasf": false,
+    "enableConvertOutSideCityAbrasfAt": "",
+    "enableModuleHubNFSeIss": false,
+    "enableModuleDCTFWEB": false,
+    "enableModuleHubDas": false,
+    "enableImporterCompany": false,
+    "taxRegime": "62d9471420ba2a79cd31c163",
+    "taxRegimeCode": "LR",
+    "phone": "",
+    "whatsApp": "",
+    "municipalIntegration": {
+      "login": "81818939134",
+      "password": "818189",
+      "createISS": false,
+      "municipalRegistration": "95181",
+      "gissonlineLogin": "",
+      "gissonlinePassword": ""
+    },
+    "simpleNationalIntegration": {
+      "accessCode": "",
+      "documentResponsible": "",
+      "manualBilling": false,
+      "hasEmployyes": false,
+      "onlyCommercialBilling": false,
+      "typeRegime": [
+        {
+          "competence": "01/2025",
+          "code": 2,
+          "name": "Competência"
+        }
+      ]
+    },
+    "moduleFederalConfiguration": {
+      "downloadNFeWithAccountingCertificate": false,
+      "downloadPurchaseNFeInvoices": false,
+      "downloadCTeInvoices": false,
+      "downloadSalesNFeInvoices": false,
+      "downloadCFeInvoices": false,
+      "downloadCFeWithAccountingCertificate": false,
+      "enablePisCofinsAudit": false
+    },
+    "email": null,
+    "emails": [],
+    "document": "10.608.734/0001-01",
+    "address": {
+      "type": "AV",
+      "address": "MARGINAL",
+      "number": 0,
+      "zip": "72872-003",
+      "district": "JARDIM IPANEMA",
+      "state": "GO",
+      "complement": "QUADRA44                  LOTE  21",
+      "city": {
+        "ibgeCode": 5221858,
+        "name": "VALPARAISO DE GOIAS"
+      }
+    },
+    "cnaes": [
+      {
+        "name": "Coleta de resíduos não perigosos",
+        "code": 3811400,
+        "primary": true
+      },
+      {
+        "name": "Tratamento e disposição de resíduos não perigosos",
+        "code": 3821100,
+        "primary": false
+      },
+      {
+        "name": "Obras de urbanização - ruas, praças e calçadas",
+        "code": 4213800,
+        "primary": false
+      },
+      {
+        "name": "Obras de terraplenagem",
+        "code": 4313400,
+        "primary": false
+      },
+      {
+        "name": "Serviços especializados para construção não especificados anteriormente",
+        "code": 4399199,
+        "primary": false
+      },
+      {
+        "name": "Transporte rodoviário de produtos perigosos",
+        "code": 4930203,
+        "primary": false
+      },
+      {
+        "name": "Aluguel de máquinas e equipamentos para construção sem operador, exceto andaimes",
+        "code": 7732201,
+        "primary": false
+      },
+      {
+        "name": "Locação de mão de obra temporária",
+        "code": 7820500,
+        "primary": false
+      },
+      {
+        "name": "Medição de consumo de energia elétrica, gás e água",
+        "code": 8299701,
+        "primary": false
+      },
+      {
+        "name": "Outras atividades de serviços prestados principalmente às empresas não especificadas anteriormente",
+        "code": 8299799,
+        "primary": false
+      }
+    ],
+    "status": 1,
+    "startCompetence": "01/2025",
+    "digitalCertificate": "https://jettax360.s3.us-west-2.amazonaws.com/offices/68b1e4d38c0ec913a50e4bd5/clients/691b2cd27ca4d33d5609c7b7/certificate.pfx",
+    "digitalCertificatePassword": "Wendell@2025",
+    "digitalCertificateDate": "08/07/2026",
+    "digitalCertificateDocument": "10608734000101",
+    "legalNature": "230-5",
+    "stateRegistration": 9,
+    "openDate": "08/01/2009",
+    "createdAt": "17/11/2025",
+    "updatedAt": "17/11/2025",
+    "headquarter": "",
+    "efdReinf": {
+      "startDate": "",
+      "partnerId": "",
+      "partnerAdmin": "",
+      "phone": "",
+      "email": "",
+      "document": "",
+      "taxClassification": "",
+      "errorMessage": ""
+    },
+    "ecdOption": "",
+    "enableEfdReinf": false,
+    "enableEfdReinfAt": "",
+    "registrationStatus": "",
+    "typeRegime": {
+      "name": "Competência",
+      "code": 2,
+      "competence": "01/2025"
+    },
+    "payroll": {
+      "eletronicPoint": null,
+      "fpas": "",
+      "rat": "",
+      "fap": 0.5,
+      "taxClassification": "",
+      "competence": ""
+    },
+    "erp": {
+      "nick": "",
+      "enableContmaticIntegration": false,
+      "enableContmaticIntegrationAt": "",
+      "contmaticIntegration": false,
+      "syncAt": ""
+    },
+    "enableModuleERPAt": "",
+    "enabledESocialAt": "",
+    "enableModuleHubFederalAt": "17/11/2025 11:10:26",
+    "enableModuleHubNFSeAt": "",
+    "enableModuleHubNFSeOutCityAt": "",
+    "enableModuleHubNFSeIssAt": "",
+    "enableModulePreventionAt": "",
+    "enable360At": "",
+    "enableModuleHubDasAt": "",
+    "enableModuleDCTFWEBAt": "",
+    "federalConfig": {
+      "enableCFE": false,
+      "enableCFEAt": "",
+      "enableNFCE": false,
+      "enableNFCEAt": "",
+      "enableSefazOnline": false,
+      "enableSefazOnlineAt": "",
+      "automationICMS": false,
+      "automationICMSAt": "",
+      "enableCertificateA3": false,
+      "enableCertificateA3At": "",
+      "enableNFeEmitted": true,
+      "enableNFeEmittedAt": "17/11/2025 11:10:26",
+      "searchWithOfficeCertificate": false,
+      "searchWithOfficeCertificateAt": "",
+      "enableAutomaticCorrections": true,
+      "enableAutomaticCorrectionsAt": "17/11/2025 11:10:26",
+      "enableAutomaticCorrectionPisCofins": true,
+      "enableAutomaticCorrectionPisCofinsAt": "17/11/2025 11:10:26"
+    },
+    "enableImporterCompanyAt": "",
+    "accountingPlanConfig": []
+  },
+  "diferencas": [
+    "Razão Social: 'GREEN AMBIENTAL EIRELI' → 'GREEN AMBIENTAL LTDA'",
+    "Tributação: '' → 'Lucro Real - Serviços'",
+    "IM: '' → '95181'",
+    "E-mail: '' → 'financeiro@greensolucoesambientais.com.br'"
+  ]
+}

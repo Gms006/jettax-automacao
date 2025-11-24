@@ -1,0 +1,195 @@
+{
+  "client_id": "68c0401f28a123411d0305a3",
+  "cnpj": "23595186000174",
+  "razao_social": "PREMIER FOGOS LTDA",
+  "payload": {
+    "id": "68c0401f28a123411d0305a3",
+    "name": "PREMIER FOGOS LTDA",
+    "enable360": false,
+    "enableModuleERP": false,
+    "enableModulePrevention": false,
+    "enableModuleHubFederal": true,
+    "enableModuleHubNFSe": true,
+    "enableModuleHubNFSeOutCity": false,
+    "enableConvertOutSideCityAbrasf": false,
+    "enableConvertOutSideCityAbrasfAt": "",
+    "enableModuleHubNFSeIss": false,
+    "enableModuleDCTFWEB": false,
+    "enableModuleHubDas": false,
+    "enableImporterCompany": false,
+    "taxRegime": "60d53314200e556dc277ac20",
+    "taxRegimeCode": "SN",
+    "phone": "",
+    "whatsApp": "",
+    "municipalIntegration": {
+      "login": "84618914653",
+      "password": "846189",
+      "createISS": true,
+      "municipalRegistration": "78350",
+      "gissonlineLogin": "",
+      "gissonlinePassword": ""
+    },
+    "simpleNationalIntegration": {
+      "accessCode": "",
+      "documentResponsible": "",
+      "manualBilling": false,
+      "hasEmployyes": false,
+      "onlyCommercialBilling": false,
+      "typeRegime": [
+        {
+          "competence": "01/2025",
+          "code": 2,
+          "name": "Competência"
+        }
+      ]
+    },
+    "moduleFederalConfiguration": {
+      "downloadNFeWithAccountingCertificate": false,
+      "downloadPurchaseNFeInvoices": false,
+      "downloadCTeInvoices": false,
+      "downloadSalesNFeInvoices": false,
+      "downloadCFeInvoices": false,
+      "downloadCFeWithAccountingCertificate": false,
+      "enablePisCofinsAudit": false
+    },
+    "email": null,
+    "emails": [],
+    "document": "23.595.186/0001-74",
+    "address": {
+      "type": "",
+      "address": "AVENIDA JUSCELINO KUBITSCHEK",
+      "number": 0,
+      "zip": "75105-080",
+      "district": "JARDIM ELDORADO",
+      "state": "GO",
+      "complement": "QUADRAI LOTE 19 E",
+      "city": {
+        "ibgeCode": 5201108,
+        "name": "Anapolis"
+      }
+    },
+    "cnaes": [
+      {
+        "name": "Comércio varejista de artigos de caça, pesca e camping",
+        "code": 4763604,
+        "primary": false
+      },
+      {
+        "name": "Comércio varejista de fogos de artifício e artigos pirotécnicos",
+        "code": 4789006,
+        "primary": true
+      },
+      {
+        "name": "Aluguel de palcos, coberturas e outras estruturas de uso temporário, exceto andaimes",
+        "code": 7739003,
+        "primary": false
+      },
+      {
+        "name": "Serviços de organização de feiras, congressos, exposições e festas",
+        "code": 8230001,
+        "primary": false
+      },
+      {
+        "name": "Atividades de sonorização e de iluminação",
+        "code": 9001906,
+        "primary": false
+      },
+      {
+        "name": "Artes cênicas, espetáculos e atividades complementares não especificados anteriormente",
+        "code": 9001999,
+        "primary": false
+      },
+      {
+        "name": "Comércio varejista especializado de equipamentos e suprimentos de informática",
+        "code": 4751201,
+        "primary": false
+      }
+    ],
+    "status": 1,
+    "startCompetence": "07/2025",
+    "digitalCertificate": "https://jettax360.s3.us-west-2.amazonaws.com/offices/68b1e4d38c0ec913a50e4bd5/clients/68c0401f28a123411d0305a3/certificate.pfx",
+    "digitalCertificatePassword": "Fernando@2025",
+    "digitalCertificateDate": "29/10/2026",
+    "digitalCertificateDocument": "23595186000174",
+    "legalNature": "206-2",
+    "stateRegistration": 106467816,
+    "openDate": "03/11/2015",
+    "createdAt": "09/09/2025",
+    "updatedAt": "05/11/2025",
+    "headquarter": "",
+    "efdReinf": {
+      "startDate": "",
+      "partnerId": "",
+      "partnerAdmin": "",
+      "phone": "",
+      "email": "",
+      "document": "",
+      "taxClassification": "",
+      "errorMessage": ""
+    },
+    "ecdOption": "",
+    "enableEfdReinf": false,
+    "enableEfdReinfAt": "",
+    "registrationStatus": "620d000954060f3cff779903",
+    "typeRegime": {
+      "name": "Competência",
+      "code": 2,
+      "competence": "01/2025"
+    },
+    "payroll": {
+      "eletronicPoint": "",
+      "fpas": "",
+      "rat": "",
+      "fap": 0.5,
+      "taxClassification": "",
+      "enableESocial": null,
+      "lastEventStatus": null,
+      "lastMessage": ""
+    },
+    "erp": {
+      "nick": "",
+      "enableContmaticIntegration": false,
+      "enableContmaticIntegrationAt": "",
+      "contmaticIntegration": false,
+      "syncAt": ""
+    },
+    "enableModuleERPAt": "",
+    "enabledESocialAt": "",
+    "enableModuleHubFederalAt": "09/09/2025 11:56:31",
+    "enableModuleHubNFSeAt": "04/11/2025 16:54:54",
+    "enableModuleHubNFSeOutCityAt": "",
+    "enableModuleHubNFSeIssAt": "",
+    "enableModulePreventionAt": "",
+    "enable360At": "",
+    "enableModuleHubDasAt": "",
+    "enableModuleDCTFWEBAt": "",
+    "federalConfig": {
+      "enableCFE": false,
+      "enableCFEAt": "",
+      "enableNFCE": false,
+      "enableNFCEAt": "",
+      "enableSefazOnline": false,
+      "enableSefazOnlineAt": "",
+      "automationICMS": false,
+      "automationICMSAt": "",
+      "enableCertificateA3": false,
+      "enableCertificateA3At": "",
+      "enableNFeEmitted": true,
+      "enableNFeEmittedAt": "11/09/2025 13:16:55",
+      "searchWithOfficeCertificate": false,
+      "searchWithOfficeCertificateAt": "",
+      "enableAutomaticCorrections": true,
+      "enableAutomaticCorrectionsAt": "05/11/2025 09:02:53",
+      "enableAutomaticCorrectionPisCofins": true,
+      "enableAutomaticCorrectionPisCofinsAt": "05/11/2025 09:02:53"
+    },
+    "enableImporterCompanyAt": "",
+    "accountingPlanConfig": []
+  },
+  "diferencas": [
+    "Tributação: '' → 'Simples Nacional - Comercio e Serviços'",
+    "IE: '' → '106467816'",
+    "IM: '' → '78350'",
+    "E-mail: '' → 'premierfogos@hotmail.com'"
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "client_id": "691b9056c0746e8c7e08c422",
+  "cnpj": "03163171000804",
+  "razao_social": "LL DA SILVA & CIA. LTDA.",
+  "payload": {
+    "id": "691b9056c0746e8c7e08c422",
+    "name": "LL DA SILVA & CIA. LTDA.",
+    "enable360": false,
+    "enableModuleERP": false,
+    "enableModulePrevention": false,
+    "enableModuleHubFederal": true,
+    "enableModuleHubNFSe": false,
+    "enableModuleHubNFSeOutCity": false,
+    "enableConvertOutSideCityAbrasf": false,
+    "enableConvertOutSideCityAbrasfAt": "",
+    "enableModuleHubNFSeIss": false,
+    "enableModuleDCTFWEB": false,
+    "enableModuleHubDas": false,
+    "enableImporterCompany": false,
+    "taxRegime": "60d53314200e556dc277ac20",
+    "taxRegimeCode": "SN",
+    "phone": "",
+    "whatsApp": "",
+    "municipalIntegration": {
+      "login": "",
+      "password": "",
+      "createISS": false,
+      "municipalRegistration": "4501",
+      "gissonlineLogin": "",
+      "gissonlinePassword": ""
+    },
+    "simpleNationalIntegration": {
+      "accessCode": "",
+      "documentResponsible": "",
+      "manualBilling": false,
+      "hasEmployyes": false,
+      "onlyCommercialBilling": false,
+      "typeRegime": [
+        {
+          "competence": "11/2025",
+          "code": 2,
+          "name": "Competência"
+        }
+      ]
+    },
+    "moduleFederalConfiguration": {
+      "downloadNFeWithAccountingCertificate": false,
+      "downloadPurchaseNFeInvoices": false,
+      "downloadCTeInvoices": false,
+      "downloadSalesNFeInvoices": false,
+      "downloadCFeInvoices": false,
+      "downloadCFeWithAccountingCertificate": false,
+      "enablePisCofinsAudit": false
+    },
+    "email": null,
+    "emails": [],
+    "document": "03.163.171/0008-04",
+    "address": {
+      "type": "R",
+      "address": "AVENIDA SANTANA",
+      "number": 100,
+      "zip": "76400-000",
+      "district": "SETOR CENTRAL",
+      "state": "GO",
+      "complement": "",
+      "city": {
+        "ibgeCode": 5221601,
+        "name": "Uruacu"
+      }
+    },
+    "cnaes": [
+      {
+        "name": "Comércio varejista de gás liqüefeito de petróleo (GLP)",
+        "code": 4784900,
+        "primary": true
+      }
+    ],
+    "status": 1,
+    "startCompetence": "11/2025",
+    "digitalCertificate": "https://jettax360.s3.us-west-2.amazonaws.com/offices/68b1e4d38c0ec913a50e4bd5/clients/691b9056c0746e8c7e08c422/certificate.pfx",
+    "digitalCertificatePassword": "Linda@2025",
+    "digitalCertificateDate": "02/07/2026",
+    "digitalCertificateDocument": "03163171000120",
+    "legalNature": "206-2",
+    "stateRegistration": 9239223287,
+    "openDate": "01/09/2025",
+    "createdAt": "17/11/2025",
+    "updatedAt": "17/11/2025",
+    "headquarter": "",
+    "efdReinf": {
+      "startDate": "",
+      "partnerId": "",
+      "partnerAdmin": "",
+      "phone": "",
+      "email": "",
+      "document": "",
+      "taxClassification": "",
+      "errorMessage": ""
+    },
+    "ecdOption": "",
+    "enableEfdReinf": false,
+    "enableEfdReinfAt": "",
+    "registrationStatus": "",
+    "typeRegime": {
+      "name": "Competência",
+      "code": 2,
+      "competence": "11/2025"
+    },
+    "payroll": {
+      "eletronicPoint": null,
+      "fpas": "",
+      "rat": "",
+      "fap": 0.5,
+      "taxClassification": "",
+      "competence": ""
+    },
+    "erp": {
+      "nick": "",
+      "enableContmaticIntegration": false,
+      "enableContmaticIntegrationAt": "",
+      "contmaticIntegration": false,
+      "syncAt": ""
+    },
+    "enableModuleERPAt": "",
+    "enabledESocialAt": "",
+    "enableModuleHubFederalAt": "17/11/2025 18:15:02",
+    "enableModuleHubNFSeAt": "",
+    "enableModuleHubNFSeOutCityAt": "",
+    "enableModuleHubNFSeIssAt": "",
+    "enableModulePreventionAt": "",
+    "enable360At": "",
+    "enableModuleHubDasAt": "",
+    "enableModuleDCTFWEBAt": "",
+    "federalConfig": {
+      "enableCFE": false,
+      "enableCFEAt": "",
+      "enableNFCE": false,
+      "enableNFCEAt": "",
+      "enableSefazOnline": false,
+      "enableSefazOnlineAt": "",
+      "automationICMS": false,
+      "automationICMSAt": "",
+      "enableCertificateA3": false,
+      "enableCertificateA3At": "",
+      "enableNFeEmitted": true,
+      "enableNFeEmittedAt": "17/11/2025 18:15:02",
+      "searchWithOfficeCertificate": false,
+      "searchWithOfficeCertificateAt": "",
+      "enableAutomaticCorrections": true,
+      "enableAutomaticCorrectionsAt": "17/11/2025 18:15:02",
+      "enableAutomaticCorrectionPisCofins": true,
+      "enableAutomaticCorrectionPisCofinsAt": "17/11/2025 18:15:02"
+    },
+    "enableImporterCompanyAt": "",
+    "accountingPlanConfig": []
+  },
+  "diferencas": [
+    "Tributação: '' → 'Filial - Regime Normal'",
+    "IE: '' → '103719423'",
+    "IM: '' → '4501'",
+    "E-mail: '' → 'linda-oliver@hotmail.com'"
+  ]
+}

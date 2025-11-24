@@ -1,0 +1,210 @@
+{
+  "client_id": "68bf70f8b1defc5838025c14",
+  "cnpj": "13475865000156",
+  "razao_social": "FANTASIAS.COM LTDA",
+  "payload": {
+    "id": "68bf70f8b1defc5838025c14",
+    "name": "FANTASIAS.COM LTDA",
+    "enable360": false,
+    "enableModuleERP": false,
+    "enableModulePrevention": false,
+    "enableModuleHubFederal": true,
+    "enableModuleHubNFSe": true,
+    "enableModuleHubNFSeOutCity": false,
+    "enableConvertOutSideCityAbrasf": false,
+    "enableConvertOutSideCityAbrasfAt": "",
+    "enableModuleHubNFSeIss": false,
+    "enableModuleDCTFWEB": false,
+    "enableModuleHubDas": false,
+    "enableImporterCompany": false,
+    "taxRegime": "60d53314200e556dc277ac20",
+    "taxRegimeCode": "SN",
+    "phone": "(62) 99232-3688",
+    "whatsApp": "",
+    "municipalIntegration": {
+      "login": "90707621100",
+      "password": "907076",
+      "createISS": true,
+      "municipalRegistration": "63616",
+      "gissonlineLogin": "",
+      "gissonlinePassword": ""
+    },
+    "simpleNationalIntegration": {
+      "accessCode": "",
+      "documentResponsible": "",
+      "manualBilling": false,
+      "hasEmployyes": false,
+      "onlyCommercialBilling": false,
+      "typeRegime": [
+        {
+          "competence": "01/2025",
+          "code": 2,
+          "name": "Competência"
+        }
+      ]
+    },
+    "moduleFederalConfiguration": {
+      "downloadNFeWithAccountingCertificate": false,
+      "downloadPurchaseNFeInvoices": false,
+      "downloadCTeInvoices": false,
+      "downloadSalesNFeInvoices": false,
+      "downloadCFeInvoices": false,
+      "downloadCFeWithAccountingCertificate": false,
+      "enablePisCofinsAudit": false
+    },
+    "email": null,
+    "emails": [],
+    "document": "13.475.865/0001-56",
+    "address": {
+      "type": "",
+      "address": "RUA 15 DE DEZEMBRO",
+      "number": 493,
+      "zip": "75024-070",
+      "district": "SETOR CENTRAL",
+      "state": "GO",
+      "complement": "",
+      "city": {
+        "ibgeCode": 5201108,
+        "name": "Anapolis"
+      }
+    },
+    "cnaes": [
+      {
+        "name": "Confecção, sob medida, de peças do vestuário, exceto roupas íntimas",
+        "code": 1412602,
+        "primary": false
+      },
+      {
+        "name": "Comércio varejista de artigos do vestuário e acessórios",
+        "code": 4781400,
+        "primary": false
+      },
+      {
+        "name": "Comércio varejista de calçados",
+        "code": 4782201,
+        "primary": false
+      },
+      {
+        "name": "Comércio varejista de outros produtos não especificados anteriormente",
+        "code": 4789099,
+        "primary": false
+      },
+      {
+        "name": "Edição de livros",
+        "code": 5811500,
+        "primary": false
+      },
+      {
+        "name": "Portais, provedores de conteúdo e outros serviços de informação na Internet",
+        "code": 6319400,
+        "primary": false
+      },
+      {
+        "name": "Promoção de vendas",
+        "code": 7319002,
+        "primary": false
+      },
+      {
+        "name": "Marketing direto",
+        "code": 7319003,
+        "primary": false
+      },
+      {
+        "name": "Aluguel de objetos do vestuário, jóias e acessórios",
+        "code": 7723300,
+        "primary": true
+      },
+      {
+        "name": "Treinamento em desenvolvimento profissional e gerencial",
+        "code": 8599604,
+        "primary": false
+      }
+    ],
+    "status": 1,
+    "startCompetence": "07/2025",
+    "digitalCertificate": "https://jettax360.s3.us-west-2.amazonaws.com/offices/68b1e4d38c0ec913a50e4bd5/clients/68bf70f8b1defc5838025c14/certificate.pfx",
+    "digitalCertificatePassword": "Vando@2025",
+    "digitalCertificateDate": "15/04/2026",
+    "digitalCertificateDocument": "13475865000156",
+    "legalNature": "206-2",
+    "stateRegistration": 105028010,
+    "openDate": "21/03/2011",
+    "createdAt": "08/09/2025",
+    "updatedAt": "04/11/2025",
+    "headquarter": "",
+    "efdReinf": {
+      "startDate": "",
+      "partnerId": "",
+      "partnerAdmin": "",
+      "phone": "",
+      "email": "",
+      "document": "",
+      "taxClassification": "",
+      "errorMessage": ""
+    },
+    "ecdOption": "",
+    "enableEfdReinf": false,
+    "enableEfdReinfAt": "",
+    "registrationStatus": "620d000954060f3cff779903",
+    "typeRegime": {
+      "name": "Competência",
+      "code": 2,
+      "competence": "01/2025"
+    },
+    "payroll": {
+      "eletronicPoint": "",
+      "fpas": "",
+      "rat": "",
+      "fap": 0.5,
+      "taxClassification": "",
+      "enableESocial": null,
+      "lastEventStatus": null,
+      "lastMessage": ""
+    },
+    "erp": {
+      "nick": "",
+      "enableContmaticIntegration": false,
+      "enableContmaticIntegrationAt": "",
+      "contmaticIntegration": false,
+      "syncAt": ""
+    },
+    "enableModuleERPAt": "",
+    "enabledESocialAt": "",
+    "enableModuleHubFederalAt": "08/09/2025 21:12:40",
+    "enableModuleHubNFSeAt": "04/11/2025 16:51:02",
+    "enableModuleHubNFSeOutCityAt": "",
+    "enableModuleHubNFSeIssAt": "",
+    "enableModulePreventionAt": "",
+    "enable360At": "",
+    "enableModuleHubDasAt": "",
+    "enableModuleDCTFWEBAt": "",
+    "federalConfig": {
+      "enableCFE": false,
+      "enableCFEAt": "",
+      "enableNFCE": false,
+      "enableNFCEAt": "",
+      "enableSefazOnline": false,
+      "enableSefazOnlineAt": "",
+      "automationICMS": false,
+      "automationICMSAt": "",
+      "enableCertificateA3": false,
+      "enableCertificateA3At": "",
+      "enableNFeEmitted": true,
+      "enableNFeEmittedAt": "11/09/2025 10:41:11",
+      "searchWithOfficeCertificate": false,
+      "searchWithOfficeCertificateAt": "",
+      "enableAutomaticCorrections": true,
+      "enableAutomaticCorrectionsAt": "04/11/2025 16:51:02",
+      "enableAutomaticCorrectionPisCofins": true,
+      "enableAutomaticCorrectionPisCofinsAt": "04/11/2025 16:51:02"
+    },
+    "enableImporterCompanyAt": "",
+    "accountingPlanConfig": []
+  },
+  "diferencas": [
+    "Tributação: '' → 'Simples Nacional - Comercio e Serviços'",
+    "IE: '' → '105028010'",
+    "IM: '' → '63616'",
+    "E-mail: '' → 'vando.fantasia.anapolis@gmail.com'"
+  ]
+}

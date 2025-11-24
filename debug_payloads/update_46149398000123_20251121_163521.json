@@ -1,0 +1,78 @@
+{
+  "client_id": "68c011f49a213ccebf0463a2",
+  "cnpj": "46149398000123",
+  "razao_social": "3TB PRODUCOES ARTISTICAS LTDA",
+  "payload": {
+    "_id": "68c011f49a213ccebf0463a2",
+    "name": "3TB PRODUCOES ARTISTICAS LTDA",
+    "taxRegime": "Simples Nacional",
+    "city": "Anapolis",
+    "users": [],
+    "document": "46.149.398/0001-23",
+    "invalidMunicipalCredential": false,
+    "invalidLastDownload": false,
+    "hasFederalCertificateError": true,
+    "hasReinfError": "",
+    "status": {
+      "type": 1,
+      "name": "Ativo",
+      "color": "success",
+      "url": ""
+    },
+    "digitalCertificate": null,
+    "contmaticIntegration": false,
+    "modules": [
+      {
+        "name": "Contabilidade",
+        "code": "enableModuleERP",
+        "status": false
+      },
+      {
+        "name": "Prevenção",
+        "code": "enableModulePrevention",
+        "status": false
+      },
+      {
+        "name": "Área do Cliente",
+        "code": "enable360",
+        "status": false
+      },
+      {
+        "name": "Federal",
+        "code": "enableModuleHubFederal",
+        "status": true
+      },
+      {
+        "name": "Serviços",
+        "code": "enableModuleHubNFSe",
+        "status": true
+      },
+      {
+        "name": "Simples Nacional",
+        "code": "enableModuleHubDas",
+        "status": false
+      },
+      {
+        "name": "Serviços Tomados",
+        "code": "enableModuleHubNFSeOutCity",
+        "status": false
+      },
+      {
+        "name": "Automações do ICMS",
+        "code": "enableModuleHubAutomationICMS",
+        "status": false
+      }
+    ],
+    "taxation": "60d53314200e556dc277ac20",
+    "email": "3tbproducoesartisticasltda@gmail.com",
+    "municipalRegistration": "103416",
+    "stateRegistration": "",
+    "login": "87298244604",
+    "password": "872982"
+  },
+  "diferencas": [
+    "Tributação: '' → 'Simples Nacional - Serviços'",
+    "IM: '' → '103416'",
+    "E-mail: '' → '3tbproducoesartisticasltda@gmail.com'"
+  ]
+}

@@ -1,0 +1,175 @@
+{
+  "client_id": "68bf7e6b6a37794fc503f3e2",
+  "cnpj": "18467652000104",
+  "razao_social": "MASTER AR CONDICIONADO LTDA",
+  "payload": {
+    "id": "68bf7e6b6a37794fc503f3e2",
+    "name": "MASTER AR CONDICIONADO LTDA",
+    "enable360": false,
+    "enableModuleERP": false,
+    "enableModulePrevention": false,
+    "enableModuleHubFederal": true,
+    "enableModuleHubNFSe": true,
+    "enableModuleHubNFSeOutCity": false,
+    "enableConvertOutSideCityAbrasf": false,
+    "enableConvertOutSideCityAbrasfAt": "",
+    "enableModuleHubNFSeIss": false,
+    "enableModuleDCTFWEB": false,
+    "enableModuleHubDas": false,
+    "enableImporterCompany": false,
+    "taxRegime": "60d53314200e556dc277ac20",
+    "taxRegimeCode": "SN",
+    "phone": "(62) 99679-8512",
+    "whatsApp": "",
+    "municipalIntegration": {
+      "login": "37075039172",
+      "password": "370750",
+      "createISS": true,
+      "municipalRegistration": "70476",
+      "gissonlineLogin": "",
+      "gissonlinePassword": ""
+    },
+    "simpleNationalIntegration": {
+      "accessCode": "",
+      "documentResponsible": "",
+      "manualBilling": false,
+      "hasEmployyes": false,
+      "onlyCommercialBilling": false,
+      "typeRegime": [
+        {
+          "competence": "01/2025",
+          "code": 2,
+          "name": "Competência"
+        }
+      ]
+    },
+    "moduleFederalConfiguration": {
+      "downloadNFeWithAccountingCertificate": false,
+      "downloadPurchaseNFeInvoices": false,
+      "downloadCTeInvoices": false,
+      "downloadSalesNFeInvoices": false,
+      "downloadCFeInvoices": false,
+      "downloadCFeWithAccountingCertificate": false,
+      "enablePisCofinsAudit": false
+    },
+    "email": null,
+    "emails": [],
+    "document": "18.467.652/0001-04",
+    "address": {
+      "type": "R",
+      "address": "CINCO",
+      "number": 0,
+      "zip": "75080-730",
+      "district": "CIDADE JARDIM",
+      "state": "GO",
+      "complement": "QUADRA16                  LOTE  01                  SALA  01",
+      "city": {
+        "ibgeCode": 5201108,
+        "name": "ANAPOLIS"
+      }
+    },
+    "cnaes": [
+      {
+        "name": "Instalação e manutenção de sistemas centrais de ar condicionado, de ventilação e refrigeração",
+        "code": 4322302,
+        "primary": false
+      },
+      {
+        "name": "Comércio varejista especializado de eletrodomésticos e equipamentos de áudio e vídeo",
+        "code": 4753900,
+        "primary": true
+      },
+      {
+        "name": "Comércio varejista especializado de peças e acessórios para aparelhos eletroeletrônicos para uso doméstico, exceto informática e comunicação",
+        "code": 4757100,
+        "primary": false
+      }
+    ],
+    "status": 1,
+    "startCompetence": "07/2025",
+    "digitalCertificate": "https://jettax360.s3.us-west-2.amazonaws.com/offices/68b1e4d38c0ec913a50e4bd5/clients/68bf7e6b6a37794fc503f3e2/certificate.pfx",
+    "digitalCertificatePassword": "Jalner@2025",
+    "digitalCertificateDate": "10/11/2026",
+    "digitalCertificateDocument": "18467652000104",
+    "legalNature": "206-2",
+    "stateRegistration": 105724858,
+    "openDate": "09/07/2013",
+    "createdAt": "08/09/2025",
+    "updatedAt": "12/11/2025",
+    "headquarter": "",
+    "efdReinf": {
+      "startDate": "",
+      "partnerId": "",
+      "partnerAdmin": "",
+      "phone": "",
+      "email": "",
+      "document": "",
+      "taxClassification": "",
+      "errorMessage": ""
+    },
+    "ecdOption": "",
+    "enableEfdReinf": false,
+    "enableEfdReinfAt": "",
+    "registrationStatus": "",
+    "typeRegime": {
+      "name": "Competência",
+      "code": 2,
+      "competence": "01/2025"
+    },
+    "payroll": {
+      "eletronicPoint": "",
+      "fpas": "",
+      "rat": "",
+      "fap": 0.5,
+      "taxClassification": "",
+      "enableESocial": null,
+      "lastEventStatus": null,
+      "lastMessage": ""
+    },
+    "erp": {
+      "nick": "",
+      "enableContmaticIntegration": false,
+      "enableContmaticIntegrationAt": "",
+      "contmaticIntegration": false,
+      "syncAt": ""
+    },
+    "enableModuleERPAt": "",
+    "enabledESocialAt": "",
+    "enableModuleHubFederalAt": "08/09/2025 22:10:03",
+    "enableModuleHubNFSeAt": "04/11/2025 16:53:28",
+    "enableModuleHubNFSeOutCityAt": "",
+    "enableModuleHubNFSeIssAt": "",
+    "enableModulePreventionAt": "",
+    "enable360At": "",
+    "enableModuleHubDasAt": "",
+    "enableModuleDCTFWEBAt": "",
+    "federalConfig": {
+      "enableCFE": false,
+      "enableCFEAt": "",
+      "enableNFCE": false,
+      "enableNFCEAt": "",
+      "enableSefazOnline": false,
+      "enableSefazOnlineAt": "",
+      "automationICMS": false,
+      "automationICMSAt": "",
+      "enableCertificateA3": false,
+      "enableCertificateA3At": "",
+      "enableNFeEmitted": true,
+      "enableNFeEmittedAt": "11/09/2025 13:08:12",
+      "searchWithOfficeCertificate": false,
+      "searchWithOfficeCertificateAt": "",
+      "enableAutomaticCorrections": true,
+      "enableAutomaticCorrectionsAt": "12/11/2025 17:39:07",
+      "enableAutomaticCorrectionPisCofins": true,
+      "enableAutomaticCorrectionPisCofinsAt": "12/11/2025 17:39:07"
+    },
+    "enableImporterCompanyAt": "",
+    "accountingPlanConfig": []
+  },
+  "diferencas": [
+    "Tributação: '' → 'Simples Nacional - Comercio e Serviços'",
+    "IE: '' → '105724858'",
+    "IM: '' → '70476'",
+    "E-mail: '' → 'masterar2013@hotmail.com'"
+  ]
+}

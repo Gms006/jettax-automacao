@@ -1,0 +1,250 @@
+{
+  "modulo": "Serviços",
+  "descricao": "Módulo responsável pela gestão de Notas Fiscais de Serviço (NFS-e), apuração de ISS, retenções e obrigações acessórias como EFD-Reinf.",
+  "categorias": [
+    {
+      "nome": "Operacional",
+      "funcionalidades": [
+        {
+          "nome": "Dashboard de Serviços",
+          "descricao": "Visão geral das notas de serviço tomadas e prestadas.",
+          "tipo_automacao": "API",
+          "fluxo_operacional": [
+            "Carregar indicadores de NFS-e.",
+            "Verificar totalizadores de notas."
+          ],
+          "detalhes_tecnicos": {
+            "endpoints_principais": [
+              {
+                "metodo": "GET",
+                "url": "https://api.jettax360.com.br/api/v1/fiscal/dashboard",
+                "descricao": "Dashboard fiscal geral"
+              },
+              {
+                "metodo": "GET",
+                "url": "https://api.jettax360.com.br/api/v1/hub/nfses/dashboard-totalizers",
+                "descricao": "Totalizadores específicos de NFS-e"
+              }
+            ]
+          }
+        },
+        {
+          "nome": "Gestão de NFS-e",
+          "descricao": "Consulta e gestão de notas fiscais de serviço (Prestados e Tomados).",
+          "tipo_automacao": "API",
+          "fluxo_operacional": [
+            "Listar notas de serviços prestados (Sale).",
+            "Listar notas de serviços tomados (Purchase).",
+            "Verificar status de carregamento."
+          ],
+          "detalhes_tecnicos": {
+            "endpoints_principais": [
+              {
+                "metodo": "GET",
+                "url": "https://api.jettax360.com.br/api/v1/fiscal/nfses/all/sale",
+                "descricao": "Listar NFS-e Prestados"
+              },
+              {
+                "metodo": "GET",
+                "url": "https://api.jettax360.com.br/api/v1/fiscal/nfses/all/purchase",
+                "descricao": "Listar NFS-e Tomados"
+              },
+              {
+                "metodo": "GET",
+                "url": "https://api.jettax360.com.br/api/v1/fiscal/nfses/load-status",
+                "descricao": "Status da captura de notas"
+              }
+            ]
+          }
+        },
+        {
+          "nome": "Apurações de ISS",
+          "descricao": "Cálculo e conferência do imposto sobre serviços.",
+          "tipo_automacao": "API",
+          "fluxo_operacional": [
+            "Carregar dados da apuração.",
+            "Criar ou recalcular apuração de ISS."
+          ],
+          "detalhes_tecnicos": {
+            "endpoints_principais": [
+              {
+                "metodo": "GET",
+                "url": "https://api.jettax360.com.br/api/v1/fiscal/nfse-tax",
+                "descricao": "Consultar apuração de ISS"
+              },
+              {
+                "metodo": "POST",
+                "url": "https://api.jettax360.com.br/api/v1/fiscal/nfse-tax/create",
+                "descricao": "Gerar apuração de ISS"
+              }
+            ]
+          }
+        },
+        {
+          "nome": "Downloads",
+          "descricao": "Central de downloads de arquivos XML e PDF de notas.",
+          "tipo_automacao": "API",
+          "fluxo_operacional": [
+            "Listar downloads disponíveis.",
+            "Solicitar novo pacote de download."
+          ],
+          "detalhes_tecnicos": {
+            "endpoints_principais": [
+              {
+                "metodo": "GET",
+                "url": "https://api.jettax360.com.br/api/v1/hub/download/list",
+                "descricao": "Histórico de downloads"
+              },
+              {
+                "metodo": "POST",
+                "url": "https://api.jettax360.com.br/api/v1/hub/download",
+                "descricao": "Solicitar download (XML/PDF)"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "nome": "Relatórios",
+      "funcionalidades": [
+        {
+          "nome": "Conferência de Documentos",
+          "descricao": "Relatório para auditar divergências em notas fiscais.",
+          "tipo_automacao": "API",
+          "fluxo_operacional": [
+            "Gerar relatório de conferência.",
+            "Baixar relatório gerado."
+          ],
+          "detalhes_tecnicos": {
+            "endpoints_principais": [
+              {
+                "metodo": "POST",
+                "url": "https://api.jettax360.com.br/api/v1/fiscal/nfses/conference-report",
+                "descricao": "Solicitar relatório de conferência"
+              },
+              {
+                "metodo": "GET",
+                "url": "https://api.jettax360.com.br/api/v1/fiscal/nfses/conference-report",
+                "descricao": "Listar relatórios prontos"
+              }
+            ]
+          }
+        },
+        {
+          "nome": "EFD Reinf",
+          "descricao": "Gestão e conferência da obrigação EFD-Reinf.",
+          "tipo_automacao": "API",
+          "fluxo_operacional": [
+            "Consultar status do Reinf."
+          ],
+          "detalhes_tecnicos": {
+            "endpoints_principais": [
+              {
+                "metodo": "GET",
+                "url": "https://api.jettax360.com.br/api/v1/fiscal/efdreinf",
+                "descricao": "Dados do EFD Reinf"
+              }
+            ]
+          }
+        },
+        {
+          "nome": "Consumo de NFSes",
+          "descricao": "Relatório de volumetria de notas processadas.",
+          "tipo_automacao": "API",
+          "fluxo_operacional": [
+            "Solicitar relatório de consumo."
+          ],
+          "detalhes_tecnicos": {
+            "endpoints_principais": [
+              {
+                "metodo": "POST",
+                "url": "https://api.jettax360.com.br/api/v1/fiscal/nfse/report/consumer",
+                "descricao": "Gerar relatório de consumo"
+              },
+              {
+                "metodo": "GET",
+                "url": "https://api.jettax360.com.br/api/v1/fiscal/nfse/report/consumer",
+                "descricao": "Baixar relatório de consumo"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "nome": "Configurações",
+      "funcionalidades": [
+        {
+          "nome": "Agendamentos",
+          "descricao": "Automação de captura de notas e geração de guias.",
+          "tipo_automacao": "API",
+          "fluxo_operacional": [
+            "Listar agendamentos ativos.",
+            "Criar novo agendamento de captura."
+          ],
+          "detalhes_tecnicos": {
+            "endpoints_principais": [
+              {
+                "metodo": "GET",
+                "url": "https://api.jettax360.com.br/api/v1/hub/schedule/list",
+                "descricao": "Listar agendamentos"
+              },
+              {
+                "metodo": "POST",
+                "url": "https://api.jettax360.com.br/api/v1/hub/schedule",
+                "descricao": "Criar agendamento"
+              }
+            ]
+          }
+        },
+        {
+          "nome": "Regras de Retenções",
+          "descricao": "Configuração de regras automáticas para retenção de impostos em notas.",
+          "tipo_automacao": "API",
+          "fluxo_operacional": [
+            "Listar regras existentes.",
+            "Criar nova regra de retenção."
+          ],
+          "detalhes_tecnicos": {
+            "endpoints_principais": [
+              {
+                "metodo": "GET",
+                "url": "https://api.jettax360.com.br/api/v1/fiscal/nfses/retention-rules",
+                "descricao": "Listar regras de retenção"
+              },
+              {
+                "metodo": "POST",
+                "url": "https://api.jettax360.com.br/api/v1/fiscal/nfses/retention-rules",
+                "descricao": "Criar regra de retenção"
+              }
+            ]
+          }
+        },
+        {
+          "nome": "Prefeituras",
+          "descricao": "Configuração de integração com prefeituras para captura de notas.",
+          "tipo_automacao": "API",
+          "fluxo_operacional": [
+            "Verificar configurações de prefeituras suportadas.",
+            "Configurar credenciais específicas por cidade."
+          ],
+          "detalhes_tecnicos": {
+            "endpoints_principais": [
+              {
+                "metodo": "GET",
+                "url": "https://api.jettax360.com.br/api/v1/hub/nfses/integrators/city-configurations",
+                "descricao": "Configurações de cidades"
+              },
+              {
+                "metodo": "GET",
+                "url": "https://api.jettax360.com.br/api/v1/hub/nfses/integrators/city-personal-configurations/{id}",
+                "descricao": "Configuração específica da cidade"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

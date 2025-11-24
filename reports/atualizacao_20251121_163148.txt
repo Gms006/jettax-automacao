@@ -1,0 +1,27 @@
+RELATÓRIO DE ATUALIZAÇÃO
+============================================================
+
+Data: 21/11/2025 16:31:48
+
+Total: 3
+✓ Atualizados: 0
+= Sem alteração: 0
+⚠ Não cadastrados: 0
+✗ Erros: 3
+
+============================================================
+DETALHES
+============================================================
+
+46149398000123 - 3TB PRODUCOES ARTISTICAS LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 500 Server Error: Internal Server Error for url: https://api.jettax360.com.br/api/v1/clients/68c011f49a213ccebf0463a2
+
+29413500000137 - A A DE MATOS RESENDE - SUPERMERCADO SANTO ANTONIO
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 500 Server Error: Internal Server Error for url: https://api.jettax360.com.br/api/v1/clients/68c01f0235d0621e88004e62
+
+06936057000183 - A C MELO LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 500 Server Error: Internal Server Error for url: https://api.jettax360.com.br/api/v1/clients/68c02011d4e6c07bf905c083
+

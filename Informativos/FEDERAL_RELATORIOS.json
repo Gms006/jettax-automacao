@@ -1,0 +1,230 @@
+{
+  "categoria": "Relatórios",
+  "modulo": "Federal",
+  "descricao": "Relatórios e auditorias do módulo Federal: auditoria de ST, PIS/COFINS, autenticidade de notas e notas faltantes.",
+  "funcionalidades": [
+    {
+      "nome": "Autenticidade de Documentos",
+      "descricao": "Validar autenticidade de notas fiscais consultando a SEFAZ.",
+      "tipo_automacao": "API",
+      "fluxo_operacional": [
+        "Listar processamentos de autenticidade.",
+        "Verificar quantidades (autenticadas, inválidas, não consultadas)."
+      ],
+      "detalhes_tecnicos": {
+        "endpoints_principais": [
+          {
+            "metodo": "GET",
+            "url": "https://api-federal.jettax360.com.br/api/v1/commerce/authenticity/list",
+            "descricao": "Listar validações de autenticidade"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "Auditoria de Substituição Tributária",
+      "descricao": "Identificar divergências no recolhimento de ICMS-ST.",
+      "tipo_automacao": "API",
+      "fluxo_operacional": [
+        "Listar auditorias de ST realizadas.",
+        "Consultar detalhes de uma auditoria.",
+        "Solicitar reprocessamento de ST."
+      ],
+      "detalhes_tecnicos": {
+        "endpoints_principais": [
+          {
+            "metodo": "GET",
+            "url": "https://api-federal.jettax360.com.br/api/v1/commerce/audit-reprocess/",
+            "descricao": "Listar auditorias (ST e PIS/COFINS)"
+          },
+          {
+            "metodo": "GET",
+            "url": "https://api-federal.jettax360.com.br/api/v1/commerce/audit-reprocess-details/{id}",
+            "descricao": "Detalhes de uma auditoria"
+          },
+          {
+            "metodo": "POST",
+            "url": "https://api-federal.jettax360.com.br/api/v1/commerce/audit-reprocess/",
+            "descricao": "Solicitar nova auditoria de ST"
+          },
+          {
+            "metodo": "PUT",
+            "url": "https://api-federal.jettax360.com.br/api/v1/commerce/audit-st/",
+            "descricao": "Reprocessar auditoria de ST"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "Auditoria de PIS/COFINS",
+      "descricao": "Validar cálculos de PIS e COFINS nas notas fiscais.",
+      "tipo_automacao": "API",
+      "fluxo_operacional": [
+        "Solicitar auditoria de PIS/COFINS.",
+        "Consultar resultados.",
+        "Baixar relatório de divergências."
+      ],
+      "detalhes_tecnicos": {
+        "endpoints_principais": [
+          {
+            "metodo": "POST",
+            "url": "https://api-federal.jettax360.com.br/api/v1/commerce/audit-reprocess/",
+            "descricao": "Solicitar auditoria (type=2 para PIS/COFINS)"
+          },
+          {
+            "metodo": "PUT",
+            "url": "https://api-federal.jettax360.com.br/api/v1/commerce/audit-pis-cofins/",
+            "descricao": "Reprocessar auditoria de PIS/COFINS"
+          },
+          {
+            "metodo": "GET",
+            "url": "https://api-federal.jettax360.com.br/api/v1/commerce/hub/report/automation-icms",
+            "descricao": "Relatórios de auditoria de ICMS/ST/PIS/COFINS"
+          },
+          {
+            "metodo": "GET",
+            "url": "https://api-federal.jettax360.com.br/api/v1/commerce/hub/report/automation-icms/details/{id}",
+            "descricao": "Detalhes de um relatório de auditoria"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "Notas Faltantes",
+      "descricao": "Identificar lacunas na sequência de numeração de notas fiscais.",
+      "tipo_automacao": "API",
+      "fluxo_operacional": [
+        "Solicitar análise de sequência.",
+        "Consultar notas faltantes identificadas.",
+        "Exportar lista em CSV."
+      ],
+      "detalhes_tecnicos": {
+        "endpoints_principais": [
+          {
+            "metodo": "GET",
+            "url": "https://api-federal.jettax360.com.br/api/v1/commerce/missing-invoices/",
+            "descricao": "Listar análises de notas faltantes"
+          },
+          {
+            "metodo": "GET",
+            "url": "https://api-federal.jettax360.com.br/api/v1/commerce/missing-invoices/{id}/details",
+            "descricao": "Detalhes de uma análise (quais notas faltam)"
+          },
+          {
+            "metodo": "POST",
+            "url": "https://api-federal.jettax360.com.br/api/v1/commerce/missing-invoices",
+            "descricao": "Solicitar nova análise de notas faltantes"
+          },
+          {
+            "metodo": "GET",
+            "url": "https://api-federal.jettax360.com.br/api/v1/commerce/missing-invoices/{id}/download-csv",
+            "descricao": "Baixar CSV consolidado"
+          },
+          {
+            "metodo": "GET",
+            "url": "https://api-federal.jettax360.com.br/api/v1/commerce/missing-invoices/{id}/details/{detailId}/download-csv",
+            "descricao": "Baixar CSV de um cliente específico"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "Conferência de Documentos",
+      "descricao": "Relatório para conferência manual de notas fiscais.",
+      "tipo_automacao": "API",
+      "fluxo_operacional": [
+        "Listar relatórios de conferência."
+      ],
+      "detalhes_tecnicos": {
+        "endpoints_principais": [
+          {
+            "metodo": "GET",
+            "url": "https://api-federal.jettax360.com.br/api/v1/commerce/hub/reports",
+            "descricao": "Listar relatórios de conferência"
+          },
+          {
+            "metodo": "POST",
+            "url": "https://api-federal.jettax360.com.br/api/v1/commerce/hub/reports",
+            "descricao": "Gerar relatório de conferência"
+          }
+        ]
+      }
+    }
+  ],
+  "procedimentos": [
+    {
+      "id": "PROC-FED-REL-001",
+      "nome": "Auditar Substituição Tributária",
+      "objetivo": "Verificar se o ICMS-ST foi corretamente calculado nas notas de entrada.",
+      "passo_a_passo": [
+        {
+          "passo": 1,
+          "acao": "Selecionar Clientes e Período",
+          "logica_local": "Defina a competência (MM/YYYY) e os IDs dos clientes."
+        },
+        {
+          "passo": 2,
+          "acao": "Solicitar Auditoria",
+          "endpoint": "POST https://api-federal.jettax360.com.br/api/v1/commerce/audit-reprocess/",
+          "instrucao_ia": "Payload: { 'type': '1', 'clients': [ids], 'competence': '10/2025' }"
+        },
+        {
+          "passo": 3,
+          "acao": "Aguardar Processamento",
+          "endpoint": "GET https://api-federal.jettax360.com.br/api/v1/commerce/audit-reprocess/",
+          "instrucao_ia": "Faça polling até 'status.label' == 'Finalizado'."
+        },
+        {
+          "passo": 4,
+          "acao": "Consultar Detalhes",
+          "endpoint": "GET https://api-federal.jettax360.com.br/api/v1/commerce/audit-reprocess-details/{id}",
+          "instrucao_ia": "Verifique os clientes processados e eventuais erros."
+        }
+      ]
+    },
+    {
+      "id": "PROC-FED-REL-002",
+      "nome": "Identificar Notas Faltantes",
+      "objetivo": "Detectar saltos na numeração de NF-e/NFCe.",
+      "passo_a_passo": [
+        {
+          "passo": 1,
+          "acao": "Solicitar Análise",
+          "endpoint": "POST https://api-federal.jettax360.com.br/api/v1/commerce/missing-invoices",
+          "instrucao_ia": "Payload: { 'competence': '10/2025', 'clients': [ids] }"
+        },
+        {
+          "passo": 2,
+          "acao": "Consultar Resultado",
+          "endpoint": "GET https://api-federal.jettax360.com.br/api/v1/commerce/missing-invoices/{id}/details",
+          "instrucao_ia": "Liste os clientes e séries com notas faltantes."
+        },
+        {
+          "passo": 3,
+          "acao": "Baixar CSV",
+          "endpoint": "GET https://api-federal.jettax360.com.br/api/v1/commerce/missing-invoices/{id}/download-csv",
+          "instrucao_ia": "Exporte a lista completa em CSV."
+        }
+      ]
+    },
+    {
+      "id": "PROC-FED-REL-003",
+      "nome": "Gerar Relatório de Auditoria ICMS",
+      "objetivo": "Consolidar resultado das auditorias de ICMS/ST em planilha.",
+      "passo_a_passo": [
+        {
+          "passo": 1,
+          "acao": "Solicitar Geração",
+          "endpoint": "POST https://api-federal.jettax360.com.br/api/v1/commerce/hub/report/automation-icms",
+          "instrucao_ia": "Payload: { 'competence': '10/2025', 'clients': [ids], 'type': 5 }"
+        },
+        {
+          "passo": 2,
+          "acao": "Baixar Relatório",
+          "endpoint": "GET https://api-federal.jettax360.com.br/api/v1/commerce/hub/report/automation-icms",
+          "instrucao_ia": "Aguarde status='Concluído' e baixe o arquivo do campo 'url'."
+        }
+      ]
+    }
+  ]
+}

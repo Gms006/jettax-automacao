@@ -1,0 +1,230 @@
+{
+  "client_id": "68bf890326c7c8c90201b832",
+  "cnpj": "17922625000103",
+  "razao_social": "SANTANA CONSTRUCOES E SERVICOS LTDA",
+  "payload": {
+    "id": "68bf890326c7c8c90201b832",
+    "name": "SANTANA CONSTRUCOES E SERVICOS LTDA",
+    "enable360": false,
+    "enableModuleERP": false,
+    "enableModulePrevention": false,
+    "enableModuleHubFederal": true,
+    "enableModuleHubNFSe": true,
+    "enableModuleHubNFSeOutCity": false,
+    "enableConvertOutSideCityAbrasf": false,
+    "enableConvertOutSideCityAbrasfAt": "",
+    "enableModuleHubNFSeIss": false,
+    "enableModuleDCTFWEB": false,
+    "enableModuleHubDas": false,
+    "enableImporterCompany": false,
+    "taxRegime": "62d9471420ba2a79cd31c162",
+    "taxRegimeCode": "LP",
+    "phone": "(62) 99209-4598",
+    "whatsApp": "",
+    "municipalIntegration": {
+      "login": "27773949115",
+      "password": "277739",
+      "createISS": true,
+      "municipalRegistration": "69601",
+      "gissonlineLogin": "",
+      "gissonlinePassword": ""
+    },
+    "simpleNationalIntegration": {
+      "accessCode": "",
+      "documentResponsible": "",
+      "manualBilling": false,
+      "hasEmployyes": false,
+      "onlyCommercialBilling": false,
+      "typeRegime": [
+        {
+          "competence": "01/2025",
+          "code": 2,
+          "name": "Competência"
+        }
+      ]
+    },
+    "moduleFederalConfiguration": {
+      "downloadNFeWithAccountingCertificate": false,
+      "downloadPurchaseNFeInvoices": false,
+      "downloadCTeInvoices": false,
+      "downloadSalesNFeInvoices": false,
+      "downloadCFeInvoices": false,
+      "downloadCFeWithAccountingCertificate": false,
+      "enablePisCofinsAudit": false
+    },
+    "email": null,
+    "emails": [],
+    "document": "17.922.625/0001-03",
+    "address": {
+      "type": "",
+      "address": "AVENIDA MIGUEL JOAO",
+      "number": 193,
+      "zip": "75020-365",
+      "district": "SETOR CENTRAL",
+      "state": "GO",
+      "complement": "SALA 03",
+      "city": {
+        "ibgeCode": 5201108,
+        "name": "Anapolis"
+      }
+    },
+    "cnaes": [
+      {
+        "name": "Incorporação de empreendimentos imobiliários",
+        "code": 4110700,
+        "primary": false
+      },
+      {
+        "name": "Construção de edifícios",
+        "code": 4120400,
+        "primary": false
+      },
+      {
+        "name": "Construção de rodovias e ferrovias",
+        "code": 4211101,
+        "primary": false
+      },
+      {
+        "name": "Construção de obras de arte especiais",
+        "code": 4212000,
+        "primary": false
+      },
+      {
+        "name": "Obras de urbanização - ruas, praças e calçadas",
+        "code": 4213800,
+        "primary": true
+      },
+      {
+        "name": "Montagem de estruturas metálicas",
+        "code": 4292801,
+        "primary": false
+      },
+      {
+        "name": "Obras de montagem industrial",
+        "code": 4292802,
+        "primary": false
+      },
+      {
+        "name": "Demolição de edifícios e outras estruturas",
+        "code": 4311801,
+        "primary": false
+      },
+      {
+        "name": "Preparação de canteiro e limpeza de terreno",
+        "code": 4311802,
+        "primary": false
+      },
+      {
+        "name": "Perfurações e sondagens",
+        "code": 4312600,
+        "primary": false
+      },
+      {
+        "name": "Obras de terraplenagem",
+        "code": 4313400,
+        "primary": false
+      },
+      {
+        "name": "Serviços de engenharia",
+        "code": 7112000,
+        "primary": false
+      },
+      {
+        "name": "Serviços de desenho técnico relacionados à arquitetura e engenharia",
+        "code": 7119703,
+        "primary": false
+      },
+      {
+        "name": "Aluguel de máquinas e equipamentos para construção sem operador, exceto andaimes",
+        "code": 7732201,
+        "primary": false
+      }
+    ],
+    "status": 1,
+    "startCompetence": "07/2025",
+    "digitalCertificate": "https://jettax360.s3.us-west-2.amazonaws.com/offices/68b1e4d38c0ec913a50e4bd5/clients/68bf890326c7c8c90201b832/certificate.pfx",
+    "digitalCertificatePassword": "Vitor@2025",
+    "digitalCertificateDate": "16/06/2026",
+    "digitalCertificateDocument": "17922625000103",
+    "legalNature": "206-2",
+    "stateRegistration": 108625214,
+    "openDate": "08/04/2013",
+    "createdAt": "08/09/2025",
+    "updatedAt": "04/11/2025",
+    "headquarter": "",
+    "efdReinf": {
+      "startDate": "",
+      "partnerId": "",
+      "partnerAdmin": "",
+      "phone": "",
+      "email": "",
+      "document": "",
+      "taxClassification": "",
+      "errorMessage": ""
+    },
+    "ecdOption": "",
+    "enableEfdReinf": false,
+    "enableEfdReinfAt": "",
+    "registrationStatus": "620d000954060f3cff779903",
+    "typeRegime": {
+      "name": "Competência",
+      "code": 2,
+      "competence": "01/2025"
+    },
+    "payroll": {
+      "eletronicPoint": "",
+      "fpas": "",
+      "rat": "",
+      "fap": 0.5,
+      "taxClassification": "",
+      "enableESocial": null,
+      "lastEventStatus": null,
+      "lastMessage": ""
+    },
+    "erp": {
+      "nick": "",
+      "enableContmaticIntegration": false,
+      "enableContmaticIntegrationAt": "",
+      "contmaticIntegration": false,
+      "syncAt": ""
+    },
+    "enableModuleERPAt": "",
+    "enabledESocialAt": "",
+    "enableModuleHubFederalAt": "08/09/2025 22:55:15",
+    "enableModuleHubNFSeAt": "04/11/2025 16:56:26",
+    "enableModuleHubNFSeOutCityAt": "",
+    "enableModuleHubNFSeIssAt": "",
+    "enableModulePreventionAt": "",
+    "enable360At": "",
+    "enableModuleHubDasAt": "",
+    "enableModuleDCTFWEBAt": "",
+    "federalConfig": {
+      "enableCFE": false,
+      "enableCFEAt": "",
+      "enableNFCE": false,
+      "enableNFCEAt": "",
+      "enableSefazOnline": false,
+      "enableSefazOnlineAt": "",
+      "automationICMS": false,
+      "automationICMSAt": "",
+      "enableCertificateA3": false,
+      "enableCertificateA3At": "",
+      "enableNFeEmitted": true,
+      "enableNFeEmittedAt": "11/09/2025 13:26:47",
+      "searchWithOfficeCertificate": false,
+      "searchWithOfficeCertificateAt": "",
+      "enableAutomaticCorrections": true,
+      "enableAutomaticCorrectionsAt": "04/11/2025 16:56:26",
+      "enableAutomaticCorrectionPisCofins": true,
+      "enableAutomaticCorrectionPisCofinsAt": "04/11/2025 16:56:26"
+    },
+    "enableImporterCompanyAt": "",
+    "accountingPlanConfig": []
+  },
+  "diferencas": [
+    "Tributação: '' → 'Lucro Presumido - Serviços'",
+    "IE: '' → '108625214'",
+    "IM: '' → '69601'",
+    "E-mail: '' → 'cntiamariapsi@yahoo.com.br'"
+  ]
+}

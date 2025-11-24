@@ -1,0 +1,10 @@
+﻿.vscode/
+*.pyc
+__pycache__/
+.env
+.venv/
+*.log
+*.sqlite3
+*.xlsx
+*.xls
+*.db

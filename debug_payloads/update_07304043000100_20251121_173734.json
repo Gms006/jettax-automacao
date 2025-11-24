@@ -1,0 +1,244 @@
+{
+  "client_id": "68bf8edea73225829c0494c2",
+  "cnpj": "07304043000100",
+  "razao_social": "TRANCE CONSTRUCOES LTDA",
+  "payload": {
+    "id": "68bf8edea73225829c0494c2",
+    "name": "TRANCE CONSTRUCOES LTDA",
+    "enable360": false,
+    "enableModuleERP": false,
+    "enableModulePrevention": false,
+    "enableModuleHubFederal": true,
+    "enableModuleHubNFSe": true,
+    "enableModuleHubNFSeOutCity": false,
+    "enableConvertOutSideCityAbrasf": false,
+    "enableConvertOutSideCityAbrasfAt": "",
+    "enableModuleHubNFSeIss": false,
+    "enableModuleDCTFWEB": false,
+    "enableModuleHubDas": false,
+    "enableImporterCompany": false,
+    "taxRegime": "62d9471420ba2a79cd31c162",
+    "taxRegimeCode": "LP",
+    "phone": "(62) 99974-3141",
+    "whatsApp": "",
+    "municipalIntegration": {
+      "login": "33120706191",
+      "password": "331207",
+      "createISS": true,
+      "municipalRegistration": "53272",
+      "gissonlineLogin": "",
+      "gissonlinePassword": ""
+    },
+    "simpleNationalIntegration": {
+      "accessCode": "",
+      "documentResponsible": "",
+      "manualBilling": false,
+      "hasEmployyes": false,
+      "onlyCommercialBilling": false,
+      "typeRegime": [
+        {
+          "competence": "01/2025",
+          "code": 2,
+          "name": "Competência"
+        }
+      ]
+    },
+    "moduleFederalConfiguration": {
+      "downloadNFeWithAccountingCertificate": false,
+      "downloadPurchaseNFeInvoices": false,
+      "downloadCTeInvoices": false,
+      "downloadSalesNFeInvoices": false,
+      "downloadCFeInvoices": false,
+      "downloadCFeWithAccountingCertificate": false,
+      "enablePisCofinsAudit": false
+    },
+    "email": null,
+    "emails": [],
+    "document": "07.304.043/0001-00",
+    "address": {
+      "type": "",
+      "address": "AVENIDA MATO GROSSO",
+      "number": 141,
+      "zip": "75110-585",
+      "district": "VILA SANTA MARIA DE NAZARE",
+      "state": "GO",
+      "complement": "SALA 2",
+      "city": {
+        "ibgeCode": 5201108,
+        "name": "Anapolis"
+      }
+    },
+    "cnaes": [
+      {
+        "name": "Incorporação de empreendimentos imobiliários",
+        "code": 4110700,
+        "primary": false
+      },
+      {
+        "name": "Construção de edifícios",
+        "code": 4120400,
+        "primary": true
+      },
+      {
+        "name": "Construção de rodovias e ferrovias",
+        "code": 4211101,
+        "primary": false
+      },
+      {
+        "name": "Pintura para sinalização em pistas rodoviárias e aeroportos",
+        "code": 4211102,
+        "primary": false
+      },
+      {
+        "name": "Construção de obras de arte especiais",
+        "code": 4212000,
+        "primary": false
+      },
+      {
+        "name": "Obras de urbanização - ruas, praças e calçadas",
+        "code": 4213800,
+        "primary": false
+      },
+      {
+        "name": "Montagem de estruturas metálicas",
+        "code": 4292801,
+        "primary": false
+      },
+      {
+        "name": "Obras de montagem industrial",
+        "code": 4292802,
+        "primary": false
+      },
+      {
+        "name": "Construção de instalações esportivas e recreativas",
+        "code": 4299501,
+        "primary": false
+      },
+      {
+        "name": "Demolição de edifícios e outras estruturas",
+        "code": 4311801,
+        "primary": false
+      },
+      {
+        "name": "Preparação de canteiro e limpeza de terreno",
+        "code": 4311802,
+        "primary": false
+      },
+      {
+        "name": "Perfurações e sondagens",
+        "code": 4312600,
+        "primary": false
+      },
+      {
+        "name": "Obras de terraplenagem",
+        "code": 4313400,
+        "primary": false
+      },
+      {
+        "name": "Serviços de pintura de edifícios em geral",
+        "code": 4330404,
+        "primary": false
+      },
+      {
+        "name": "Obras de alvenaria",
+        "code": 4399103,
+        "primary": false
+      },
+      {
+        "name": "Aluguel de máquinas e equipamentos para construção sem operador, exceto andaimes",
+        "code": 7732201,
+        "primary": false
+      },
+      {
+        "name": "Aluguel de outras máquinas e equipamentos comerciais e industriais não especificados anteriormente, sem operador",
+        "code": 7739099,
+        "primary": false
+      }
+    ],
+    "status": 1,
+    "startCompetence": "07/2025",
+    "digitalCertificate": "https://jettax360.s3.us-west-2.amazonaws.com/offices/68b1e4d38c0ec913a50e4bd5/clients/68bf8edea73225829c0494c2/certificate.pfx",
+    "digitalCertificatePassword": "Wanderley@2025",
+    "digitalCertificateDate": "07/02/2026",
+    "digitalCertificateDocument": "07304043000100",
+    "legalNature": "206-2",
+    "stateRegistration": "",
+    "openDate": "01/04/2005",
+    "createdAt": "08/09/2025",
+    "updatedAt": "04/11/2025",
+    "headquarter": "",
+    "efdReinf": {
+      "startDate": "",
+      "partnerId": "",
+      "partnerAdmin": "",
+      "phone": "",
+      "email": "",
+      "document": "",
+      "taxClassification": "",
+      "errorMessage": ""
+    },
+    "ecdOption": "",
+    "enableEfdReinf": false,
+    "enableEfdReinfAt": "",
+    "registrationStatus": "620d000954060f3cff779903",
+    "typeRegime": {
+      "name": "Competência",
+      "code": 2,
+      "competence": "01/2025"
+    },
+    "payroll": {
+      "eletronicPoint": "",
+      "fpas": "",
+      "rat": "",
+      "fap": 0.5,
+      "taxClassification": "",
+      "enableESocial": null,
+      "lastEventStatus": null,
+      "lastMessage": ""
+    },
+    "erp": {
+      "nick": "",
+      "enableContmaticIntegration": false,
+      "enableContmaticIntegrationAt": "",
+      "contmaticIntegration": false,
+      "syncAt": ""
+    },
+    "enableModuleERPAt": "",
+    "enabledESocialAt": "",
+    "enableModuleHubFederalAt": "08/09/2025 23:20:14",
+    "enableModuleHubNFSeAt": "04/11/2025 16:57:46",
+    "enableModuleHubNFSeOutCityAt": "",
+    "enableModuleHubNFSeIssAt": "",
+    "enableModulePreventionAt": "",
+    "enable360At": "",
+    "enableModuleHubDasAt": "",
+    "enableModuleDCTFWEBAt": "",
+    "federalConfig": {
+      "enableCFE": false,
+      "enableCFEAt": "",
+      "enableNFCE": false,
+      "enableNFCEAt": "",
+      "enableSefazOnline": false,
+      "enableSefazOnlineAt": "",
+      "automationICMS": false,
+      "automationICMSAt": "",
+      "enableCertificateA3": false,
+      "enableCertificateA3At": "",
+      "enableNFeEmitted": true,
+      "enableNFeEmittedAt": "11/09/2025 13:34:32",
+      "searchWithOfficeCertificate": false,
+      "searchWithOfficeCertificateAt": "",
+      "enableAutomaticCorrections": true,
+      "enableAutomaticCorrectionsAt": "04/11/2025 16:57:46",
+      "enableAutomaticCorrectionPisCofins": true,
+      "enableAutomaticCorrectionPisCofinsAt": "04/11/2025 16:57:46"
+    },
+    "enableImporterCompanyAt": "",
+    "accountingPlanConfig": []
+  },
+  "diferencas": [
+    "Tributação: '' → 'Lucro Presumido - Serviços'",
+    "IM: '' → '53272'",
+    "E-mail: '' → 'w2mo@terra.com.br'"
+  ]
+}

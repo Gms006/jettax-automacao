@@ -1,0 +1,253 @@
+{
+  "client_id": "6915d8ab6b8c0955da0407f3",
+  "cnpj": "18608090000163",
+  "razao_social": "WVM ENERGIA E EVENTOS LTDA",
+  "payload": {
+    "id": "6915d8ab6b8c0955da0407f3",
+    "name": "WVM ENERGIA E EVENTOS LTDA",
+    "enable360": false,
+    "enableModuleERP": false,
+    "enableModulePrevention": false,
+    "enableModuleHubFederal": true,
+    "enableModuleHubNFSe": true,
+    "enableModuleHubNFSeOutCity": false,
+    "enableConvertOutSideCityAbrasf": false,
+    "enableConvertOutSideCityAbrasfAt": "",
+    "enableModuleHubNFSeIss": true,
+    "enableModuleDCTFWEB": false,
+    "enableModuleHubDas": false,
+    "enableImporterCompany": false,
+    "taxRegime": "62d9471420ba2a79cd31c162",
+    "taxRegimeCode": "LP",
+    "phone": "",
+    "whatsApp": "",
+    "municipalIntegration": {
+      "login": "42545145149",
+      "password": "425451",
+      "createISS": false,
+      "municipalRegistration": "70596",
+      "gissonlineLogin": "",
+      "gissonlinePassword": ""
+    },
+    "simpleNationalIntegration": {
+      "accessCode": "",
+      "documentResponsible": "",
+      "manualBilling": false,
+      "hasEmployyes": false,
+      "onlyCommercialBilling": false,
+      "typeRegime": [
+        {
+          "competence": "01/2025",
+          "code": 2,
+          "name": "Competência"
+        }
+      ]
+    },
+    "moduleFederalConfiguration": {
+      "downloadNFeWithAccountingCertificate": false,
+      "downloadPurchaseNFeInvoices": false,
+      "downloadCTeInvoices": false,
+      "downloadSalesNFeInvoices": false,
+      "downloadCFeInvoices": false,
+      "downloadCFeWithAccountingCertificate": false,
+      "enablePisCofinsAudit": false
+    },
+    "email": null,
+    "emails": [],
+    "document": "18.608.090/0001-63",
+    "address": {
+      "type": "R",
+      "address": "R JM-020",
+      "number": 0,
+      "zip": "75124-240",
+      "district": "SETOR SUL JAMIL MIGUEL",
+      "state": "GO",
+      "complement": "QUADRA51 LOTE 21",
+      "city": {
+        "ibgeCode": 5201108,
+        "name": "Anapolis"
+      }
+    },
+    "cnaes": [
+      {
+        "name": "Montagem e desmontagem de andaimes e outras estruturas temporárias",
+        "code": 4399102,
+        "primary": false
+      },
+      {
+        "name": "Comércio varejista de bebidas",
+        "code": 4723700,
+        "primary": false
+      },
+      {
+        "name": "Comércio varejista de produtos alimentícios em geral ou especializado em produtos alimentícios não especificados anteriormente",
+        "code": 4729699,
+        "primary": false
+      },
+      {
+        "name": "Estacionamento de veículos",
+        "code": 5223100,
+        "primary": false
+      },
+      {
+        "name": "Organização logística do transporte de carga",
+        "code": 5250804,
+        "primary": false
+      },
+      {
+        "name": "Serviços de alimentação para eventos e recepções - bufê",
+        "code": 5620102,
+        "primary": false
+      },
+      {
+        "name": "Criação de estandes para feiras e exposições",
+        "code": 7319001,
+        "primary": false
+      },
+      {
+        "name": "Agenciamento de profissionais para atividades esportivas, culturais e artísticas",
+        "code": 7490105,
+        "primary": false
+      },
+      {
+        "name": "Aluguel de palcos, coberturas e outras estruturas de uso temporário, exceto andaimes",
+        "code": 7739003,
+        "primary": false
+      },
+      {
+        "name": "Aluguel de outras máquinas e equipamentos comerciais e industriais não especificados anteriormente, sem operador",
+        "code": 7739099,
+        "primary": false
+      },
+      {
+        "name": "Atividades de vigilância e segurança privada",
+        "code": 8011101,
+        "primary": false
+      },
+      {
+        "name": "Atividades paisagísticas",
+        "code": 8130300,
+        "primary": false
+      },
+      {
+        "name": "Serviços de organização de feiras, congressos, exposições e festas",
+        "code": 8230001,
+        "primary": false
+      },
+      {
+        "name": "Casas de festas e eventos",
+        "code": 8230002,
+        "primary": false
+      },
+      {
+        "name": "Produção musical",
+        "code": 9001902,
+        "primary": false
+      },
+      {
+        "name": "Produção de espetáculos de dança",
+        "code": 9001903,
+        "primary": false
+      },
+      {
+        "name": "Produção de espetáculos de rodeios, vaquejadas e similares",
+        "code": 9001905,
+        "primary": true
+      },
+      {
+        "name": "Atividades de sonorização e de iluminação",
+        "code": 9001906,
+        "primary": false
+      },
+      {
+        "name": "Gestão de espaços para artes cênicas, espetáculos e outras atividades artísticas",
+        "code": 9003500,
+        "primary": false
+      }
+    ],
+    "status": 1,
+    "startCompetence": "01/2024",
+    "digitalCertificate": "https://jettax360.s3.us-west-2.amazonaws.com/offices/68b1e4d38c0ec913a50e4bd5/clients/6915d8ab6b8c0955da0407f3/certificate.pfx",
+    "digitalCertificatePassword": "Werlan@2025",
+    "digitalCertificateDate": "10/06/2026",
+    "digitalCertificateDocument": "18608090000163",
+    "legalNature": "206-2",
+    "stateRegistration": "",
+    "openDate": "02/08/2013",
+    "createdAt": "13/11/2025",
+    "updatedAt": "13/11/2025",
+    "headquarter": "",
+    "efdReinf": {
+      "startDate": "",
+      "partnerId": "",
+      "partnerAdmin": "",
+      "phone": "",
+      "email": "",
+      "document": "",
+      "taxClassification": "",
+      "errorMessage": ""
+    },
+    "ecdOption": "",
+    "enableEfdReinf": false,
+    "enableEfdReinfAt": "",
+    "registrationStatus": "620d000954060f3cff779903",
+    "typeRegime": {
+      "name": "Competência",
+      "code": 2,
+      "competence": "01/2025"
+    },
+    "payroll": {
+      "eletronicPoint": null,
+      "fpas": "",
+      "rat": "",
+      "fap": 0.5,
+      "taxClassification": "",
+      "competence": ""
+    },
+    "erp": {
+      "nick": "",
+      "enableContmaticIntegration": false,
+      "enableContmaticIntegrationAt": "",
+      "contmaticIntegration": false,
+      "syncAt": ""
+    },
+    "enableModuleERPAt": "",
+    "enabledESocialAt": "",
+    "enableModuleHubFederalAt": "13/11/2025 10:10:03",
+    "enableModuleHubNFSeAt": "13/11/2025 10:10:03",
+    "enableModuleHubNFSeOutCityAt": "",
+    "enableModuleHubNFSeIssAt": "13/11/2025 10:10:03",
+    "enableModulePreventionAt": "",
+    "enable360At": "",
+    "enableModuleHubDasAt": "",
+    "enableModuleDCTFWEBAt": "",
+    "federalConfig": {
+      "enableCFE": false,
+      "enableCFEAt": "",
+      "enableNFCE": false,
+      "enableNFCEAt": "",
+      "enableSefazOnline": false,
+      "enableSefazOnlineAt": "",
+      "automationICMS": false,
+      "automationICMSAt": "",
+      "enableCertificateA3": false,
+      "enableCertificateA3At": "",
+      "enableNFeEmitted": false,
+      "enableNFeEmittedAt": "",
+      "searchWithOfficeCertificate": false,
+      "searchWithOfficeCertificateAt": "",
+      "enableAutomaticCorrections": true,
+      "enableAutomaticCorrectionsAt": "13/11/2025 10:10:03",
+      "enableAutomaticCorrectionPisCofins": true,
+      "enableAutomaticCorrectionPisCofinsAt": "13/11/2025 10:10:03"
+    },
+    "enableImporterCompanyAt": "",
+    "accountingPlanConfig": []
+  },
+  "diferencas": [
+    "Tributação: '' → 'Lucro Presumido - Serviços'",
+    "IE: '' → '106469215'",
+    "IM: '' → '70596'",
+    "E-mail: '' → 'anapaulanobel1@gmail.com'"
+  ]
+}

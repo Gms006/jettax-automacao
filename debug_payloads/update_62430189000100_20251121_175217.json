@@ -1,0 +1,168 @@
+{
+  "client_id": "6914cad297f393f4e90fa014",
+  "cnpj": "62430189000100",
+  "razao_social": "EAR PREMIUM LTDA",
+  "payload": {
+    "id": "6914cad297f393f4e90fa014",
+    "name": "EAR PREMIUM LTDA",
+    "enable360": false,
+    "enableModuleERP": false,
+    "enableModulePrevention": false,
+    "enableModuleHubFederal": true,
+    "enableModuleHubNFSe": false,
+    "enableModuleHubNFSeOutCity": false,
+    "enableConvertOutSideCityAbrasf": false,
+    "enableConvertOutSideCityAbrasfAt": "",
+    "enableModuleHubNFSeIss": false,
+    "enableModuleDCTFWEB": false,
+    "enableModuleHubDas": false,
+    "enableImporterCompany": false,
+    "taxRegime": "62d9471420ba2a79cd31c162",
+    "taxRegimeCode": "LP",
+    "phone": "",
+    "whatsApp": "",
+    "municipalIntegration": {
+      "login": "79315534115",
+      "password": "793155",
+      "createISS": false,
+      "municipalRegistration": "127467",
+      "gissonlineLogin": "",
+      "gissonlinePassword": ""
+    },
+    "simpleNationalIntegration": {
+      "accessCode": "",
+      "documentResponsible": "",
+      "manualBilling": false,
+      "hasEmployyes": false,
+      "onlyCommercialBilling": false,
+      "typeRegime": [
+        {
+          "competence": "01/2025",
+          "code": 2,
+          "name": "Competência"
+        }
+      ]
+    },
+    "moduleFederalConfiguration": {
+      "downloadNFeWithAccountingCertificate": false,
+      "downloadPurchaseNFeInvoices": false,
+      "downloadCTeInvoices": false,
+      "downloadSalesNFeInvoices": false,
+      "downloadCFeInvoices": false,
+      "downloadCFeWithAccountingCertificate": false,
+      "enablePisCofinsAudit": false
+    },
+    "email": null,
+    "emails": [],
+    "document": "62.430.189/0001-00",
+    "address": {
+      "type": "AV",
+      "address": "AV BRASIL",
+      "number": 4108,
+      "zip": "75124-820",
+      "district": "SETOR SUL JAMIL MIGUEL I E II ETAPA",
+      "state": "GO",
+      "complement": "QUADRA23 LOTE 26",
+      "city": {
+        "ibgeCode": 5201108,
+        "name": "Anapolis"
+      }
+    },
+    "cnaes": [
+      {
+        "name": "Comércio a varejo de automóveis, camionetas e utilitários usados",
+        "code": 4511102,
+        "primary": true
+      },
+      {
+        "name": "Atividades de intermediação e agenciamento de serviços e negócios em geral, exceto imobiliários",
+        "code": 7490104,
+        "primary": false
+      }
+    ],
+    "status": 1,
+    "startCompetence": "11/2025",
+    "digitalCertificate": "https://jettax360.s3.us-west-2.amazonaws.com/offices/68b1e4d38c0ec913a50e4bd5/clients/6914cad297f393f4e90fa014/certificate.pfx",
+    "digitalCertificatePassword": "Eduardo@2025",
+    "digitalCertificateDate": "10/09/2026",
+    "digitalCertificateDocument": "62430189000100",
+    "legalNature": "206-2",
+    "stateRegistration": 203117743,
+    "openDate": "27/08/2025",
+    "createdAt": "12/11/2025",
+    "updatedAt": "12/11/2025",
+    "headquarter": "",
+    "efdReinf": {
+      "startDate": "",
+      "partnerId": "",
+      "partnerAdmin": "",
+      "phone": "",
+      "email": "",
+      "document": "",
+      "taxClassification": "",
+      "errorMessage": ""
+    },
+    "ecdOption": "",
+    "enableEfdReinf": false,
+    "enableEfdReinfAt": "",
+    "registrationStatus": "620d000954060f3cff779903",
+    "typeRegime": {
+      "name": "Competência",
+      "code": 2,
+      "competence": "01/2025"
+    },
+    "payroll": {
+      "eletronicPoint": null,
+      "fpas": "",
+      "rat": "",
+      "fap": 0.5,
+      "taxClassification": "",
+      "competence": ""
+    },
+    "erp": {
+      "nick": "",
+      "enableContmaticIntegration": false,
+      "enableContmaticIntegrationAt": "",
+      "contmaticIntegration": false,
+      "syncAt": ""
+    },
+    "enableModuleERPAt": "",
+    "enabledESocialAt": "",
+    "enableModuleHubFederalAt": "12/11/2025 14:58:42",
+    "enableModuleHubNFSeAt": "",
+    "enableModuleHubNFSeOutCityAt": "",
+    "enableModuleHubNFSeIssAt": "",
+    "enableModulePreventionAt": "",
+    "enable360At": "",
+    "enableModuleHubDasAt": "",
+    "enableModuleDCTFWEBAt": "",
+    "federalConfig": {
+      "enableCFE": false,
+      "enableCFEAt": "",
+      "enableNFCE": false,
+      "enableNFCEAt": "",
+      "enableSefazOnline": false,
+      "enableSefazOnlineAt": "",
+      "automationICMS": false,
+      "automationICMSAt": "",
+      "enableCertificateA3": false,
+      "enableCertificateA3At": "",
+      "enableNFeEmitted": true,
+      "enableNFeEmittedAt": "12/11/2025 14:58:42",
+      "searchWithOfficeCertificate": false,
+      "searchWithOfficeCertificateAt": "",
+      "enableAutomaticCorrections": true,
+      "enableAutomaticCorrectionsAt": "12/11/2025 14:58:42",
+      "enableAutomaticCorrectionPisCofins": true,
+      "enableAutomaticCorrectionPisCofinsAt": "12/11/2025 14:58:42"
+    },
+    "enableImporterCompanyAt": "",
+    "accountingPlanConfig": []
+  },
+  "diferencas": [
+    "Tributação: '' → 'Lucro Presumido - Comércio e Serviços'",
+    "IE: '' → '203117743'",
+    "IM: '' → '127467'",
+    "E-mail: '' → 'eduardoveiculosanapolis@gmail.com'"
+  ]
+}

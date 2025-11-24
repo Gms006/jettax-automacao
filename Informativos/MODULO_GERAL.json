@@ -1,0 +1,442 @@
+{
+  "modulo": "Geral",
+  "descricao": "Módulo de gestão geral do escritório: clientes, grupos, usuários, credenciais, contadores e configurações globais.",
+  "funcionalidades": [
+    {
+      "nome": "Gestão de Clientes",
+      "descricao": "CRUD completo de clientes, incluindo cadastro, atualização, importação em lote e gestão de módulos.",
+      "tipo_automacao": "API",
+      "fluxo_operacional": [
+        "Listar todos os clientes.",
+        "Consultar detalhes de um cliente.",
+        "Criar ou atualizar cliente.",
+        "Importar clientes via planilha Excel.",
+        "Ativar/desativar módulos para múltiplos clientes.",
+        "Alterar regime tributário."
+      ],
+      "detalhes_tecnicos": {
+        "endpoints_principais": [
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/clients",
+            "descricao": "Listar clientes (paginado)"
+          },
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/clients/all",
+            "descricao": "Listar todos os clientes (sem paginação)"
+          },
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/clients/{id}",
+            "descricao": "Detalhes de um cliente"
+          },
+          {
+            "metodo": "PUT",
+            "url": "https://api.jettax360.com.br/api/v1/clients/{id}",
+            "descricao": "Atualizar cliente"
+          },
+          {
+            "metodo": "POST",
+            "url": "https://api.jettax360.com.br/api/v1/clients/import/excel",
+            "descricao": "Importar clientes via Excel (base64)"
+          },
+          {
+            "metodo": "POST",
+            "url": "https://api.jettax360.com.br/api/v1/clients/update-modules/",
+            "descricao": "Ativar/desativar módulos em lote"
+          },
+          {
+            "metodo": "PUT",
+            "url": "https://api.jettax360.com.br/api/v1/clients/update-regime-type/{id}",
+            "descricao": "Alterar regime tributário"
+          },
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/clients/load/",
+            "descricao": "Carregar dados auxiliares para cadastro"
+          },
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/clients/branches/{id}",
+            "descricao": "Listar filiais de um cliente"
+          },
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/clients/search-invoices-ws/{id}",
+            "descricao": "Buscar notas via WebService"
+          }
+        ],
+        "payload_exemplo_update": {
+          "name": "Empresa LTDA",
+          "document": "00.000.000/0001-00",
+          "taxRegime": "60d53314200e556dc277ac20",
+          "address": {
+            "zip": "75000-000",
+            "address": "Rua Exemplo",
+            "number": "123"
+          }
+        }
+      }
+    },
+    {
+      "nome": "Grupos de Clientes (Clusters)",
+      "descricao": "Agrupar clientes para aplicação de configurações em lote.",
+      "tipo_automacao": "API",
+      "fluxo_operacional": [
+        "Listar grupos existentes.",
+        "Criar novo grupo.",
+        "Adicionar clientes a um grupo.",
+        "Excluir grupo."
+      ],
+      "detalhes_tecnicos": {
+        "endpoints_principais": [
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/clusters/",
+            "descricao": "Listar clusters"
+          },
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/clusters/{id}",
+            "descricao": "Detalhes de um cluster"
+          },
+          {
+            "metodo": "POST",
+            "url": "https://api.jettax360.com.br/api/v1/clusters/",
+            "descricao": "Criar cluster"
+          },
+          {
+            "metodo": "POST",
+            "url": "https://api.jettax360.com.br/api/v1/clusters/delete",
+            "descricao": "Excluir cluster"
+          },
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/clusters/clients",
+            "descricao": "Listar clientes disponíveis para vincular"
+          },
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/clusters/load",
+            "descricao": "Carregar dados para formulário"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "Gestão de Usuários",
+      "descricao": "Controle de acesso de usuários do escritório e clientes.",
+      "tipo_automacao": "API",
+      "fluxo_operacional": [
+        "Listar usuários.",
+        "Consultar detalhes de um usuário.",
+        "Criar ou atualizar usuário.",
+        "Definir permissões e departamentos.",
+        "Vincular clientes a usuários."
+      ],
+      "detalhes_tecnicos": {
+        "endpoints_principais": [
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/users",
+            "descricao": "Listar usuários"
+          },
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/users/{id}",
+            "descricao": "Detalhes de um usuário"
+          },
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/users/load",
+            "descricao": "Carregar roles, departamentos e clusters"
+          },
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/users/clients/get-to-link/{id}",
+            "descricao": "Listar clientes para vincular a usuário"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "Credenciais e Certificados Digitais",
+      "descricao": "Gestão centralizada de certificados A1/A3 e credenciais de acesso.",
+      "tipo_automacao": "API",
+      "fluxo_operacional": [
+        "Listar credenciais cadastradas.",
+        "Verificar validade de certificados.",
+        "Excluir certificado vencido.",
+        "Remover erros de credenciais."
+      ],
+      "detalhes_tecnicos": {
+        "endpoints_principais": [
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/offices/credentials",
+            "descricao": "Listar credenciais do escritório"
+          },
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/offices/credentials/load",
+            "descricao": "Carregar dados de credenciais"
+          },
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/offices/has-certificate",
+            "descricao": "Verificar se escritório possui certificado"
+          },
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/offices/check-credentials",
+            "descricao": "Verificar status das credenciais"
+          },
+          {
+            "metodo": "DELETE",
+            "url": "https://api.jettax360.com.br/api/v1/clients/delete-certificate/{id}",
+            "descricao": "Excluir certificado de um cliente"
+          },
+          {
+            "metodo": "POST",
+            "url": "https://api.jettax360.com.br/api/v1/clients/remove-credential-error",
+            "descricao": "Remover erros de credencial"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "Contadores (Escritório)",
+      "descricao": "Configurações do escritório contábil.",
+      "tipo_automacao": "API",
+      "fluxo_operacional": [
+        "Consultar dados do escritório.",
+        "Atualizar informações (nome, email, endereço).",
+        "Verificar plano contratado.",
+        "Consultar avisos PIOR (Pendências Importantes)."
+      ],
+      "detalhes_tecnicos": {
+        "endpoints_principais": [
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/offices",
+            "descricao": "Dados completos do escritório"
+          },
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/offices/load",
+            "descricao": "Carregar dados auxiliares"
+          },
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/offices/my-plan/",
+            "descricao": "Plano contratado (consumo por módulo)"
+          },
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/offices/pior-notice",
+            "descricao": "Avisos de pendências importantes"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "Configurações Globais",
+      "descricao": "Parametrizações gerais do sistema.",
+      "tipo_automacao": "API",
+      "fluxo_operacional": [
+        "Carregar dados globais (regimes, ERPs, tipos de endereço).",
+        "Buscar endereço por CEP.",
+        "Consultar dados de empresa por CNPJ.",
+        "Obter arquivo S3."
+      ],
+      "detalhes_tecnicos": {
+        "endpoints_principais": [
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/utils/load-global-data",
+            "descricao": "Carregar dados globais do sistema"
+          },
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/utils/search-address/{cep}",
+            "descricao": "Buscar endereço por CEP"
+          },
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/utils/search-document/{cnpj}",
+            "descricao": "Consultar dados da Receita Federal"
+          },
+          {
+            "metodo": "POST",
+            "url": "https://api.jettax360.com.br/api/v1/utils/get-file/",
+            "descricao": "Obter arquivo do S3"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "Tabela de Alertas (Auditorias)",
+      "descricao": "Consultar tipos de alertas e auditorias disponíveis no sistema.",
+      "tipo_automacao": "API",
+      "fluxo_operacional": [
+        "Listar todos os tipos de auditoria.",
+        "Consultar lista simplificada de auditorias."
+      ],
+      "detalhes_tecnicos": {
+        "endpoints_principais": [
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/fiscal/audits",
+            "descricao": "Listar tipos de auditoria disponíveis"
+          },
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/fiscal/audits/list-audits",
+            "descricao": "Lista simplificada de auditorias"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "Download Jettax A3",
+      "descricao": "Download do aplicativo Jettax A3 para certificados.",
+      "tipo_automacao": "INFORMATIVO",
+      "fluxo_operacional": [
+        "Fornecer link de download do aplicativo."
+      ],
+      "detalhes_tecnicos": {
+        "informacao": "Funcionalidade informativa sem endpoint específico de API."
+      }
+    }
+  ],
+  "procedimentos": [
+    {
+      "id": "PROC-GERAL-001",
+      "nome": "Cadastrar Novo Cliente",
+      "objetivo": "Criar registro completo de um cliente no sistema.",
+      "passo_a_passo": [
+        {
+          "passo": 1,
+          "acao": "Carregar Dados Auxiliares",
+          "endpoint": "GET https://api.jettax360.com.br/api/v1/clients/load/",
+          "instrucao_ia": "Obtenha os ObjectIds dos regimes tributários, tipos de endereço, FPAs e demais dados de referência."
+        },
+        {
+          "passo": 2,
+          "acao": "Consultar CNPJ na Receita Federal (Opcional)",
+          "endpoint": "GET https://api.jettax360.com.br/api/v1/utils/search-document/{cnpj}",
+          "instrucao_ia": "Pré-preencha dados cadastrais (nome, endereço, CNAEs) automaticamente."
+        },
+        {
+          "passo": 3,
+          "acao": "Buscar Endereço por CEP (Opcional)",
+          "endpoint": "GET https://api.jettax360.com.br/api/v1/utils/search-address/{cep}",
+          "instrucao_ia": "Complete os campos de endereço."
+        },
+        {
+          "passo": 4,
+          "acao": "Criar Cliente (via UI ou endpoint POST não mapeado)",
+          "instrucao_ia": "Use PUT /clients/{id} para atualização. Endpoint de criação não está explícito no catálogo."
+        }
+      ]
+    },
+    {
+      "id": "PROC-GERAL-002",
+      "nome": "Ativar Módulo Federal para Múltiplos Clientes",
+      "objetivo": "Habilitar o módulo Federal em lote para um grupo de clientes.",
+      "passo_a_passo": [
+        {
+          "passo": 1,
+          "acao": "Definir Clientes Alvo",
+          "logica_local": "Crie um array com os IDs dos clientes ou use 'filterType': 'all' para todos."
+        },
+        {
+          "passo": 2,
+          "acao": "Ativar Módulo",
+          "endpoint": "POST https://api.jettax360.com.br/api/v1/clients/update-modules/",
+          "instrucao_ia": "Payload: { 'filterType': 'specific', 'ids': [ids], 'module': 'enableModuleHubFederal', 'statusModule': true }"
+        }
+      ]
+    },
+    {
+      "id": "PROC-GERAL-003",
+      "nome": "Criar Grupo de Clientes",
+      "objetivo": "Organizar clientes em cluster para gestão em lote.",
+      "passo_a_passo": [
+        {
+          "passo": 1,
+          "acao": "Listar Clientes Disponíveis",
+          "endpoint": "GET https://api.jettax360.com.br/api/v1/clusters/clients",
+          "instrucao_ia": "Selecione os clientes que farão parte do grupo."
+        },
+        {
+          "passo": 2,
+          "acao": "Criar Cluster",
+          "endpoint": "POST https://api.jettax360.com.br/api/v1/clusters/",
+          "instrucao_ia": "Payload: { 'name': 'Grupo Varejo', 'clients': [ids] }"
+        }
+      ]
+    },
+    {
+      "id": "PROC-GERAL-004",
+      "nome": "Verificar Certificados Vencidos",
+      "objetivo": "Identificar certificados digitais que precisam ser renovados.",
+      "passo_a_passo": [
+        {
+          "passo": 1,
+          "acao": "Listar Credenciais",
+          "endpoint": "GET https://api.jettax360.com.br/api/v1/offices/credentials",
+          "instrucao_ia": "Filtre por 'isExpired': true ou 'expiring': true."
+        },
+        {
+          "passo": 2,
+          "acao": "Notificar Responsável",
+          "logica_local": "Gere alerta com a lista de certificados a vencer e suas datas de validade."
+        }
+      ]
+    },
+    {
+      "id": "PROC-GERAL-005",
+      "nome": "Importar Clientes via Excel",
+      "objetivo": "Cadastrar múltiplos clientes de uma vez usando planilha.",
+      "passo_a_passo": [
+        {
+          "passo": 1,
+          "acao": "Preparar Planilha",
+          "logica_local": "Preencha Excel com colunas: CNPJ, Nome, Regime Tributário, etc."
+        },
+        {
+          "passo": 2,
+          "acao": "Converter para Base64",
+          "logica_local": "Leia o arquivo Excel e converta para string base64."
+        },
+        {
+          "passo": 3,
+          "acao": "Enviar Importação",
+          "endpoint": "POST https://api.jettax360.com.br/api/v1/clients/import/excel",
+          "instrucao_ia": "Payload: { 'source': '<base64_do_excel>' }"
+        }
+      ]
+    },
+    {
+      "id": "PROC-GERAL-006",
+      "nome": "Alterar Regime Tributário de um Cliente",
+      "objetivo": "Migrar cliente entre Simples Nacional, Lucro Presumido ou Lucro Real.",
+      "passo_a_passo": [
+        {
+          "passo": 1,
+          "acao": "Obter ObjectId do Novo Regime",
+          "endpoint": "GET https://api.jettax360.com.br/api/v1/offices/load",
+          "instrucao_ia": "No campo 'taxRegime', encontre o '_id' correspondente ao novo regime."
+        },
+        {
+          "passo": 2,
+          "acao": "Atualizar Cliente",
+          "endpoint": "PUT https://api.jettax360.com.br/api/v1/clients/update-regime-type/{id}",
+          "instrucao_ia": "Envie payload vazio [] (o ID do regime é definido em outra chamada ou na URL)."
+        }
+      ]
+    }
+  ]
+}

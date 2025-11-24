@@ -1,0 +1,300 @@
+{
+  "categoria": "Configurações",
+  "modulo": "Federal",
+  "descricao": "Configurações e parametrizações do módulo Federal: agendamentos, categorias, regras de CFOP, PIS/COFINS, CEST e MVA.",
+  "funcionalidades": [
+    {
+      "nome": "Agendamentos Automáticos",
+      "descricao": "Configurar rotinas recorrentes para downloads e auditorias.",
+      "tipo_automacao": "API",
+      "fluxo_operacional": [
+        "Criar novo agendamento.",
+        "Definir tipo (Download NF-e, Auditoria ST, etc).",
+        "Configurar frequência e clientes.",
+        "Ativar/desativar agendamento."
+      ],
+      "detalhes_tecnicos": {
+        "endpoints_principais": [
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/hub/schedule/list",
+            "descricao": "Listar agendamentos"
+          },
+          {
+            "metodo": "POST",
+            "url": "https://api.jettax360.com.br/api/v1/hub/schedule",
+            "descricao": "Criar agendamento"
+          },
+          {
+            "metodo": "PUT",
+            "url": "https://api.jettax360.com.br/api/v1/hub/schedule/{id}",
+            "descricao": "Atualizar agendamento"
+          },
+          {
+            "metodo": "DELETE",
+            "url": "https://api.jettax360.com.br/api/v1/hub/schedule/{id}",
+            "descricao": "Excluir agendamento"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "Categorias de Produtos",
+      "descricao": "Criar categorias para classificação de produtos e aplicação de regras fiscais.",
+      "tipo_automacao": "API",
+      "fluxo_operacional": [
+        "Listar categorias existentes.",
+        "Criar nova categoria.",
+        "Definir propriedades fiscais (destino do item, redução de BC, anexo SN).",
+        "Atualizar ou excluir categoria."
+      ],
+      "detalhes_tecnicos": {
+        "endpoints_principais": [
+          {
+            "metodo": "GET",
+            "url": "https://api-federal.jettax360.com.br/api/v1/commerce/categories/list",
+            "descricao": "Listar categorias"
+          },
+          {
+            "metodo": "GET",
+            "url": "https://api-federal.jettax360.com.br/api/v1/commerce/categories/{id}",
+            "descricao": "Detalhes de uma categoria"
+          },
+          {
+            "metodo": "PUT",
+            "url": "https://api-federal.jettax360.com.br/api/v1/commerce/categories/{id}",
+            "descricao": "Atualizar categoria"
+          },
+          {
+            "metodo": "DELETE",
+            "url": "https://api-federal.jettax360.com.br/api/v1/commerce/categories/{id}",
+            "descricao": "Excluir categoria"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "Regras de Categorização Automática",
+      "descricao": "Configurar regras para aplicar categorias automaticamente em notas fiscais.",
+      "tipo_automacao": "API",
+      "fluxo_operacional": [
+        "Criar regra de categorização.",
+        "Definir critérios (CNPJ emissor, CFOP, NCM, etc).",
+        "Vincular categoria.",
+        "Aplicar aos clientes."
+      ],
+      "detalhes_tecnicos": {
+        "endpoints_principais": [
+          {
+            "metodo": "GET",
+            "url": "https://api-federal.jettax360.com.br/api/v1/commerce/categories/rule/list",
+            "descricao": "Listar regras de categorização"
+          },
+          {
+            "metodo": "GET",
+            "url": "https://api-federal.jettax360.com.br/api/v1/commerce/categories/rule/loadData",
+            "descricao": "Carregar dados para formulário"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "Regras de CFOP",
+      "descricao": "Configurar tributação por Código Fiscal de Operações e Prestações.",
+      "tipo_automacao": "API",
+      "fluxo_operacional": [
+        "Listar CFOPs cadastrados.",
+        "Consultar detalhes de um CFOP.",
+        "Atualizar regras fiscais (PIS, COFINS, ST, DIFAL-SN, DAS)."
+      ],
+      "detalhes_tecnicos": {
+        "endpoints_principais": [
+          {
+            "metodo": "GET",
+            "url": "https://api-federal.jettax360.com.br/api/v1/commerce/cfops-rules/list",
+            "descricao": "Listar CFOPs"
+          },
+          {
+            "metodo": "GET",
+            "url": "https://api-federal.jettax360.com.br/api/v1/commerce/cfops-rules/{id}",
+            "descricao": "Detalhes de um CFOP"
+          },
+          {
+            "metodo": "POST",
+            "url": "https://api-federal.jettax360.com.br/api/v1/commerce/cfops-rules/create-or-update",
+            "descricao": "Criar ou atualizar regra de CFOP"
+          }
+        ],
+        "payload_exemplo": {
+          "code": 1101,
+          "difalSN": "2",
+          "anticipationIcmsSt": "1",
+          "pis": "1",
+          "cofins": "1",
+          "dasTaxation": "2"
+        }
+      }
+    },
+    {
+      "nome": "Regras de PIS/COFINS",
+      "descricao": "Configurar alíquotas específicas de PIS e COFINS por produto ou fornecedor.",
+      "tipo_automacao": "API",
+      "fluxo_operacional": [
+        "Listar regras de PIS/COFINS.",
+        "Criar nova regra.",
+        "Definir critérios (NCM, código do produto, fornecedor).",
+        "Configurar CST e alíquotas.",
+        "Vincular clientes."
+      ],
+      "detalhes_tecnicos": {
+        "endpoints_principais": [
+          {
+            "metodo": "GET",
+            "url": "https://api-federal.jettax360.com.br/api/v1/commerce/hub/pis-cofins-rules/list/",
+            "descricao": "Listar regras de PIS/COFINS"
+          },
+          {
+            "metodo": "GET",
+            "url": "https://api-federal.jettax360.com.br/api/v1/commerce/hub/pis-cofins-rules/details/{id}",
+            "descricao": "Detalhes de uma regra"
+          },
+          {
+            "metodo": "PUT",
+            "url": "https://api-federal.jettax360.com.br/api/v1/commerce/hub/pis-cofins-rules/update/{id}",
+            "descricao": "Atualizar regra"
+          },
+          {
+            "metodo": "DELETE",
+            "url": "https://api-federal.jettax360.com.br/api/v1/commerce/hub/pis-cofins-rules/delete/",
+            "descricao": "Excluir regra"
+          },
+          {
+            "metodo": "POST",
+            "url": "https://api-federal.jettax360.com.br/api/v1/commerce/hub/pis-cofins-rules/link-clients/{id}",
+            "descricao": "Vincular clientes à regra"
+          },
+          {
+            "metodo": "POST",
+            "url": "https://api-federal.jettax360.com.br/api/v1/commerce/hub/pis-cofins-rules/update-by-file",
+            "descricao": "Atualizar regras via planilha Excel"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "Regras de CEST",
+      "descricao": "Configurar Código Especificador da Substituição Tributária.",
+      "tipo_automacao": "API",
+      "fluxo_operacional": [
+        "Listar regras de CEST."
+      ],
+      "detalhes_tecnicos": {
+        "endpoints_principais": [
+          {
+            "metodo": "GET",
+            "url": "https://api-federal.jettax360.com.br/api/v1/commerce/cest-rules/list",
+            "descricao": "Listar regras de CEST"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "Regras de MVA (Margem de Valor Agregado)",
+      "descricao": "Configurar MVA para cálculo de ICMS-ST.",
+      "tipo_automacao": "API",
+      "fluxo_operacional": [
+        "Listar regras de MVA."
+      ],
+      "detalhes_tecnicos": {
+        "endpoints_principais": [
+          {
+            "metodo": "GET",
+            "url": "https://api-federal.jettax360.com.br/api/v1/commerce/mva-icms/list",
+            "descricao": "Listar regras de MVA"
+          }
+        ]
+      }
+    }
+  ],
+  "procedimentos": [
+    {
+      "id": "PROC-FED-CFG-001",
+      "nome": "Criar Categoria de Produto",
+      "objetivo": "Classificar produtos para aplicação de regras fiscais específicas.",
+      "passo_a_passo": [
+        {
+          "passo": 1,
+          "acao": "Definir Propriedades",
+          "logica_local": "Nome da categoria, cor, destino (Revenda, Uso e Consumo, Ativo), redução de BC, anexo do Simples Nacional."
+        },
+        {
+          "passo": 2,
+          "acao": "Criar Categoria (via UI ou API não mapeada)",
+          "instrucao_ia": "O endpoint de criação não está explícito no catálogo. Use PUT /categories/{id} para atualização."
+        }
+      ]
+    },
+    {
+      "id": "PROC-FED-CFG-002",
+      "nome": "Configurar Regra de CFOP",
+      "objetivo": "Definir como um CFOP deve ser tratado fiscalmente.",
+      "passo_a_passo": [
+        {
+          "passo": 1,
+          "acao": "Consultar CFOP Atual",
+          "endpoint": "GET https://api-federal.jettax360.com.br/api/v1/commerce/cfops-rules/{id}",
+          "instrucao_ia": "Verifique as configurações atuais do CFOP."
+        },
+        {
+          "passo": 2,
+          "acao": "Atualizar Regra",
+          "endpoint": "POST https://api-federal.jettax360.com.br/api/v1/commerce/cfops-rules/create-or-update",
+          "instrucao_ia": "Payload: { 'code': 5102, 'pis': '1', 'cofins': '1', 'anticipationIcmsSt': '1' }"
+        }
+      ]
+    },
+    {
+      "id": "PROC-FED-CFG-003",
+      "nome": "Criar Regra de PIS/COFINS por NCM",
+      "objetivo": "Aplicar alíquotas específicas para um NCM específico.",
+      "passo_a_passo": [
+        {
+          "passo": 1,
+          "acao": "Verificar Regras Existentes",
+          "endpoint": "GET https://api-federal.jettax360.com.br/api/v1/commerce/hub/pis-cofins-rules/list/",
+          "instrucao_ia": "Evite duplicidade."
+        },
+        {
+          "passo": 2,
+          "acao": "Criar Regra (via UI ou endpoint não mapeado)",
+          "instrucao_ia": "Use PUT para atualizar regra existente."
+        },
+        {
+          "passo": 3,
+          "acao": "Vincular Clientes",
+          "endpoint": "POST https://api-federal.jettax360.com.br/api/v1/commerce/hub/pis-cofins-rules/link-clients/{id}",
+          "instrucao_ia": "Payload: { 'clients': [ids], 'action': true }"
+        }
+      ]
+    },
+    {
+      "id": "PROC-FED-CFG-004",
+      "nome": "Criar Agendamento de Download Mensal",
+      "objetivo": "Baixar automaticamente NF-e todo dia 5 de cada mês.",
+      "passo_a_passo": [
+        {
+          "passo": 1,
+          "acao": "Criar Agendamento",
+          "endpoint": "POST https://api.jettax360.com.br/api/v1/hub/schedule",
+          "instrucao_ia": "Payload: { 'type': '3', 'name': 'Download NF-e Mensal', 'competenceType': '1', 'day': 5, 'filters': { 'invoiceDocumentType': '3' } }"
+        },
+        {
+          "passo": 2,
+          "acao": "Vincular Clientes",
+          "endpoint": "POST https://api.jettax360.com.br/api/v1/hub/schedule/clients-linked/{id}",
+          "instrucao_ia": "Envie array de IDs dos clientes."
+        }
+      ]
+    }
+  ]
+}

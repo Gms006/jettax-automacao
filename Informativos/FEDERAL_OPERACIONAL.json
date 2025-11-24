@@ -1,0 +1,284 @@
+{
+  "categoria": "Operacional",
+  "modulo": "Federal",
+  "descricao": "Operações diárias do módulo Federal: gestão de notas fiscais eletrônicas (NF-e, NFCe, CT-e), apurações de impostos federais e auditorias.",
+  "funcionalidades": [
+    {
+      "nome": "Dashboard Federal",
+      "descricao": "Visão consolidada das operações fiscais federais com indicadores principais.",
+      "tipo_automacao": "API",
+      "fluxo_operacional": [
+        "Acessar dashboard federal.",
+        "Visualizar totalizadores de NF-e, NFCe e CT-e.",
+        "Verificar top clientes e fornecedores.",
+        "Analisar indicadores de PIS/COFINS."
+      ],
+      "detalhes_tecnicos": {
+        "endpoints_principais": [
+          {
+            "metodo": "GET",
+            "url": "https://api-federal.jettax360.com.br/api/v1/commerce/hub/federal/dashboard-totalizers",
+            "descricao": "Totalizadores gerais do Federal"
+          },
+          {
+            "metodo": "GET",
+            "url": "https://api-federal.jettax360.com.br/api/v1/commerce/hub/federal/dashboard-top-clients",
+            "descricao": "Top clientes (maiores compradores)"
+          },
+          {
+            "metodo": "GET",
+            "url": "https://api-federal.jettax360.com.br/api/v1/commerce/hub/federal/dashboard-top-sellers",
+            "descricao": "Top fornecedores (maiores vendedores)"
+          },
+          {
+            "metodo": "GET",
+            "url": "https://api-federal.jettax360.com.br/api/v1/commerce/hub/federal/dashboard-products",
+            "descricao": "Produtos mais movimentados"
+          },
+          {
+            "metodo": "GET",
+            "url": "https://api-federal.jettax360.com.br/api/v1/commerce/hub/federal/dashboard-pis-cofins",
+            "descricao": "Indicadores de PIS/COFINS"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "Gestão de NF-e (Notas Fiscais Eletrônicas)",
+      "descricao": "Consulta e gestão de notas fiscais de mercadorias (Emitidas e Recebidas).",
+      "tipo_automacao": "API",
+      "fluxo_operacional": [
+        "Listar NF-e emitidas ou recebidas.",
+        "Filtrar por período, cliente, fornecedor.",
+        "Consultar detalhes de uma nota específica.",
+        "Manifestar destinatário (Ciência, Confirmação, Desconhecimento, Não Realizada)."
+      ],
+      "detalhes_tecnicos": {
+        "endpoints_principais": [
+          {
+            "metodo": "GET",
+            "url": "https://api-federal.jettax360.com.br/api/v1/commerce/nfes",
+            "descricao": "Listar NF-e (com filtros)"
+          },
+          {
+            "metodo": "GET",
+            "url": "https://api-federal.jettax360.com.br/api/v1/commerce/nfes/{id}",
+            "descricao": "Detalhes de uma NF-e específica"
+          },
+          {
+            "metodo": "POST",
+            "url": "https://api-federal.jettax360.com.br/api/v1/commerce/nfes/manifest",
+            "descricao": "Manifestar destinatário"
+          }
+        ],
+        "parametros_consulta": {
+          "page": "Número da página",
+          "per_page": "Itens por página",
+          "clientId": "ID do cliente",
+          "invoiceType": "1=Recebida, 2=Emitida",
+          "startDate": "Data inicial",
+          "endDate": "Data final",
+          "status": "Status da nota"
+        }
+      }
+    },
+    {
+      "nome": "Gestão de NFCe (Nota Fiscal ao Consumidor Eletrônica)",
+      "descricao": "Consulta de notas fiscais de varejo emitidas.",
+      "tipo_automacao": "API",
+      "fluxo_operacional": [
+        "Listar NFCe emitidas.",
+        "Filtrar por período e cliente."
+      ],
+      "detalhes_tecnicos": {
+        "endpoints_principais": [
+          {
+            "metodo": "GET",
+            "url": "https://api-federal.jettax360.com.br/api/v1/commerce/nfces",
+            "descricao": "Listar NFCe"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "Gestão de CT-e (Conhecimento de Transporte Eletrônico)",
+      "descricao": "Consulta de documentos de transporte.",
+      "tipo_automacao": "API",
+      "fluxo_operacional": [
+        "Listar CT-e recebidos.",
+        "Consultar detalhes de frete.",
+        "Verificar histórico de manifestação."
+      ],
+      "detalhes_tecnicos": {
+        "endpoints_principais": [
+          {
+            "metodo": "GET",
+            "url": "https://api-federal.jettax360.com.br/api/v1/commerce/ctes",
+            "descricao": "Listar CT-e"
+          },
+          {
+            "metodo": "GET",
+            "url": "https://api-federal.jettax360.com.br/api/v1/commerce/ctes/{id}",
+            "descricao": "Detalhes de um CT-e"
+          },
+          {
+            "metodo": "GET",
+            "url": "https://api-federal.jettax360.com.br/api/v1/commerce/ctes/manifest-history/{id}",
+            "descricao": "Histórico de manifestação"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "Apurações de Impostos Federais",
+      "descricao": "Consulta de apurações calculadas (PIS, COFINS, ICMS-ST, DIFAL-SN).",
+      "tipo_automacao": "API",
+      "fluxo_operacional": [
+        "Verificar resumos fiscais mensais.",
+        "Consultar detalhes de IRRF.",
+        "Acessar totalizadores de apuração."
+      ],
+      "detalhes_tecnicos": {
+        "endpoints_principais": [
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/fiscal/summaries",
+            "descricao": "Resumos fiscais (mensais)"
+          },
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/fiscal/summaries/irrf/details",
+            "descricao": "Detalhes de IRRF"
+          },
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/fiscal/summaries/irrf/totalizator/{id}",
+            "descricao": "Totalizadores de IRRF"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "Downloads de Documentos Fiscais",
+      "descricao": "Baixar XMLs e PDFs de NF-e, NFCe e CT-e.",
+      "tipo_automacao": "API",
+      "fluxo_operacional": [
+        "Listar downloads anteriores.",
+        "Solicitar novo pacote de download.",
+        "Configurar organizador de arquivos (estrutura de pastas).",
+        "Baixar arquivo ZIP gerado."
+      ],
+      "detalhes_tecnicos": {
+        "endpoints_principais": [
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/hub/download/list",
+            "descricao": "Histórico de downloads"
+          },
+          {
+            "metodo": "POST",
+            "url": "https://api.jettax360.com.br/api/v1/hub/download",
+            "descricao": "Solicitar download de documentos"
+          },
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/hub/download/loadData",
+            "descricao": "Carregar configurações de download"
+          }
+        ],
+        "payload_exemplo": {
+          "type": "3",
+          "clients": ["clientId1"],
+          "filters": {
+            "invoiceType": "2",
+            "startDate": "2025-10-01 00:00:00",
+            "endDate": "2025-10-31 23:59:59",
+            "invoiceDocumentType": "3"
+          },
+          "erpOrganizerConfigType": "0"
+        }
+      }
+    },
+    {
+      "nome": "Importação de Documentos",
+      "descricao": "Importar XMLs de notas fiscais para o sistema.",
+      "tipo_automacao": "API",
+      "fluxo_operacional": [
+        "Enviar arquivo XML ou ZIP.",
+        "Monitorar status da importação.",
+        "Verificar processamento."
+      ],
+      "detalhes_tecnicos": {
+        "endpoints_principais": [
+          {
+            "metodo": "GET",
+            "url": "https://api-federal.jettax360.com.br/api/v1/commerce/import/list",
+            "descricao": "Listar importações"
+          },
+          {
+            "metodo": "POST",
+            "url": "https://api-federal.jettax360.com.br/api/v1/commerce/import",
+            "descricao": "Importar arquivo (XML ou ZIP em base64)"
+          }
+        ]
+      }
+    }
+  ],
+  "procedimentos": [
+    {
+      "id": "PROC-FED-OP-001",
+      "nome": "Consultar NF-e de um Cliente",
+      "objetivo": "Listar todas as notas fiscais eletrônicas (emitidas ou recebidas) de um cliente.",
+      "passo_a_passo": [
+        {
+          "passo": 1,
+          "acao": "Obter ID do Cliente",
+          "endpoint": "GET https://api.jettax360.com.br/api/v1/clients/all",
+          "instrucao_ia": "Encontre o cliente pelo nome ou documento. Extraia o '_id'."
+        },
+        {
+          "passo": 2,
+          "acao": "Listar NF-e",
+          "endpoint": "GET https://api-federal.jettax360.com.br/api/v1/commerce/nfes?clientId={id}&invoiceType=2",
+          "instrucao_ia": "invoiceType=2 para emitidas, =1 para recebidas. Adicione &startDate e &endDate para filtrar período."
+        }
+      ]
+    },
+    {
+      "id": "PROC-FED-OP-002",
+      "nome": "Manifestar Destinatário",
+      "objetivo": "Confirmar ou desconhecer recebimento de NF-e.",
+      "passo_a_passo": [
+        {
+          "passo": 1,
+          "acao": "Identificar a Nota",
+          "logica_local": "Obtenha o ID ou chave de acesso da NF-e."
+        },
+        {
+          "passo": 2,
+          "acao": "Enviar Manifestação",
+          "endpoint": "POST https://api-federal.jettax360.com.br/api/v1/commerce/nfes/manifest",
+          "instrucao_ia": "Payload: { 'invoiceId': 'xxx', 'manifestType': '210210' }. Tipos: 210200=Ciência, 210210=Confirmação, 210220=Desconhecimento, 210240=Não Realizada."
+        }
+      ]
+    },
+    {
+      "id": "PROC-FED-OP-003",
+      "nome": "Importar XML de Notas",
+      "objetivo": "Carregar XMLs de NF-e no sistema para processamento fiscal.",
+      "passo_a_passo": [
+        {
+          "passo": 1,
+          "acao": "Preparar Arquivo",
+          "logica_local": "Converta o XML ou ZIP para base64."
+        },
+        {
+          "passo": 2,
+          "acao": "Enviar Importação",
+          "endpoint": "POST https://api-federal.jettax360.com.br/api/v1/commerce/import",
+          "instrucao_ia": "Payload: { 'type': '55', 'file': '<base64>', 'fileName': 'notas.zip', 'extension': 'zip', 'typeFile': 1 }"
+        }
+      ]
+    }
+  ]
+}

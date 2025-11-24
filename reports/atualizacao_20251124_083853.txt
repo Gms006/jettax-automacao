@@ -1,0 +1,66 @@
+RELATÓRIO DE ATUALIZAÇÃO
+============================================================
+
+Data: 24/11/2025 08:38:53
+
+Total: 10
+✓ Atualizados: 3
+= Sem alteração: 0
+⚠ Não cadastrados: 0
+✗ Erros: 7
+
+============================================================
+DETALHES
+============================================================
+
+46149398000123 - 3TB PRODUCOES ARTISTICAS LTDA
+  Status: ✓ OK
+  Mensagem: Atualizado com sucesso (3 campos alterados)
+  Diferenças:
+    - Tributação: '' → 'Simples Nacional - Serviços'
+    - IM: '' → '103416'
+    - E-mail: '' → '3tbproducoesartisticasltda@gmail.com'
+
+29413500000137 - A A DE MATOS RESENDE - SUPERMERCADO SANTO ANTONIO
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68c01f0235d0621e88004e62
+
+06936057000183 - A C MELO LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68c02011d4e6c07bf905c083
+
+37097323000155 - A K STORE LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf617a7fdbce02b90740f2
+
+24415962000170 - A S OLIVEIRA ENGENHARIA LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf61b94bfe0a0de7000ac5
+
+35067703000111 - A2 SOLUCOES E PARTICIPACOES LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf61fbb60b284a41030892
+
+19163109000178 - AC SOARES CONSULTORIA E DESENVOLVIMENTO EMPRESARIAL LTDA
+  Status: ✓ OK
+  Mensagem: Atualizado com sucesso (3 campos alterados)
+  Diferenças:
+    - Tributação: '' → 'Simples Nacional - Serviços'
+    - IM: '' → '8550882'
+    - E-mail: '' → 'adaocsoares@gmail.com'
+
+54131050000137 - ACARTONAPOLIS PRESTADORA DE SERVICOS LTDA
+  Status: ✓ OK
+  Mensagem: Atualizado com sucesso (2 campos alterados)
+  Diferenças:
+    - Tributação: '' → 'Simples Nacional - Serviços'
+    - IM: '' → '113834'
+
+22633997000150 - ADAHYL CHAVEIRO ADVOGADOS ASSOCIADOS
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf62b5549f36ee110e1639
+
+37365154000197 - AGROCERRADO RURAL PROJETOS LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf62f406b13d5fd8014bc3
+

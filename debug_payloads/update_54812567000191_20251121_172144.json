@@ -1,0 +1,192 @@
+{
+  "client_id": "691b8d8ec0681799a8008f42",
+  "cnpj": "54812567000191",
+  "razao_social": "EMPORIO RESTAURANTE BICA DA AGUA LTDA",
+  "payload": {
+    "id": "691b8d8ec0681799a8008f42",
+    "name": "EMPORIO RESTAURANTE BICA DA AGUA LTDA",
+    "enable360": false,
+    "enableModuleERP": false,
+    "enableModulePrevention": false,
+    "enableModuleHubFederal": true,
+    "enableModuleHubNFSe": false,
+    "enableModuleHubNFSeOutCity": false,
+    "enableConvertOutSideCityAbrasf": false,
+    "enableConvertOutSideCityAbrasfAt": "",
+    "enableModuleHubNFSeIss": false,
+    "enableModuleDCTFWEB": false,
+    "enableModuleHubDas": false,
+    "enableImporterCompany": false,
+    "taxRegime": "60d53314200e556dc277ac20",
+    "taxRegimeCode": "SN",
+    "phone": "",
+    "whatsApp": "",
+    "municipalIntegration": {
+      "login": "",
+      "password": "",
+      "createISS": false,
+      "municipalRegistration": "124513",
+      "gissonlineLogin": "",
+      "gissonlinePassword": ""
+    },
+    "simpleNationalIntegration": {
+      "accessCode": "",
+      "documentResponsible": "",
+      "manualBilling": false,
+      "hasEmployyes": false,
+      "onlyCommercialBilling": false,
+      "typeRegime": [
+        {
+          "competence": "11/2025",
+          "code": 2,
+          "name": "Competência"
+        }
+      ]
+    },
+    "moduleFederalConfiguration": {
+      "downloadNFeWithAccountingCertificate": false,
+      "downloadPurchaseNFeInvoices": false,
+      "downloadCTeInvoices": false,
+      "downloadSalesNFeInvoices": false,
+      "downloadCFeInvoices": false,
+      "downloadCFeWithAccountingCertificate": false,
+      "enablePisCofinsAudit": false
+    },
+    "email": null,
+    "emails": [],
+    "document": "54.812.567/0001-91",
+    "address": {
+      "type": "R",
+      "address": "ROD BR 414 SITIO SAO LUCAS",
+      "number": 0,
+      "zip": "75149-899",
+      "district": "AREA RURAL DE ANAPOLIS",
+      "state": "GO",
+      "complement": "KM 14 A DIREITA",
+      "city": {
+        "ibgeCode": 5201108,
+        "name": "Anapolis"
+      }
+    },
+    "cnaes": [
+      {
+        "name": "Fabricação de alimentos e pratos prontos",
+        "code": 1096100,
+        "primary": false
+      },
+      {
+        "name": "Comércio varejista de bebidas",
+        "code": 4723700,
+        "primary": false
+      },
+      {
+        "name": "Restaurantes e similares",
+        "code": 5611201,
+        "primary": false
+      },
+      {
+        "name": "Lanchonetes, casas de chá, de sucos e similares",
+        "code": 5611203,
+        "primary": false
+      },
+      {
+        "name": "Fornecimento de alimentos preparados preponderantemente para empresas",
+        "code": 5620101,
+        "primary": false
+      },
+      {
+        "name": "Fornecimento de alimentos preparados preponderantemente para consumo domiciliar",
+        "code": 5620104,
+        "primary": false
+      },
+      {
+        "name": "Bares e outros estabelecimentos especializados em servir bebidas, sem entretenimento",
+        "code": 5611204,
+        "primary": true
+      }
+    ],
+    "status": 1,
+    "startCompetence": "11/2025",
+    "digitalCertificate": "https://jettax360.s3.us-west-2.amazonaws.com/offices/68b1e4d38c0ec913a50e4bd5/clients/691b8d8ec0681799a8008f42/certificate.pfx",
+    "digitalCertificatePassword": "Eduarda@2025",
+    "digitalCertificateDate": "01/08/2026",
+    "digitalCertificateDocument": "54812567000191",
+    "legalNature": "206-2",
+    "stateRegistration": 9480525813,
+    "openDate": "01/09/2025",
+    "createdAt": "17/11/2025",
+    "updatedAt": "17/11/2025",
+    "headquarter": "",
+    "efdReinf": {
+      "startDate": "",
+      "partnerId": "",
+      "partnerAdmin": "",
+      "phone": "",
+      "email": "",
+      "document": "",
+      "taxClassification": "",
+      "errorMessage": ""
+    },
+    "ecdOption": "",
+    "enableEfdReinf": false,
+    "enableEfdReinfAt": "",
+    "registrationStatus": "",
+    "typeRegime": {
+      "name": "Competência",
+      "code": 2,
+      "competence": "11/2025"
+    },
+    "payroll": {
+      "eletronicPoint": null,
+      "fpas": "",
+      "rat": "",
+      "fap": 0.5,
+      "taxClassification": "",
+      "competence": ""
+    },
+    "erp": {
+      "nick": "",
+      "enableContmaticIntegration": false,
+      "enableContmaticIntegrationAt": "",
+      "contmaticIntegration": false,
+      "syncAt": ""
+    },
+    "enableModuleERPAt": "",
+    "enabledESocialAt": "",
+    "enableModuleHubFederalAt": "17/11/2025 18:03:10",
+    "enableModuleHubNFSeAt": "",
+    "enableModuleHubNFSeOutCityAt": "",
+    "enableModuleHubNFSeIssAt": "",
+    "enableModulePreventionAt": "",
+    "enable360At": "",
+    "enableModuleHubDasAt": "",
+    "enableModuleDCTFWEBAt": "",
+    "federalConfig": {
+      "enableCFE": false,
+      "enableCFEAt": "",
+      "enableNFCE": false,
+      "enableNFCEAt": "",
+      "enableSefazOnline": false,
+      "enableSefazOnlineAt": "",
+      "automationICMS": false,
+      "automationICMSAt": "",
+      "enableCertificateA3": false,
+      "enableCertificateA3At": "",
+      "enableNFeEmitted": true,
+      "enableNFeEmittedAt": "17/11/2025 18:03:10",
+      "searchWithOfficeCertificate": false,
+      "searchWithOfficeCertificateAt": "",
+      "enableAutomaticCorrections": true,
+      "enableAutomaticCorrectionsAt": "17/11/2025 18:03:10",
+      "enableAutomaticCorrectionPisCofins": true,
+      "enableAutomaticCorrectionPisCofinsAt": "17/11/2025 18:03:10"
+    },
+    "enableImporterCompanyAt": "",
+    "accountingPlanConfig": []
+  },
+  "diferencas": [
+    "Tributação: '' → 'Simples Nacional - Comércio e Industria'",
+    "IE: '' → '201416220'",
+    "IM: '' → '124513'"
+  ]
+}

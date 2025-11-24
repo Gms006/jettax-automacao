@@ -1,0 +1,208 @@
+{
+  "client_id": "691b8e6666c0236ce90ed482",
+  "cnpj": "63501671000156",
+  "razao_social": "GJX COMERCIO E IMPORTACAO LTDA",
+  "payload": {
+    "id": "691b8e6666c0236ce90ed482",
+    "name": "GJX COMERCIO E IMPORTACAO LTDA",
+    "enable360": false,
+    "enableModuleERP": false,
+    "enableModulePrevention": false,
+    "enableModuleHubFederal": true,
+    "enableModuleHubNFSe": false,
+    "enableModuleHubNFSeOutCity": false,
+    "enableConvertOutSideCityAbrasf": false,
+    "enableConvertOutSideCityAbrasfAt": "",
+    "enableModuleHubNFSeIss": false,
+    "enableModuleDCTFWEB": false,
+    "enableModuleHubDas": false,
+    "enableImporterCompany": false,
+    "taxRegime": "60d53314200e556dc277ac20",
+    "taxRegimeCode": "SN",
+    "phone": "",
+    "whatsApp": "",
+    "municipalIntegration": {
+      "login": "",
+      "password": "",
+      "createISS": false,
+      "municipalRegistration": "128346",
+      "gissonlineLogin": "",
+      "gissonlinePassword": ""
+    },
+    "simpleNationalIntegration": {
+      "accessCode": "",
+      "documentResponsible": "",
+      "manualBilling": false,
+      "hasEmployyes": false,
+      "onlyCommercialBilling": false,
+      "typeRegime": [
+        {
+          "competence": "11/2025",
+          "code": 2,
+          "name": "Competência"
+        }
+      ]
+    },
+    "moduleFederalConfiguration": {
+      "downloadNFeWithAccountingCertificate": false,
+      "downloadPurchaseNFeInvoices": false,
+      "downloadCTeInvoices": false,
+      "downloadSalesNFeInvoices": false,
+      "downloadCFeInvoices": false,
+      "downloadCFeWithAccountingCertificate": false,
+      "enablePisCofinsAudit": false
+    },
+    "email": null,
+    "emails": [],
+    "document": "63.501.671/0001-56",
+    "address": {
+      "type": "R",
+      "address": "R Y 1",
+      "number": 0,
+      "zip": "75135-390",
+      "district": "VÍVIAM PARQUE 2ª ETAPA",
+      "state": "GO",
+      "complement": "QUADRA06 LOTE 03 SALA 03",
+      "city": {
+        "ibgeCode": 5201108,
+        "name": "Anapolis"
+      }
+    },
+    "cnaes": [
+      {
+        "name": "Comércio atacadista de produtos alimentícios em geral",
+        "code": 4639701,
+        "primary": false
+      },
+      {
+        "name": "Comércio atacadista de artigos de escritório e de papelaria",
+        "code": 4647801,
+        "primary": false
+      },
+      {
+        "name": "Comércio atacadista de produtos de higiene, limpeza e conservação domiciliar",
+        "code": 4649408,
+        "primary": false
+      },
+      {
+        "name": "Comércio atacadista de embalagens",
+        "code": 4686902,
+        "primary": false
+      },
+      {
+        "name": "Comércio atacadista de mercadorias em geral, sem predominância de alimentos ou de insumos agropecuários",
+        "code": 4693100,
+        "primary": false
+      },
+      {
+        "name": "Comércio varejista de móveis",
+        "code": 4754701,
+        "primary": false
+      },
+      {
+        "name": "Comércio varejista de artigos de papelaria",
+        "code": 4761003,
+        "primary": true
+      },
+      {
+        "name": "Comércio varejista de outros produtos não especificados anteriormente",
+        "code": 4789099,
+        "primary": false
+      },
+      {
+        "name": "Comissaria de despachos",
+        "code": 5250801,
+        "primary": false
+      },
+      {
+        "name": "Atividades de intermediação e agenciamento de serviços e negócios em geral, exceto imobiliários",
+        "code": 7490104,
+        "primary": false
+      }
+    ],
+    "status": 1,
+    "startCompetence": "11/2025",
+    "digitalCertificate": "https://jettax360.s3.us-west-2.amazonaws.com/offices/68b1e4d38c0ec913a50e4bd5/clients/691b8e6666c0236ce90ed482/certificate.pfx",
+    "digitalCertificatePassword": "Jason@2025",
+    "digitalCertificateDate": "07/11/2026",
+    "digitalCertificateDocument": "63501671000156",
+    "legalNature": "206-2",
+    "stateRegistration": 9555255084,
+    "openDate": "01/09/2025",
+    "createdAt": "17/11/2025",
+    "updatedAt": "17/11/2025",
+    "headquarter": "",
+    "efdReinf": {
+      "startDate": "",
+      "partnerId": "",
+      "partnerAdmin": "",
+      "phone": "",
+      "email": "",
+      "document": "",
+      "taxClassification": "",
+      "errorMessage": ""
+    },
+    "ecdOption": "",
+    "enableEfdReinf": false,
+    "enableEfdReinfAt": "",
+    "registrationStatus": "",
+    "typeRegime": {
+      "name": "Competência",
+      "code": 2,
+      "competence": "11/2025"
+    },
+    "payroll": {
+      "eletronicPoint": null,
+      "fpas": "",
+      "rat": "",
+      "fap": 0.5,
+      "taxClassification": "",
+      "competence": ""
+    },
+    "erp": {
+      "nick": "",
+      "enableContmaticIntegration": false,
+      "enableContmaticIntegrationAt": "",
+      "contmaticIntegration": false,
+      "syncAt": ""
+    },
+    "enableModuleERPAt": "",
+    "enabledESocialAt": "",
+    "enableModuleHubFederalAt": "17/11/2025 18:06:46",
+    "enableModuleHubNFSeAt": "",
+    "enableModuleHubNFSeOutCityAt": "",
+    "enableModuleHubNFSeIssAt": "",
+    "enableModulePreventionAt": "",
+    "enable360At": "",
+    "enableModuleHubDasAt": "",
+    "enableModuleDCTFWEBAt": "",
+    "federalConfig": {
+      "enableCFE": false,
+      "enableCFEAt": "",
+      "enableNFCE": false,
+      "enableNFCEAt": "",
+      "enableSefazOnline": false,
+      "enableSefazOnlineAt": "",
+      "automationICMS": false,
+      "automationICMSAt": "",
+      "enableCertificateA3": false,
+      "enableCertificateA3At": "",
+      "enableNFeEmitted": true,
+      "enableNFeEmittedAt": "17/11/2025 18:06:46",
+      "searchWithOfficeCertificate": false,
+      "searchWithOfficeCertificateAt": "",
+      "enableAutomaticCorrections": true,
+      "enableAutomaticCorrectionsAt": "17/11/2025 18:06:46",
+      "enableAutomaticCorrectionPisCofins": true,
+      "enableAutomaticCorrectionPisCofinsAt": "17/11/2025 18:06:46"
+    },
+    "enableImporterCompanyAt": "",
+    "accountingPlanConfig": []
+  },
+  "diferencas": [
+    "Tributação: '' → 'Simples Nacional - Comércio e Industria'",
+    "IE: '' → '203373820'",
+    "IM: '' → '128346'",
+    "E-mail: '' → 'jasonsvx@gmail.com'"
+  ]
+}

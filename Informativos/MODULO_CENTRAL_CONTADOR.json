@@ -1,0 +1,184 @@
+{
+  "modulo": "Central do Contador",
+  "descricao": "Módulo administrativo para gestão global do escritório, monitoramento de pendências, credenciais e integrações.",
+  "funcionalidades": [
+    {
+      "nome": "Dashboard",
+      "descricao": "Visão geral do escritório, incluindo agendamentos e status fiscal.",
+      "tipo_automacao": "API",
+      "fluxo_operacional": [
+        "Carregar cabeçalho do dashboard.",
+        "Carregar agendamentos recentes.",
+        "Verificar status geral."
+      ],
+      "detalhes_tecnicos": {
+        "endpoints_principais": [
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/dashboard/header",
+            "descricao": "Dados do cabeçalho do dashboard"
+          },
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/dashboard/schedules",
+            "descricao": "Lista de agendamentos no dashboard"
+          },
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/fiscal/dashboard",
+            "descricao": "Dashboard fiscal específico"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "Resumo Mensal",
+      "descricao": "Acompanhamento do fechamento mensal e alertas fiscais.",
+      "tipo_automacao": "API",
+      "fluxo_operacional": [
+        "Carregar resumo mensal.",
+        "Verificar alertas de pendências ou erros."
+      ],
+      "detalhes_tecnicos": {
+        "endpoints_principais": [
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/fiscal/summaries",
+            "descricao": "Lista de resumos fiscais"
+          },
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/fiscal/summaries/load",
+            "descricao": "Carregar dados do resumo"
+          },
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/fiscal/summaries/alerts",
+            "descricao": "Alertas do resumo mensal"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "Pendências",
+      "descricao": "Listagem de pendências operacionais e fiscais.",
+      "tipo_automacao": "API",
+      "fluxo_operacional": [
+        "Consultar lista de pendências no Hub.",
+        "Verificar notificações recentes."
+      ],
+      "detalhes_tecnicos": {
+        "endpoints_principais": [
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/hub/pendencies/list/",
+            "descricao": "Lista de pendências do Hub"
+          },
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/notifications",
+            "descricao": "Notificações do sistema"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "Exportar Guias",
+      "descricao": "Exportação em lote de guias e impostos.",
+      "tipo_automacao": "API",
+      "fluxo_operacional": [
+        "Listar exportações disponíveis.",
+        "Solicitar nova exportação de guias."
+      ],
+      "detalhes_tecnicos": {
+        "endpoints_principais": [
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/hub/bill-export/list",
+            "descricao": "Listar exportações de guias"
+          },
+          {
+            "metodo": "POST",
+            "url": "https://api.jettax360.com.br/api/v1/hub/bill-export",
+            "descricao": "Solicitar exportação"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "Controle de Credenciais",
+      "descricao": "Gestão de certificados digitais e senhas de acesso.",
+      "tipo_automacao": "API",
+      "fluxo_operacional": [
+        "Listar credenciais cadastradas.",
+        "Verificar status de validade.",
+        "Remover credenciais com erro."
+      ],
+      "detalhes_tecnicos": {
+        "endpoints_principais": [
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/credential-center",
+            "descricao": "Centro de credenciais"
+          },
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/offices/credentials",
+            "descricao": "Listar credenciais do escritório"
+          },
+          {
+            "metodo": "POST",
+            "url": "https://api.jettax360.com.br/api/v1/credential-center/remove-credential-all-errors",
+            "descricao": "Remover erros de credenciais"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "Central de Emails",
+      "descricao": "Histórico e gestão de emails enviados pela plataforma.",
+      "tipo_automacao": "API",
+      "fluxo_operacional": [
+        "Consultar histórico de emails enviados.",
+        "Verificar status de entrega."
+      ],
+      "detalhes_tecnicos": {
+        "endpoints_principais": [
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/email/getAll",
+            "descricao": "Obter todos os emails"
+          },
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/fiscal/summaries/email-history",
+            "descricao": "Histórico de emails fiscais"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "Integrações - Acessórias",
+      "descricao": "Gestão da integração com o sistema Acessórias.",
+      "tipo_automacao": "API",
+      "fluxo_operacional": [
+        "Verificar status da integração.",
+        "Listar integrações ativas."
+      ],
+      "detalhes_tecnicos": {
+        "endpoints_principais": [
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/integration-acessorias/list",
+            "descricao": "Listar integrações com Acessórias"
+          },
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/offices",
+            "descricao": "Detalhes do escritório (contém config de Acessórias)"
+          }
+        ]
+      }
+    }
+  ]
+}

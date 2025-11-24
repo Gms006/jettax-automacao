@@ -1,0 +1,21 @@
+{
+  "client_id": "68c011f49a213ccebf0463a2",
+  "cnpj": "46149398000123",
+  "razao_social": "3TB PRODUCOES ARTISTICAS LTDA",
+  "payload": {
+    "document": "46.149.398/0001-23",
+    "name": "3TB PRODUCOES ARTISTICAS LTDA",
+    "taxation": "60d53314200e556dc277ac20",
+    "email": "3tbproducoesartisticasltda@gmail.com",
+    "municipalRegistration": "103416",
+    "isActive": true,
+    "stateRegistration": "",
+    "login": "87298244604",
+    "password": "872982"
+  },
+  "diferencas": [
+    "Tributação: '' → 'Simples Nacional - Serviços'",
+    "IM: '' → '103416'",
+    "E-mail: '' → '3tbproducoesartisticasltda@gmail.com'"
+  ]
+}

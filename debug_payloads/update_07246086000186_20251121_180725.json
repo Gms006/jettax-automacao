@@ -1,0 +1,175 @@
+{
+  "client_id": "690a0744a913e4fe5d0b21b2",
+  "cnpj": "07246086000186",
+  "razao_social": "SILVEIRA & CANEDO LTDA",
+  "payload": {
+    "id": "690a0744a913e4fe5d0b21b2",
+    "name": "SILVEIRA & CANEDO LTDA",
+    "enable360": false,
+    "enableModuleERP": false,
+    "enableModulePrevention": false,
+    "enableModuleHubFederal": true,
+    "enableModuleHubNFSe": false,
+    "enableModuleHubNFSeOutCity": false,
+    "enableConvertOutSideCityAbrasf": false,
+    "enableConvertOutSideCityAbrasfAt": "",
+    "enableModuleHubNFSeIss": false,
+    "enableModuleDCTFWEB": true,
+    "enableModuleHubDas": false,
+    "enableImporterCompany": false,
+    "taxRegime": "60d53314200e556dc277ac20",
+    "taxRegimeCode": "SN",
+    "phone": "",
+    "whatsApp": "",
+    "municipalIntegration": {
+      "login": "30240468104",
+      "password": "302404",
+      "createISS": true,
+      "municipalRegistration": "80549",
+      "gissonlineLogin": "",
+      "gissonlinePassword": ""
+    },
+    "simpleNationalIntegration": {
+      "accessCode": "",
+      "documentResponsible": "",
+      "manualBilling": false,
+      "hasEmployyes": false,
+      "onlyCommercialBilling": false,
+      "typeRegime": [
+        {
+          "competence": "01/2025",
+          "code": 2,
+          "name": "Competência"
+        }
+      ]
+    },
+    "moduleFederalConfiguration": {
+      "downloadNFeWithAccountingCertificate": false,
+      "downloadPurchaseNFeInvoices": false,
+      "downloadCTeInvoices": false,
+      "downloadSalesNFeInvoices": false,
+      "downloadCFeInvoices": false,
+      "downloadCFeWithAccountingCertificate": false,
+      "enablePisCofinsAudit": false
+    },
+    "email": null,
+    "emails": [],
+    "document": "07.246.086/0001-86",
+    "address": {
+      "type": "",
+      "address": "RUA OITO",
+      "number": 83,
+      "zip": "75125-810",
+      "district": "JOAO LUIZ OLIVEIRA",
+      "state": "GO",
+      "complement": "",
+      "city": {
+        "ibgeCode": 5201108,
+        "name": "Anapolis"
+      }
+    },
+    "cnaes": [
+      {
+        "name": "Fabricação de esquadrias de madeira e de peças de madeira para instalações industriais e comerciais",
+        "code": 1622602,
+        "primary": true
+      },
+      {
+        "name": "Comércio atacadista de madeira e produtos derivados",
+        "code": 4671100,
+        "primary": false
+      },
+      {
+        "name": "Comércio varejista de madeira e artefatos",
+        "code": 4744002,
+        "primary": false
+      }
+    ],
+    "status": 1,
+    "startCompetence": "01/2025",
+    "digitalCertificate": "https://jettax360.s3.us-west-2.amazonaws.com/offices/68b1e4d38c0ec913a50e4bd5/clients/690a0744a913e4fe5d0b21b2/certificate.pfx",
+    "digitalCertificatePassword": "19702302",
+    "digitalCertificateDate": "21/11/2025",
+    "digitalCertificateDocument": "07246086000186",
+    "legalNature": "206-2",
+    "stateRegistration": 103933468,
+    "openDate": "22/02/2005",
+    "createdAt": "04/11/2025",
+    "updatedAt": "13/11/2025",
+    "headquarter": "",
+    "efdReinf": {
+      "startDate": "",
+      "partnerId": "",
+      "partnerAdmin": "",
+      "phone": "",
+      "email": "",
+      "document": "",
+      "taxClassification": "",
+      "errorMessage": ""
+    },
+    "ecdOption": "",
+    "enableEfdReinf": false,
+    "enableEfdReinfAt": "",
+    "registrationStatus": "620d000954060f3cff779903",
+    "typeRegime": {
+      "name": "Competência",
+      "code": 2,
+      "competence": "01/2025"
+    },
+    "payroll": {
+      "eletronicPoint": "",
+      "fpas": "",
+      "rat": "",
+      "fap": 0.5,
+      "taxClassification": "",
+      "enableESocial": null,
+      "lastEventStatus": null,
+      "lastMessage": ""
+    },
+    "erp": {
+      "nick": "",
+      "enableContmaticIntegration": false,
+      "enableContmaticIntegrationAt": "",
+      "contmaticIntegration": false,
+      "syncAt": ""
+    },
+    "enableModuleERPAt": "",
+    "enabledESocialAt": "",
+    "enableModuleHubFederalAt": "13/11/2025 15:29:26",
+    "enableModuleHubNFSeAt": "",
+    "enableModuleHubNFSeOutCityAt": "",
+    "enableModuleHubNFSeIssAt": "",
+    "enableModulePreventionAt": "",
+    "enable360At": "",
+    "enableModuleHubDasAt": "",
+    "enableModuleDCTFWEBAt": "13/11/2025 15:29:26",
+    "federalConfig": {
+      "enableCFE": false,
+      "enableCFEAt": "",
+      "enableNFCE": false,
+      "enableNFCEAt": "",
+      "enableSefazOnline": false,
+      "enableSefazOnlineAt": "",
+      "automationICMS": false,
+      "automationICMSAt": "",
+      "enableCertificateA3": false,
+      "enableCertificateA3At": "",
+      "enableNFeEmitted": true,
+      "enableNFeEmittedAt": "13/11/2025 15:29:26",
+      "searchWithOfficeCertificate": false,
+      "searchWithOfficeCertificateAt": "",
+      "enableAutomaticCorrections": true,
+      "enableAutomaticCorrectionsAt": "13/11/2025 15:29:26",
+      "enableAutomaticCorrectionPisCofins": true,
+      "enableAutomaticCorrectionPisCofinsAt": "13/11/2025 15:29:26"
+    },
+    "enableImporterCompanyAt": "",
+    "accountingPlanConfig": []
+  },
+  "diferencas": [
+    "Tributação: '' → 'Simples Nacional - Comercio e Serviços'",
+    "IE: '' → '106083600'",
+    "IM: '' → '80549'",
+    "E-mail: '' → 'coimmar@yahoo.com.br'"
+  ]
+}

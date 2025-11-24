@@ -1,0 +1,194 @@
+{
+  "client_id": "68bf87ff2080af8c3d0752e2",
+  "cnpj": "23677415000108",
+  "razao_social": "ROGERIO A DIAS & CIA LTDA",
+  "payload": {
+    "id": "68bf87ff2080af8c3d0752e2",
+    "name": "ROGERIO A DIAS & CIA LTDA",
+    "enable360": false,
+    "enableModuleERP": false,
+    "enableModulePrevention": false,
+    "enableModuleHubFederal": true,
+    "enableModuleHubNFSe": true,
+    "enableModuleHubNFSeOutCity": false,
+    "enableConvertOutSideCityAbrasf": false,
+    "enableConvertOutSideCityAbrasfAt": "",
+    "enableModuleHubNFSeIss": false,
+    "enableModuleDCTFWEB": false,
+    "enableModuleHubDas": false,
+    "enableImporterCompany": false,
+    "taxRegime": "60d53314200e556dc277ac20",
+    "taxRegimeCode": "SN",
+    "phone": "(62) 99101-5000",
+    "whatsApp": "",
+    "municipalIntegration": {
+      "login": "03433540632",
+      "password": "034335",
+      "createISS": true,
+      "municipalRegistration": "78547",
+      "gissonlineLogin": "",
+      "gissonlinePassword": ""
+    },
+    "simpleNationalIntegration": {
+      "accessCode": "",
+      "documentResponsible": "",
+      "manualBilling": false,
+      "hasEmployyes": false,
+      "onlyCommercialBilling": false,
+      "typeRegime": [
+        {
+          "competence": "01/2025",
+          "code": 2,
+          "name": "Competência"
+        }
+      ]
+    },
+    "moduleFederalConfiguration": {
+      "downloadNFeWithAccountingCertificate": false,
+      "downloadPurchaseNFeInvoices": false,
+      "downloadCTeInvoices": false,
+      "downloadSalesNFeInvoices": false,
+      "downloadCFeInvoices": false,
+      "downloadCFeWithAccountingCertificate": false,
+      "enablePisCofinsAudit": false
+    },
+    "email": null,
+    "emails": [],
+    "document": "23.677.415/0001-08",
+    "address": {
+      "type": "R",
+      "address": "SETE DE SETEMBRO",
+      "number": 844,
+      "zip": "75020-420",
+      "district": "SETOR CENTRAL",
+      "state": "GO",
+      "complement": "SALA  206                 ANDAR 2",
+      "city": {
+        "ibgeCode": 5201108,
+        "name": "ANAPOLIS"
+      }
+    },
+    "cnaes": [
+      {
+        "name": "Serviços de engenharia",
+        "code": 7112000,
+        "primary": false
+      },
+      {
+        "name": "Atividade médica ambulatorial restrita a consultas",
+        "code": 8630503,
+        "primary": false
+      },
+      {
+        "name": "Atividade odontológica",
+        "code": 8630504,
+        "primary": true
+      },
+      {
+        "name": "Laboratórios clínicos",
+        "code": 8640202,
+        "primary": false
+      },
+      {
+        "name": "Atividades de psicologia e psicanálise",
+        "code": 8650003,
+        "primary": false
+      },
+      {
+        "name": "Atividades de fisioterapia",
+        "code": 8650004,
+        "primary": false
+      },
+      {
+        "name": "Atividades de fonoaudiologia",
+        "code": 8650006,
+        "primary": false
+      }
+    ],
+    "status": 1,
+    "startCompetence": "07/2025",
+    "digitalCertificate": null,
+    "digitalCertificatePassword": "",
+    "digitalCertificateDate": "",
+    "digitalCertificateDocument": "",
+    "legalNature": "206-2",
+    "stateRegistration": "",
+    "openDate": "17/11/2015",
+    "createdAt": "08/09/2025",
+    "updatedAt": "21/11/2025",
+    "headquarter": "",
+    "efdReinf": {
+      "startDate": "",
+      "partnerId": "",
+      "partnerAdmin": "",
+      "phone": "",
+      "email": "",
+      "document": "",
+      "taxClassification": "",
+      "errorMessage": ""
+    },
+    "ecdOption": "",
+    "enableEfdReinf": false,
+    "enableEfdReinfAt": "",
+    "registrationStatus": "",
+    "typeRegime": {
+      "name": "Competência",
+      "code": 2,
+      "competence": "01/2025"
+    },
+    "payroll": {
+      "eletronicPoint": "",
+      "fpas": "",
+      "rat": "",
+      "fap": 0.5,
+      "taxClassification": "",
+      "enableESocial": null,
+      "lastEventStatus": null,
+      "lastMessage": ""
+    },
+    "erp": {
+      "nick": "",
+      "enableContmaticIntegration": false,
+      "enableContmaticIntegrationAt": "",
+      "contmaticIntegration": false,
+      "syncAt": ""
+    },
+    "enableModuleERPAt": "",
+    "enabledESocialAt": "",
+    "enableModuleHubFederalAt": "08/09/2025 22:50:55",
+    "enableModuleHubNFSeAt": "04/11/2025 16:56:07",
+    "enableModuleHubNFSeOutCityAt": "",
+    "enableModuleHubNFSeIssAt": "",
+    "enableModulePreventionAt": "",
+    "enable360At": "",
+    "enableModuleHubDasAt": "",
+    "enableModuleDCTFWEBAt": "",
+    "federalConfig": {
+      "enableCFE": false,
+      "enableCFEAt": "",
+      "enableNFCE": false,
+      "enableNFCEAt": "",
+      "enableSefazOnline": false,
+      "enableSefazOnlineAt": "",
+      "automationICMS": false,
+      "automationICMSAt": "",
+      "enableCertificateA3": false,
+      "enableCertificateA3At": "",
+      "enableNFeEmitted": false,
+      "enableNFeEmittedAt": "",
+      "searchWithOfficeCertificate": false,
+      "searchWithOfficeCertificateAt": "",
+      "enableAutomaticCorrections": true,
+      "enableAutomaticCorrectionsAt": "21/11/2025 17:33:35",
+      "enableAutomaticCorrectionPisCofins": true,
+      "enableAutomaticCorrectionPisCofinsAt": "21/11/2025 17:33:35"
+    },
+    "enableImporterCompanyAt": "",
+    "accountingPlanConfig": []
+  },
+  "diferencas": [
+    "Tributação: '' → 'Simples Nacional - Serviços'",
+    "IM: '' → '78547'",
+    "E-mail: '' → 'drrogerioadias@gmail.com'"
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "client_id": "68f8e2f3dcf354a7590e2d73",
+  "cnpj": "50178203000140",
+  "razao_social": "COMERCIAL MORAIS LTDA",
+  "payload": {
+    "id": "68f8e2f3dcf354a7590e2d73",
+    "name": "COMERCIAL MORAIS LTDA",
+    "enable360": false,
+    "enableModuleERP": false,
+    "enableModulePrevention": false,
+    "enableModuleHubFederal": true,
+    "enableModuleHubNFSe": false,
+    "enableModuleHubNFSeOutCity": false,
+    "enableConvertOutSideCityAbrasf": false,
+    "enableConvertOutSideCityAbrasfAt": "",
+    "enableModuleHubNFSeIss": false,
+    "enableModuleDCTFWEB": false,
+    "enableModuleHubDas": false,
+    "enableImporterCompany": false,
+    "taxRegime": "62d9471420ba2a79cd31c163",
+    "taxRegimeCode": "LR",
+    "phone": "",
+    "whatsApp": "",
+    "municipalIntegration": {
+      "login": "",
+      "password": "",
+      "createISS": false,
+      "municipalRegistration": "Imóvel irregular (chácara) - Não possui inscrição",
+      "gissonlineLogin": "",
+      "gissonlinePassword": ""
+    },
+    "simpleNationalIntegration": {
+      "accessCode": "",
+      "documentResponsible": "",
+      "manualBilling": false,
+      "hasEmployyes": false,
+      "onlyCommercialBilling": false,
+      "typeRegime": [
+        {
+          "competence": "01/2025",
+          "code": 2,
+          "name": "Competência"
+        }
+      ]
+    },
+    "moduleFederalConfiguration": {
+      "downloadNFeWithAccountingCertificate": false,
+      "downloadPurchaseNFeInvoices": false,
+      "downloadCTeInvoices": false,
+      "downloadSalesNFeInvoices": false,
+      "downloadCFeInvoices": false,
+      "downloadCFeWithAccountingCertificate": false,
+      "enablePisCofinsAudit": false
+    },
+    "email": null,
+    "emails": [],
+    "document": "50.178.203/0001-40",
+    "address": {
+      "type": "",
+      "address": "FAZENDA BOA VISTA FRAÇÃO 02 DA CHACARA 01",
+      "number": 0,
+      "zip": "72940-000",
+      "district": "ZONA RURAL",
+      "state": "GO",
+      "complement": "",
+      "city": {
+        "ibgeCode": 5200100,
+        "name": "Abadiania"
+      }
+    },
+    "cnaes": [
+      {
+        "name": "Comércio varejista de mercadorias em geral, com predominância de produtos alimentícios - minimercados, mercearias e armazéns",
+        "code": 4712100,
+        "primary": false
+      },
+      {
+        "name": "Comércio varejista de bebidas",
+        "code": 4723700,
+        "primary": true
+      }
+    ],
+    "status": 1,
+    "startCompetence": "01/2025",
+    "digitalCertificate": "https://jettax360.s3.us-west-2.amazonaws.com/offices/68b1e4d38c0ec913a50e4bd5/clients/68f8e2f3dcf354a7590e2d73/certificate.pfx",
+    "digitalCertificatePassword": "Dinovan@2025",
+    "digitalCertificateDate": "30/04/2026",
+    "digitalCertificateDocument": "50178203000140",
+    "legalNature": "206-2",
+    "stateRegistration": 103032282,
+    "openDate": "03/04/2023",
+    "createdAt": "22/10/2025",
+    "updatedAt": "22/10/2025",
+    "headquarter": "",
+    "efdReinf": {
+      "startDate": "",
+      "partnerId": "",
+      "partnerAdmin": "",
+      "phone": "",
+      "email": "",
+      "document": "",
+      "taxClassification": "",
+      "errorMessage": ""
+    },
+    "ecdOption": "",
+    "enableEfdReinf": false,
+    "enableEfdReinfAt": "",
+    "registrationStatus": "620d000954060f3cff779903",
+    "typeRegime": {
+      "name": "Competência",
+      "code": 2,
+      "competence": "01/2025"
+    },
+    "payroll": {
+      "eletronicPoint": null,
+      "fpas": "",
+      "rat": "",
+      "fap": 0.5,
+      "taxClassification": "",
+      "competence": ""
+    },
+    "erp": {
+      "nick": "",
+      "enableContmaticIntegration": false,
+      "enableContmaticIntegrationAt": "",
+      "contmaticIntegration": false,
+      "syncAt": ""
+    },
+    "enableModuleERPAt": "",
+    "enabledESocialAt": "",
+    "enableModuleHubFederalAt": "22/10/2025 10:58:11",
+    "enableModuleHubNFSeAt": "",
+    "enableModuleHubNFSeOutCityAt": "",
+    "enableModuleHubNFSeIssAt": "",
+    "enableModulePreventionAt": "",
+    "enable360At": "",
+    "enableModuleHubDasAt": "",
+    "enableModuleDCTFWEBAt": "",
+    "federalConfig": {
+      "enableCFE": false,
+      "enableCFEAt": "",
+      "enableNFCE": false,
+      "enableNFCEAt": "",
+      "enableSefazOnline": false,
+      "enableSefazOnlineAt": "",
+      "automationICMS": false,
+      "automationICMSAt": "",
+      "enableCertificateA3": false,
+      "enableCertificateA3At": "",
+      "enableNFeEmitted": false,
+      "enableNFeEmittedAt": "",
+      "searchWithOfficeCertificate": false,
+      "searchWithOfficeCertificateAt": "",
+      "enableAutomaticCorrections": true,
+      "enableAutomaticCorrectionsAt": "22/10/2025 10:58:11",
+      "enableAutomaticCorrectionPisCofins": true,
+      "enableAutomaticCorrectionPisCofinsAt": "22/10/2025 10:58:11"
+    },
+    "enableImporterCompanyAt": "",
+    "accountingPlanConfig": []
+  },
+  "diferencas": [
+    "Tributação: '' → 'Lucro Real - Comércio e Industria'",
+    "IE: '' → '200259407'",
+    "IM: '' → 'Imóvel irregular (chácara) - Não possui inscrição'",
+    "E-mail: '' → 'dinodemorais@gmail.com'"
+  ]
+}

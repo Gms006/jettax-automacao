@@ -1,0 +1,190 @@
+{
+  "client_id": "68bf8024229ce9473402cde2",
+  "cnpj": "15120838000196",
+  "razao_social": "MERCATOP DISTRIBUIDORA LTDA",
+  "payload": {
+    "id": "68bf8024229ce9473402cde2",
+    "name": "MERCATOP DISTRIBUIDORA LTDA",
+    "enable360": false,
+    "enableModuleERP": false,
+    "enableModulePrevention": false,
+    "enableModuleHubFederal": true,
+    "enableModuleHubNFSe": true,
+    "enableModuleHubNFSeOutCity": false,
+    "enableConvertOutSideCityAbrasf": false,
+    "enableConvertOutSideCityAbrasfAt": "",
+    "enableModuleHubNFSeIss": false,
+    "enableModuleDCTFWEB": false,
+    "enableModuleHubDas": false,
+    "enableImporterCompany": false,
+    "taxRegime": "60d53314200e556dc277ac20",
+    "taxRegimeCode": "SN",
+    "phone": "(62) 3311-1941",
+    "whatsApp": "",
+    "municipalIntegration": {
+      "login": "89574648168",
+      "password": "895746",
+      "createISS": true,
+      "municipalRegistration": "65876",
+      "gissonlineLogin": "",
+      "gissonlinePassword": ""
+    },
+    "simpleNationalIntegration": {
+      "accessCode": "",
+      "documentResponsible": "",
+      "manualBilling": false,
+      "hasEmployyes": false,
+      "onlyCommercialBilling": false,
+      "typeRegime": [
+        {
+          "competence": "01/2025",
+          "code": 2,
+          "name": "Competência"
+        }
+      ]
+    },
+    "moduleFederalConfiguration": {
+      "downloadNFeWithAccountingCertificate": false,
+      "downloadPurchaseNFeInvoices": false,
+      "downloadCTeInvoices": false,
+      "downloadSalesNFeInvoices": false,
+      "downloadCFeInvoices": false,
+      "downloadCFeWithAccountingCertificate": false,
+      "enablePisCofinsAudit": false
+    },
+    "email": null,
+    "emails": [],
+    "document": "15.120.838/0001-96",
+    "address": {
+      "type": "R",
+      "address": "R G 18",
+      "number": 0,
+      "zip": "75080-450",
+      "district": "CIDADE JARDIM",
+      "state": "GO",
+      "complement": "QUADRA 25;LOTE 19;LOTE 20;LOJA 02",
+      "city": {
+        "ibgeCode": 5201108,
+        "name": "Anapolis"
+      }
+    },
+    "cnaes": [
+      {
+        "name": "Instalação de painéis publicitários",
+        "code": 4329101,
+        "primary": false
+      },
+      {
+        "name": "Comércio atacadista de equipamentos de informática",
+        "code": 4651601,
+        "primary": false
+      },
+      {
+        "name": "Comércio atacadista de componentes eletrônicos e equipamentos de telefonia e comunicação",
+        "code": 4652400,
+        "primary": true
+      },
+      {
+        "name": "Agenciamento de espaços para publicidade, exceto em veículos de comunicação",
+        "code": 7312200,
+        "primary": false
+      },
+      {
+        "name": "Outras atividades de publicidade não especificadas anteriormente",
+        "code": 7319099,
+        "primary": false
+      },
+      {
+        "name": "Serviços combinados de escritório e apoio administrativo",
+        "code": 8211300,
+        "primary": false
+      }
+    ],
+    "status": 1,
+    "startCompetence": "07/2025",
+    "digitalCertificate": "https://jettax360.s3.us-west-2.amazonaws.com/offices/68b1e4d38c0ec913a50e4bd5/clients/68bf8024229ce9473402cde2/certificate.pfx",
+    "digitalCertificatePassword": "Jason@2025",
+    "digitalCertificateDate": "20/01/2026",
+    "digitalCertificateDocument": "15120838000196",
+    "legalNature": "206-2",
+    "stateRegistration": 106568418,
+    "openDate": "01/03/2012",
+    "createdAt": "08/09/2025",
+    "updatedAt": "04/11/2025",
+    "headquarter": "",
+    "efdReinf": {
+      "startDate": "",
+      "partnerId": "",
+      "partnerAdmin": "",
+      "phone": "",
+      "email": "",
+      "document": "",
+      "taxClassification": "",
+      "errorMessage": ""
+    },
+    "ecdOption": "",
+    "enableEfdReinf": false,
+    "enableEfdReinfAt": "",
+    "registrationStatus": "620d000954060f3cff779903",
+    "typeRegime": {
+      "name": "Competência",
+      "code": 2,
+      "competence": "01/2025"
+    },
+    "payroll": {
+      "eletronicPoint": "",
+      "fpas": "",
+      "rat": "",
+      "fap": 0.5,
+      "taxClassification": "",
+      "enableESocial": null,
+      "lastEventStatus": null,
+      "lastMessage": ""
+    },
+    "erp": {
+      "nick": "",
+      "enableContmaticIntegration": false,
+      "enableContmaticIntegrationAt": "",
+      "contmaticIntegration": false,
+      "syncAt": ""
+    },
+    "enableModuleERPAt": "",
+    "enabledESocialAt": "",
+    "enableModuleHubFederalAt": "08/09/2025 22:17:24",
+    "enableModuleHubNFSeAt": "04/11/2025 16:53:54",
+    "enableModuleHubNFSeOutCityAt": "",
+    "enableModuleHubNFSeIssAt": "",
+    "enableModulePreventionAt": "",
+    "enable360At": "",
+    "enableModuleHubDasAt": "",
+    "enableModuleDCTFWEBAt": "",
+    "federalConfig": {
+      "enableCFE": false,
+      "enableCFEAt": "",
+      "enableNFCE": false,
+      "enableNFCEAt": "",
+      "enableSefazOnline": false,
+      "enableSefazOnlineAt": "",
+      "automationICMS": false,
+      "automationICMSAt": "",
+      "enableCertificateA3": false,
+      "enableCertificateA3At": "",
+      "enableNFeEmitted": true,
+      "enableNFeEmittedAt": "11/09/2025 13:11:54",
+      "searchWithOfficeCertificate": false,
+      "searchWithOfficeCertificateAt": "",
+      "enableAutomaticCorrections": true,
+      "enableAutomaticCorrectionsAt": "04/11/2025 16:53:54",
+      "enableAutomaticCorrectionPisCofins": true,
+      "enableAutomaticCorrectionPisCofinsAt": "04/11/2025 16:53:54"
+    },
+    "enableImporterCompanyAt": "",
+    "accountingPlanConfig": []
+  },
+  "diferencas": [
+    "Tributação: '' → 'Simples Nacional - Serviços'",
+    "IE: '' → '106568418'",
+    "IM: '' → '65876'",
+    "E-mail: '' → 'barbara_vitcr@hotmail.com'"
+  ]
+}

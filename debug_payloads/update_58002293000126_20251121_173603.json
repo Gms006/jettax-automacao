@@ -1,0 +1,230 @@
+{
+  "client_id": "68bf8b9fbf74807d9207c205",
+  "cnpj": "58002293000126",
+  "razao_social": "SOARES DE AZEVEDO CONSTRUCOES LTDA",
+  "payload": {
+    "id": "68bf8b9fbf74807d9207c205",
+    "name": "SOARES DE AZEVEDO CONSTRUCOES LTDA",
+    "enable360": false,
+    "enableModuleERP": false,
+    "enableModulePrevention": false,
+    "enableModuleHubFederal": true,
+    "enableModuleHubNFSe": true,
+    "enableModuleHubNFSeOutCity": false,
+    "enableConvertOutSideCityAbrasf": false,
+    "enableConvertOutSideCityAbrasfAt": "",
+    "enableModuleHubNFSeIss": false,
+    "enableModuleDCTFWEB": false,
+    "enableModuleHubDas": false,
+    "enableImporterCompany": false,
+    "taxRegime": "60d53314200e556dc277ac20",
+    "taxRegimeCode": "SN",
+    "phone": "(62) 9206-5641",
+    "whatsApp": "",
+    "municipalIntegration": {
+      "login": "81667256149",
+      "password": "816672",
+      "createISS": true,
+      "municipalRegistration": "123387",
+      "gissonlineLogin": "",
+      "gissonlinePassword": ""
+    },
+    "simpleNationalIntegration": {
+      "accessCode": "",
+      "documentResponsible": "",
+      "manualBilling": false,
+      "hasEmployyes": false,
+      "onlyCommercialBilling": false,
+      "typeRegime": [
+        {
+          "competence": "01/2025",
+          "code": 2,
+          "name": "Competência"
+        }
+      ]
+    },
+    "moduleFederalConfiguration": {
+      "downloadNFeWithAccountingCertificate": false,
+      "downloadPurchaseNFeInvoices": false,
+      "downloadCTeInvoices": false,
+      "downloadSalesNFeInvoices": false,
+      "downloadCFeInvoices": false,
+      "downloadCFeWithAccountingCertificate": false,
+      "enablePisCofinsAudit": false
+    },
+    "email": null,
+    "emails": [],
+    "document": "58.002.293/0001-26",
+    "address": {
+      "type": "R",
+      "address": "R ALEIXO RODRIGUES",
+      "number": 643,
+      "zip": "75115-010",
+      "district": "VILA INDUSTRIAL",
+      "state": "GO",
+      "complement": "QUADRA08 LOTE 42 SALA 01",
+      "city": {
+        "ibgeCode": 5201108,
+        "name": "Anapolis"
+      }
+    },
+    "cnaes": [
+      {
+        "name": "Construção de edifícios",
+        "code": 4120400,
+        "primary": true
+      },
+      {
+        "name": "Construção de rodovias e ferrovias",
+        "code": 4211101,
+        "primary": false
+      },
+      {
+        "name": "Construção de obras de arte especiais",
+        "code": 4212000,
+        "primary": false
+      },
+      {
+        "name": "Obras de urbanização - ruas, praças e calçadas",
+        "code": 4213800,
+        "primary": false
+      },
+      {
+        "name": "Construção de redes de abastecimento de água, coleta de esgoto e construções correlatas, exceto obras de irrigação",
+        "code": 4222701,
+        "primary": false
+      },
+      {
+        "name": "Obras de terraplenagem",
+        "code": 4313400,
+        "primary": false
+      },
+      {
+        "name": "Serviços de preparação do terreno não especificados anteriormente",
+        "code": 4319300,
+        "primary": false
+      },
+      {
+        "name": "Instalação e manutenção elétrica",
+        "code": 4321500,
+        "primary": false
+      },
+      {
+        "name": "Instalações hidráulicas, sanitárias e de gás",
+        "code": 4322301,
+        "primary": false
+      },
+      {
+        "name": "Serviços de pintura de edifícios em geral",
+        "code": 4330404,
+        "primary": false
+      },
+      {
+        "name": "Outras obras de acabamento da construção",
+        "code": 4330499,
+        "primary": false
+      },
+      {
+        "name": "Administração de obras",
+        "code": 4399101,
+        "primary": false
+      },
+      {
+        "name": "Obras de alvenaria",
+        "code": 4399103,
+        "primary": false
+      },
+      {
+        "name": "Compra e venda de imóveis próprios",
+        "code": 6810201,
+        "primary": false
+      }
+    ],
+    "status": 1,
+    "startCompetence": "07/2025",
+    "digitalCertificate": null,
+    "digitalCertificatePassword": "",
+    "digitalCertificateDate": "",
+    "digitalCertificateDocument": "",
+    "legalNature": "206-2",
+    "stateRegistration": 202047458,
+    "openDate": "06/11/2024",
+    "createdAt": "08/09/2025",
+    "updatedAt": "12/11/2025",
+    "headquarter": "",
+    "efdReinf": {
+      "startDate": "",
+      "partnerId": "",
+      "partnerAdmin": "",
+      "phone": "",
+      "email": "",
+      "document": "",
+      "taxClassification": "",
+      "errorMessage": ""
+    },
+    "ecdOption": "",
+    "enableEfdReinf": false,
+    "enableEfdReinfAt": "",
+    "registrationStatus": "620d000954060f3cff779903",
+    "typeRegime": {
+      "name": "Competência",
+      "code": 2,
+      "competence": "01/2025"
+    },
+    "payroll": {
+      "eletronicPoint": "",
+      "fpas": "",
+      "rat": "",
+      "fap": 0.5,
+      "taxClassification": "",
+      "enableESocial": null,
+      "lastEventStatus": null,
+      "lastMessage": ""
+    },
+    "erp": {
+      "nick": "",
+      "enableContmaticIntegration": false,
+      "enableContmaticIntegrationAt": "",
+      "contmaticIntegration": false,
+      "syncAt": ""
+    },
+    "enableModuleERPAt": "",
+    "enabledESocialAt": "",
+    "enableModuleHubFederalAt": "08/09/2025 23:06:23",
+    "enableModuleHubNFSeAt": "04/11/2025 16:56:58",
+    "enableModuleHubNFSeOutCityAt": "",
+    "enableModuleHubNFSeIssAt": "",
+    "enableModulePreventionAt": "",
+    "enable360At": "",
+    "enableModuleHubDasAt": "",
+    "enableModuleDCTFWEBAt": "",
+    "federalConfig": {
+      "enableCFE": false,
+      "enableCFEAt": "",
+      "enableNFCE": false,
+      "enableNFCEAt": "",
+      "enableSefazOnline": false,
+      "enableSefazOnlineAt": "",
+      "automationICMS": false,
+      "automationICMSAt": "",
+      "enableCertificateA3": false,
+      "enableCertificateA3At": "",
+      "enableNFeEmitted": true,
+      "enableNFeEmittedAt": "11/09/2025 13:30:46",
+      "searchWithOfficeCertificate": false,
+      "searchWithOfficeCertificateAt": "",
+      "enableAutomaticCorrections": true,
+      "enableAutomaticCorrectionsAt": "04/11/2025 16:56:58",
+      "enableAutomaticCorrectionPisCofins": true,
+      "enableAutomaticCorrectionPisCofinsAt": "04/11/2025 16:56:58"
+    },
+    "enableImporterCompanyAt": "",
+    "accountingPlanConfig": []
+  },
+  "diferencas": [
+    "Tributação: '' → 'Simples Nacional - Serviços'",
+    "IE: '' → '202047458'",
+    "IM: '' → '123387'",
+    "E-mail: '' → 'fabianolsazevedo@hotmail.com'"
+  ]
+}

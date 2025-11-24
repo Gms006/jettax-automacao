@@ -1,0 +1,171 @@
+{
+  "client_id": "68b5dbdb67c653d28b0bd6d4",
+  "cnpj": "31500145000185",
+  "razao_social": "DROGARIAS NACIONAL LTDA",
+  "payload": {
+    "id": "68b5dbdb67c653d28b0bd6d4",
+    "name": "DROGARIAS NACIONAL EIRELI",
+    "enable360": false,
+    "enableModuleERP": false,
+    "enableModulePrevention": false,
+    "enableModuleHubFederal": true,
+    "enableModuleHubNFSe": false,
+    "enableModuleHubNFSeOutCity": false,
+    "enableConvertOutSideCityAbrasf": false,
+    "enableConvertOutSideCityAbrasfAt": "",
+    "enableModuleHubNFSeIss": false,
+    "enableModuleDCTFWEB": false,
+    "enableModuleHubDas": false,
+    "enableImporterCompany": false,
+    "taxRegime": "62d9471420ba2a79cd31c163",
+    "taxRegimeCode": "LR",
+    "phone": "",
+    "whatsApp": "",
+    "municipalIntegration": {
+      "login": "",
+      "password": "",
+      "createISS": false,
+      "municipalRegistration": "86917",
+      "gissonlineLogin": "",
+      "gissonlinePassword": ""
+    },
+    "simpleNationalIntegration": {
+      "accessCode": "",
+      "documentResponsible": "",
+      "manualBilling": false,
+      "hasEmployyes": false,
+      "onlyCommercialBilling": false,
+      "typeRegime": [
+        {
+          "competence": "01/2025",
+          "code": 2,
+          "name": "Competência"
+        }
+      ]
+    },
+    "moduleFederalConfiguration": {
+      "downloadNFeWithAccountingCertificate": false,
+      "downloadPurchaseNFeInvoices": false,
+      "downloadCTeInvoices": false,
+      "downloadSalesNFeInvoices": false,
+      "downloadCFeInvoices": false,
+      "downloadCFeWithAccountingCertificate": false,
+      "enablePisCofinsAudit": false
+    },
+    "email": null,
+    "emails": [],
+    "document": "31.500.145/0001-85",
+    "address": {
+      "type": "",
+      "address": "DOM EMANOEL GOMES DE OLIVEIRA",
+      "number": 184,
+      "zip": "75113-020",
+      "district": "JUNDIAI",
+      "state": "GO",
+      "complement": "QUADRAC                   LOTE  20                  LOJA  01",
+      "city": {
+        "ibgeCode": 5201108,
+        "name": "ANAPOLIS"
+      }
+    },
+    "cnaes": [
+      {
+        "name": "Comércio varejista de produtos farmacêuticos, sem manipulação de fórmulas",
+        "code": 4771701,
+        "primary": true
+      },
+      {
+        "name": "Comércio varejista de cosméticos, produtos de perfumaria e de higiene pessoal",
+        "code": 4772500,
+        "primary": false
+      }
+    ],
+    "status": 1,
+    "startCompetence": "07/2025",
+    "digitalCertificate": "https://jettax360.s3.us-west-2.amazonaws.com/offices/68b1e4d38c0ec913a50e4bd5/clients/68b5dbdb67c653d28b0bd6d4/certificate.pfx",
+    "digitalCertificatePassword": "Jander@2025",
+    "digitalCertificateDate": "06/10/2026",
+    "digitalCertificateDocument": "31500145000185",
+    "legalNature": "230-5",
+    "stateRegistration": "",
+    "openDate": "13/09/2018",
+    "createdAt": "01/09/2025",
+    "updatedAt": "08/10/2025",
+    "headquarter": "",
+    "efdReinf": {
+      "startDate": "",
+      "partnerId": "",
+      "partnerAdmin": "",
+      "phone": "",
+      "email": "",
+      "document": "",
+      "taxClassification": "",
+      "errorMessage": ""
+    },
+    "ecdOption": "",
+    "enableEfdReinf": false,
+    "enableEfdReinfAt": "",
+    "registrationStatus": "",
+    "typeRegime": {
+      "name": "Competência",
+      "code": 2,
+      "competence": "01/2025"
+    },
+    "payroll": {
+      "eletronicPoint": "",
+      "fpas": "",
+      "rat": "",
+      "fap": 0.5,
+      "taxClassification": "",
+      "enableESocial": null,
+      "lastEventStatus": null,
+      "lastMessage": ""
+    },
+    "erp": {
+      "nick": "",
+      "enableContmaticIntegration": false,
+      "enableContmaticIntegrationAt": "",
+      "contmaticIntegration": false,
+      "syncAt": ""
+    },
+    "enableModuleERPAt": "",
+    "enabledESocialAt": "",
+    "enableModuleHubFederalAt": "01/09/2025 14:46:03",
+    "enableModuleHubNFSeAt": "",
+    "enableModuleHubNFSeOutCityAt": "",
+    "enableModuleHubNFSeIssAt": "",
+    "enableModulePreventionAt": "",
+    "enable360At": "",
+    "enableModuleHubDasAt": "",
+    "enableModuleDCTFWEBAt": "",
+    "federalConfig": {
+      "enableCFE": false,
+      "enableCFEAt": "",
+      "enableNFCE": false,
+      "enableNFCEAt": "",
+      "enableSefazOnline": false,
+      "enableSefazOnlineAt": "",
+      "automationICMS": false,
+      "automationICMSAt": "",
+      "enableCertificateA3": false,
+      "enableCertificateA3At": "",
+      "enableNFeEmitted": true,
+      "enableNFeEmittedAt": "11/09/2025 10:36:10",
+      "searchWithOfficeCertificate": false,
+      "searchWithOfficeCertificateAt": "",
+      "enableAutomaticCorrections": true,
+      "enableAutomaticCorrectionsAt": "08/10/2025 10:54:54",
+      "enableAutomaticCorrectionPisCofins": true,
+      "enableAutomaticCorrectionPisCofinsAt": "08/10/2025 10:54:54"
+    },
+    "enableImporterCompanyAt": "",
+    "accountingPlanConfig": []
+  },
+  "diferencas": [
+    "Razão Social: 'DROGARIAS NACIONAL EIRELI' → 'DROGARIAS NACIONAL LTDA'",
+    "Tributação: '' → 'Lucro Real - Comércio e Industria'",
+    "IE: '' → '107380382'",
+    "IM: '' → '86917'",
+    "E-mail: '' → 'rh@drogariasnacional.com.br'"
+  ]
+}

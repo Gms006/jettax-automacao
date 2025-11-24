@@ -1,0 +1,275 @@
+{
+  "client_id": "691b8f9e3f69400fef043c15",
+  "cnpj": "34938827000162",
+  "razao_social": "KZA.U ARQUITETURA E ENGENHARIA INTEGRADA LTDA",
+  "payload": {
+    "id": "691b8f9e3f69400fef043c15",
+    "name": "KZA.U ARQUITETURA E ENGENHARIA INTEGRADA LTDA",
+    "enable360": false,
+    "enableModuleERP": false,
+    "enableModulePrevention": false,
+    "enableModuleHubFederal": true,
+    "enableModuleHubNFSe": false,
+    "enableModuleHubNFSeOutCity": false,
+    "enableConvertOutSideCityAbrasf": false,
+    "enableConvertOutSideCityAbrasfAt": "",
+    "enableModuleHubNFSeIss": false,
+    "enableModuleDCTFWEB": false,
+    "enableModuleHubDas": false,
+    "enableImporterCompany": false,
+    "taxRegime": "60d53314200e556dc277ac20",
+    "taxRegimeCode": "SN",
+    "phone": "",
+    "whatsApp": "",
+    "municipalIntegration": {
+      "login": "05167438136",
+      "password": "051674",
+      "createISS": false,
+      "municipalRegistration": "91409",
+      "gissonlineLogin": "",
+      "gissonlinePassword": ""
+    },
+    "simpleNationalIntegration": {
+      "accessCode": "",
+      "documentResponsible": "",
+      "manualBilling": false,
+      "hasEmployyes": false,
+      "onlyCommercialBilling": false,
+      "typeRegime": [
+        {
+          "competence": "11/2025",
+          "code": 2,
+          "name": "Competência"
+        }
+      ]
+    },
+    "moduleFederalConfiguration": {
+      "downloadNFeWithAccountingCertificate": false,
+      "downloadPurchaseNFeInvoices": false,
+      "downloadCTeInvoices": false,
+      "downloadSalesNFeInvoices": false,
+      "downloadCFeInvoices": false,
+      "downloadCFeWithAccountingCertificate": false,
+      "enablePisCofinsAudit": false
+    },
+    "email": null,
+    "emails": [],
+    "document": "34.938.827/0001-62",
+    "address": {
+      "type": "R",
+      "address": "RUA BELA VISTA",
+      "number": 480,
+      "zip": "75125-415",
+      "district": "SANTO ANDRE",
+      "state": "GO",
+      "complement": "QUADRA03 LOTE 15",
+      "city": {
+        "ibgeCode": 5201108,
+        "name": "Anapolis"
+      }
+    },
+    "cnaes": [
+      {
+        "name": "Construção de edifícios",
+        "code": 4120400,
+        "primary": true
+      },
+      {
+        "name": "Montagem de estruturas metálicas",
+        "code": 4292801,
+        "primary": false
+      },
+      {
+        "name": "Perfurações e sondagens",
+        "code": 4312600,
+        "primary": false
+      },
+      {
+        "name": "Obras de terraplenagem",
+        "code": 4313400,
+        "primary": false
+      },
+      {
+        "name": "Serviços de preparação do terreno não especificados anteriormente",
+        "code": 4319300,
+        "primary": false
+      },
+      {
+        "name": "Instalação e manutenção elétrica",
+        "code": 4321500,
+        "primary": false
+      },
+      {
+        "name": "Instalações hidráulicas, sanitárias e de gás",
+        "code": 4322301,
+        "primary": false
+      },
+      {
+        "name": "Instalação e manutenção de sistemas centrais de ar condicionado, de ventilação e refrigeração",
+        "code": 4322302,
+        "primary": false
+      },
+      {
+        "name": "Instalações de sistema de prevenção contra incêndio",
+        "code": 4322303,
+        "primary": false
+      },
+      {
+        "name": "Instalação, manutenção e reparação de elevadores, escadas e esteiras rolantes",
+        "code": 4329103,
+        "primary": false
+      },
+      {
+        "name": "Serviços de pintura de edifícios em geral",
+        "code": 4330404,
+        "primary": false
+      },
+      {
+        "name": "Obras de fundações",
+        "code": 4391600,
+        "primary": false
+      },
+      {
+        "name": "Administração de obras",
+        "code": 4399101,
+        "primary": false
+      },
+      {
+        "name": "Montagem e desmontagem de andaimes e outras estruturas temporárias",
+        "code": 4399102,
+        "primary": false
+      },
+      {
+        "name": "Serviços especializados para construção não especificados anteriormente",
+        "code": 4399199,
+        "primary": false
+      },
+      {
+        "name": "Comércio varejista de móveis",
+        "code": 4754701,
+        "primary": false
+      },
+      {
+        "name": "Serviços de arquitetura",
+        "code": 7111100,
+        "primary": false
+      },
+      {
+        "name": "Serviços de engenharia",
+        "code": 7112000,
+        "primary": false
+      },
+      {
+        "name": "Serviços de desenho técnico relacionados à arquitetura e engenharia",
+        "code": 7119703,
+        "primary": false
+      },
+      {
+        "name": "Design de interiores",
+        "code": 7410202,
+        "primary": false
+      },
+      {
+        "name": "Atividades paisagísticas",
+        "code": 8130300,
+        "primary": false
+      },
+      {
+        "name": "Reparação de artigos do mobiliário",
+        "code": 9529105,
+        "primary": false
+      },
+      {
+        "name": "Desing de produto",
+        "code": 7410203,
+        "primary": false
+      }
+    ],
+    "status": 1,
+    "startCompetence": "11/2025",
+    "digitalCertificate": null,
+    "digitalCertificatePassword": "",
+    "digitalCertificateDate": "",
+    "digitalCertificateDocument": "",
+    "legalNature": "206-2",
+    "stateRegistration": 9628842041,
+    "openDate": "01/09/2025",
+    "createdAt": "17/11/2025",
+    "updatedAt": "21/11/2025",
+    "headquarter": "",
+    "efdReinf": {
+      "startDate": "",
+      "partnerId": "",
+      "partnerAdmin": "",
+      "phone": "",
+      "email": "",
+      "document": "",
+      "taxClassification": "",
+      "errorMessage": ""
+    },
+    "ecdOption": "",
+    "enableEfdReinf": false,
+    "enableEfdReinfAt": "",
+    "registrationStatus": "",
+    "typeRegime": {
+      "name": "Competência",
+      "code": 2,
+      "competence": "11/2025"
+    },
+    "payroll": {
+      "eletronicPoint": "",
+      "fpas": "",
+      "rat": "",
+      "fap": 0.5,
+      "taxClassification": "",
+      "enableESocial": null,
+      "lastEventStatus": null,
+      "lastMessage": ""
+    },
+    "erp": {
+      "nick": "",
+      "enableContmaticIntegration": false,
+      "enableContmaticIntegrationAt": "",
+      "contmaticIntegration": false,
+      "syncAt": ""
+    },
+    "enableModuleERPAt": "",
+    "enabledESocialAt": "",
+    "enableModuleHubFederalAt": "17/11/2025 18:11:58",
+    "enableModuleHubNFSeAt": "",
+    "enableModuleHubNFSeOutCityAt": "",
+    "enableModuleHubNFSeIssAt": "",
+    "enableModulePreventionAt": "",
+    "enable360At": "",
+    "enableModuleHubDasAt": "",
+    "enableModuleDCTFWEBAt": "",
+    "federalConfig": {
+      "enableCFE": false,
+      "enableCFEAt": "",
+      "enableNFCE": false,
+      "enableNFCEAt": "",
+      "enableSefazOnline": false,
+      "enableSefazOnlineAt": "",
+      "automationICMS": false,
+      "automationICMSAt": "",
+      "enableCertificateA3": false,
+      "enableCertificateA3At": "",
+      "enableNFeEmitted": true,
+      "enableNFeEmittedAt": "17/11/2025 18:11:58",
+      "searchWithOfficeCertificate": false,
+      "searchWithOfficeCertificateAt": "",
+      "enableAutomaticCorrections": true,
+      "enableAutomaticCorrectionsAt": "21/11/2025 17:26:35",
+      "enableAutomaticCorrectionPisCofins": true,
+      "enableAutomaticCorrectionPisCofinsAt": "21/11/2025 17:26:35"
+    },
+    "enableImporterCompanyAt": "",
+    "accountingPlanConfig": []
+  },
+  "diferencas": [
+    "Tributação: '' → 'Simples Nacional - Serviços'",
+    "IE: '' → '107746611'",
+    "IM: '' → '91409'",
+    "E-mail: '' → 'contato@kzau.com.br'"
+  ]
+}

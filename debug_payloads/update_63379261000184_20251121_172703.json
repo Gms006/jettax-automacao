@@ -1,0 +1,173 @@
+{
+  "client_id": "691624543a645e34ac0d57d2",
+  "cnpj": "63379261000184",
+  "razao_social": "JS MEDICAMENTOS LTDA",
+  "payload": {
+    "id": "691624543a645e34ac0d57d2",
+    "name": "JS MEDICAMENTOS LTDA",
+    "enable360": false,
+    "enableModuleERP": false,
+    "enableModulePrevention": false,
+    "enableModuleHubFederal": true,
+    "enableModuleHubNFSe": true,
+    "enableModuleHubNFSeOutCity": false,
+    "enableConvertOutSideCityAbrasf": false,
+    "enableConvertOutSideCityAbrasfAt": "",
+    "enableModuleHubNFSeIss": true,
+    "enableModuleDCTFWEB": false,
+    "enableModuleHubDas": false,
+    "enableImporterCompany": false,
+    "taxRegime": "60d53314200e556dc277ac20",
+    "taxRegimeCode": "SN",
+    "phone": "",
+    "whatsApp": "",
+    "municipalIntegration": {
+      "login": "78941873134",
+      "password": "789418",
+      "createISS": false,
+      "municipalRegistration": "128155",
+      "gissonlineLogin": "",
+      "gissonlinePassword": ""
+    },
+    "simpleNationalIntegration": {
+      "accessCode": "",
+      "documentResponsible": "",
+      "manualBilling": false,
+      "hasEmployyes": false,
+      "onlyCommercialBilling": false,
+      "typeRegime": [
+        {
+          "competence": "01/2025",
+          "code": 2,
+          "name": "Competência"
+        }
+      ]
+    },
+    "moduleFederalConfiguration": {
+      "downloadNFeWithAccountingCertificate": false,
+      "downloadPurchaseNFeInvoices": false,
+      "downloadCTeInvoices": false,
+      "downloadSalesNFeInvoices": false,
+      "downloadCFeInvoices": false,
+      "downloadCFeWithAccountingCertificate": false,
+      "enablePisCofinsAudit": false
+    },
+    "email": null,
+    "emails": [],
+    "document": "63.379.261/0001-84",
+    "address": {
+      "type": "AV",
+      "address": "AV FERNANDO COSTA",
+      "number": 242,
+      "zip": "75115-320",
+      "district": "VILA JAYARA",
+      "state": "GO",
+      "complement": "QUADRA03 LOTE 30 SALA 01",
+      "city": {
+        "ibgeCode": 5201108,
+        "name": "Anapolis"
+      }
+    },
+    "cnaes": [
+      {
+        "name": "Comércio varejista de produtos farmacêuticos, sem manipulação de fórmulas",
+        "code": 4771701,
+        "primary": true
+      },
+      {
+        "name": "Comércio varejista de cosméticos, produtos de perfumaria e de higiene pessoal",
+        "code": 4772500,
+        "primary": false
+      },
+      {
+        "name": "Comércio varejista de artigos médicos e ortopédicos",
+        "code": 4773300,
+        "primary": false
+      }
+    ],
+    "status": 1,
+    "startCompetence": "10/2025",
+    "digitalCertificate": "https://jettax360.s3.us-west-2.amazonaws.com/offices/68b1e4d38c0ec913a50e4bd5/clients/691624543a645e34ac0d57d2/certificate.pfx",
+    "digitalCertificatePassword": "Jander@2025",
+    "digitalCertificateDate": "11/11/2026",
+    "digitalCertificateDocument": "63379261000184",
+    "legalNature": "206-2",
+    "stateRegistration": 203344197,
+    "openDate": "27/10/2025",
+    "createdAt": "13/11/2025",
+    "updatedAt": "13/11/2025",
+    "headquarter": "",
+    "efdReinf": {
+      "startDate": "",
+      "partnerId": "",
+      "partnerAdmin": "",
+      "phone": "",
+      "email": "",
+      "document": "",
+      "taxClassification": "",
+      "errorMessage": ""
+    },
+    "ecdOption": "",
+    "enableEfdReinf": false,
+    "enableEfdReinfAt": "",
+    "registrationStatus": "620d000954060f3cff779903",
+    "typeRegime": {
+      "name": "Competência",
+      "code": 2,
+      "competence": "01/2025"
+    },
+    "payroll": {
+      "eletronicPoint": null,
+      "fpas": "",
+      "rat": "",
+      "fap": 0.5,
+      "taxClassification": "",
+      "competence": ""
+    },
+    "erp": {
+      "nick": "",
+      "enableContmaticIntegration": false,
+      "enableContmaticIntegrationAt": "",
+      "contmaticIntegration": false,
+      "syncAt": ""
+    },
+    "enableModuleERPAt": "",
+    "enabledESocialAt": "",
+    "enableModuleHubFederalAt": "13/11/2025 15:32:52",
+    "enableModuleHubNFSeAt": "13/11/2025 15:32:52",
+    "enableModuleHubNFSeOutCityAt": "",
+    "enableModuleHubNFSeIssAt": "13/11/2025 15:32:52",
+    "enableModulePreventionAt": "",
+    "enable360At": "",
+    "enableModuleHubDasAt": "",
+    "enableModuleDCTFWEBAt": "",
+    "federalConfig": {
+      "enableCFE": false,
+      "enableCFEAt": "",
+      "enableNFCE": false,
+      "enableNFCEAt": "",
+      "enableSefazOnline": false,
+      "enableSefazOnlineAt": "",
+      "automationICMS": false,
+      "automationICMSAt": "",
+      "enableCertificateA3": false,
+      "enableCertificateA3At": "",
+      "enableNFeEmitted": false,
+      "enableNFeEmittedAt": "",
+      "searchWithOfficeCertificate": false,
+      "searchWithOfficeCertificateAt": "",
+      "enableAutomaticCorrections": true,
+      "enableAutomaticCorrectionsAt": "13/11/2025 15:32:52",
+      "enableAutomaticCorrectionPisCofins": false,
+      "enableAutomaticCorrectionPisCofinsAt": ""
+    },
+    "enableImporterCompanyAt": "",
+    "accountingPlanConfig": []
+  },
+  "diferencas": [
+    "Tributação: '' → 'Simples Nacional - Comércio e Industria'",
+    "IE: '' → '203344197'",
+    "IM: '' → '128155'",
+    "E-mail: '' → 'drogariasnacional@hotmail.com'"
+  ]
+}

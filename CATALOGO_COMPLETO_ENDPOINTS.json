@@ -1,0 +1,2631 @@
+{
+  "metadata": {
+    "gerado_em": "2025-11-21",
+    "total_endpoints": 170,
+    "total_modulos": 19,
+    "fontes": [
+      "Captura 1: 19/11/2025 - 94 endpoints",
+      "Captura 2: 21/11/2025 - 107 endpoints"
+    ],
+    "cobertura": "77.8%"
+  },
+  "modulos": {
+    "commerce": {
+      "total_endpoints": 54,
+      "endpoints": [
+        {
+          "method": "DELETE",
+          "url": "https://api-federal.jettax360.com.br/api/v1/commerce/categories/{id}",
+          "endpoint_key": "DELETE https://api-federal.jettax360.com.br/api/v1/commerce/categories/{id}",
+          "module": "commerce",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": {}
+          },
+          "response_example": {
+            "status": 202,
+            "statusText": "",
+            "headers": {},
+            "body": []
+          }
+        },
+        {
+          "method": "DELETE",
+          "url": "https://api-federal.jettax360.com.br/api/v1/commerce/hub/pis-cofins-rules/delete/",
+          "endpoint_key": "DELETE https://api-federal.jettax360.com.br/api/v1/commerce/hub/pis-cofins-rules/delete/",
+          "module": "commerce",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": {
+              "ids": [
+                "68cc0c91aea599916c0c7476"
+              ]
+            }
+          },
+          "response_example": {
+            "status": 202,
+            "statusText": "",
+            "headers": {},
+            "body": []
+          }
+        },
+        {
+          "method": "DELETE",
+          "url": "https://api-federal.jettax360.com.br/api/v1/commerce/hub/reports/delete/{id}",
+          "endpoint_key": "DELETE https://api-federal.jettax360.com.br/api/v1/commerce/hub/reports/delete/{id}",
+          "module": "commerce",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": {}
+          },
+          "response_example": {
+            "status": 202,
+            "statusText": "",
+            "headers": {},
+            "body": []
+          }
+        },
+        {
+          "method": "GET",
+          "url": "https://api-federal.jettax360.com.br/api/v1/commerce/audit-reprocess-details/{id}",
+          "endpoint_key": "GET https://api-federal.jettax360.com.br/api/v1/commerce/audit-reprocess-details/{id}",
+          "module": "commerce",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": null
+          },
+          "response_example": {
+            "status": 202,
+            "statusText": "",
+            "headers": {},
+            "body": {
+              "data": [
+                {
+                  "id": "691c9ff6fd84bec73b07ce76",
+                  "createdAt": "18/11/2025",
+                  "auditReprocessId": "691c9ff6fd84bec73b07ce75",
+                  "client": {
+                    "id": "68c011f49a213ccebf0463a2",
+                    "name": "3TB PRODUCOES ARTISTICAS LTDA",
+                    "document": "46.149.398/0001-23"
+                  },
+                  "status": {
+                    "color": "badge badge-success",
+                    "label": "Finalizado",
+                    "tooltip": ""
+                  }
+                }
+              ],
+              "meta": {
+                "pagination": {
+                  "total": 1,
+                  "count": 1,
+                  "per_page": 20,
+                  "current_page": 1,
+                  "total_pages": 1,
+                  "links": {}
+                }
+              }
+            }
+          }
+        },
+        {
+          "method": "GET",
+          "url": "https://api-federal.jettax360.com.br/api/v1/commerce/audit-reprocess/",
+          "endpoint_key": "GET https://api-federal.jettax360.com.br/api/v1/commerce/audit-reprocess/",
+          "module": "commerce",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": null
+          },
+          "response_example": {
+            "status": 200,
+            "statusText": "",
+            "headers": {},
+            "body": "{\"data\":[{\"id\":\"691c9ff6fd84bec73b07ce75\",\"createdAt\":\"18/11/2025 13:33:58\",\"totalClients\":1,\"period\":\"10/2025\",\"successPercentage\":100,\"errorPercentage\":0,\"type\":\"Auditoria Substituição Tributária\",\"status\":{\"color\":\"badge badge-success\",\"label\":\"Finalizado\",\"tooltip\":\"\"},\"disableDetailsBtn\":false},{\"id\":\"690c92603fec1b308001ea72\",\"createdAt\":\"06/11/2025 09:19:44\",\"totalClients\":2,\"period\":\"10/2025\",\"successPercentage\":100,\"errorPercentage\":0,\"type\":\"Auditoria PIS/COFINS\",\"status\":{\"color\":\"bad\n... [TRUNCATED - 1840 chars] ...\nS\",\"status\":{\"color\":\"badge badge-success\",\"label\":\"Finalizado\",\"tooltip\":\"\"},\"disableDetailsBtn\":false},{\"id\":\"68c1b4c1617680d3dd0c224b\",\"createdAt\":\"10/09/2025 14:26:25\",\"totalClients\":1,\"period\":\"08/2025\",\"successPercentage\":100,\"errorPercentage\":0,\"type\":\"Auditoria Substituição Tributária\",\"status\":{\"color\":\"badge badge-success\",\"label\":\"Finalizado\",\"tooltip\":\"\"},\"disableDetailsBtn\":false}],\"meta\":{\"pagination\":{\"total\":6,\"count\":6,\"per_page\":20,\"current_page\":1,\"total_pages\":1,\"links\":{}}}}"
+          }
+        },
+        {
+          "method": "GET",
+          "url": "https://api-federal.jettax360.com.br/api/v1/commerce/audit-reprocess/clients",
+          "endpoint_key": "GET https://api-federal.jettax360.com.br/api/v1/commerce/audit-reprocess/clients",
+          "module": "commerce",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": null
+          },
+          "response_example": {
+            "status": 200,
+            "statusText": "",
+            "headers": {},
+            "body": "{\"data\":[{\"_id\":\"68c011f49a213ccebf0463a2\",\"name\":\"3TB PRODUCOES ARTISTICAS LTDA\",\"document\":\"46.149.398/0001-23\",\"linked\":false,\"infoLinked\":false,\"taxRegime\":\"Simples Nacional\",\"city\":\"Anapolis\",\"status\":{\"code\":1,\"text\":\"Ativo\",\"color\":\"success\"}},{\"_id\":\"68c01f0235d0621e88004e62\",\"name\":\"A A DE MATOS RESENDE - SUPERMERCADO SANTO ANTONIO\",\"document\":\"29.413.500/0001-37\",\"linked\":false,\"infoLinked\":false,\"taxRegime\":\"Simples Nacional\",\"city\":\"Anapolis\",\"status\":{\"code\":1,\"text\":\"Ativo\",\"color\"\n... [TRUNCATED - 48165 chars] ...\nivo\",\"color\":\"success\"}},{\"_id\":\"68bf92ff6a14c8043708ef12\",\"name\":\"WVM ENERGIA E EVENTOS LTDA\",\"document\":\"18.608.090/0002-44\",\"linked\":false,\"infoLinked\":false,\"taxRegime\":\"Lucro Presumido\",\"city\":\"Anapolis\",\"status\":{\"code\":1,\"text\":\"Ativo\",\"color\":\"success\"}},{\"_id\":\"68bf933e0fafc74f1904cc66\",\"name\":\"ZION DENTAL CLINIC LTDA\",\"document\":\"42.160.692/0001-85\",\"linked\":false,\"infoLinked\":false,\"taxRegime\":\"Simples Nacional\",\"city\":\"Anapolis\",\"status\":{\"code\":1,\"text\":\"Ativo\",\"color\":\"success\"}}]}"
+          }
+        },
+        {
+          "method": "GET",
+          "url": "https://api-federal.jettax360.com.br/api/v1/commerce/authenticity/list",
+          "endpoint_key": "GET https://api-federal.jettax360.com.br/api/v1/commerce/authenticity/list",
+          "module": "commerce",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": null
+          },
+          "response_example": {
+            "status": 200,
+            "statusText": "",
+            "headers": {},
+            "body": "{\"data\":[{\"id\":\"691c9e71a0cf616f5b02199d\",\"createdAt\":\"18/11/2025 13:27:29\",\"client\":\"LL DA SILVA & CIA. LTDA. - 03.163.171/0006-34\",\"clientId\":\"691b909faca1136b11054297\",\"period\":\"01/11/2025 - 18/11/2025\",\"type\":\"NF-e Emitida\",\"totalDocument\":0,\"totalAuthenticated\":0,\"totalInvalid\":0,\"totalNoQuery\":0,\"route\":\"hub-nfe-list\",\"issueDate\":\"01/11/2025;18/11/2025\",\"status\":{\"color\":\"badge badge-success\",\"label\":\"Finalizado\",\"tooltip\":\"\"},\"fromSchedule\":false},{\"id\":\"691c9e71a0cf616f5b02199c\",\"created\n... [TRUNCATED - 9267 chars] ...\n543a645e34ac0d57d2\",\"period\":\"01/11/2025 - 18/11/2025\",\"type\":\"NF-e Emitida\",\"totalDocument\":0,\"totalAuthenticated\":0,\"totalInvalid\":0,\"totalNoQuery\":0,\"route\":\"hub-nfe-list\",\"issueDate\":\"01/11/2025;18/11/2025\",\"status\":{\"color\":\"badge badge-success\",\"label\":\"Finalizado\",\"tooltip\":\"\"},\"fromSchedule\":false}],\"meta\":{\"pagination\":{\"total\":144,\"count\":20,\"per_page\":20,\"current_page\":1,\"total_pages\":8,\"links\":{\"next\":\"https://api-federal.jettax360.com.br/api/v1/commerce/authenticity/list?page=2\"}}}}"
+          }
+        },
+        {
+          "method": "GET",
+          "url": "https://api-federal.jettax360.com.br/api/v1/commerce/categories/list",
+          "endpoint_key": "GET https://api-federal.jettax360.com.br/api/v1/commerce/categories/list",
+          "module": "commerce",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": null
+          },
+          "response_example": {
+            "status": 200,
+            "statusText": "",
+            "headers": {},
+            "body": "{\"data\":[{\"id\":\"6359f05538e9d589e10e84f7\",\"name\":\"Ativo\",\"color\":\"#BCBDC7\",\"default\":true,\"user\":{\"name\":null,\"_id\":null},\"exemptionICMS\":\"Não\",\"itemDestination\":\"Ativo\",\"bcICMSreduction\":\"0,00\",\"bcICMSSTReduction\":\"0,00\",\"covenantReduce\":\"Sim\",\"annex\":\"\"},{\"id\":\"690c8e8f239b76b4c401aaba\",\"name\":\"Combustíveis e Lubrificantes\",\"color\":\"#D9D9D9\",\"default\":false,\"user\":{\"name\":\"MARCO ANTONIO\",\"_id\":null},\"exemptionICMS\":\"Não\",\"itemDestination\":\"Uso e Consumo\",\"bcICMSreduction\":\"0,00\",\"bcICMSSTReduc\n... [TRUNCATED - 2264 chars] ...\nonICMS\":\"Não\",\"itemDestination\":\"Uso e Consumo\",\"bcICMSreduction\":\"0,00\",\"bcICMSSTReduction\":\"0,00\",\"covenantReduce\":\"Sim\",\"annex\":\"\"},{\"id\":\"691ca0f2fd84bec73b07ce7e\",\"name\":\"teste\",\"color\":\"#181C32\",\"default\":false,\"user\":{\"name\":\"MARCO ANTONIO\",\"_id\":null},\"exemptionICMS\":\"Sim\",\"itemDestination\":\"Revenda\",\"bcICMSreduction\":\"0,00\",\"bcICMSSTReduction\":\"0,00\",\"covenantReduce\":\"Sim\",\"annex\":\"\"}],\"meta\":{\"pagination\":{\"total\":8,\"count\":8,\"per_page\":20,\"current_page\":1,\"total_pages\":1,\"links\":{}}}}"
+          }
+        },
+        {
+          "method": "GET",
+          "url": "https://api-federal.jettax360.com.br/api/v1/commerce/categories/rule/list",
+          "endpoint_key": "GET https://api-federal.jettax360.com.br/api/v1/commerce/categories/rule/list",
+          "module": "commerce",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": null
+          },
+          "response_example": {
+            "status": 200,
+            "statusText": "",
+            "headers": {},
+            "body": "{\"data\":[{\"_id\":\"690c91bce66e7d4d9e020ab2\",\"name\":\"GH SISTEMAS\",\"type\":{\"code\":1,\"label\":\"NFe Recebida\"},\"filters\":{\"document\":\"02082558000865\"},\"category\":{\"_id\":\"6359f05538e9d589e10e84f4\",\"name\":\"Revenda\",\"color\":\"#BCBDC7\"},\"officeId\":\"68b1e4d38c0ec913a50e4bd5\",\"user\":{\"name\":\"MARCO ANTONIO\",\"id\":{\"$oid\":\"68b1e4d38c0ec913a50e4bd7\"}},\"clients\":[{\"id\":\"68b5ca34826f0baddb0a9df3\",\"name\":\"GH SISTEMAS CONSTRUTIVOS LTDA\",\"document\":\"55.741.687/0001-08\",\"city\":\"Anapolis\",\"taxRegime\":\"Lucro Real\"},{\"id\n... [TRUNCATED - 1132 chars] ...\ncro Real\"}],\"clientsCount\":2},{\"_id\":\"68d17cd0781c9353f00b253f\",\"name\":\"João Vitor Guimarães Silva\",\"type\":{\"code\":1,\"label\":\"NFe Recebida\"},\"filters\":{\"cfop\":5102},\"category\":{\"_id\":\"6359f05538e9d589e10e84f5\",\"name\":\"Industrialização\",\"color\":\"#BCBDC7\"},\"officeId\":\"68b1e4d38c0ec913a50e4bd5\",\"user\":{\"name\":\"MARCO ANTONIO\",\"id\":{\"$oid\":\"68b1e4d38c0ec913a50e4bd7\"}},\"clients\":[],\"clientsCount\":0}],\"meta\":{\"pagination\":{\"total\":2,\"count\":2,\"per_page\":20,\"current_page\":1,\"total_pages\":1,\"links\":{}}}}"
+          }
+        },
+        {
+          "method": "GET",
+          "url": "https://api-federal.jettax360.com.br/api/v1/commerce/categories/rule/loadData",
+          "endpoint_key": "GET https://api-federal.jettax360.com.br/api/v1/commerce/categories/rule/loadData",
+          "module": "commerce",
+          "fonte": "ambas"
+        },
+        {
+          "method": "GET",
+          "url": "https://api-federal.jettax360.com.br/api/v1/commerce/categories/{id}",
+          "endpoint_key": "GET https://api-federal.jettax360.com.br/api/v1/commerce/categories/{id}",
+          "module": "commerce",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": null
+          },
+          "response_example": {
+            "status": 200,
+            "statusText": "",
+            "headers": {},
+            "body": {
+              "data": {
+                "_id": "690c8e8f239b76b4c401aaba",
+                "name": "Combustíveis e Lubrificantes",
+                "color": "#D9D9D9",
+                "default": false,
+                "user": {
+                  "name": "MARCO ANTONIO",
+                  "_id": null
+                },
+                "exemptionICMS": "2",
+                "itemDestination": "3",
+                "bcICMSreduction": "0,00",
+                "bcICMSSTReduction": "0,00",
+                "covenantReduce": "1",
+                "disregardProtocol": false,
+                "annex": ""
+              }
+            }
+          }
+        },
+        {
+          "method": "GET",
+          "url": "https://api-federal.jettax360.com.br/api/v1/commerce/cest-rules/list",
+          "endpoint_key": "GET https://api-federal.jettax360.com.br/api/v1/commerce/cest-rules/list",
+          "module": "commerce",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": null
+          },
+          "response_example": {
+            "status": 200,
+            "statusText": "",
+            "headers": {},
+            "body": {
+              "data": [],
+              "meta": {
+                "pagination": {
+                  "total": 0,
+                  "count": 0,
+                  "per_page": 20,
+                  "current_page": 1,
+                  "total_pages": 1,
+                  "links": {}
+                }
+              }
+            }
+          }
+        },
+        {
+          "method": "GET",
+          "url": "https://api-federal.jettax360.com.br/api/v1/commerce/cfops-rules/list",
+          "endpoint_key": "GET https://api-federal.jettax360.com.br/api/v1/commerce/cfops-rules/list",
+          "module": "commerce",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": null
+          },
+          "response_example": {
+            "status": 200,
+            "statusText": "",
+            "headers": {},
+            "body": "{\"data\":[{\"code\":1101,\"description\":\"Classificam-se neste código as compras de mercadorias a serem utilizadas em processo de industrialização ou produção rural.\",\"shortDescription\":\"Compra para industrialização ou produção rural\",\"origin\":null,\"difalSN\":null,\"manuallyChanged\":1,\"anticipationIcmsSt\":\"Sim\",\"dasTaxation\":\"Não\",\"dasDevolution\":\"Não\",\"dasTaxationAnnex\":{\"name\":\"Anexo II\",\"_id\":\"63c0737492285f8bef018603\"},\"st\":\"Não\",\"pis\":\"Sim\",\"cofins\":\"Sim\"},{\"code\":1102,\"description\":\"Classificam-s\n... [TRUNCATED - 12883 chars] ...\no as entradas de energia elétrica recebida em transferência de outro estabelecimento da mesma empresa, para distribuição.\",\"shortDescription\":\"Transferência de energia elétrica para distribuição\",\"origin\":null,\"difalSN\":\"Não\",\"manuallyChanged\":0,\"anticipationIcmsSt\":\"Sim\",\"dasTaxation\":\"Não\",\"dasDevolution\":\"Não\",\"dasTaxationAnnex\":[],\"st\":\"Não\",\"pis\":\"Sim\",\"cofins\":\"Sim\"}],\"meta\":{\"pagination\":{\"total\":619,\"count\":20,\"per_page\":20,\"current_page\":1,\"total_pages\":31,\"links\":{\"next\":\"/?page=2\"}}}}"
+          }
+        },
+        {
+          "method": "GET",
+          "url": "https://api-federal.jettax360.com.br/api/v1/commerce/cfops-rules/{id}",
+          "endpoint_key": "GET https://api-federal.jettax360.com.br/api/v1/commerce/cfops-rules/{id}",
+          "module": "commerce",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": null
+          },
+          "response_example": {
+            "status": 200,
+            "statusText": "",
+            "headers": {},
+            "body": {
+              "data": {
+                "code": 1101,
+                "description": "Classificam-se neste código as compras de mercadorias a serem utilizadas em processo de industrialização ou produção rural.",
+                "shortDescription": "Compra para industrialização ou produção rural",
+                "origin": null,
+                "difalSN": null,
+                "manuallyChanged": 1,
+                "anticipationIcmsSt": "Sim",
+                "dasTaxation": "Não",
+                "dasDevolution": "Não",
+                "dasTaxationAnnex": {
+                  "name": "Anexo II",
+                  "id": "63c0737492285f8bef018603"
+                },
+                "st": "Não",
+                "pis": "Sim",
+                "cofins": "Sim"
+              }
+            }
+          }
+        },
+        {
+          "method": "GET",
+          "url": "https://api-federal.jettax360.com.br/api/v1/commerce/ctes",
+          "endpoint_key": "GET https://api-federal.jettax360.com.br/api/v1/commerce/ctes",
+          "module": "commerce",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": null
+          },
+          "response_example": {
+            "status": 200,
+            "statusText": "",
+            "headers": {},
+            "body": {
+              "data": [],
+              "meta": {
+                "totalizers": {
+                  "totalNote": 0,
+                  "totalCanceledNote": 0,
+                  "totalAuthenticated": 0,
+                  "totalInvalid": 0,
+                  "totalAuthorizedAmount": "0,00",
+                  "rbt12TotalInternal": "0,00",
+                  "rbt12TotalExternal": "0,00"
+                },
+                "pagination": {
+                  "total": 0,
+                  "count": 0,
+                  "per_page": 20,
+                  "current_page": 1,
+                  "total_pages": 1,
+                  "links": {}
+                }
+              }
+            }
+          }
+        },
+        {
+          "method": "GET",
+          "url": "https://api-federal.jettax360.com.br/api/v1/commerce/ctes/manifest-history/{id}",
+          "endpoint_key": "GET https://api-federal.jettax360.com.br/api/v1/commerce/ctes/manifest-history/{id}",
+          "module": "commerce",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": null
+          },
+          "response_example": {
+            "status": 202,
+            "statusText": "",
+            "headers": {},
+            "body": []
+          }
+        },
+        {
+          "method": "GET",
+          "url": "https://api-federal.jettax360.com.br/api/v1/commerce/ctes/{id}",
+          "endpoint_key": "GET https://api-federal.jettax360.com.br/api/v1/commerce/ctes/{id}",
+          "module": "commerce",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": null
+          },
+          "response_example": {
+            "status": 200,
+            "statusText": "",
+            "headers": {},
+            "body": "{\"data\":{\"model\":57,\"number\":3266,\"serie\":1,\"accessKey\":\"52251126221807000148570010000032661959896104\",\"type\":\"Recebida\",\"tpEmis\":\"Normal\",\"status\":\"Autorizada\",\"issueDate\":\"12/11/2025 13:38:00\",\"xMunIni\":\"CAMACARI\",\"xMunFim\":\"ANAPOLIS\",\"CFOP\":6932,\"natOp\":\"AQUISICAO DE SERVICO DE TRANSPORTE INICIADO EM UNIDADE DA FE\",\"issued\":{\"document\":\"26221807000148\",\"name\":\"PERMAQUE LOGISTICA LTDA\",\"IE\":\"106748335\",\"address\":{\"zip\":\"72820350\",\"address\":\"RUA HERCULANO MEIRELES\",\"number\":\"S/N\",\"district\":\"PA\n... [TRUNCATED - 2198 chars] ...\n 0,00\",\"vINSS\":\"R$ 0,00\",\"vCSLL\":\"R$ 0,00\"},\"infDoc\":[{\"id\":1,\"key\":\"29251102082558000865550010000869891193584990\",\"type\":\"NF-e\",\"serie\":1,\"number\":86989}],\"s3Url\":\"https://jettax360.s3.us-west-2.amazonaws.com/offices/68b1e4d38c0ec913a50e4bd5/clients/68b5ca34826f0baddb0a9df3/CTe/2025/11/recebidas/52251126221807000148570010000032661959896104.xml\",\"eventS3Url\":null,\"taxation\":{\"status\":false,\"hasNoIncidence\":true,\"message\":\"\"},\"taxationUpdatedByUser\":false,\"taxationUserRule\":{\"_id\":\"\",\"name\":\"\"}}}"
+          }
+        },
+        {
+          "method": "GET",
+          "url": "https://api-federal.jettax360.com.br/api/v1/commerce/das/load-data",
+          "endpoint_key": "GET https://api-federal.jettax360.com.br/api/v1/commerce/das/load-data",
+          "module": "commerce",
+          "fonte": "ambas"
+        },
+        {
+          "method": "GET",
+          "url": "https://api-federal.jettax360.com.br/api/v1/commerce/hub/federal/dashboard-pis-cofins",
+          "endpoint_key": "GET https://api-federal.jettax360.com.br/api/v1/commerce/hub/federal/dashboard-pis-cofins",
+          "module": "commerce",
+          "fonte": "captura_1"
+        },
+        {
+          "method": "GET",
+          "url": "https://api-federal.jettax360.com.br/api/v1/commerce/hub/federal/dashboard-products",
+          "endpoint_key": "GET https://api-federal.jettax360.com.br/api/v1/commerce/hub/federal/dashboard-products",
+          "module": "commerce",
+          "fonte": "captura_1"
+        },
+        {
+          "method": "GET",
+          "url": "https://api-federal.jettax360.com.br/api/v1/commerce/hub/federal/dashboard-top-clients",
+          "endpoint_key": "GET https://api-federal.jettax360.com.br/api/v1/commerce/hub/federal/dashboard-top-clients",
+          "module": "commerce",
+          "fonte": "captura_1"
+        },
+        {
+          "method": "GET",
+          "url": "https://api-federal.jettax360.com.br/api/v1/commerce/hub/federal/dashboard-top-sellers",
+          "endpoint_key": "GET https://api-federal.jettax360.com.br/api/v1/commerce/hub/federal/dashboard-top-sellers",
+          "module": "commerce",
+          "fonte": "captura_1"
+        },
+        {
+          "method": "GET",
+          "url": "https://api-federal.jettax360.com.br/api/v1/commerce/hub/federal/dashboard-totalizers",
+          "endpoint_key": "GET https://api-federal.jettax360.com.br/api/v1/commerce/hub/federal/dashboard-totalizers",
+          "module": "commerce",
+          "fonte": "captura_1"
+        },
+        {
+          "method": "GET",
+          "url": "https://api-federal.jettax360.com.br/api/v1/commerce/hub/pis-cofins-rules/details/{id}",
+          "endpoint_key": "GET https://api-federal.jettax360.com.br/api/v1/commerce/hub/pis-cofins-rules/details/{id}",
+          "module": "commerce",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": null
+          },
+          "response_example": {
+            "status": 200,
+            "statusText": "",
+            "headers": {},
+            "body": {
+              "data": {
+                "_id": "68cc0c91aea599916c0c7476",
+                "taxation": {
+                  "PIS": {
+                    "enable": true,
+                    "value": "1,65"
+                  },
+                  "COFINS": {
+                    "enable": true,
+                    "value": "7,60"
+                  },
+                  "CST": {
+                    "enable": true,
+                    "value": "01"
+                  }
+                },
+                "name": "Regra para o NCM 68091900",
+                "clientDocument": "32.675.376/0001-92",
+                "type": 1,
+                "ncm": "68091900",
+                "effectiveStartDate": "",
+                "effectiveEndDate": "",
+                "productCode": "131",
+                "withoutTaxationIncidence": false
+              }
+            }
+          }
+        },
+        {
+          "method": "GET",
+          "url": "https://api-federal.jettax360.com.br/api/v1/commerce/hub/pis-cofins-rules/get-clients/new",
+          "endpoint_key": "GET https://api-federal.jettax360.com.br/api/v1/commerce/hub/pis-cofins-rules/get-clients/new",
+          "module": "commerce",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": null
+          },
+          "response_example": {
+            "status": 200,
+            "statusText": "",
+            "headers": {},
+            "body": "{\"data\":[{\"_id\":\"68c011f49a213ccebf0463a2\",\"name\":\"3TB PRODUCOES ARTISTICAS LTDA\",\"document\":\"46.149.398/0001-23\",\"linked\":false,\"infoLinked\":false,\"taxRegime\":\"Simples Nacional\",\"city\":\"Anapolis\",\"status\":{\"code\":1,\"text\":\"Ativo\",\"color\":\"success\"}},{\"_id\":\"68c01f0235d0621e88004e62\",\"name\":\"A A DE MATOS RESENDE - SUPERMERCADO SANTO ANTONIO\",\"document\":\"29.413.500/0001-37\",\"linked\":false,\"infoLinked\":false,\"taxRegime\":\"Simples Nacional\",\"city\":\"Anapolis\",\"status\":{\"code\":1,\"text\":\"Ativo\",\"color\"\n... [TRUNCATED - 48165 chars] ...\nivo\",\"color\":\"success\"}},{\"_id\":\"68bf92ff6a14c8043708ef12\",\"name\":\"WVM ENERGIA E EVENTOS LTDA\",\"document\":\"18.608.090/0002-44\",\"linked\":false,\"infoLinked\":false,\"taxRegime\":\"Lucro Presumido\",\"city\":\"Anapolis\",\"status\":{\"code\":1,\"text\":\"Ativo\",\"color\":\"success\"}},{\"_id\":\"68bf933e0fafc74f1904cc66\",\"name\":\"ZION DENTAL CLINIC LTDA\",\"document\":\"42.160.692/0001-85\",\"linked\":false,\"infoLinked\":false,\"taxRegime\":\"Simples Nacional\",\"city\":\"Anapolis\",\"status\":{\"code\":1,\"text\":\"Ativo\",\"color\":\"success\"}}]}"
+          }
+        },
+        {
+          "method": "GET",
+          "url": "https://api-federal.jettax360.com.br/api/v1/commerce/hub/pis-cofins-rules/get-clients/{id}",
+          "endpoint_key": "GET https://api-federal.jettax360.com.br/api/v1/commerce/hub/pis-cofins-rules/get-clients/{id}",
+          "module": "commerce",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": null
+          },
+          "response_example": {
+            "status": 200,
+            "statusText": "",
+            "headers": {},
+            "body": "{\"data\":[{\"_id\":\"68c011f49a213ccebf0463a2\",\"name\":\"3TB PRODUCOES ARTISTICAS LTDA\",\"document\":\"46.149.398/0001-23\",\"linked\":false,\"infoLinked\":false,\"taxRegime\":\"Simples Nacional\",\"city\":\"Anapolis\",\"status\":{\"code\":1,\"text\":\"Ativo\",\"color\":\"success\"}},{\"_id\":\"68c01f0235d0621e88004e62\",\"name\":\"A A DE MATOS RESENDE - SUPERMERCADO SANTO ANTONIO\",\"document\":\"29.413.500/0001-37\",\"linked\":false,\"infoLinked\":false,\"taxRegime\":\"Simples Nacional\",\"city\":\"Anapolis\",\"status\":{\"code\":1,\"text\":\"Ativo\",\"color\"\n... [TRUNCATED - 48164 chars] ...\nivo\",\"color\":\"success\"}},{\"_id\":\"68bf92ff6a14c8043708ef12\",\"name\":\"WVM ENERGIA E EVENTOS LTDA\",\"document\":\"18.608.090/0002-44\",\"linked\":false,\"infoLinked\":false,\"taxRegime\":\"Lucro Presumido\",\"city\":\"Anapolis\",\"status\":{\"code\":1,\"text\":\"Ativo\",\"color\":\"success\"}},{\"_id\":\"68bf933e0fafc74f1904cc66\",\"name\":\"ZION DENTAL CLINIC LTDA\",\"document\":\"42.160.692/0001-85\",\"linked\":false,\"infoLinked\":false,\"taxRegime\":\"Simples Nacional\",\"city\":\"Anapolis\",\"status\":{\"code\":1,\"text\":\"Ativo\",\"color\":\"success\"}}]}"
+          }
+        },
+        {
+          "method": "GET",
+          "url": "https://api-federal.jettax360.com.br/api/v1/commerce/hub/pis-cofins-rules/list/",
+          "endpoint_key": "GET https://api-federal.jettax360.com.br/api/v1/commerce/hub/pis-cofins-rules/list/",
+          "module": "commerce",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": null
+          },
+          "response_example": {
+            "status": 200,
+            "statusText": "",
+            "headers": {},
+            "body": {
+              "data": [
+                {
+                  "_id": "68cc0c91aea599916c0c7476",
+                  "taxation": {
+                    "PIS": {
+                      "enable": true,
+                      "value": 1.65
+                    },
+                    "COFINS": {
+                      "enable": true,
+                      "value": 7.6
+                    },
+                    "CST": {
+                      "enable": true,
+                      "value": 1
+                    }
+                  },
+                  "name": "Regra para o NCM 68091900",
+                  "supplierDocument": "",
+                  "type": {
+                    "code": 1,
+                    "name": "NF-e Emitida"
+                  },
+                  "ncm": "68091900",
+                  "effectiveStartDate": "",
+                  "effectiveEndDate": "",
+                  "productCode": "131",
+                  "createdAt": "18/09/2025 13:43:45",
+                  "countClients": 1,
+                  "clients": [
+                    {
+                      "name": "GH SISTEMAS CONSTRUTIVOS LTDA",
+                      "id": "68b5ca34826f0baddb0a9df3"
+                    }
+                  ]
+                }
+              ],
+              "meta": {
+                "pagination": {
+                  "total": 1,
+                  "count": 1,
+                  "per_page": 20,
+                  "current_page": 1,
+                  "total_pages": 1,
+                  "links": {}
+                }
+              }
+            }
+          }
+        },
+        {
+          "method": "GET",
+          "url": "https://api-federal.jettax360.com.br/api/v1/commerce/hub/report/automation-icms",
+          "endpoint_key": "GET https://api-federal.jettax360.com.br/api/v1/commerce/hub/report/automation-icms",
+          "module": "commerce",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": null
+          },
+          "response_example": {
+            "status": 202,
+            "statusText": "",
+            "headers": {},
+            "body": "{\"data\":[{\"id\":\"691ca05ffd84bec73b07ce7a\",\"countClients\":1,\"createdAt\":\"18/11/2025 13:35:43\",\"competence\":\"10/2025\",\"successPercentage\":100,\"errorPercentage\":0,\"type\":\"Auditoria PIS/COFINS\",\"status\":{\"description\":\"Concluído\",\"color\":\"success\",\"value\":2},\"url\":\"https://jettax360.s3.us-west-2.amazonaws.com/offices/68b1e4d38c0ec913a50e4bd5/HUB/automation_icms/report/2025/11/691ca05ffd84bec73b07ce7a.zip\",\"disableDetailsBtn\":false},{\"id\":\"68d184ba2ec33d39680296d9\",\"countClients\":172,\"createdAt\":\"22/\n... [TRUNCATED - 4385 chars] ...\n915\",\"countClients\":1,\"createdAt\":\"02/09/2025 09:04:31\",\"competence\":\"08/2025\",\"successPercentage\":100,\"errorPercentage\":0,\"type\":\"Auditoria PIS/COFINS\",\"status\":{\"description\":\"Concluído\",\"color\":\"success\",\"value\":2},\"url\":\"https://jettax360.s3.us-west-2.amazonaws.com/offices/68b1e4d38c0ec913a50e4bd5/HUB/automation_icms/report/2025/09/68b6dd4ffacc128b2b082915.zip\",\"disableDetailsBtn\":false}],\"meta\":{\"pagination\":{\"total\":10,\"count\":10,\"per_page\":20,\"current_page\":1,\"total_pages\":1,\"links\":{}}}}"
+          }
+        },
+        {
+          "method": "GET",
+          "url": "https://api-federal.jettax360.com.br/api/v1/commerce/hub/report/automation-icms/clients",
+          "endpoint_key": "GET https://api-federal.jettax360.com.br/api/v1/commerce/hub/report/automation-icms/clients",
+          "module": "commerce",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": null
+          },
+          "response_example": {
+            "status": 200,
+            "statusText": "",
+            "headers": {},
+            "body": {
+              "data": []
+            }
+          }
+        },
+        {
+          "method": "GET",
+          "url": "https://api-federal.jettax360.com.br/api/v1/commerce/hub/report/automation-icms/details/{id}",
+          "endpoint_key": "GET https://api-federal.jettax360.com.br/api/v1/commerce/hub/report/automation-icms/details/{id}",
+          "module": "commerce",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": null
+          },
+          "response_example": {
+            "status": 202,
+            "statusText": "",
+            "headers": {},
+            "body": {
+              "data": [
+                {
+                  "id": "691ca05ffd84bec73b07ce7b",
+                  "createdAt": "18/11/2025",
+                  "automationIcmsReportId": "691ca05ffd84bec73b07ce7a",
+                  "client": {
+                    "id": "68c01f0235d0621e88004e62",
+                    "name": "A A DE MATOS RESENDE - SUPERMERCADO SANTO ANTONIO",
+                    "document": "29.413.500/0001-37"
+                  },
+                  "status": {
+                    "color": "success",
+                    "label": "Finalizado",
+                    "tooltip": ""
+                  },
+                  "url": "https://jettax360.s3.us-west-2.amazonaws.com/offices/68b1e4d38c0ec913a50e4bd5/HUB/automation_icms/report/2025/11/auditoria_pis_cofins_102025_29413500000137.xlsx"
+                }
+              ],
+              "meta": {
+                "pagination": {
+                  "total": 1,
+                  "count": 1,
+                  "per_page": 20,
+                  "current_page": 1,
+                  "total_pages": 1,
+                  "links": {}
+                }
+              }
+            }
+          }
+        },
+        {
+          "method": "GET",
+          "url": "https://api-federal.jettax360.com.br/api/v1/commerce/hub/reports",
+          "endpoint_key": "GET https://api-federal.jettax360.com.br/api/v1/commerce/hub/reports",
+          "module": "commerce",
+          "fonte": "ambas"
+        },
+        {
+          "method": "GET",
+          "url": "https://api-federal.jettax360.com.br/api/v1/commerce/import/list",
+          "endpoint_key": "GET https://api-federal.jettax360.com.br/api/v1/commerce/import/list",
+          "module": "commerce",
+          "fonte": "ambas"
+        },
+        {
+          "method": "GET",
+          "url": "https://api-federal.jettax360.com.br/api/v1/commerce/missing-invoices/",
+          "endpoint_key": "GET https://api-federal.jettax360.com.br/api/v1/commerce/missing-invoices/",
+          "module": "commerce",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": null
+          },
+          "response_example": {
+            "status": 200,
+            "statusText": "",
+            "headers": {},
+            "body": "{\"data\":[{\"_id\":\"691ca0399e1c71c9240e8b64\",\"clientsCount\":201,\"clients\":[{\"id\":\"68c011f49a213ccebf0463a2\",\"name\":\"3TB PRODUCOES ARTISTICAS LTDA\",\"document\":\"46.149.398/0001-23\",\"city\":\"Anapolis\",\"taxRegime\":\"Simples Nacional\"},{\"id\":\"68c01f0235d0621e88004e62\",\"name\":\"A A DE MATOS RESENDE - SUPERMERCADO SANTO ANTONIO\",\"document\":\"29.413.500/0001-37\",\"city\":\"Anapolis\",\"taxRegime\":\"Simples Nacional\"},{\"id\":\"68bf617a7fdbce02b90740f2\",\"name\":\"A K STORE LTDA\",\"document\":\"37.097.323/0001-55\",\"city\":\"Go\n... [TRUNCATED - 30825 chars] ...\n.608.090/0002-44\",\"city\":\"Anapolis\",\"taxRegime\":\"Lucro Presumido\"},{\"id\":\"68bf933e0fafc74f1904cc66\",\"name\":\"ZION DENTAL CLINIC LTDA\",\"document\":\"42.160.692/0001-85\",\"city\":\"Anapolis\",\"taxRegime\":\"Simples Nacional\"}],\"competence\":\"10/2025\",\"createdAt\":\"18/11/2025 16:35:05\",\"user\":{\"name\":\"MARCO ANTONIO\",\"_id\":\"68b1e4d38c0ec913a50e4bd7\"},\"status\":{\"code\":2,\"label\":\"Concluído\",\"color\":\"success\"}}],\"meta\":{\"pagination\":{\"total\":1,\"count\":1,\"per_page\":20,\"current_page\":1,\"total_pages\":1,\"links\":{}}}}"
+          }
+        },
+        {
+          "method": "GET",
+          "url": "https://api-federal.jettax360.com.br/api/v1/commerce/missing-invoices/clients",
+          "endpoint_key": "GET https://api-federal.jettax360.com.br/api/v1/commerce/missing-invoices/clients",
+          "module": "commerce",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": null
+          },
+          "response_example": {
+            "status": 200,
+            "statusText": "",
+            "headers": {},
+            "body": "{\"data\":[{\"_id\":\"68c011f49a213ccebf0463a2\",\"name\":\"3TB PRODUCOES ARTISTICAS LTDA\",\"document\":\"46.149.398/0001-23\",\"linked\":false,\"infoLinked\":false,\"taxRegime\":\"Simples Nacional\",\"city\":\"Anapolis\",\"status\":{\"code\":1,\"text\":\"Ativo\",\"color\":\"success\"}},{\"_id\":\"68c01f0235d0621e88004e62\",\"name\":\"A A DE MATOS RESENDE - SUPERMERCADO SANTO ANTONIO\",\"document\":\"29.413.500/0001-37\",\"linked\":false,\"infoLinked\":false,\"taxRegime\":\"Simples Nacional\",\"city\":\"Anapolis\",\"status\":{\"code\":1,\"text\":\"Ativo\",\"color\"\n... [TRUNCATED - 48165 chars] ...\nivo\",\"color\":\"success\"}},{\"_id\":\"68bf92ff6a14c8043708ef12\",\"name\":\"WVM ENERGIA E EVENTOS LTDA\",\"document\":\"18.608.090/0002-44\",\"linked\":false,\"infoLinked\":false,\"taxRegime\":\"Lucro Presumido\",\"city\":\"Anapolis\",\"status\":{\"code\":1,\"text\":\"Ativo\",\"color\":\"success\"}},{\"_id\":\"68bf933e0fafc74f1904cc66\",\"name\":\"ZION DENTAL CLINIC LTDA\",\"document\":\"42.160.692/0001-85\",\"linked\":false,\"infoLinked\":false,\"taxRegime\":\"Simples Nacional\",\"city\":\"Anapolis\",\"status\":{\"code\":1,\"text\":\"Ativo\",\"color\":\"success\"}}]}"
+          }
+        },
+        {
+          "method": "GET",
+          "url": "https://api-federal.jettax360.com.br/api/v1/commerce/missing-invoices/{id}/details",
+          "endpoint_key": "GET https://api-federal.jettax360.com.br/api/v1/commerce/missing-invoices/{id}/details",
+          "module": "commerce",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": null
+          },
+          "response_example": {
+            "status": 200,
+            "statusText": "",
+            "headers": {},
+            "body": "{\"data\":[{\"_id\":\"691ca04583e6e437e60309b9\",\"hubMissingInvoiceId\":\"691ca0399e1c71c9240e8b64\",\"client\":{\"name\":\"A A DE MATOS RESENDE - SUPERMERCADO SANTO ANTONIO\",\"document\":\"29.413.500/0001-37\",\"taxRegime\":{\"code\":\"SN\",\"name\":\"Simples Nacional\",\"id\":{\"$oid\":\"60d53314200e556dc277ac20\"}},\"id\":\"68c01f0235d0621e88004e62\"},\"competence\":\"10/2025\",\"invoiceType\":\"NFCe Emitida\",\"series\":1,\"totalMissingInvoices\":27,\"firstInvoice\":39113,\"lastInvoice\":39471,\"totalInvoices\":332,\"createdAt\":\"18/11/2025 16:35:0\n... [TRUNCATED - 9593 chars] ...\nme\":\"Lucro Real\",\"id\":{\"$oid\":\"62d9471420ba2a79cd31c163\"}},\"id\":\"68bf7b66676d2629a60b8bd2\"},\"competence\":\"10/2025\",\"invoiceType\":\"NFe Emitida\",\"series\":\"1\",\"totalMissingInvoices\":3,\"firstInvoice\":16162,\"lastInvoice\":16360,\"totalInvoices\":196,\"createdAt\":\"18/11/2025 16:35:15\"}],\"meta\":{\"pagination\":{\"total\":26,\"count\":20,\"per_page\":20,\"current_page\":1,\"total_pages\":2,\"links\":{\"next\":\"https://api-federal.jettax360.com.br/api/v1/commerce/missing-invoices/691ca0399e1c71c9240e8b64/details?page=2\"}}}}"
+          }
+        },
+        {
+          "method": "GET",
+          "url": "https://api-federal.jettax360.com.br/api/v1/commerce/missing-invoices/{id}/details/{id}/download-csv",
+          "endpoint_key": "GET https://api-federal.jettax360.com.br/api/v1/commerce/missing-invoices/{id}/details/{id}/download-csv",
+          "module": "commerce",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": null
+          },
+          "response_example": {
+            "status": 200,
+            "statusText": "",
+            "headers": {},
+            "body": "\"Cliente;CNPJ;\\\"Tipo de Documento\\\";Série;\\\"Nota Faltante\\\"\\n\\\"A A DE MATOS RESENDE - SUPERMERCADO SANTO ANTONIO\\\";29.413.500/0001-37;\\\"NFCe Emitida\\\";1;39423\\n\\\"A A DE MATOS RESENDE - SUPERMERCADO SANTO ANTONIO\\\";29.413.500/0001-37;\\\"NFCe Emitida\\\";1;39425\\n\\\"A A DE MATOS RESENDE - SUPERMERCADO SANTO ANTONIO\\\";29.413.500/0001-37;\\\"NFCe Emitida\\\";1;39427\\n\\\"A A DE MATOS RESENDE - SUPERMERCADO SANTO ANTONIO\\\";29.413.500/0001-37;\\\"NFCe Emitida\\\";1;39428\\n\\\"A A DE MATOS RESENDE - SUPERMERCADO SANTO\n... [TRUNCATED - 2735 chars] ...\n64\\n\\\"A A DE MATOS RESENDE - SUPERMERCADO SANTO ANTONIO\\\";29.413.500/0001-37;\\\"NFCe Emitida\\\";1;39465\\n\\\"A A DE MATOS RESENDE - SUPERMERCADO SANTO ANTONIO\\\";29.413.500/0001-37;\\\"NFCe Emitida\\\";1;39467\\n\\\"A A DE MATOS RESENDE - SUPERMERCADO SANTO ANTONIO\\\";29.413.500/0001-37;\\\"NFCe Emitida\\\";1;39468\\n\\\"A A DE MATOS RESENDE - SUPERMERCADO SANTO ANTONIO\\\";29.413.500/0001-37;\\\"NFCe Emitida\\\";1;39469\\n\\\"A A DE MATOS RESENDE - SUPERMERCADO SANTO ANTONIO\\\";29.413.500/0001-37;\\\"NFCe Emitida\\\";1;39470\\n\""
+          }
+        },
+        {
+          "method": "GET",
+          "url": "https://api-federal.jettax360.com.br/api/v1/commerce/missing-invoices/{id}/download-csv",
+          "endpoint_key": "GET https://api-federal.jettax360.com.br/api/v1/commerce/missing-invoices/{id}/download-csv",
+          "module": "commerce",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": null
+          },
+          "response_example": {
+            "status": 200,
+            "statusText": "",
+            "headers": {},
+            "body": "\"Cliente;CNPJ;\\\"Tipo de Documento\\\";Série;\\\"Nota Faltante\\\"\\n\\\"A A DE MATOS RESENDE - SUPERMERCADO SANTO ANTONIO\\\";29.413.500/0001-37;\\\"NFCe Emitida\\\";1;39423\\n\\\"A A DE MATOS RESENDE - SUPERMERCADO SANTO ANTONIO\\\";29.413.500/0001-37;\\\"NFCe Emitida\\\";1;39425\\n\\\"A A DE MATOS RESENDE - SUPERMERCADO SANTO ANTONIO\\\";29.413.500/0001-37;\\\"NFCe Emitida\\\";1;39427\\n\\\"A A DE MATOS RESENDE - SUPERMERCADO SANTO ANTONIO\\\";29.413.500/0001-37;\\\"NFCe Emitida\\\";1;39428\\n\\\"A A DE MATOS RESENDE - SUPERMERCADO SANTO\n... [TRUNCATED - 152522 chars] ...\n\\\";3;40315\\n\\\"TRISTAO & SILVA LTDA\\\";05.897.072/0001-05;\\\"NFCe Emitida\\\";3;40316\\n\\\"TRISTAO & SILVA LTDA\\\";05.897.072/0001-05;\\\"NFCe Emitida\\\";3;40317\\n\\\"TRISTAO & SILVA LTDA\\\";05.897.072/0001-05;\\\"NFCe Emitida\\\";3;40318\\n\\\"TRISTAO & SILVA LTDA\\\";05.897.072/0001-05;\\\"NFCe Emitida\\\";3;40319\\n\\\"TRISTAO & SILVA LTDA\\\";05.897.072/0001-05;\\\"NFCe Emitida\\\";2;27034\\n\\\"VITORIA COMERCIO LTDA\\\";00.272.583/0001-00;\\\"NFCe Emitida\\\";2;286\\n\\\"VITORIA COMERCIO LTDA\\\";00.272.583/0001-00;\\\"NFe Emitida\\\";2;741\\n\""
+          }
+        },
+        {
+          "method": "GET",
+          "url": "https://api-federal.jettax360.com.br/api/v1/commerce/mva-icms/list",
+          "endpoint_key": "GET https://api-federal.jettax360.com.br/api/v1/commerce/mva-icms/list",
+          "module": "commerce",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": null
+          },
+          "response_example": {
+            "status": 200,
+            "statusText": "",
+            "headers": {},
+            "body": {
+              "data": [],
+              "meta": {
+                "pagination": {
+                  "total": 0,
+                  "count": 0,
+                  "per_page": 20,
+                  "current_page": 1,
+                  "total_pages": 1,
+                  "links": {}
+                }
+              }
+            }
+          }
+        },
+        {
+          "method": "GET",
+          "url": "https://api-federal.jettax360.com.br/api/v1/commerce/nfces",
+          "endpoint_key": "GET https://api-federal.jettax360.com.br/api/v1/commerce/nfces",
+          "module": "commerce",
+          "fonte": "ambas"
+        },
+        {
+          "method": "GET",
+          "url": "https://api-federal.jettax360.com.br/api/v1/commerce/nfes",
+          "endpoint_key": "GET https://api-federal.jettax360.com.br/api/v1/commerce/nfes",
+          "module": "commerce",
+          "fonte": "captura_1"
+        },
+        {
+          "method": "GET",
+          "url": "https://api-federal.jettax360.com.br/api/v1/commerce/nfes/{id}",
+          "endpoint_key": "GET https://api-federal.jettax360.com.br/api/v1/commerce/nfes/{id}",
+          "module": "commerce",
+          "fonte": "captura_1"
+        },
+        {
+          "method": "POST",
+          "url": "https://api-federal.jettax360.com.br/api/v1/commerce/audit-reprocess/",
+          "endpoint_key": "POST https://api-federal.jettax360.com.br/api/v1/commerce/audit-reprocess/",
+          "module": "commerce",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": "{\"id\":\"\",\"type\":\"2\",\"clients\":[\"68c011f49a213ccebf0463a2\",\"68c01f0235d0621e88004e62\",\"68bf617a7fdbce02b90740f2\",\"68bf61b94bfe0a0de7000ac5\",\"68bf61fbb60b284a41030892\",\"68bf6238549f36ee110e1632\",\"68bf62766dc0bc30e7091de2\",\"68bf62b5549f36ee110e1639\",\"68bf62f406b13d5fd8014bc3\",\"68bf63336dc0bc30e7091de5\",\"68bf63726dc0bc30e7091de9\",\"68bf63bc3f8cfd83d40113c5\",\"68bf63fb8f9fcb9c0b08fb82\",\"68bf643a744f9ea39c0cde23\",\"68bf647af8b3fc4f34049bd2\",\"691b834ba8fded6c310c5984\",\"68bf6537bf77e892950e1a58\",\"68bf65824\n... [TRUNCATED - 5482 chars] ...\nd34f2957a05eff2\",\"68bf8edea73225829c0494c2\",\"68bf8f1df5ebc9a383067352\",\"68bf8f5cebf5d77a2e0f3df2\",\"68bf8f9bf5ebc9a383067356\",\"68bf8fdaf5ebc9a38306735a\",\"68bf901981e45068830621f3\",\"68bf905981e45068830621f7\",\"68bf909981e45068830621fb\",\"68bf90dcf5ebc9a383067361\",\"68bf915df5ebc9a383067365\",\"68bf919c62406de9f00dd832\",\"68bf921d72c710e991046e04\",\"68bf925c0fafc74f1904cc62\",\"68bf92b3289fea29ae0047f2\",\"6915d8ab6b8c0955da0407f3\",\"68bf92ff6a14c8043708ef12\",\"68bf933e0fafc74f1904cc66\"],\"competence\":\"10/2025\"}"
+          },
+          "response_example": {
+            "status": 201,
+            "statusText": "",
+            "headers": {},
+            "body": []
+          }
+        },
+        {
+          "method": "POST",
+          "url": "https://api-federal.jettax360.com.br/api/v1/commerce/cfops-rules/create-or-update",
+          "endpoint_key": "POST https://api-federal.jettax360.com.br/api/v1/commerce/cfops-rules/create-or-update",
+          "module": "commerce",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": {
+              "code": 1101,
+              "difalSN": "2",
+              "anticipationIcmsSt": "1",
+              "pis": "1",
+              "cofins": "1"
+            }
+          },
+          "response_example": {
+            "status": 200,
+            "statusText": "",
+            "headers": {},
+            "body": {
+              "code": 1101,
+              "shortDescription": "Compra para industrialização ou produção rural",
+              "description": "Classificam-se neste código as compras de mercadorias a serem utilizadas em processo de industrialização ou produção rural.",
+              "difalSN": 2,
+              "anticipationIcmsSt": 1,
+              "dasEmitterDevolution": 2,
+              "dasReceiverDevolution": 2,
+              "dasTaxation": 2,
+              "st": 2,
+              "dasTaxationAnnex": {
+                "name": "Anexo II",
+                "id": "63c0737492285f8bef018603"
+              },
+              "manuallyChanged": 1,
+              "origin": null,
+              "pis": 1,
+              "cofins": 1,
+              "officeId": "68b1e4d38c0ec913a50e4bd5",
+              "user": {
+                "name": "MARCO ANTONIO",
+                "id": {
+                  "$oid": "68b1e4d38c0ec913a50e4bd7"
+                }
+              },
+              "updatedAt": "2025-11-21T16:36:52.430000Z",
+              "createdAt": "2025-11-18T16:38:53.836000Z",
+              "id": "691ca11d019b0cf4e70daf26"
+            }
+          }
+        },
+        {
+          "method": "POST",
+          "url": "https://api-federal.jettax360.com.br/api/v1/commerce/hub/pis-cofins-rules/link-clients/{id}",
+          "endpoint_key": "POST https://api-federal.jettax360.com.br/api/v1/commerce/hub/pis-cofins-rules/link-clients/{id}",
+          "module": "commerce",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": "{\"clients\":[{\"_id\":\"68c011f49a213ccebf0463a2\",\"name\":\"3TB PRODUCOES ARTISTICAS LTDA\"},{\"_id\":\"68c01f0235d0621e88004e62\",\"name\":\"A A DE MATOS RESENDE - SUPERMERCADO SANTO ANTONIO\"},{\"_id\":\"68bf617a7fdbce02b90740f2\",\"name\":\"A K STORE LTDA\"},{\"_id\":\"68bf61b94bfe0a0de7000ac5\",\"name\":\"A S OLIVEIRA ENGENHARIA LTDA\"},{\"_id\":\"68bf61fbb60b284a41030892\",\"name\":\"A2 SOLUCOES E PARTICIPACOES LTDA\"},{\"_id\":\"68bf6238549f36ee110e1632\",\"name\":\"AC SOARES CONSULTORIA E DESENVOLVIMENTO EMPRESARIAL LTDA\"},{\"_id\":\"68\n... [TRUNCATED - 14499 chars] ...\n},{\"_id\":\"68bf919c62406de9f00dd832\",\"name\":\"VP PRESTACAO DE SERVICOS LTDA\"},{\"_id\":\"68bf921d72c710e991046e04\",\"name\":\"W J DE ANDRADE\"},{\"_id\":\"68bf925c0fafc74f1904cc62\",\"name\":\"WAPHI EMPREENDIMENTOS LTDA\"},{\"_id\":\"68bf92b3289fea29ae0047f2\",\"name\":\"WV POSTO DE LAVAGEM LTDA\"},{\"_id\":\"6915d8ab6b8c0955da0407f3\",\"name\":\"WVM ENERGIA E EVENTOS LTDA\"},{\"_id\":\"68bf92ff6a14c8043708ef12\",\"name\":\"WVM ENERGIA E EVENTOS LTDA\"},{\"_id\":\"68bf933e0fafc74f1904cc66\",\"name\":\"ZION DENTAL CLINIC LTDA\"}],\"action\":true}"
+          },
+          "response_example": {
+            "status": 200,
+            "statusText": "",
+            "headers": {},
+            "body": null
+          }
+        },
+        {
+          "method": "POST",
+          "url": "https://api-federal.jettax360.com.br/api/v1/commerce/hub/pis-cofins-rules/update-by-file",
+          "endpoint_key": "POST https://api-federal.jettax360.com.br/api/v1/commerce/hub/pis-cofins-rules/update-by-file",
+          "module": "commerce",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": "{\"source\":\"UEsDBBQABgAIAAAAIQBkLXQNeAEAAJAFAAATAAgCW0NvbnRlbnRfVHlwZXNdLnhtbCCiBAIooAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\n... [TRUNCATED - 76919 chars] ...\njvIYsnQAABRjAwAYAAAAAAAAAAAAAAAAADldAAB4bC93b3Jrc2hlZXRzL3NoZWV0MS54bWxQSwECLQAUAAYACAAAACEAwbt1xk4BAABnAgAAEQAAAAAAAAAAAAAAAAAh0gAAZG9jUHJvcHMvY29yZS54bWxQSwECLQAUAAYACAAAACEAJnRBi/4CAADiEQAAEAAAAAAAAAAAAAAAAACm1AAAeGwvY2FsY0NoYWluLnhtbFBLAQItABQABgAIAAAAIQALr4VY7gIAAB8JAAAUAAAAAAAAAAAAAAAAANLXAAB4bC90YWJsZXMvdGFibGUxLnhtbFBLAQItABQABgAIAAAAIQDg0TlvkwEAAAwDAAAQAAAAAAAAAAAAAAAAAPLaAABkb2NQcm9wcy9hcHAueG1sUEsFBgAAAAANAA0AUQMAALvdAAAAAA==\",\"extension\":\"xlsx\",\"clients\":[\"68c011f49a213ccebf0463a2\"]}"
+          },
+          "response_example": {
+            "status": 422,
+            "statusText": "",
+            "headers": {},
+            "body": {
+              "message": "O campo tipo_de_nota é obrigatório",
+              "errors": {
+                "tipo_de_nota": [
+                  "O campo tipo_de_nota é obrigatório"
+                ]
+              }
+            }
+          }
+        },
+        {
+          "method": "POST",
+          "url": "https://api-federal.jettax360.com.br/api/v1/commerce/hub/report/automation-icms",
+          "endpoint_key": "POST https://api-federal.jettax360.com.br/api/v1/commerce/hub/report/automation-icms",
+          "module": "commerce",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": "{\"id\":\"\",\"competence\":\"10/2025\",\"clients\":[{\"id\":\"68c011f49a213ccebf0463a2\",\"name\":\"3TB PRODUCOES ARTISTICAS LTDA\"},{\"id\":\"68c01f0235d0621e88004e62\",\"name\":\"A A DE MATOS RESENDE - SUPERMERCADO SANTO ANTONIO\"},{\"id\":\"68bf617a7fdbce02b90740f2\",\"name\":\"A K STORE LTDA\"},{\"id\":\"68bf61b94bfe0a0de7000ac5\",\"name\":\"A S OLIVEIRA ENGENHARIA LTDA\"},{\"id\":\"68bf61fbb60b284a41030892\",\"name\":\"A2 SOLUCOES E PARTICIPACOES LTDA\"},{\"id\":\"68bf6238549f36ee110e1632\",\"name\":\"AC SOARES CONSULTORIA E DESENVOLVIMENTO EMPR\n... [TRUNCATED - 14324 chars] ...\nMERCIO LTDA\"},{\"id\":\"68bf919c62406de9f00dd832\",\"name\":\"VP PRESTACAO DE SERVICOS LTDA\"},{\"id\":\"68bf921d72c710e991046e04\",\"name\":\"W J DE ANDRADE\"},{\"id\":\"68bf925c0fafc74f1904cc62\",\"name\":\"WAPHI EMPREENDIMENTOS LTDA\"},{\"id\":\"68bf92b3289fea29ae0047f2\",\"name\":\"WV POSTO DE LAVAGEM LTDA\"},{\"id\":\"6915d8ab6b8c0955da0407f3\",\"name\":\"WVM ENERGIA E EVENTOS LTDA\"},{\"id\":\"68bf92ff6a14c8043708ef12\",\"name\":\"WVM ENERGIA E EVENTOS LTDA\"},{\"id\":\"68bf933e0fafc74f1904cc66\",\"name\":\"ZION DENTAL CLINIC LTDA\"}],\"type\":5}"
+          },
+          "response_example": {
+            "status": 201,
+            "statusText": "",
+            "headers": {},
+            "body": []
+          }
+        },
+        {
+          "method": "POST",
+          "url": "https://api-federal.jettax360.com.br/api/v1/commerce/hub/reports",
+          "endpoint_key": "POST https://api-federal.jettax360.com.br/api/v1/commerce/hub/reports",
+          "module": "commerce",
+          "fonte": "ambas"
+        },
+        {
+          "method": "POST",
+          "url": "https://api-federal.jettax360.com.br/api/v1/commerce/import",
+          "endpoint_key": "POST https://api-federal.jettax360.com.br/api/v1/commerce/import",
+          "module": "commerce",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": "{\"type\":\"55\",\"keys\":\"\",\"file\":\"UEsDBAoAAAAAAFhEalsAAAAAAAAAAAAAAAAQAAkAR2VzdG9yX3phcC1tYWluL1VUBQABKRQSaVBLAwQKAAAACABYRGpbx17QZYYCAAAhBQAAHAAJAEdlc3Rvcl96YXAtbWFpbi8uZW52LmV4YW1wbGVVVAUAASkUEmmVVFFv2jAQfvevQNpbtUJCR9dW8oNxrsRrYnu2A6UvVgppQYMGkbTT9utnJ7TAOk2b85T7Pt3d953PHzr4nw/60BkSegM86lDBr9koU8QwwV38P5IQCloLxYi2RDJrhEv4LpqpBC/qelNd9Xr5ZtnNZ0VVldtlXnVn5fpdDpaCyAw+C9xBaBITo4mUVsaCg+VZOgRlWYT3CKE+w2vxt/AYFLue7sKPRVWXW/sz39iXYrt8+IEQyUzsyt5BtMuq8WBw3r98PR+bv4vdQUgK1XaFuIjAAh/jefFSrMrNuniqUSJGNoExJ\n... [TRUNCATED - 239459 chars] ...\nAAkAAAAAAAEAAAAAABuAAgBHZXN0b3JfemFwLW1haW4vc2NyaXB0cy9pbml0aWFsLXN5bmMuanNVVAUAASkUEmlQSwECAAAKAAAACABYRGpbr5U3alAAAABTAAAAKgAJAAAAAAABAAAAAAC7gAIAR2VzdG9yX3phcC1tYWluL3NjcmlwdHMvcnVuLWV4cGxvcmF0aW9uLmpzVVQFAAEpFBJpUEsBAgAACgAAAAgAWERqWyHP2iZUAAAAYAAAACAACQAAAAAAAQAAAAAAXIECAEdlc3Rvcl96YXAtbWFpbi9zY3JpcHRzL3NldHVwLmpzVVQFAAEpFBJpUEsFBgAAAACWAJYA/joAAPeBAgAoADIxMjJjYWIxYTkwNTQzNjgwNTI0YjVhODgyNmM5ZjNjMmJhMjRjYmU=\",\"fileName\":\"Gestor_zap-main (1).zip\",\"extension\":\"zip\",\"typeFile\":1,\"clientId\":\"\"}"
+          },
+          "response_example": {
+            "status": 201,
+            "statusText": "",
+            "headers": {},
+            "body": []
+          }
+        },
+        {
+          "method": "POST",
+          "url": "https://api-federal.jettax360.com.br/api/v1/commerce/missing-invoices",
+          "endpoint_key": "POST https://api-federal.jettax360.com.br/api/v1/commerce/missing-invoices",
+          "module": "commerce",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": "{\"id\":\"\",\"competence\":\"10/2025\",\"userId\":\"\",\"clients\":[{\"id\":\"68c011f49a213ccebf0463a2\",\"name\":\"3TB PRODUCOES ARTISTICAS LTDA\"},{\"id\":\"68c01f0235d0621e88004e62\",\"name\":\"A A DE MATOS RESENDE - SUPERMERCADO SANTO ANTONIO\"},{\"id\":\"68bf617a7fdbce02b90740f2\",\"name\":\"A K STORE LTDA\"},{\"id\":\"68bf61b94bfe0a0de7000ac5\",\"name\":\"A S OLIVEIRA ENGENHARIA LTDA\"},{\"id\":\"68bf61fbb60b284a41030892\",\"name\":\"A2 SOLUCOES E PARTICIPACOES LTDA\"},{\"id\":\"68bf6238549f36ee110e1632\",\"name\":\"AC SOARES CONSULTORIA E DESENVOL\n... [TRUNCATED - 14327 chars] ...\nITORIA COMERCIO LTDA\"},{\"id\":\"68bf919c62406de9f00dd832\",\"name\":\"VP PRESTACAO DE SERVICOS LTDA\"},{\"id\":\"68bf921d72c710e991046e04\",\"name\":\"W J DE ANDRADE\"},{\"id\":\"68bf925c0fafc74f1904cc62\",\"name\":\"WAPHI EMPREENDIMENTOS LTDA\"},{\"id\":\"68bf92b3289fea29ae0047f2\",\"name\":\"WV POSTO DE LAVAGEM LTDA\"},{\"id\":\"6915d8ab6b8c0955da0407f3\",\"name\":\"WVM ENERGIA E EVENTOS LTDA\"},{\"id\":\"68bf92ff6a14c8043708ef12\",\"name\":\"WVM ENERGIA E EVENTOS LTDA\"},{\"id\":\"68bf933e0fafc74f1904cc66\",\"name\":\"ZION DENTAL CLINIC LTDA\"}]}"
+          },
+          "response_example": {
+            "status": 201,
+            "statusText": "",
+            "headers": {},
+            "body": "{\"competence\":\"10/2025\",\"clients\":[{\"id\":\"68c011f49a213ccebf0463a2\",\"name\":\"3TB PRODUCOES ARTISTICAS LTDA\"},{\"id\":\"68c01f0235d0621e88004e62\",\"name\":\"A A DE MATOS RESENDE - SUPERMERCADO SANTO ANTONIO\"},{\"id\":\"68bf617a7fdbce02b90740f2\",\"name\":\"A K STORE LTDA\"},{\"id\":\"68bf61b94bfe0a0de7000ac5\",\"name\":\"A S OLIVEIRA ENGENHARIA LTDA\"},{\"id\":\"68bf61fbb60b284a41030892\",\"name\":\"A2 SOLUCOES E PARTICIPACOES LTDA\"},{\"id\":\"68bf6238549f36ee110e1632\",\"name\":\"AC SOARES CONSULTORIA E DESENVOLVIMENTO EMPRESARIAL \n... [TRUNCATED - 14546 chars] ...\n289fea29ae0047f2\",\"name\":\"WV POSTO DE LAVAGEM LTDA\"},{\"id\":\"6915d8ab6b8c0955da0407f3\",\"name\":\"WVM ENERGIA E EVENTOS LTDA\"},{\"id\":\"68bf92ff6a14c8043708ef12\",\"name\":\"WVM ENERGIA E EVENTOS LTDA\"},{\"id\":\"68bf933e0fafc74f1904cc66\",\"name\":\"ZION DENTAL CLINIC LTDA\"}],\"officeId\":\"68b1e4d38c0ec913a50e4bd5\",\"user\":{\"_id\":{\"$oid\":\"68b1e4d38c0ec913a50e4bd7\"},\"name\":\"MARCO ANTONIO\"},\"status\":1,\"updatedAt\":\"2025-11-21T13:46:38.306000Z\",\"createdAt\":\"2025-11-21T13:46:38.306000Z\",\"id\":\"69206d3eb90b201e3c022fc4\"}"
+          }
+        },
+        {
+          "method": "POST",
+          "url": "https://api-federal.jettax360.com.br/api/v1/commerce/nfes/manifest",
+          "endpoint_key": "POST https://api-federal.jettax360.com.br/api/v1/commerce/nfes/manifest",
+          "module": "commerce",
+          "fonte": "captura_1"
+        },
+        {
+          "method": "PUT",
+          "url": "https://api-federal.jettax360.com.br/api/v1/commerce/audit-pis-cofins/",
+          "endpoint_key": "PUT https://api-federal.jettax360.com.br/api/v1/commerce/audit-pis-cofins/",
+          "module": "commerce",
+          "fonte": "captura_1"
+        },
+        {
+          "method": "PUT",
+          "url": "https://api-federal.jettax360.com.br/api/v1/commerce/audit-st/",
+          "endpoint_key": "PUT https://api-federal.jettax360.com.br/api/v1/commerce/audit-st/",
+          "module": "commerce",
+          "fonte": "captura_1"
+        },
+        {
+          "method": "PUT",
+          "url": "https://api-federal.jettax360.com.br/api/v1/commerce/categories/{id}",
+          "endpoint_key": "PUT https://api-federal.jettax360.com.br/api/v1/commerce/categories/{id}",
+          "module": "commerce",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": {
+              "_id": "690c8e8f239b76b4c401aaba",
+              "name": "afdsfasd",
+              "color": "#BE4B1C",
+              "default": false,
+              "user": {
+                "name": "MARCO ANTONIO",
+                "_id": null
+              },
+              "exemptionICMS": "1",
+              "itemDestination": "1",
+              "bcICMSreduction": "0,00",
+              "bcICMSSTReduction": "0,00",
+              "covenantReduce": "1",
+              "disregardProtocol": true,
+              "annex": "I"
+            }
+          },
+          "response_example": {
+            "status": 202,
+            "statusText": "",
+            "headers": {},
+            "body": {
+              "name": "afdsfasd",
+              "color": "#BE4B1C",
+              "exemptionICMS": 1,
+              "itemDestination": 1,
+              "bcICMSreduction": 0,
+              "bcICMSSTReduction": 0,
+              "covenantReduce": 1,
+              "disregardProtocol": true,
+              "annex": "I",
+              "officeId": "68b1e4d38c0ec913a50e4bd5",
+              "user": {
+                "name": "MARCO ANTONIO",
+                "_id": null
+              },
+              "updatedAt": "2025-11-21T16:33:17.082000Z",
+              "createdAt": "2025-11-06T12:03:27.749000Z",
+              "id": "690c8e8f239b76b4c401aaba"
+            }
+          }
+        },
+        {
+          "method": "PUT",
+          "url": "https://api-federal.jettax360.com.br/api/v1/commerce/hub/pis-cofins-rules/update/{id}",
+          "endpoint_key": "PUT https://api-federal.jettax360.com.br/api/v1/commerce/hub/pis-cofins-rules/update/{id}",
+          "module": "commerce",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": {
+              "_id": "68cc0c91aea599916c0c7476",
+              "taxation": {
+                "PIS": {
+                  "enable": true,
+                  "value": "1,65"
+                },
+                "COFINS": {
+                  "enable": true,
+                  "value": "7,60"
+                },
+                "CST": {
+                  "enable": true,
+                  "value": "01"
+                }
+              },
+              "name": "Regra para o NCM 68091900",
+              "clientDocument": "32.675.376/0001-92",
+              "type": 1,
+              "ncm": "68091900",
+              "effectiveStartDate": "",
+              "effectiveEndDate": "",
+              "productCode": "131",
+              "withoutTaxationIncidence": false
+            }
+          },
+          "response_example": {
+            "status": 202,
+            "statusText": "",
+            "headers": {},
+            "body": []
+          }
+        }
+      ]
+    },
+    "fiscal": {
+      "total_endpoints": 36,
+      "endpoints": [
+        {
+          "method": "DELETE",
+          "url": "https://api.jettax360.com.br/api/v1/fiscal/nfses/conference-report/{id}",
+          "endpoint_key": "DELETE https://api.jettax360.com.br/api/v1/fiscal/nfses/conference-report/{id}",
+          "module": "fiscal",
+          "fonte": "captura_1"
+        },
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/fiscal/audits",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/fiscal/audits",
+          "module": "fiscal",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": null
+          },
+          "response_example": {
+            "status": 200,
+            "statusText": "",
+            "headers": {},
+            "body": "{\"data\":[{\"id\":\"CL1\",\"title\":\"Lançamento contábil com valor diferente do documento fiscal.\",\"description\":\"O valor do lançamento contábil está diferente do valor do documento fiscal. \",\"suggestion\":\"Acesse o documento fiscal ou o lançamento contábil e faça o ajuste.\",\"routine\":\"Lançamento contábil\"},{\"id\":\"CL2\",\"title\":\"Lançamento contábil com diferença entre débito e crédito.\",\"description\":\"O valor do lançamento contábil está com diferença entre o débito e o crédito.\",\"suggestion\":\"Acesse o la\n... [TRUNCATED - 4910 chars] ...\nir o efd Reinf.\",\"suggestion\":\"Clique aqui para verificar as notas.\",\"routine\":\"efd Reinf\"},{\"id\":\"FA32\",\"title\":\"NSFe cancelada após transmitir o efd Reinf com período desbloqueado.\",\"description\":\"Existem notas canceladas após transmitir o efd Reinf.\",\"suggestion\":\"Clique aqui para verificar as notas.\",\"routine\":\"efd Reinf\"}],\"meta\":{\"pagination\":{\"total\":123,\"count\":20,\"per_page\":20,\"current_page\":1,\"total_pages\":7,\"links\":{\"next\":\"https://api.jettax360.com.br/api/v1/fiscal/audits?page=2\"}}}}"
+          }
+        },
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/fiscal/audits/list-audits",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/fiscal/audits/list-audits",
+          "module": "fiscal",
+          "fonte": "captura_1"
+        },
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/fiscal/das/annex/",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/fiscal/das/annex/",
+          "module": "fiscal",
+          "fonte": "ambas"
+        },
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/fiscal/dashboard",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/fiscal/dashboard",
+          "module": "fiscal",
+          "fonte": "captura_1"
+        },
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/fiscal/efdreinf",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/fiscal/efdreinf",
+          "module": "fiscal",
+          "fonte": "captura_1"
+        },
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/fiscal/nfse-tax",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/fiscal/nfse-tax",
+          "module": "fiscal",
+          "fonte": "captura_1"
+        },
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/fiscal/nfse-tax/clients",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/fiscal/nfse-tax/clients",
+          "module": "fiscal",
+          "fonte": "captura_1"
+        },
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/fiscal/nfse/report/consumer",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/fiscal/nfse/report/consumer",
+          "module": "fiscal",
+          "fonte": "captura_1"
+        },
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/fiscal/nfses/all/purchase",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/fiscal/nfses/all/purchase",
+          "module": "fiscal",
+          "fonte": "captura_1"
+        },
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/fiscal/nfses/all/sale",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/fiscal/nfses/all/sale",
+          "module": "fiscal",
+          "fonte": "ambas"
+        },
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/fiscal/nfses/conference-report",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/fiscal/nfses/conference-report",
+          "module": "fiscal",
+          "fonte": "captura_1"
+        },
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/fiscal/nfses/load-status",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/fiscal/nfses/load-status",
+          "module": "fiscal",
+          "fonte": "ambas"
+        },
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/fiscal/nfses/receipt/purchaseReceipt",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/fiscal/nfses/receipt/purchaseReceipt",
+          "module": "fiscal",
+          "fonte": "captura_1"
+        },
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/fiscal/nfses/receipt/saleReceipt",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/fiscal/nfses/receipt/saleReceipt",
+          "module": "fiscal",
+          "fonte": "captura_1"
+        },
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/fiscal/nfses/receipt/totalizers/{id}",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/fiscal/nfses/receipt/totalizers/{id}",
+          "module": "fiscal",
+          "fonte": "captura_1"
+        },
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/fiscal/nfses/retention-rules",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/fiscal/nfses/retention-rules",
+          "module": "fiscal",
+          "fonte": "captura_1"
+        },
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/fiscal/nfses/retention-rules/get-clients/{id}",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/fiscal/nfses/retention-rules/get-clients/{id}",
+          "module": "fiscal",
+          "fonte": "captura_1"
+        },
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/fiscal/nfses/retention-rules/load",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/fiscal/nfses/retention-rules/load",
+          "module": "fiscal",
+          "fonte": "ambas"
+        },
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/fiscal/nfses/totalizers/{id}",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/fiscal/nfses/totalizers/{id}",
+          "module": "fiscal",
+          "fonte": "ambas"
+        },
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/fiscal/summaries",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/fiscal/summaries",
+          "module": "fiscal",
+          "fonte": "ambas"
+        },
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/fiscal/summaries/alerts",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/fiscal/summaries/alerts",
+          "module": "fiscal",
+          "fonte": "captura_1"
+        },
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/fiscal/summaries/email-history",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/fiscal/summaries/email-history",
+          "module": "fiscal",
+          "fonte": "ambas"
+        },
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/fiscal/summaries/irrf/details",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/fiscal/summaries/irrf/details",
+          "module": "fiscal",
+          "fonte": "captura_1"
+        },
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/fiscal/summaries/irrf/totalizator/{id}",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/fiscal/summaries/irrf/totalizator/{id}",
+          "module": "fiscal",
+          "fonte": "captura_1"
+        },
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/fiscal/summaries/load",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/fiscal/summaries/load",
+          "module": "fiscal",
+          "fonte": "ambas"
+        },
+        {
+          "method": "POST",
+          "url": "https://api.jettax360.com.br/api/v1/fiscal/nfse-tax/create",
+          "endpoint_key": "POST https://api.jettax360.com.br/api/v1/fiscal/nfse-tax/create",
+          "module": "fiscal",
+          "fonte": "captura_1"
+        },
+        {
+          "method": "POST",
+          "url": "https://api.jettax360.com.br/api/v1/fiscal/nfse/report/consumer",
+          "endpoint_key": "POST https://api.jettax360.com.br/api/v1/fiscal/nfse/report/consumer",
+          "module": "fiscal",
+          "fonte": "captura_1"
+        },
+        {
+          "method": "POST",
+          "url": "https://api.jettax360.com.br/api/v1/fiscal/nfses/conference-report",
+          "endpoint_key": "POST https://api.jettax360.com.br/api/v1/fiscal/nfses/conference-report",
+          "module": "fiscal",
+          "fonte": "captura_1"
+        },
+        {
+          "method": "POST",
+          "url": "https://api.jettax360.com.br/api/v1/fiscal/nfses/retention-rules",
+          "endpoint_key": "POST https://api.jettax360.com.br/api/v1/fiscal/nfses/retention-rules",
+          "module": "fiscal",
+          "fonte": "captura_1"
+        },
+        {
+          "method": "POST",
+          "url": "https://api.jettax360.com.br/api/v1/fiscal/nfses/retention-rules/link-clients/{id}",
+          "endpoint_key": "POST https://api.jettax360.com.br/api/v1/fiscal/nfses/retention-rules/link-clients/{id}",
+          "module": "fiscal",
+          "fonte": "captura_1"
+        },
+        {
+          "method": "POST",
+          "url": "https://api.jettax360.com.br/api/v1/fiscal/summaries/dctfweb/batch-reprocess",
+          "endpoint_key": "POST https://api.jettax360.com.br/api/v1/fiscal/summaries/dctfweb/batch-reprocess",
+          "module": "fiscal",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": {
+              "competence": "10/2025",
+              "type": "sync"
+            }
+          },
+          "response_example": {
+            "status": 200,
+            "statusText": "",
+            "headers": {},
+            "body": null
+          }
+        },
+        {
+          "method": "POST",
+          "url": "https://api.jettax360.com.br/api/v1/fiscal/summaries/difal-sn/batch-reprocess/",
+          "endpoint_key": "POST https://api.jettax360.com.br/api/v1/fiscal/summaries/difal-sn/batch-reprocess/",
+          "module": "fiscal",
+          "fonte": "ambas"
+        },
+        {
+          "method": "POST",
+          "url": "https://api.jettax360.com.br/api/v1/fiscal/summaries/icms-st/batch-reprocess/",
+          "endpoint_key": "POST https://api.jettax360.com.br/api/v1/fiscal/summaries/icms-st/batch-reprocess/",
+          "module": "fiscal",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": {
+              "competence": "10/2025"
+            }
+          },
+          "response_example": {
+            "status": 201,
+            "statusText": "",
+            "headers": {},
+            "body": []
+          }
+        },
+        {
+          "method": "POST",
+          "url": "https://api.jettax360.com.br/api/v1/fiscal/summaries/update-closed",
+          "endpoint_key": "POST https://api.jettax360.com.br/api/v1/fiscal/summaries/update-closed",
+          "module": "fiscal",
+          "fonte": "ambas"
+        },
+        {
+          "method": "PUT",
+          "url": "https://api.jettax360.com.br/api/v1/fiscal/nfses/retention-rules/{id}",
+          "endpoint_key": "PUT https://api.jettax360.com.br/api/v1/fiscal/nfses/retention-rules/{id}",
+          "module": "fiscal",
+          "fonte": "captura_1"
+        }
+      ]
+    },
+    "hub": {
+      "total_endpoints": 24,
+      "endpoints": [
+        {
+          "method": "DELETE",
+          "url": "https://api.jettax360.com.br/api/v1/hub/schedule/{id}",
+          "endpoint_key": "DELETE https://api.jettax360.com.br/api/v1/hub/schedule/{id}",
+          "module": "hub",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": {}
+          },
+          "response_example": {
+            "status": 202,
+            "statusText": "",
+            "headers": {},
+            "body": []
+          }
+        },
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/hub/bill-export/clients/",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/hub/bill-export/clients/",
+          "module": "hub",
+          "fonte": "captura_1"
+        },
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/hub/bill-export/list",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/hub/bill-export/list",
+          "module": "hub",
+          "fonte": "captura_1"
+        },
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/hub/bill-export/{id}",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/hub/bill-export/{id}",
+          "module": "hub",
+          "fonte": "captura_1"
+        },
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/hub/download/clients/{id}",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/hub/download/clients/{id}",
+          "module": "hub",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": null
+          },
+          "response_example": {
+            "status": 200,
+            "statusText": "",
+            "headers": {},
+            "body": "{\"data\":[{\"_id\":\"68c011f49a213ccebf0463a2\",\"name\":\"3TB PRODUCOES ARTISTICAS LTDA\",\"document\":\"46.149.398/0001-23\",\"linked\":false,\"infoLinked\":false,\"allInfoLinked\":[],\"taxRegime\":\"Simples Nacional\",\"city\":\"Anapolis\",\"status\":{\"code\":1,\"text\":\"Ativo\",\"color\":\"success\"},\"erp\":{\"nick\":null,\"enableContmaticIntegration\":false,\"enableContmaticIntegrationAt\":null,\"contmaticIntegration\":false,\"syncAt\":null}},{\"_id\":\"68c01f0235d0621e88004e62\",\"name\":\"A A DE MATOS RESENDE - SUPERMERCADO SANTO ANTONIO\",\"do\n... [TRUNCATED - 78885 chars] ...\neContmaticIntegration\":false,\"enableContmaticIntegrationAt\":null,\"contmaticIntegration\":false,\"syncAt\":null}},{\"_id\":\"68bf933e0fafc74f1904cc66\",\"name\":\"ZION DENTAL CLINIC LTDA\",\"document\":\"42.160.692/0001-85\",\"linked\":false,\"infoLinked\":false,\"allInfoLinked\":[],\"taxRegime\":\"Simples Nacional\",\"city\":\"Anapolis\",\"status\":{\"code\":1,\"text\":\"Ativo\",\"color\":\"success\"},\"erp\":{\"nick\":null,\"enableContmaticIntegration\":false,\"enableContmaticIntegrationAt\":null,\"contmaticIntegration\":false,\"syncAt\":null}}]}"
+          }
+        },
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/hub/download/list",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/hub/download/list",
+          "module": "hub",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": null
+          },
+          "response_example": {
+            "status": 200,
+            "statusText": "",
+            "headers": {},
+            "body": "{\"data\":[{\"id\":\"691c9ec6df60c6fd280111d6\",\"clientCount\":1,\"createdAt\":\"18/11/2025 13:28:54\",\"type\":{\"code\":3,\"label\":\"NF-e\"},\"status\":{\"code\":1,\"label\":\"Concluído\",\"color\":\"success\"},\"error\":\"\",\"filters\":{\"invoiceType\":\"2\",\"startDate\":\"2025-10-01 00:00:00\",\"endDate\":\"2025-10-31 23:59:59\",\"replaceICMS\":true,\"replaceAuditST\":true,\"replaceAuditPisCofins\":true,\"invoiceDocumentType\":\"3\"},\"s3File\":\"https://jettax360.s3.us-west-2.amazonaws.com/offices/68b1e4d38c0ec913a50e4bd5/HUB/NFe/2025/11/691c9ec6df\n... [TRUNCATED - 11249 chars] ...\n11-12 00:00:00\",\"endDate\":\"2025-11-14 23:59:59\",\"replaceICMS\":false,\"replaceAuditST\":false,\"replaceAuditPisCofins\":false,\"invoiceDocumentType\":\"3\"},\"s3File\":\"https://jettax360.s3.us-west-2.amazonaws.com/offices/68b1e4d38c0ec913a50e4bd5/HUB/CFe/2025/11/69175346d42ee213b503d998.zip\",\"erpOrganizerConfigType\":\"Padrão Jettax\"}],\"meta\":{\"pagination\":{\"total\":187,\"count\":20,\"per_page\":20,\"current_page\":1,\"total_pages\":10,\"links\":{\"next\":\"https://api.jettax360.com.br/api/v1/hub/download/list?page=2\"}}}}"
+          }
+        },
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/hub/download/loadData",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/hub/download/loadData",
+          "module": "hub",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": null
+          },
+          "response_example": {
+            "status": 200,
+            "statusText": "",
+            "headers": {},
+            "body": "{\"cfops\":[{\"code\":1101,\"shortDescription\":\"Compra para industrialização ou produção rural\",\"id\":\"6359f04e38e9d589e10e8323\"},{\"code\":1102,\"shortDescription\":\"Compra para comercialização\",\"id\":\"63286dbd1104b10b8c00c392\"},{\"code\":1111,\"shortDescription\":\"Compra para industrialização de mercadoria recebida anteriormente em consignação industrial\",\"id\":\"6359f04f38e9d589e10e8324\"},{\"code\":1113,\"shortDescription\":\"Compra para comercialização, de mercadoria recebida anteriormente em consignação mercanti\n... [TRUNCATED - 97990 chars] ...\n\",\"id\":\"690c8e8f239b76b4c401aaba\"},{\"name\":\"Devoluçlão de Mercadoria\",\"color\":\"#D0D0D0\",\"id\":\"690c8e14f364c7f29f0d2943\"},{\"name\":\"Industrialização\",\"color\":\"#BCBDC7\",\"id\":\"6359f05538e9d589e10e84f5\"},{\"name\":\"Revenda\",\"color\":\"#BCBDC7\",\"id\":\"6359f05538e9d589e10e84f4\"},{\"name\":\"Transferência de mercadoria\",\"color\":\"#BABABA\",\"id\":\"690c8cd37ee5ad726d01f221\"},{\"name\":\"Uso e Consumo\",\"color\":\"#BCBDC7\",\"id\":\"6359f05538e9d589e10e84f6\"},{\"name\":\"teste\",\"color\":\"#181C32\",\"id\":\"691ca0f2fd84bec73b07ce7e\"}]}"
+          }
+        },
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/hub/download/{id}",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/hub/download/{id}",
+          "module": "hub",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": null
+          },
+          "response_example": {
+            "status": 200,
+            "statusText": "",
+            "headers": {},
+            "body": {
+              "data": [
+                {
+                  "id": "68bf933e0fafc74f1904cc66",
+                  "name": "ZION DENTAL CLINIC LTDA",
+                  "document": "42.160.692/0001-85",
+                  "city": "Anapolis",
+                  "taxRegime": "Simples Nacional"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/hub/nfses/dashboard-top-clients",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/hub/nfses/dashboard-top-clients",
+          "module": "hub",
+          "fonte": "captura_1"
+        },
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/hub/nfses/dashboard-top-sellers",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/hub/nfses/dashboard-top-sellers",
+          "module": "hub",
+          "fonte": "captura_1"
+        },
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/hub/nfses/dashboard-totalizers",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/hub/nfses/dashboard-totalizers",
+          "module": "hub",
+          "fonte": "captura_1"
+        },
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/hub/nfses/integrators/city-configurations",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/hub/nfses/integrators/city-configurations",
+          "module": "hub",
+          "fonte": "captura_1"
+        },
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/hub/nfses/integrators/city-personal-configurations/{id}",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/hub/nfses/integrators/city-personal-configurations/{id}",
+          "module": "hub",
+          "fonte": "captura_1"
+        },
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/hub/nfses/package-process/list",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/hub/nfses/package-process/list",
+          "module": "hub",
+          "fonte": "captura_1"
+        },
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/hub/pendencies/list/",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/hub/pendencies/list/",
+          "module": "hub",
+          "fonte": "captura_1"
+        },
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/hub/schedule/clients-linked/{id}/{id}",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/hub/schedule/clients-linked/{id}/{id}",
+          "module": "hub",
+          "fonte": "ambas"
+        },
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/hub/schedule/list",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/hub/schedule/list",
+          "module": "hub",
+          "fonte": "ambas"
+        },
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/hub/schedule/loadData",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/hub/schedule/loadData",
+          "module": "hub",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": null
+          },
+          "response_example": {
+            "status": 200,
+            "statusText": "",
+            "headers": {},
+            "body": "{\"cfops\":[{\"code\":1101,\"shortDescription\":\"Compra para industrialização ou produção rural\",\"description\":\"Classificam-se neste código as compras de mercadorias a serem utilizadas em processo de industrialização ou produção rural.\",\"difalSN\":2,\"updatedAt\":\"2024-11-29T17:01:39.365000Z\",\"createdAt\":\"2022-10-27T02:43:26.991000Z\",\"anticipationIcmsSt\":1,\"dasEmitterDevolution\":2,\"dasReceiverDevolution\":2,\"dasTaxation\":2,\"st\":2,\"dasTaxationAnnex\":{\"name\":\"Anexo II\",\"id\":\"63c0737492285f8bef018603\"},\"manu\n... [TRUNCATED - 409633 chars] ...\n\",\"id\":\"690c8e8f239b76b4c401aaba\"},{\"name\":\"Devoluçlão de Mercadoria\",\"color\":\"#D0D0D0\",\"id\":\"690c8e14f364c7f29f0d2943\"},{\"name\":\"Industrialização\",\"color\":\"#BCBDC7\",\"id\":\"6359f05538e9d589e10e84f5\"},{\"name\":\"Revenda\",\"color\":\"#BCBDC7\",\"id\":\"6359f05538e9d589e10e84f4\"},{\"name\":\"Transferência de mercadoria\",\"color\":\"#BABABA\",\"id\":\"690c8cd37ee5ad726d01f221\"},{\"name\":\"Uso e Consumo\",\"color\":\"#BCBDC7\",\"id\":\"6359f05538e9d589e10e84f6\"},{\"name\":\"teste\",\"color\":\"#181C32\",\"id\":\"691ca0f2fd84bec73b07ce7e\"}]}"
+          }
+        },
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/hub/schedule/{id}",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/hub/schedule/{id}",
+          "module": "hub",
+          "fonte": "ambas"
+        },
+        {
+          "method": "POST",
+          "url": "https://api.jettax360.com.br/api/v1/hub/bill-export",
+          "endpoint_key": "POST https://api.jettax360.com.br/api/v1/hub/bill-export",
+          "module": "hub",
+          "fonte": "captura_1"
+        },
+        {
+          "method": "POST",
+          "url": "https://api.jettax360.com.br/api/v1/hub/download",
+          "endpoint_key": "POST https://api.jettax360.com.br/api/v1/hub/download",
+          "module": "hub",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": {
+              "clients": [
+                {
+                  "id": "68bf617a7fdbce02b90740f2",
+                  "name": "A K STORE LTDA"
+                }
+              ],
+              "type": "3",
+              "erpOrganizerConfigType": "0",
+              "filters": {
+                "invoiceType": "",
+                "invoiceBuyerDocument": "",
+                "invoiceSellerDocument": "",
+                "invoiceSituation": "",
+                "startDate": "2025-10-01 00:00:00",
+                "endDate": "2025-10-31 23:59:59",
+                "productCode": "",
+                "productNCM": "",
+                "productCFOP": "",
+                "productCategories": "",
+                "replaceICMS": false,
+                "replaceAuditST": false,
+                "replaceAuditPisCofins": false,
+                "replateAuditST": "",
+                "invoiceDocumentType": "3"
+              }
+            }
+          },
+          "response_example": {
+            "status": 201,
+            "statusText": "",
+            "headers": {},
+            "body": []
+          }
+        },
+        {
+          "method": "POST",
+          "url": "https://api.jettax360.com.br/api/v1/hub/schedule",
+          "endpoint_key": "POST https://api.jettax360.com.br/api/v1/hub/schedule",
+          "module": "hub",
+          "fonte": "ambas"
+        },
+        {
+          "method": "POST",
+          "url": "https://api.jettax360.com.br/api/v1/hub/schedule/clients-linked/{id}",
+          "endpoint_key": "POST https://api.jettax360.com.br/api/v1/hub/schedule/clients-linked/{id}",
+          "module": "hub",
+          "fonte": "ambas"
+        },
+        {
+          "method": "PUT",
+          "url": "https://api.jettax360.com.br/api/v1/hub/schedule/{id}",
+          "endpoint_key": "PUT https://api.jettax360.com.br/api/v1/hub/schedule/{id}",
+          "module": "hub",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": {
+              "id": "6920938add4d9d0b070bd297",
+              "type": "9",
+              "competenceType": "1",
+              "name": "addsa",
+              "day": 1,
+              "filters": {
+                "invoiceType": "",
+                "invoiceBuyerDocument": "",
+                "invoiceSellerDocument": "",
+                "invoiceSituation": "",
+                "startDate": "2025-10-01 00:00:00",
+                "endDate": "2025-10-31 23:59:59",
+                "productCode": "",
+                "productNCM": "",
+                "productCFOP": "",
+                "invoiceDocumentType": "3",
+                "replaceAuditPisCofins": false
+              },
+              "erpOrganizerConfigType": "null",
+              "range": [],
+              "auditICMS": false,
+              "auditST": false,
+              "auditPisCofins": false
+            }
+          },
+          "response_example": {
+            "status": 202,
+            "statusText": "",
+            "headers": {},
+            "body": "{\"type\":9,\"competenceType\":1,\"name\":\"addsa\",\"day\":1,\"filters\":{\"invoiceType\":null,\"invoiceBuyerDocument\":null,\"invoiceSellerDocument\":null,\"invoiceSituation\":null,\"startDate\":\"2025-10-01 00:00:00\",\"endDate\":\"2025-10-31 23:59:59\",\"productCode\":null,\"productNCM\":null,\"productCFOP\":null,\"invoiceDocumentType\":\"3\",\"replaceAuditPisCofins\":false},\"erpOrganizerConfigType\":0,\"range\":[],\"auditICMS\":false,\"auditST\":false,\"auditPisCofins\":false,\"officeId\":\"68b1e4d38c0ec913a50e4bd5\",\"user\":{\"_id\":{\"$oid\":\"68\n... [TRUNCATED - 14966 chars] ...\n\"691b8f0dc205be4dbd079a13\"},{\"name\":\"JCS COMERCIAL DE GAS LTDA\",\"id\":\"691b8f5ac0681799a8008f48\"},{\"name\":\"KZA.U ARQUITETURA E ENGENHARIA INTEGRADA LTDA\",\"id\":\"691b8f9e3f69400fef043c15\"},{\"name\":\"L L DA SILVA OLIVEIRA & CIA LTDA\",\"id\":\"691b8fcc9d4159e750047f62\"},{\"name\":\"LA TRATTORIA DI LANA LTDA\",\"id\":\"691b90109be2a11cfb0120f2\"},{\"name\":\"LL DA SILVA & CIA. LTDA.\",\"id\":\"691b9056c0746e8c7e08c422\"},{\"name\":\"LL DA SILVA & CIA. LTDA.\",\"id\":\"691b909faca1136b11054297\"}],\"id\":\"6920938add4d9d0b070bd297\"}"
+          }
+        }
+      ]
+    },
+    "clients": {
+      "total_endpoints": 12,
+      "endpoints": [
+        {
+          "method": "DELETE",
+          "url": "https://api.jettax360.com.br/api/v1/clients/delete-certificate/{id}",
+          "endpoint_key": "DELETE https://api.jettax360.com.br/api/v1/clients/delete-certificate/{id}",
+          "module": "clients",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": {}
+          },
+          "response_example": {
+            "status": 202,
+            "statusText": "",
+            "headers": {},
+            "body": []
+          }
+        },
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/clients",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/clients",
+          "module": "clients",
+          "fonte": "ambas"
+        },
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/clients/all",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/clients/all",
+          "module": "clients",
+          "fonte": "ambas"
+        },
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/clients/branches/{id}",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/clients/branches/{id}",
+          "module": "clients",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": null
+          },
+          "response_example": {
+            "status": 200,
+            "statusText": "",
+            "headers": {},
+            "body": {
+              "data": []
+            }
+          }
+        },
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/clients/load/",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/clients/load/",
+          "module": "clients",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": null
+          },
+          "response_example": {
+            "status": 200,
+            "statusText": "",
+            "headers": {},
+            "body": "{\"fpas\":[{\"code\":507,\"description\":\"INDÚSTRIA - TRANSPORTE FERROVIÁRIO e de CARRIS URBANOS (inclusive cabos aéreos) EMPRESA METROVIÁ\",\"id\":\"62d5608ea760ee45a354ef72\"},{\"code\":744,\"description\":\"EMPRESA ADQUIRENTE, CONSUMIDORA, CONSIGNATÁRIA OU COOPERATIVA que adquire produção rural de produ\",\"id\":\"62d5608e9c2b6e4c30225e36\"},{\"code\":515,\"description\":\"COMÉRCIO ATACADISTA - COMÉRCIO VAREJISTA - AGENTE AUTÔNOMO DO COMÉRCIO - COMÉRCIO ARMAZENADOR -\",\"id\":\"62d5608ea760ee45a354ef73\"},{\"code\":779,\"desc\n... [TRUNCATED - 46006 chars] ...\n\"Ativa\",\"_id\":\"620d000954060f3cff779903\"},{\"code\":3,\"description\":\"Suspensa\",\"_id\":\"620d000954060f3cff779904\"},{\"code\":4,\"description\":\"Inapta\",\"_id\":\"620d000954060f3cff779905\"},{\"code\":8,\"description\":\"Baixada\",\"_id\":\"620d000954060f3cff779906\"}],\"integrator\":\"NFEletronicaNew\",\"integratorLabel\":\"CPF\",\"integratorEnableHubNFSe\":true,\"integratorEnableERP\":false,\"modules\":{\"ERP\":0,\"PREVENTION\":0,\"HUBNFSe\":1,\"HUBNFSeOutCity\":0,\"HUBFederal\":1,\"HUBDAS\":0,\"StDifal\":0},\"includedOnOfficeCredentials\":true}"
+          }
+        },
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/clients/search-invoices-ws/{id}",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/clients/search-invoices-ws/{id}",
+          "module": "clients",
+          "fonte": "ambas"
+        },
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/clients/{id}",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/clients/{id}",
+          "module": "clients",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": null
+          },
+          "response_example": {
+            "status": 200,
+            "statusText": "",
+            "headers": {},
+            "body": "{\"data\":{\"id\":\"68c011f49a213ccebf0463a2\",\"name\":\"3TB PRODUCOES ARTISTICAS LTDA\",\"enable360\":false,\"enableModuleERP\":false,\"enableModulePrevention\":false,\"enableModuleHubFederal\":true,\"enableModuleHubNFSe\":true,\"enableModuleHubNFSeOutCity\":false,\"enableConvertOutSideCityAbrasf\":false,\"enableConvertOutSideCityAbrasfAt\":\"\",\"enableModuleHubNFSeIss\":true,\"enableModuleDCTFWEB\":false,\"enableModuleHubDas\":false,\"enableImporterCompany\":false,\"taxRegime\":\"60d53314200e556dc277ac20\",\"taxRegimeCode\":\"SN\",\"ph\n... [TRUNCATED - 3599 chars] ...\nazOnlineAt\":\"\",\"automationICMS\":false,\"automationICMSAt\":\"\",\"enableCertificateA3\":false,\"enableCertificateA3At\":\"\",\"enableNFeEmitted\":true,\"enableNFeEmittedAt\":\"11/09/2025 10:08:07\",\"searchWithOfficeCertificate\":false,\"searchWithOfficeCertificateAt\":\"\",\"enableAutomaticCorrections\":true,\"enableAutomaticCorrectionsAt\":\"17/11/2025 13:59:46\",\"enableAutomaticCorrectionPisCofins\":true,\"enableAutomaticCorrectionPisCofinsAt\":\"17/11/2025 13:59:46\"},\"enableImporterCompanyAt\":\"\",\"accountingPlanConfig\":[]}}"
+          }
+        },
+        {
+          "method": "POST",
+          "url": "https://api.jettax360.com.br/api/v1/clients/import/excel",
+          "endpoint_key": "POST https://api.jettax360.com.br/api/v1/clients/import/excel",
+          "module": "clients",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": "{\"source\":\"UEsDBBQABgAIAAAAIQBkLXQNeAEAAJAFAAATAAgCW0NvbnRlbnRfVHlwZXNdLnhtbCCiBAIooAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\n... [TRUNCATED - 76861 chars] ...\nAAAAAAAAAAAAA0VwAAeGwvc3R5bGVzLnhtbFBLAQItABQABgAIAAAAIQDkjvIYsnQAABRjAwAYAAAAAAAAAAAAAAAAADldAAB4bC93b3Jrc2hlZXRzL3NoZWV0MS54bWxQSwECLQAUAAYACAAAACEAwbt1xk4BAABnAgAAEQAAAAAAAAAAAAAAAAAh0gAAZG9jUHJvcHMvY29yZS54bWxQSwECLQAUAAYACAAAACEAJnRBi/4CAADiEQAAEAAAAAAAAAAAAAAAAACm1AAAeGwvY2FsY0NoYWluLnhtbFBLAQItABQABgAIAAAAIQALr4VY7gIAAB8JAAAUAAAAAAAAAAAAAAAAANLXAAB4bC90YWJsZXMvdGFibGUxLnhtbFBLAQItABQABgAIAAAAIQDg0TlvkwEAAAwDAAAQAAAAAAAAAAAAAAAAAPLaAABkb2NQcm9wcy9hcHAueG1sUEsFBgAAAAANAA0AUQMAALvdAAAAAA==\"}"
+          },
+          "response_example": {
+            "status": 500,
+            "statusText": "",
+            "headers": {},
+            "body": {
+              "message": "Server Error"
+            }
+          }
+        },
+        {
+          "method": "POST",
+          "url": "https://api.jettax360.com.br/api/v1/clients/remove-credential-error",
+          "endpoint_key": "POST https://api.jettax360.com.br/api/v1/clients/remove-credential-error",
+          "module": "clients",
+          "fonte": "captura_1"
+        },
+        {
+          "method": "POST",
+          "url": "https://api.jettax360.com.br/api/v1/clients/update-modules/",
+          "endpoint_key": "POST https://api.jettax360.com.br/api/v1/clients/update-modules/",
+          "module": "clients",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": {
+              "filterType": "all",
+              "statusModule": false,
+              "ids": [],
+              "module": "enableModulePrevention"
+            }
+          },
+          "response_example": {
+            "status": 201,
+            "statusText": "",
+            "headers": {},
+            "body": []
+          }
+        },
+        {
+          "method": "PUT",
+          "url": "https://api.jettax360.com.br/api/v1/clients/update-regime-type/{id}",
+          "endpoint_key": "PUT https://api.jettax360.com.br/api/v1/clients/update-regime-type/{id}",
+          "module": "clients",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": []
+          },
+          "response_example": {
+            "status": 201,
+            "statusText": "",
+            "headers": {},
+            "body": []
+          }
+        },
+        {
+          "method": "PUT",
+          "url": "https://api.jettax360.com.br/api/v1/clients/{id}",
+          "endpoint_key": "PUT https://api.jettax360.com.br/api/v1/clients/{id}",
+          "module": "clients",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": "{\"id\":\"68c011f49a213ccebf0463a2\",\"showUnecontFlag\":\"\",\"document\":\"46.149.398/0001-23\",\"name\":\"3TB PRODUCOES ARTISTICAS LTDA\",\"cnaes\":[{\"code\":9001902,\"primary\":true},{\"code\":4399102,\"primary\":false}],\"emails\":[],\"taxRegime\":\"60d53314200e556dc277ac20\",\"phone\":\"\",\"whatsApp\":\"\",\"password\":\"\",\"erp\":{\"nick\":\"\",\"enableContmaticIntegration\":false,\"enableContmaticIntegrationAt\":\"\",\"contmaticIntegration\":false,\"syncAt\":\"\"},\"address\":{\"type\":\"\",\"address\":\"RUA ALEIXO RODRIGUES\",\"number\":643,\"zip\":\"75115-01\n... [TRUNCATED - 3372 chars] ...\n\"downloadCFeWithAccountingCertificate\":false,\"enablePisCofinsAudit\":false},\"email\":null,\"updatedAt\":\"21/11/2025\",\"headquarter\":\"\",\"payroll\":{\"eletronicPoint\":\"\",\"fpas\":\"\",\"rat\":\"\",\"fap\":0.5,\"taxClassification\":\"\",\"enableESocial\":null,\"lastEventStatus\":null,\"lastMessage\":\"\"},\"enableModuleERPAt\":\"\",\"enableModuleHubNFSeAt\":\"04/11/2025 16:04:54\",\"enableModuleHubNFSeOutCityAt\":\"\",\"enableModuleHubNFSeIssAt\":\"04/11/2025 16:04:54\",\"enableModulePreventionAt\":\"\",\"enable360At\":\"\",\"accountingPlanConfig\":[]}"
+          },
+          "response_example": {
+            "status": 201,
+            "statusText": "",
+            "headers": {},
+            "body": []
+          }
+        }
+      ]
+    },
+    "offices": {
+      "total_endpoints": 8,
+      "endpoints": [
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/offices",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/offices",
+          "module": "offices",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": null
+          },
+          "response_example": {
+            "status": 200,
+            "statusText": "",
+            "headers": {},
+            "body": {
+              "data": {
+                "id": "68b1e4d38c0ec913a50e4bd5",
+                "document": "81843909120",
+                "name": "MARCO ANTONIO CARVALHO NETO",
+                "responsible": "MARCO ANTONIO",
+                "email": "contabil2@netocontabilidade.com.br",
+                "phone": "(62) 99298-2486",
+                "whatsApp": "(62) 99298-2486",
+                "taxRegime": "",
+                "erp": "6100b701ff006d696f47ca72",
+                "logo": "",
+                "address": {
+                  "type": "",
+                  "address": "",
+                  "number": "",
+                  "zip": "08051-570",
+                  "district": "",
+                  "state": "",
+                  "complement": "",
+                  "city": {
+                    "ibgeCode": "",
+                    "name": ""
+                  }
+                },
+                "emailConfiguration": {
+                  "signature": "João",
+                  "sender": "contabil2@netocontabilidade.com.br",
+                  "autoSend": "",
+                  "autoSendCND": "",
+                  "autoSendFiscalSituation": ""
+                },
+                "security": {
+                  "enableMFA": false
+                },
+                "apiToken": "",
+                "integrationSieg": {
+                  "updatedAt": "2025-10-15T05:06:17.000000Z",
+                  "status": 2,
+                  "token": "Wx5gynjeg5quKOYnA4kPXw%3d%3d",
+                  "error": "Token sem acesso ao sistema"
+                },
+                "acessorias": {
+                  "userId": "",
+                  "integrations": [],
+                  "mainUser": false,
+                  "acessoriasIntegration": true,
+                  "apiToken": ""
+                }
+              }
+            }
+          }
+        },
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/offices/check-credentials",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/offices/check-credentials",
+          "module": "offices",
+          "fonte": "captura_1"
+        },
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/offices/credentials",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/offices/credentials",
+          "module": "offices",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": null
+          },
+          "response_example": {
+            "status": 200,
+            "statusText": "",
+            "headers": {},
+            "body": {
+              "data": [
+                {
+                  "id": "68b5943bae04e6290e035276",
+                  "name": "Marco Antonio",
+                  "type": "Certificado",
+                  "digitalCertificate": "https://jettax360.s3.us-west-2.amazonaws.com/offices/68b1e4d38c0ec913a50e4bd5/certificates/68b1e4d38c0ec913a50e4bd568b5943b6652f.pfx",
+                  "city": "-",
+                  "qtdClients": 172,
+                  "default": true,
+                  "digitalCertificateDate": "16/06/2026",
+                  "isExpired": false,
+                  "expiring": false,
+                  "actionPermission": true,
+                  "clientsCount": 172
+                }
+              ],
+              "meta": {
+                "pagination": {
+                  "total": 1,
+                  "count": 1,
+                  "per_page": 20,
+                  "current_page": 1,
+                  "total_pages": 1,
+                  "links": {}
+                }
+              }
+            }
+          }
+        },
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/offices/credentials/load",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/offices/credentials/load",
+          "module": "offices",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": null
+          },
+          "response_example": {
+            "status": 200,
+            "statusText": "",
+            "headers": {},
+            "body": {
+              "cluster": []
+            }
+          }
+        },
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/offices/has-certificate",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/offices/has-certificate",
+          "module": "offices",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": null
+          },
+          "response_example": {
+            "status": 200,
+            "statusText": "",
+            "headers": {},
+            "body": {
+              "status": true
+            }
+          }
+        },
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/offices/load",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/offices/load",
+          "module": "offices",
+          "fonte": "ambas"
+        },
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/offices/my-plan/",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/offices/my-plan/",
+          "module": "offices",
+          "fonte": "captura_1"
+        },
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/offices/pior-notice",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/offices/pior-notice",
+          "module": "offices",
+          "fonte": "captura_1"
+        }
+      ]
+    },
+    "unknown": {
+      "total_endpoints": 7,
+      "endpoints": [
+        {
+          "method": "GET",
+          "url": "https://admin.jettax360.com.br/media/svg/icons/Communication/Mail-notification.svg",
+          "endpoint_key": "GET https://admin.jettax360.com.br/media/svg/icons/Communication/Mail-notification.svg",
+          "module": "unknown",
+          "fonte": "ambas"
+        },
+        {
+          "method": "GET",
+          "url": "https://admin.jettax360.com.br/media/svg/icons/Communication/Mail-opened.svg",
+          "endpoint_key": "GET https://admin.jettax360.com.br/media/svg/icons/Communication/Mail-opened.svg",
+          "module": "unknown",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": null
+          },
+          "response_example": {
+            "status": 200,
+            "statusText": "OK",
+            "headers": {},
+            "body": "\"<?xml version=\\\"1.0\\\" encoding=\\\"UTF-8\\\"?>\\r\\n<svg width=\\\"24px\\\" height=\\\"24px\\\" viewBox=\\\"0 0 24 24\\\" version=\\\"1.1\\\" xmlns=\\\"http://www.w3.org/2000/svg\\\" xmlns:xlink=\\\"http://www.w3.org/1999/xlink\\\">\\r\\n    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->\\r\\n    <title>Stockholm-icons / Communication / Mail-opened</title>\\r\\n    <desc>Created with Sketch.</desc>\\r\\n    <defs></defs>\\r\\n    <g id=\\\"Stockholm-icons-/-Communication-/-Mail-opened\\\" stroke=\\\"none\\\" s\n... [TRUNCATED - 1683 chars] ...\nacity=\\\"0.3\\\"></path>\\r\\n        <path d=\\\"M3.79274528,6.57253826 L12,12.5 L20.2072547,6.57253826 C20.4311176,6.4108595 20.7436609,6.46126971 20.9053396,6.68513259 C20.9668779,6.77033951 21,6.87277228 21,6.97787787 L21,17 C21,18.1045695 20.1045695,19 19,19 L5,19 C3.8954305,19 3,18.1045695 3,17 L3,6.97787787 C3,6.70173549 3.22385763,6.47787787 3.5,6.47787787 C3.60510559,6.47787787 3.70753836,6.51099993 3.79274528,6.57253826 Z\\\" id=\\\"Combined-Shape\\\" fill=\\\"#000000\\\"></path>\\r\\n    </g>\\r\\n</svg>\""
+          }
+        },
+        {
+          "method": "GET",
+          "url": "https://api-auth.jettax360.com.br/api/jettax360/v1/auth/office/refresh",
+          "endpoint_key": "GET https://api-auth.jettax360.com.br/api/jettax360/v1/auth/office/refresh",
+          "module": "unknown",
+          "fonte": "ambas"
+        },
+        {
+          "method": "GET",
+          "url": "https://api-auth.jettax360.com.br/api/jettax360/v1/auth/office/user",
+          "endpoint_key": "GET https://api-auth.jettax360.com.br/api/jettax360/v1/auth/office/user",
+          "module": "unknown",
+          "fonte": "captura_1"
+        },
+        {
+          "method": "POST",
+          "url": "https://api-auth.jettax360.com.br/api/jettax360/v1/auth/office/login",
+          "endpoint_key": "POST https://api-auth.jettax360.com.br/api/jettax360/v1/auth/office/login",
+          "module": "unknown",
+          "fonte": "captura_1"
+        },
+        {
+          "method": "POST",
+          "url": "https://api.jettax360.com.br/broadcasting/auth",
+          "endpoint_key": "POST https://api.jettax360.com.br/broadcasting/auth",
+          "module": "unknown",
+          "fonte": "captura_1"
+        },
+        {
+          "method": "POST",
+          "url": "https://www.google-analytics.com/g/collect",
+          "endpoint_key": "POST https://www.google-analytics.com/g/collect",
+          "module": "unknown",
+          "fonte": "ambas"
+        }
+      ]
+    },
+    "clusters": {
+      "total_endpoints": 6,
+      "endpoints": [
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/clusters/",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/clusters/",
+          "module": "clusters",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": null
+          },
+          "response_example": {
+            "status": 200,
+            "statusText": "",
+            "headers": {},
+            "body": {
+              "data": [],
+              "meta": {
+                "pagination": {
+                  "total": 0,
+                  "count": 0,
+                  "per_page": 20,
+                  "current_page": 1,
+                  "total_pages": 1,
+                  "links": {}
+                }
+              }
+            }
+          }
+        },
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/clusters/clients",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/clusters/clients",
+          "module": "clusters",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": null
+          },
+          "response_example": {
+            "status": 200,
+            "statusText": "",
+            "headers": {},
+            "body": "{\"data\":[{\"_id\":\"68b5ca34826f0baddb0a9df3\",\"name\":\"GH SISTEMAS CONSTRUTIVOS LTDA\",\"document\":\"55.741.687/0001-08\",\"taxRegime\":\"Lucro Real\",\"city\":\"Anapolis\",\"linked\":false,\"infoLinked\":false,\"status\":{\"code\":1,\"text\":\"Ativo\",\"color\":\"success\"}},{\"_id\":\"68b5da0f487c8d137b0c87c7\",\"name\":\"DROGARIAS NACIONAL PEDRO LUDOVICO LTDA\",\"document\":\"07.956.060/0001-21\",\"taxRegime\":\"Lucro Real\",\"city\":\"Anapolis\",\"linked\":false,\"infoLinked\":false,\"status\":{\"code\":1,\"text\":\"Ativo\",\"color\":\"success\"}},{\"_id\":\"68\n... [TRUNCATED - 48397 chars] ...\n\"Ativo\",\"color\":\"success\"}},{\"_id\":\"691b9056c0746e8c7e08c422\",\"name\":\"LL DA SILVA & CIA. LTDA.\",\"document\":\"03.163.171/0008-04\",\"taxRegime\":\"Simples Nacional\",\"city\":\"Uruacu\",\"linked\":false,\"infoLinked\":false,\"status\":{\"code\":1,\"text\":\"Ativo\",\"color\":\"success\"}},{\"_id\":\"691b909faca1136b11054297\",\"name\":\"LL DA SILVA & CIA. LTDA.\",\"document\":\"03.163.171/0006-34\",\"taxRegime\":\"Simples Nacional\",\"city\":\"Itapaci\",\"linked\":false,\"infoLinked\":false,\"status\":{\"code\":1,\"text\":\"Ativo\",\"color\":\"success\"}}]}"
+          }
+        },
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/clusters/load",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/clusters/load",
+          "module": "clusters",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": null
+          },
+          "response_example": {
+            "status": 200,
+            "statusText": "",
+            "headers": {},
+            "body": {
+              "data": []
+            }
+          }
+        },
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/clusters/{id}",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/clusters/{id}",
+          "module": "clusters",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": null
+          },
+          "response_example": {
+            "status": 200,
+            "statusText": "",
+            "headers": {},
+            "body": {
+              "data": {
+                "id": "6920980b8c2edee34300afa3",
+                "userId": "",
+                "name": "João Vitor Guimarães Silva"
+              }
+            }
+          }
+        },
+        {
+          "method": "POST",
+          "url": "https://api.jettax360.com.br/api/v1/clusters/",
+          "endpoint_key": "POST https://api.jettax360.com.br/api/v1/clusters/",
+          "module": "clusters",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": "{\"id\":\"\",\"name\":\"João Vitor Guimarães Silva\",\"userId\":\"\",\"clients\":[\"68b5ca34826f0baddb0a9df3\",\"68b5da0f487c8d137b0c87c7\",\"68b5db63e998833aad0dd71a\",\"68b5dbdb67c653d28b0bd6d4\",\"68b6d438ef14825f280c50d2\",\"68bf617a7fdbce02b90740f2\",\"68bf61b94bfe0a0de7000ac5\",\"68bf61fbb60b284a41030892\",\"68bf6238549f36ee110e1632\",\"68bf62766dc0bc30e7091de2\",\"68bf62b5549f36ee110e1639\",\"68bf62f406b13d5fd8014bc3\",\"68bf63336dc0bc30e7091de5\",\"68bf63726dc0bc30e7091de9\",\"68bf63bc3f8cfd83d40113c5\",\"68bf63fb8f9fcb9c0b08fb82\",\n... [TRUNCATED - 5523 chars] ...\nf28ea0bce28\",\"691b8c4730c6d4eb34091135\",\"691b8c875d4e1f28ea0bce31\",\"691b8cc75ca6e7cb9c005c02\",\"691b8d0bf5618a2b72048984\",\"691b8d4cbf2c614abb0c4fe2\",\"691b8d8ec0681799a8008f42\",\"691b8dd0996452062201edf6\",\"691b8e0a6805494a9e0a5202\",\"691b8e6666c0236ce90ed482\",\"691b8e955cb6a24bff0ac9d2\",\"691b8ed3fd16f806b3086f47\",\"691b8f0dc205be4dbd079a13\",\"691b8f5ac0681799a8008f48\",\"691b8f9e3f69400fef043c15\",\"691b8fcc9d4159e750047f62\",\"691b90109be2a11cfb0120f2\",\"691b9056c0746e8c7e08c422\",\"691b909faca1136b11054297\"]}"
+          },
+          "response_example": {
+            "status": 201,
+            "statusText": "",
+            "headers": {},
+            "body": []
+          }
+        },
+        {
+          "method": "POST",
+          "url": "https://api.jettax360.com.br/api/v1/clusters/delete",
+          "endpoint_key": "POST https://api.jettax360.com.br/api/v1/clusters/delete",
+          "module": "clusters",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": {
+              "ids": [
+                "6920980b8c2edee34300afa3"
+              ]
+            }
+          },
+          "response_example": {
+            "status": 202,
+            "statusText": "",
+            "headers": {},
+            "body": []
+          }
+        }
+      ]
+    },
+    "utils": {
+      "total_endpoints": 4,
+      "endpoints": [
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/utils/load-global-data",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/utils/load-global-data",
+          "module": "utils",
+          "fonte": "captura_1"
+        },
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/utils/search-address/{id}",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/utils/search-address/{id}",
+          "module": "utils",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": null
+          },
+          "response_example": {
+            "status": 200,
+            "statusText": "",
+            "headers": {},
+            "body": {
+              "item": {
+                "neighborhood": "Vila Industrial",
+                "city": "Anápolis",
+                "ibge": "5201108",
+                "state": "GO",
+                "address": "Aleixo Rodrigues",
+                "addressComplement": "",
+                "postcode": "75115010",
+                "addressType": "Rua",
+                "id": "61415d59309ff93eb030ec2c",
+                "integrator": "NFEletronicaNew",
+                "integratorEnableHubNFSe": true,
+                "integratorEnableERP": false
+              }
+            }
+          }
+        },
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/utils/search-document/{id}",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/utils/search-document/{id}",
+          "module": "utils",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": null
+          },
+          "response_example": {
+            "status": 200,
+            "statusText": "",
+            "headers": {},
+            "body": {
+              "item": {
+                "document": "46149398000123",
+                "name": "3TB PRODUCOES ARTISTICAS LTDA",
+                "primaryCNAE": {
+                  "code": 9001902,
+                  "description": "Produção musical"
+                },
+                "openDate": "26/04/2022",
+                "natureType": "206-2",
+                "address": {
+                  "type": "",
+                  "address": "RUA ALEIXO RODRIGUES",
+                  "number": "643",
+                  "complement": "QUADRA08 LOTE 42",
+                  "district": "VILA INDUSTRIAL",
+                  "state": "GO",
+                  "city": {
+                    "name": "Anapolis",
+                    "ibgeCode": 5201108
+                  },
+                  "zip": "75115010"
+                },
+                "isSimpleNational": false,
+                "simpleNationalStartDate": "",
+                "simpleNationalEndDate": "",
+                "isMei": false,
+                "secondaryCNAE": [
+                  {
+                    "code": "4399102",
+                    "description": "Montagem e desmontagem de andaimes e outras estruturas temporárias"
+                  }
+                ],
+                "documentOrigin": "ReceitaWS",
+                "integrator": "NFEletronicaNew",
+                "integratorEnableHubNFSe": true,
+                "integratorEnableERP": false,
+                "status": "1",
+                "registrationStatus": "620d000954060f3cff779903",
+                "showSelectCities": false
+              }
+            }
+          }
+        },
+        {
+          "method": "POST",
+          "url": "https://api.jettax360.com.br/api/v1/utils/get-file/",
+          "endpoint_key": "POST https://api.jettax360.com.br/api/v1/utils/get-file/",
+          "module": "utils",
+          "fonte": "ambas"
+        }
+      ]
+    },
+    "users": {
+      "total_endpoints": 4,
+      "endpoints": [
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/users",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/users",
+          "module": "users",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": null
+          },
+          "response_example": {
+            "status": 200,
+            "statusText": "",
+            "headers": {},
+            "body": "{\"data\":[{\"_id\":\"68cc09f2c71b8938af0495b2\",\"name\":\"Carla Mendes\",\"email\":\"fiscal@netocontabilidade.com.br\",\"clientId\":\"\",\"role\":{\"name\":\"Administrador do escritório\",\"type\":1},\"department\":{\"name\":\" - \"},\"status\":{\"code\":1,\"text\":\"Sim\",\"color\":\"success\"},\"hasApiToken\":false},{\"_id\":\"68b5da0f487c8d137b0c87c9\",\"name\":\"DROGARIAS NACIONAL PEDRO LUDOVICO LTDA\",\"email\":\"joaovguimas@gmail.com\",\"clientId\":\"68b5da0f487c8d137b0c87c7\",\"role\":{\"name\":\"Acesso do Cliente\",\"type\":2},\"department\":{\"name\":\" - \"}\n... [TRUNCATED - 2590 chars] ...\nistrador do escritório\",\"type\":1},\"department\":{\"name\":\" - \"},\"status\":{\"code\":1,\"text\":\"Sim\",\"color\":\"success\"},\"hasApiToken\":false},{\"_id\":\"68f8d22f6f332dd67d08be29\",\"name\":\"Rhaiane\",\"email\":\"rhaiane@netocontabilidade.com.br\",\"clientId\":\"\",\"role\":{\"name\":\"Administrador do escritório\",\"type\":1},\"department\":{\"name\":\" - \"},\"status\":{\"code\":1,\"text\":\"Sim\",\"color\":\"success\"},\"hasApiToken\":false}],\"meta\":{\"pagination\":{\"total\":9,\"count\":9,\"per_page\":20,\"current_page\":1,\"total_pages\":1,\"links\":{}}}}"
+          }
+        },
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/users/clients/get-to-link/{id}",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/users/clients/get-to-link/{id}",
+          "module": "users",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": null
+          },
+          "response_example": {
+            "status": 200,
+            "statusText": "",
+            "headers": {},
+            "body": "{\"data\":[{\"_id\":\"68c011f49a213ccebf0463a2\",\"name\":\"3TB PRODUCOES ARTISTICAS LTDA\",\"document\":\"46.149.398/0001-23\",\"linked\":false,\"infoLinked\":false,\"allInfoLinked\":[],\"taxRegime\":\"Simples Nacional\",\"city\":\"Anapolis\",\"status\":{\"code\":1,\"text\":\"Ativo\",\"color\":\"success\"},\"erp\":null},{\"_id\":\"68c01f0235d0621e88004e62\",\"name\":\"A A DE MATOS RESENDE - SUPERMERCADO SANTO ANTONIO\",\"document\":\"29.413.500/0001-37\",\"linked\":false,\"infoLinked\":false,\"allInfoLinked\":[],\"taxRegime\":\"Simples Nacional\",\"city\":\"An\n... [TRUNCATED - 54457 chars] ...\nc66\",\"name\":\"ZION DENTAL CLINIC LTDA\",\"document\":\"42.160.692/0001-85\",\"linked\":false,\"infoLinked\":false,\"allInfoLinked\":[],\"taxRegime\":\"Simples Nacional\",\"city\":\"Anapolis\",\"status\":{\"code\":1,\"text\":\"Ativo\",\"color\":\"success\"},\"erp\":null},{\"_id\":\"68c02011d4e6c07bf905c083\",\"name\":\"A C MELO LTDA\",\"document\":\"06.936.057/0001-83\",\"linked\":false,\"infoLinked\":false,\"allInfoLinked\":[],\"taxRegime\":\"Simples Nacional\",\"city\":\"PIRENOPOLIS\",\"status\":{\"code\":2,\"text\":\"Pendente\",\"color\":\"warning\"},\"erp\":null}]}"
+          }
+        },
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/users/load",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/users/load",
+          "module": "users",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": null
+          },
+          "response_example": {
+            "status": 200,
+            "statusText": "",
+            "headers": {},
+            "body": "{\"roles\":[{\"type\":2,\"name\":\"Acesso do Cliente\",\"_id\":\"60d53313200e556dc277aac9\"},{\"type\":1,\"name\":\"Administrador do escritório\",\"_id\":\"60d53313200e556dc277aaca\"},{\"type\":3,\"name\":\"Funcionário do escritório\",\"_id\":\"60d53313200e556dc277aacb\"}],\"departments\":[{\"name\":\"Todos\",\"modules\":[{\"code\":\"FIS\",\"name\":\"Fiscal\"},{\"code\":\"ATE\",\"name\":\"Atendimento\"},{\"code\":\"BPO\",\"name\":\"BPO Financeiro\"},{\"code\":\"FDP\",\"name\":\"Folha De Pagamento\"},{\"code\":\"GDP\",\"name\":\"Gestão De Pagamento\"},{\"code\":\"GDT\",\"name\":\"G\n... [TRUNCATED - 1365 chars] ...\nd\":\"63976aff400c62e0b50366b5\"},{\"name\":\"Folha De Pagamento\",\"modules\":[{\"code\":\"FDP\",\"name\":\"Folha De Pagamento\"}],\"_id\":\"63976aff400c62e0b50366b6\"},{\"name\":\"Gestão De Pagamento\",\"modules\":[{\"code\":\"GDP\",\"name\":\"Gestão De Pagamento\"}],\"_id\":\"63976aff400c62e0b50366b7\"},{\"name\":\"Gestão De Tarefas\",\"modules\":[{\"code\":\"GDT\",\"name\":\"Gestão De Tarefas\"}],\"_id\":\"63976aff400c62e0b50366b8\"},{\"name\":\"Prevenção\",\"modules\":[{\"code\":\"PRV\",\"name\":\"Prevenção\"}],\"_id\":\"63976aff400c62e0b50366b9\"}],\"clusters\":[]}"
+          }
+        },
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/users/{id}",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/users/{id}",
+          "module": "users",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": null
+          },
+          "response_example": {
+            "status": 200,
+            "statusText": "",
+            "headers": {},
+            "body": {
+              "data": {
+                "name": "Carla Mendes",
+                "clientName": "",
+                "email": "fiscal@netocontabilidade.com.br",
+                "phone": "",
+                "whatsApp": "",
+                "document": "00099019140",
+                "department": "",
+                "status": 1,
+                "roleType": 1,
+                "apiTokenAcessorias": null
+              }
+            }
+          }
+        }
+      ]
+    },
+    "notifications": {
+      "total_endpoints": 3,
+      "endpoints": [
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/notifications",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/notifications",
+          "module": "notifications",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": null
+          },
+          "response_example": {
+            "status": 200,
+            "statusText": "",
+            "headers": {},
+            "body": "{\"data\":[{\"client\":\"J S VIEIRA LTDA\",\"module\":\"Fiscal\",\"process\":\"Finalizado processo da DCTFWEB\",\"message\":\"Processo de envio do DCTFWEB para J S VIEIRA LTDA finalizado.\",\"errorDetail\":\"\",\"readAt\":null,\"createdAt\":\"19/11/2025 10:27:14\",\"notificationType\":{\"code\":2,\"color\":\"success\"}},{\"client\":\"QUALIEND INSPECOES LTDA\",\"module\":\"Fiscal\",\"process\":\"Finalizado processo da DCTFWEB\",\"message\":\"Processo de envio do DCTFWEB para QUALIEND INSPECOES LTDA finalizado.\",\"errorDetail\":\"\",\"readAt\":null,\"cre\n... [TRUNCATED - 6291 chars] ...\nype\":{\"code\":2,\"color\":\"success\"}},{\"client\":\"HUBJET TRANSPORTES LTDA\",\"module\":\"Fiscal\",\"process\":\"Finalizado processo da DCTFWEB\",\"message\":\"Processo de envio do DCTFWEB para HUBJET TRANSPORTES LTDA finalizado.\",\"errorDetail\":\"\",\"readAt\":null,\"createdAt\":\"19/11/2025 10:18:45\",\"notificationType\":{\"code\":2,\"color\":\"success\"}}],\"meta\":{\"pagination\":{\"total\":465,\"count\":20,\"per_page\":20,\"current_page\":1,\"total_pages\":24,\"links\":{\"next\":\"https://api.jettax360.com.br/api/v1/notifications?page=2\"}}}}"
+          }
+        },
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/notifications/user",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/notifications/user",
+          "module": "notifications",
+          "fonte": "captura_1"
+        },
+        {
+          "method": "POST",
+          "url": "https://api.jettax360.com.br/api/v1/notifications/read",
+          "endpoint_key": "POST https://api.jettax360.com.br/api/v1/notifications/read",
+          "module": "notifications",
+          "fonte": "captura_2",
+          "request_example": {
+            "headers": {},
+            "body": {
+              "ids": [
+                "6c4733b2-91fc-4881-8868-3faf2acf4207",
+                "985d469a-fece-4973-93bf-ffe63b64a243"
+              ]
+            }
+          },
+          "response_example": {
+            "status": 202,
+            "statusText": "",
+            "headers": {},
+            "body": []
+          }
+        }
+      ]
+    },
+    "credential-center": {
+      "total_endpoints": 3,
+      "endpoints": [
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/credential-center",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/credential-center",
+          "module": "credential-center",
+          "fonte": "captura_1"
+        },
+        {
+          "method": "POST",
+          "url": "https://api.jettax360.com.br/api/v1/credential-center/remove-credential-all-errors",
+          "endpoint_key": "POST https://api.jettax360.com.br/api/v1/credential-center/remove-credential-all-errors",
+          "module": "credential-center",
+          "fonte": "captura_1"
+        },
+        {
+          "method": "POST",
+          "url": "https://api.jettax360.com.br/api/v1/credential-center/remove-credential-das-error",
+          "endpoint_key": "POST https://api.jettax360.com.br/api/v1/credential-center/remove-credential-das-error",
+          "module": "credential-center",
+          "fonte": "captura_1"
+        }
+      ]
+    },
+    "dashboard": {
+      "total_endpoints": 2,
+      "endpoints": [
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/dashboard/header",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/dashboard/header",
+          "module": "dashboard",
+          "fonte": "captura_1"
+        },
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/dashboard/schedules",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/dashboard/schedules",
+          "module": "dashboard",
+          "fonte": "captura_1"
+        }
+      ]
+    },
+    "iframe": {
+      "total_endpoints": 1,
+      "endpoints": [
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/iframe/notify",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/iframe/notify",
+          "module": "iframe",
+          "fonte": "captura_1"
+        }
+      ]
+    },
+    "bulletins": {
+      "total_endpoints": 1,
+      "endpoints": [
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/bulletins/notify",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/bulletins/notify",
+          "module": "bulletins",
+          "fonte": "ambas"
+        }
+      ]
+    },
+    "calls": {
+      "total_endpoints": 1,
+      "endpoints": [
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/calls/notification",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/calls/notification",
+          "module": "calls",
+          "fonte": "captura_1"
+        }
+      ]
+    },
+    "email": {
+      "total_endpoints": 1,
+      "endpoints": [
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/email/getAll",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/email/getAll",
+          "module": "email",
+          "fonte": "captura_1"
+        }
+      ]
+    },
+    "integration-acessorias": {
+      "total_endpoints": 1,
+      "endpoints": [
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/integration-acessorias/list",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/integration-acessorias/list",
+          "module": "integration-acessorias",
+          "fonte": "captura_1"
+        }
+      ]
+    },
+    "schedules": {
+      "total_endpoints": 1,
+      "endpoints": [
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/schedules/load",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/schedules/load",
+          "module": "schedules",
+          "fonte": "ambas"
+        }
+      ]
+    },
+    "cities": {
+      "total_endpoints": 1,
+      "endpoints": [
+        {
+          "method": "GET",
+          "url": "https://api.jettax360.com.br/api/v1/cities/service-codes/{id}",
+          "endpoint_key": "GET https://api.jettax360.com.br/api/v1/cities/service-codes/{id}",
+          "module": "cities",
+          "fonte": "captura_1"
+        }
+      ]
+    }
+  },
+  "endpoints": []
+}

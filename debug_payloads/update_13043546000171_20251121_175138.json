@@ -1,0 +1,180 @@
+{
+  "client_id": "68b5db63e998833aad0dd71a",
+  "cnpj": "13043546000171",
+  "razao_social": "DROGARIAS NACIONAL JUNDIAI LTDA",
+  "payload": {
+    "id": "68b5db63e998833aad0dd71a",
+    "name": "DROGARIAS NACIONAL JUNDIAI LTDA",
+    "enable360": false,
+    "enableModuleERP": false,
+    "enableModulePrevention": false,
+    "enableModuleHubFederal": true,
+    "enableModuleHubNFSe": false,
+    "enableModuleHubNFSeOutCity": false,
+    "enableConvertOutSideCityAbrasf": false,
+    "enableConvertOutSideCityAbrasfAt": "",
+    "enableModuleHubNFSeIss": false,
+    "enableModuleDCTFWEB": false,
+    "enableModuleHubDas": false,
+    "enableImporterCompany": false,
+    "taxRegime": "60d53314200e556dc277ac20",
+    "taxRegimeCode": "SN",
+    "phone": "",
+    "whatsApp": "",
+    "municipalIntegration": {
+      "login": "",
+      "password": "",
+      "createISS": false,
+      "municipalRegistration": "215534",
+      "gissonlineLogin": "",
+      "gissonlinePassword": ""
+    },
+    "simpleNationalIntegration": {
+      "accessCode": "",
+      "documentResponsible": "",
+      "manualBilling": false,
+      "hasEmployyes": false,
+      "onlyCommercialBilling": false,
+      "typeRegime": [
+        {
+          "competence": "01/2025",
+          "code": 2,
+          "name": "Competência"
+        }
+      ]
+    },
+    "moduleFederalConfiguration": {
+      "downloadNFeWithAccountingCertificate": false,
+      "downloadPurchaseNFeInvoices": false,
+      "downloadCTeInvoices": false,
+      "downloadSalesNFeInvoices": false,
+      "downloadCFeInvoices": false,
+      "downloadCFeWithAccountingCertificate": false,
+      "enablePisCofinsAudit": false
+    },
+    "email": null,
+    "emails": [],
+    "document": "13.043.546/0001-71",
+    "address": {
+      "type": "",
+      "address": "RUA 24 DE OUTUBRO",
+      "number": 0,
+      "zip": "75180-000",
+      "district": "SETOR CENTRO",
+      "state": "GO",
+      "complement": "QUADRA23 LOTE 76 SALA 02",
+      "city": {
+        "ibgeCode": 5220603,
+        "name": "Silvania"
+      }
+    },
+    "cnaes": [
+      {
+        "name": "Comércio varejista de produtos alimentícios em geral ou especializado em produtos alimentícios não especificados anteriormente",
+        "code": 4729699,
+        "primary": false
+      },
+      {
+        "name": "Comércio varejista de produtos farmacêuticos, sem manipulação de fórmulas",
+        "code": 4771701,
+        "primary": true
+      },
+      {
+        "name": "Comércio varejista de cosméticos, produtos de perfumaria e de higiene pessoal",
+        "code": 4772500,
+        "primary": false
+      },
+      {
+        "name": "Comércio varejista de artigos médicos e ortopédicos",
+        "code": 4773300,
+        "primary": false
+      }
+    ],
+    "status": 1,
+    "startCompetence": "08/2025",
+    "digitalCertificate": "https://jettax360.s3.us-west-2.amazonaws.com/offices/68b1e4d38c0ec913a50e4bd5/clients/68b5db63e998833aad0dd71a/certificate.pfx",
+    "digitalCertificatePassword": "Jonathan@2025",
+    "digitalCertificateDate": "09/10/2026",
+    "digitalCertificateDocument": "13043546000171",
+    "legalNature": "206-2",
+    "stateRegistration": 104891009,
+    "openDate": "21/12/2010",
+    "createdAt": "01/09/2025",
+    "updatedAt": "05/11/2025",
+    "headquarter": "",
+    "efdReinf": {
+      "startDate": "",
+      "partnerId": "",
+      "partnerAdmin": "",
+      "phone": "",
+      "email": "",
+      "document": "",
+      "taxClassification": "",
+      "errorMessage": ""
+    },
+    "ecdOption": "",
+    "enableEfdReinf": false,
+    "enableEfdReinfAt": "",
+    "registrationStatus": "620d000954060f3cff779903",
+    "typeRegime": {
+      "name": "Competência",
+      "code": 2,
+      "competence": "01/2025"
+    },
+    "payroll": {
+      "eletronicPoint": "",
+      "fpas": "",
+      "rat": "",
+      "fap": 0.5,
+      "taxClassification": "",
+      "enableESocial": null,
+      "lastEventStatus": null,
+      "lastMessage": ""
+    },
+    "erp": {
+      "nick": "",
+      "enableContmaticIntegration": false,
+      "enableContmaticIntegrationAt": "",
+      "contmaticIntegration": false,
+      "syncAt": ""
+    },
+    "enableModuleERPAt": "",
+    "enabledESocialAt": "",
+    "enableModuleHubFederalAt": "01/09/2025 14:44:03",
+    "enableModuleHubNFSeAt": "",
+    "enableModuleHubNFSeOutCityAt": "",
+    "enableModuleHubNFSeIssAt": "",
+    "enableModulePreventionAt": "",
+    "enable360At": "",
+    "enableModuleHubDasAt": "",
+    "enableModuleDCTFWEBAt": "",
+    "federalConfig": {
+      "enableCFE": false,
+      "enableCFEAt": "",
+      "enableNFCE": false,
+      "enableNFCEAt": "",
+      "enableSefazOnline": false,
+      "enableSefazOnlineAt": "",
+      "automationICMS": false,
+      "automationICMSAt": "",
+      "enableCertificateA3": false,
+      "enableCertificateA3At": "",
+      "enableNFeEmitted": true,
+      "enableNFeEmittedAt": "11/09/2025 10:36:26",
+      "searchWithOfficeCertificate": false,
+      "searchWithOfficeCertificateAt": "",
+      "enableAutomaticCorrections": true,
+      "enableAutomaticCorrectionsAt": "05/11/2025 08:57:40",
+      "enableAutomaticCorrectionPisCofins": true,
+      "enableAutomaticCorrectionPisCofinsAt": "05/11/2025 08:57:40"
+    },
+    "enableImporterCompanyAt": "",
+    "accountingPlanConfig": []
+  },
+  "diferencas": [
+    "Tributação: '' → 'Simples Nacional - Comércio e Industria'",
+    "IE: '' → '104891009'",
+    "IM: '' → '215534'",
+    "E-mail: '' → 'rh@drogariasnacional.com.br'"
+  ]
+}

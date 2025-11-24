@@ -1,0 +1,170 @@
+{
+  "client_id": "68bf71765d5a733e61081642",
+  "cnpj": "14535676000194",
+  "razao_social": "FONSECA & ALVES REPRESENTACOES LTDA",
+  "payload": {
+    "id": "68bf71765d5a733e61081642",
+    "name": "FONSECA & SOARES REPRESENTACOES LTDA",
+    "enable360": false,
+    "enableModuleERP": false,
+    "enableModulePrevention": false,
+    "enableModuleHubFederal": true,
+    "enableModuleHubNFSe": true,
+    "enableModuleHubNFSeOutCity": false,
+    "enableConvertOutSideCityAbrasf": false,
+    "enableConvertOutSideCityAbrasfAt": "",
+    "enableModuleHubNFSeIss": false,
+    "enableModuleDCTFWEB": false,
+    "enableModuleHubDas": false,
+    "enableImporterCompany": false,
+    "taxRegime": "62d9471420ba2a79cd31c162",
+    "taxRegimeCode": "LP",
+    "phone": "(62) 98117-2200",
+    "whatsApp": "",
+    "municipalIntegration": {
+      "login": "26279746100",
+      "password": "262797",
+      "createISS": true,
+      "municipalRegistration": "8550438",
+      "gissonlineLogin": "",
+      "gissonlinePassword": ""
+    },
+    "simpleNationalIntegration": {
+      "accessCode": "",
+      "documentResponsible": "",
+      "manualBilling": false,
+      "hasEmployyes": false,
+      "onlyCommercialBilling": false,
+      "typeRegime": [
+        {
+          "competence": "01/2025",
+          "code": 2,
+          "name": "Competência"
+        }
+      ]
+    },
+    "moduleFederalConfiguration": {
+      "downloadNFeWithAccountingCertificate": false,
+      "downloadPurchaseNFeInvoices": false,
+      "downloadCTeInvoices": false,
+      "downloadSalesNFeInvoices": false,
+      "downloadCFeInvoices": false,
+      "downloadCFeWithAccountingCertificate": false,
+      "enablePisCofinsAudit": false
+    },
+    "email": null,
+    "emails": [],
+    "document": "14.535.676/0001-94",
+    "address": {
+      "type": "R",
+      "address": "AGENOR CALDAS",
+      "number": 216,
+      "zip": "75460-000",
+      "district": "SETOR CENTRAL",
+      "state": "GO",
+      "complement": "A                   QUADRA25                  LOTE  08-A",
+      "city": {
+        "ibgeCode": 5214507,
+        "name": "NEROPOLIS"
+      }
+    },
+    "cnaes": [
+      {
+        "name": "Representantes comerciais e agentes do comércio de produtos alimentícios, bebidas e fumo",
+        "code": 4617600,
+        "primary": true
+      },
+      {
+        "name": "Outros representantes comerciais e agentes do comércio especializado em produtos não especificados anteriormente",
+        "code": 4618499,
+        "primary": false
+      }
+    ],
+    "status": 1,
+    "startCompetence": "07/2025",
+    "digitalCertificate": "https://jettax360.s3.us-west-2.amazonaws.com/offices/68b1e4d38c0ec913a50e4bd5/clients/68bf71765d5a733e61081642/certificate.pfx",
+    "digitalCertificatePassword": "Marcos@2025",
+    "digitalCertificateDate": "19/05/2026",
+    "digitalCertificateDocument": "14535676000194",
+    "legalNature": "206-2",
+    "stateRegistration": "",
+    "openDate": "17/10/2011",
+    "createdAt": "08/09/2025",
+    "updatedAt": "04/11/2025",
+    "headquarter": "",
+    "efdReinf": {
+      "startDate": "",
+      "partnerId": "",
+      "partnerAdmin": "",
+      "phone": "",
+      "email": "",
+      "document": "",
+      "taxClassification": "",
+      "errorMessage": ""
+    },
+    "ecdOption": "",
+    "enableEfdReinf": false,
+    "enableEfdReinfAt": "",
+    "registrationStatus": "",
+    "typeRegime": {
+      "name": "Competência",
+      "code": 2,
+      "competence": "01/2025"
+    },
+    "payroll": {
+      "eletronicPoint": "",
+      "fpas": "",
+      "rat": "",
+      "fap": 0.5,
+      "taxClassification": "",
+      "enableESocial": null,
+      "lastEventStatus": null,
+      "lastMessage": ""
+    },
+    "erp": {
+      "nick": "",
+      "enableContmaticIntegration": false,
+      "enableContmaticIntegrationAt": "",
+      "contmaticIntegration": false,
+      "syncAt": ""
+    },
+    "enableModuleERPAt": "",
+    "enabledESocialAt": "",
+    "enableModuleHubFederalAt": "08/09/2025 21:14:46",
+    "enableModuleHubNFSeAt": "04/11/2025 16:51:12",
+    "enableModuleHubNFSeOutCityAt": "",
+    "enableModuleHubNFSeIssAt": "",
+    "enableModulePreventionAt": "",
+    "enable360At": "",
+    "enableModuleHubDasAt": "",
+    "enableModuleDCTFWEBAt": "",
+    "federalConfig": {
+      "enableCFE": false,
+      "enableCFEAt": "",
+      "enableNFCE": false,
+      "enableNFCEAt": "",
+      "enableSefazOnline": false,
+      "enableSefazOnlineAt": "",
+      "automationICMS": false,
+      "automationICMSAt": "",
+      "enableCertificateA3": false,
+      "enableCertificateA3At": "",
+      "enableNFeEmitted": true,
+      "enableNFeEmittedAt": "11/09/2025 10:44:42",
+      "searchWithOfficeCertificate": false,
+      "searchWithOfficeCertificateAt": "",
+      "enableAutomaticCorrections": true,
+      "enableAutomaticCorrectionsAt": "04/11/2025 16:51:12",
+      "enableAutomaticCorrectionPisCofins": true,
+      "enableAutomaticCorrectionPisCofinsAt": "04/11/2025 16:51:12"
+    },
+    "enableImporterCompanyAt": "",
+    "accountingPlanConfig": []
+  },
+  "diferencas": [
+    "Razão Social: 'FONSECA & SOARES REPRESENTACOES LTDA' → 'FONSECA & ALVES REPRESENTACOES LTDA'",
+    "Tributação: '' → 'Lucro Presumido - Serviços'",
+    "IM: '' → '8550438'",
+    "E-mail: '' → 'marcosfonseca28@gmail.com'"
+  ]
+}

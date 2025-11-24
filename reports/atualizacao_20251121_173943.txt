@@ -1,0 +1,1384 @@
+RELATÓRIO DE ATUALIZAÇÃO
+============================================================
+
+Data: 21/11/2025 17:39:43
+
+Total: 219
+✓ Atualizados: 52
+= Sem alteração: 0
+⚠ Não cadastrados: 17
+✗ Erros: 150
+
+============================================================
+DETALHES
+============================================================
+
+46149398000123 - 3TB PRODUCOES ARTISTICAS LTDA
+  Status: ✓ OK
+  Mensagem: Atualizado com sucesso (3 campos alterados)
+  Diferenças:
+    - Tributação: '' → 'Simples Nacional - Serviços'
+    - IM: '' → '103416'
+    - E-mail: '' → '3tbproducoesartisticasltda@gmail.com'
+
+29413500000137 - A A DE MATOS RESENDE - SUPERMERCADO SANTO ANTONIO
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68c01f0235d0621e88004e62
+
+06936057000183 - A C MELO LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68c02011d4e6c07bf905c083
+
+37097323000155 - A K STORE LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf617a7fdbce02b90740f2
+
+24415962000170 - A S OLIVEIRA ENGENHARIA LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf61b94bfe0a0de7000ac5
+
+35067703000111 - A2 SOLUCOES E PARTICIPACOES LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf61fbb60b284a41030892
+
+19163109000178 - AC SOARES CONSULTORIA E DESENVOLVIMENTO EMPRESARIAL LTDA
+  Status: ✓ OK
+  Mensagem: Atualizado com sucesso (3 campos alterados)
+  Diferenças:
+    - Tributação: '' → 'Simples Nacional - Serviços'
+    - IM: '' → '8550882'
+    - E-mail: '' → 'adaocsoares@gmail.com'
+
+54131050000137 - ACARTONAPOLIS PRESTADORA DE SERVICOS LTDA
+  Status: ✓ OK
+  Mensagem: Atualizado com sucesso (2 campos alterados)
+  Diferenças:
+    - Tributação: '' → 'Simples Nacional - Serviços'
+    - IM: '' → '113834'
+
+22633997000150 - ADAHYL CHAVEIRO ADVOGADOS ASSOCIADOS
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf62b5549f36ee110e1639
+
+37365154000197 - AGROCERRADO RURAL PROJETOS LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf62f406b13d5fd8014bc3
+
+51037239000177 - AGROPECUARIA FAZENDAS RENASCER LTDA
+  Status: ✗ ERRO
+  Mensagem: Regime 'Lucro Presumido - Comércio e Serviços' não encontrado no JETTAX
+  Diferenças:
+    - Tributação: '' → 'Lucro Presumido - Comércio e Serviços'
+    - IE: '' → '200475380'
+    - IM: '' → '2010130130'
+    - E-mail: '' → 'AGROPECUARIARENASCER@GMAIL.COM.BR'
+
+01958717000103 - AGUA NINA INDUSTRIA DE BEBIDAS LTDA
+  Status: ✗ ERRO
+  Mensagem: Regime 'Lucro Presumido - Comércio e Serviços' não encontrado no JETTAX
+  Diferenças:
+    - Tributação: '' → 'Lucro Presumido - Comércio e Serviços'
+    - IE: '' → '103565183'
+    - IM: '' → '50073'
+    - E-mail: '' → 'nilsonntv@hotmail.com'
+
+38277516000150 - ALESSANDRO ANDRADE SOCIEDADE INDIVIDUAL DE ADVOCACIA
+  Status: ✓ OK
+  Mensagem: Atualizado com sucesso (3 campos alterados)
+  Diferenças:
+    - Tributação: '' → 'Simples Nacional - Serviços'
+    - IM: '' → '95707'
+    - E-mail: '' → 'asandrade2@hotmail.com'
+
+22801319000159 - ANA PEDRAS LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf63fb8f9fcb9c0b08fb82
+
+57492145000174 - ANAPEDRAS EXPERIENCE LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf643a744f9ea39c0cde23
+
+33562384000195 - ANHANGUERA PASTAGEM COMERCIO LTDA
+  Status: ✗ ERRO
+  Mensagem: Regime 'Lucro Presumido - Comércio e Serviços' não encontrado no JETTAX
+  Diferenças:
+    - Tributação: '' → 'Lucro Presumido - Comércio e Serviços'
+    - IE: '' → '107683148'
+    - IM: '' → '555874 - Não está no Portal'
+    - E-mail: '' → 'arq.lorrainny@gmail.com'
+
+46559074000163 - API SAFE CONSULTORIA E SERVICOS LTDA
+  Status: ✓ OK
+  Mensagem: Atualizado com sucesso (3 campos alterados)
+  Diferenças:
+    - Tributação: '' → 'Simples Nacional - Serviços'
+    - IM: '' → '104100'
+    - E-mail: '' → 'mauriciosousa11@gmail.com'
+
+51154071000180 - ARRIEL GAS LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf6537bf77e892950e1a58
+
+52568182000103 - ATM EMPREENDIMENTOS LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf65824b9e9931550f35b2
+
+63325683000177 - AVLIS LTDA
+  Status: ✓ OK
+  Mensagem: Atualizado com sucesso (3 campos alterados)
+  Diferenças:
+    - Tributação: '' → 'Lucro Presumido - Serviços'
+    - IM: '' → '128166'
+    - E-mail: '' → 'angelagomes282@gmail.com'
+
+20835879000107 - B. N. SERVICOS EMPRESARIAIS LTDA
+  Status: ✓ OK
+  Mensagem: Atualizado com sucesso (3 campos alterados)
+  Diferenças:
+    - Tributação: '' → 'Simples Nacional - Serviços'
+    - IM: '' → '74722'
+    - E-mail: '' → 'ambientalarena@gmail.com'
+
+46990144000133 - BABI KIDS LOJA INFANTIL LTDA
+  Status: ✓ OK
+  Mensagem: Atualizado com sucesso (4 campos alterados)
+  Diferenças:
+    - Tributação: '' → 'Simples Nacional - Comércio e Industria'
+    - IE: '' → '109443870'
+    - IM: '' → '108797'
+    - E-mail: '' → 'barbara_vitcr@hotmail.com'
+
+02770477000181 - BARROS E MENDES LTDA
+  Status: ✓ OK
+  Mensagem: Atualizado com sucesso (4 campos alterados)
+  Diferenças:
+    - Tributação: '' → 'Simples Nacional - Serviços'
+    - IE: '' → '104915900'
+    - IM: '' → '16213914'
+    - E-mail: '' → 'atendimento@gsmdmservice.com'
+
+41492247000150 - BDA COMERCIO E INTERMEDIACAO DE VEICULOS LTDA
+  Status: ✗ ERRO
+  Mensagem: Regime 'Lucro Presumido - Comércio e Serviços' não encontrado no JETTAX
+  Diferenças:
+    - Tributação: '' → 'Lucro Presumido - Comércio e Serviços'
+    - IE: '' → '200780484'
+    - IM: '' → '97792'
+    - E-mail: '' → 'moema.radial@gmail.com'
+
+53379706000172 - BUTECO PINGUIM LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/6916260069d9f6e749024bb9
+
+11955213000193 - CAIRO CEZAR FERNANDES & CIA LTDA
+  Status: ✓ OK
+  Mensagem: Atualizado com sucesso (3 campos alterados)
+  Diferenças:
+    - Tributação: '' → 'Simples Nacional - Serviços'
+    - IM: '' → '73441'
+    - E-mail: '' → 'ccfjfar@yahoo.com.br'
+
+61730676000125 - CAJU SERVICOS LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/691b8c4730c6d4eb34091135
+
+33649574000144 - CARVALHO, MOREIRA & SANDRE ADVOGADOS ASSOCIADOS
+  Status: ✓ OK
+  Mensagem: Atualizado com sucesso (3 campos alterados)
+  Diferenças:
+    - Tributação: '' → 'Simples Nacional - Serviços'
+    - IM: '' → '89797'
+    - E-mail: '' → 'mateus@cmsadvogados.adv.br'
+
+05889499000153 - CENTRO OESTE GAS II LTDA
+  Status: ✗ ERRO
+  Mensagem: Regime 'Lucro Real - Comércio e Industria' não encontrado no JETTAX
+  Diferenças:
+    - Tributação: '' → 'Lucro Real - Comércio e Industria'
+    - IE: '' → '103669850'
+    - IM: '' → '8546760'
+    - E-mail: '' → 'linda-oliver@hotmail.com'
+
+35863681000104 - CENTRO OESTE GAS III LTDA
+  Status: ✗ ERRO
+  Mensagem: Regime 'Lucro Real - Comércio e Industria' não encontrado no JETTAX
+  Diferenças:
+    - Tributação: '' → 'Lucro Real - Comércio e Industria'
+    - IE: '' → '108514935'
+    - IM: '' → '8571118'
+    - E-mail: '' → 'linda-oliver@hotmail.com'
+
+00353416000193 - CERAMICA CENABRA LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf6879a79f7e5a7f0eefa4
+
+19255194000102 - CLINICA ODONTOLOGICA DENTE CERTO LTDA
+  Status: ✓ OK
+  Mensagem: Atualizado com sucesso (3 campos alterados)
+  Diferenças:
+    - Tributação: '' → 'Simples Nacional - Serviços'
+    - IM: '' → '71893'
+    - E-mail: '' → 'dentecerto@hotmail.com'
+
+01706965000167 - COEPI - COMUNIDADE EDUCACIONAL DE PIRENOPOLIS
+  Status: ✗ ERRO
+  Mensagem: Regime 'Imune/Isenta' não encontrado no JETTAX
+  Diferenças:
+    - Tributação: '' → 'Imune/Isenta'
+    - IE: '' → '203115244'
+    - IM: '' → '674'
+    - E-mail: '' → 'patriciaferraz007@gmail.com'
+
+51756909000105 - COIMMAR COMERCIO LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68c0364d258c7a014b076ad2
+
+50178203000140 - COMERCIAL MORAIS LTDA
+  Status: ✗ ERRO
+  Mensagem: Regime 'Lucro Real - Comércio e Industria' não encontrado no JETTAX
+  Diferenças:
+    - Tributação: '' → 'Lucro Real - Comércio e Industria'
+    - IE: '' → '200259407'
+    - IM: '' → 'Imóvel irregular (chácara) - Não possui inscrição'
+    - E-mail: '' → 'dinodemorais@gmail.com'
+
+58921505000179 - CONSTRUTORA LONGHI LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf6977bc562369560ed3e3
+
+39379724000123 - CORDAS MONTIBELLER LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf69b6f8c3e472780df522
+
+31676210000128 - CORPO & SAUDE FIRFLEX COLCHOARIA LTDA
+  Status: ✗ ERRO
+  Mensagem: Regime 'Simples Nacional - Comercio e Serviços' não encontrado no JETTAX
+  Diferenças:
+    - Tributação: '' → 'Simples Nacional - Comercio e Serviços'
+    - IE: '' → '107400014'
+    - IM: '' → '87826'
+    - E-mail: '' → 'Psmisth@gmail.com'
+
+53975225000120 - CROCHE MORAES LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/691b8cc75ca6e7cb9c005c02
+
+13307495000148 - D F SERVICOS LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/691b8d0bf5618a2b72048984
+
+52839335000100 - D LORE MIDIA LTDA
+  Status: ✓ OK
+  Mensagem: Atualizado com sucesso (3 campos alterados)
+  Diferenças:
+    - Tributação: '' → 'Simples Nacional - Serviços'
+    - IM: '' → '112445'
+    - E-mail: '' → 'anibalssn@gmail.com'
+
+52239048000150 - D&V PECAS E ACESSORIOS AUTOMOTIVOS LTDA
+  Status: ✗ ERRO
+  Mensagem: Regime 'Simples Nacional - Comercio e Serviços' não encontrado no JETTAX
+  Diferenças:
+    - Tributação: '' → 'Simples Nacional - Comercio e Serviços'
+    - IE: '' → '200780719'
+    - IM: '' → '111942'
+    - E-mail: '' → 'milton.o.v.junior@icloud.com'
+
+57448775000141 - DANPECAS REFRIGERACAO LTDA
+  Status: ✓ OK
+  Mensagem: Atualizado com sucesso (3 campos alterados)
+  Diferenças:
+    - Tributação: '' → 'Simples Nacional - Comércio e Industria'
+    - IE: '' → '201923394'
+    - IM: '' → '122910'
+
+10366216000129 - DISK CERVEJA PINGUIM LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf6b3df7a003972d0b4622
+
+33854350000174 - DOM CARECA PIZZARIA E HAMBURGUEIRA LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf6b7caf12700312040fb2
+
+24742881000184 - DROGARIA ATUAL LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68c0375514866ec0850fdd18
+
+02997350000108 - DROGARIA FERREIRA E JESUS LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 502 Server Error: Bad Gateway for url: https://api.jettax360.com.br/api/v1/clients/68ee38bb83fe75cfaf018e76
+
+13043546000171 - DROGARIAS NACIONAL JUNDIAI LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68b5db63e998833aad0dd71a
+
+31500145000185 - DROGARIAS NACIONAL LTDA
+  Status: ✗ ERRO
+  Mensagem: Regime 'Lucro Real - Comércio e Industria' não encontrado no JETTAX
+  Diferenças:
+    - Razão Social: 'DROGARIAS NACIONAL EIRELI' → 'DROGARIAS NACIONAL LTDA'
+    - Tributação: '' → 'Lucro Real - Comércio e Industria'
+    - IE: '' → '107380382'
+    - IM: '' → '86917'
+    - E-mail: '' → 'rh@drogariasnacional.com.br'
+
+07956060000121 - DROGARIAS NACIONAL PEDRO LUDOVICO LTDA
+  Status: ✗ ERRO
+  Mensagem: Regime 'Lucro Real - Comércio e Industria' não encontrado no JETTAX
+  Diferenças:
+    - Tributação: '' → 'Lucro Real - Comércio e Industria'
+    - IE: '' → '104011815'
+    - IM: '' → '54653'
+    - E-mail: '' → 'rh@drogariasnacional.com.br'
+
+26145315000110 - DROGARIAS ULTRAPOPULAR JAIARA LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68b6d438ef14825f280c50d2
+
+62430189000100 - EAR PREMIUM LTDA
+  Status: ✗ ERRO
+  Mensagem: Regime 'Lucro Presumido - Comércio e Serviços' não encontrado no JETTAX
+  Diferenças:
+    - Tributação: '' → 'Lucro Presumido - Comércio e Serviços'
+    - IE: '' → '203117743'
+    - IM: '' → '127467'
+    - E-mail: '' → 'eduardoveiculosanapolis@gmail.com'
+
+48443136000100 - EDUARDO PREMIUM LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf6df84eab6e2d4006256b
+
+34919927000141 - EDUARDO VEICULOS LTDA
+  Status: ✗ ERRO
+  Mensagem: Regime 'Lucro Presumido - Comércio e Serviços' não encontrado no JETTAX
+  Diferenças:
+    - Tributação: '' → 'Lucro Presumido - Comércio e Serviços'
+    - IE: '' → '108713806'
+    - IM: '' → '100743'
+    - E-mail: '' → 'eduardoveiculosanapolis@gmail.com'
+
+54385238000101 - ELEGANZA REVEST LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf6e777006fb34b8014cb6
+
+51897178000118 - ELEVARE CLINIC LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/691b8d4cbf2c614abb0c4fe2
+
+32126649000140 - ELLO ENGENHARIA E SERVICOS LTDA
+  Status: ✓ OK
+  Mensagem: Atualizado com sucesso (3 campos alterados)
+  Diferenças:
+    - Tributação: '' → 'Simples Nacional - Serviços'
+    - IM: '' → '87912'
+    - E-mail: '' → 'nozimaryf@hotmail.com'
+
+03778907000174 - EMBALAGENS MOURA LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf6f3854fad97d0b0663d7
+
+54812567000191 - EMPORIO RESTAURANTE BICA DA AGUA LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/691b8d8ec0681799a8008f42
+
+61544100000173 - EMPORIO ROTA DO LAGO LTDA
+  Status: ✓ OK
+  Mensagem: Atualizado com sucesso (4 campos alterados)
+  Diferenças:
+    - Tributação: '' → 'Simples Nacional - Comércio e Industria'
+    - IE: '' → '202906302'
+    - IM: '' → '970832'
+    - E-mail: '' → 'enzooliveiramq@hotmail.com'
+
+52432412000102 - ENVASE INDUSTRIA DE BEBIDAS LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf6fb785e1e80bec027a72
+
+55517525000190 - ERIPUBLI LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bfa2d4421da4ddcb0c7c32
+
+04829039000177 - FABIANA PATRICIA ALVES LTDA
+  Status: ✓ OK
+  Mensagem: Atualizado com sucesso (4 campos alterados)
+  Diferenças:
+    - Tributação: '' → 'Simples Nacional - Comércio e Industria'
+    - IE: '' → '103464441'
+    - IM: '' → '5669'
+    - E-mail: '' → 'ceres.centrooestegas@outlook.com'
+
+30832593000113 - FACCIAL ODONTOLOGIA ESPECIALIZADA LTDA
+  Status: ✓ OK
+  Mensagem: Atualizado com sucesso (3 campos alterados)
+  Diferenças:
+    - Tributação: '' → 'Simples Nacional - Serviços'
+    - IM: '' → '3304940'
+    - E-mail: '' → 'portoanniele@gmail.com'
+
+13475865000156 - FANTASIAS.COM LTDA
+  Status: ✗ ERRO
+  Mensagem: Regime 'Simples Nacional - Comercio e Serviços' não encontrado no JETTAX
+  Diferenças:
+    - Tributação: '' → 'Simples Nacional - Comercio e Serviços'
+    - IE: '' → '105028010'
+    - IM: '' → '63616'
+    - E-mail: '' → 'vando.fantasia.anapolis@gmail.com'
+
+27243364000159 - FCGOMES SERVICOS MEDICOS LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf7137ef19365ace07afa4
+
+14535676000194 - FONSECA & ALVES REPRESENTACOES LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf71765d5a733e61081642
+
+21101502000189 - FORMOSA PANIFICACAO LTDA
+  Status: ✗ ERRO
+  Mensagem: Regime 'Lucro Real - Comércio e Industria' não encontrado no JETTAX
+  Diferenças:
+    - Tributação: '' → 'Lucro Real - Comércio e Industria'
+    - IE: '' → '106658395'
+    - IM: '' → '74911'
+    - E-mail: '' → 'produtosformosa@hotmail.com'
+
+46934850000168 - FORMOSA PRESTACAO DE SERVICOS LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/691b8e0a6805494a9e0a5202
+
+11219154000195 - FOSCRIA NUTRIÇÃO ANIMAL LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf7244e5b73d8a4a0e8d12
+
+24739277000107 - FREITAS & NASCIMENTO LTDA
+  Status: ✗ ERRO
+  Mensagem: Não cadastrado no JETTAX
+
+17504870000109 - G F MEDEIROS TRANSPORTES
+  Status: ✓ OK
+  Mensagem: Atualizado com sucesso (4 campos alterados)
+  Diferenças:
+    - Tributação: '' → 'Simples Nacional - Serviços'
+    - IE: '' → '107010380'
+    - IM: '' → '68946'
+    - E-mail: '' → 'sheilamedeiros9980@gmail.com'
+
+25448061000147 - GESSO HONORIO LTDA
+  Status: ✗ ERRO
+  Mensagem: Regime 'Simples Nacional - Comercio e Serviços' não encontrado no JETTAX
+  Diferenças:
+    - Tributação: '' → 'Simples Nacional - Comercio e Serviços'
+    - IE: '' → '106768840'
+    - IM: '' → '81225'
+    - E-mail: '' → 'gessohonorio@gmail.com'
+
+08821047000128 - GESTARE ET EDUCARE ASSESSORIA E GESTAO LTDA
+  Status: ✓ OK
+  Mensagem: Atualizado com sucesso (3 campos alterados)
+  Diferenças:
+    - Tributação: '' → 'Simples Nacional - Serviços'
+    - IM: '' → '55453'
+    - E-mail: '' → 'lilianvmachado@hotmail.com'
+
+55741687000108 - GH SISTEMAS CONSTRUTIVOS LTDA
+  Status: ✗ ERRO
+  Mensagem: Regime 'Lucro Real - Comércio e Industria' não encontrado no JETTAX
+  Diferenças:
+    - Tributação: '' → 'Lucro Real - Comércio e Industria'
+    - IE: '' → '201639840'
+    - IM: '' → '124111'
+    - E-mail: '' → 'GESSOHONORIO@GMAIL.COM'
+
+55741687000299 - GH SISTEMAS CONSTRUTIVOS LTDA
+  Status: ✗ ERRO
+  Mensagem: Regime 'Lucro Real - Comércio e Industria' não encontrado no JETTAX
+  Diferenças:
+    - Tributação: '' → 'Lucro Real - Comércio e Industria'
+    - IE: '' → '202540120'
+    - IM: '' → '555188'
+
+63501671000156 - GJX COMERCIO E IMPORTACAO LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/691b8e6666c0236ce90ed482
+
+58764857000168 - GM FALCAO CONFECCOES LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf73ceea6d2f3715098f28
+
+46757883000180 - GONDIM E GONDIM LTDA
+  Status: ✓ OK
+  Mensagem: Atualizado com sucesso (4 campos alterados)
+  Diferenças:
+    - Tributação: '' → 'Simples Nacional - Comércio e Industria'
+    - IE: '' → '109382110'
+    - IM: '' → '104309'
+    - E-mail: '' → 'gustavo.gondim@icloud.com'
+
+34324600000127 - GRAAN ALIMENTOS LTDA
+  Status: ✗ ERRO
+  Mensagem: Regime 'Lucro Presumido - Comércio e Serviços' não encontrado no JETTAX
+  Diferenças:
+    - Razão Social: 'J&P NUTRICAO ANIMAL LTDA' → 'GRAAN ALIMENTOS LTDA'
+    - Tributação: '' → 'Lucro Presumido - Comércio e Serviços'
+    - IE: '' → '107685655'
+    - IM: '' → '90726'
+    - E-mail: '' → 'graanalimentos@hotmail.com'
+
+49763344000141 - GRAAN COMERCIAL LTDA
+  Status: ✗ ERRO
+  Mensagem: Regime 'Lucro Real - Comércio e Industria' não encontrado no JETTAX
+  Diferenças:
+    - Tributação: '' → 'Lucro Real - Comércio e Industria'
+    - IE: '' → '200152777'
+    - IM: '' → '108722'
+
+10608734000292 - GREEN AMBIENTAL EIRELI
+  Status: ✗ ERRO
+  Mensagem: Regime 'Filial - Regime Normal' não encontrado no JETTAX
+  Diferenças:
+    - Razão Social: 'GREEN AMBIENTAL LTDA' → 'GREEN AMBIENTAL EIRELI'
+    - Tributação: '' → 'Filial - Regime Normal'
+    - IM: '' → 'FALSE'
+    - Município: 'ANAPOLIS' → 'VALPARAISO DE GOIAS'
+
+10608734000373 - GREEN AMBIENTAL LTDA
+  Status: ✗ ERRO
+  Mensagem: Regime 'Filial - Regime Normal' não encontrado no JETTAX
+  Diferenças:
+    - Tributação: '' → 'Filial - Regime Normal'
+    - IE: '' → '104434929'
+    - IM: '' → '15400'
+
+10608734000101 - GREEN AMBIENTAL LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/691b2cd27ca4d33d5609c7b7
+
+10608734000292 - GREEN AMBIENTAL LTDA
+  Status: ✗ ERRO
+  Mensagem: Regime 'Filial - Regime Normal' não encontrado no JETTAX
+  Diferenças:
+    - Tributação: '' → 'Filial - Regime Normal'
+    - IM: '' → 'FALSE'
+    - E-mail: '' → 'rh01@greensolucoesambientais.com.br'
+
+04240555000161 - GSETTI TECNOLOGIA LTDA
+  Status: ✓ OK
+  Mensagem: Atualizado com sucesso (3 campos alterados)
+  Diferenças:
+    - Tributação: '' → 'Simples Nacional - Serviços'
+    - IM: '' → '47980'
+    - E-mail: '' → 'fernando@g7tecnologia.com'
+
+47974051000188 - GSM MANUTENCAO INDUSTRIAL LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf7567264eb0bcb10d4912
+
+04874425000180 - GUAIMBE ESPACOE MOVIMENTO CRIATIVO
+  Status: ✗ ERRO
+  Mensagem: Não cadastrado no JETTAX
+
+09443871000154 - H S L GAS LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf75a7264eb0bcb10d4916
+
+14751414000167 - HERMES CARRIJO COELHO
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf75e7264eb0bcb10d491a
+
+52222994000194 - HGP-PHARMA CONSULTORIA LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/691b8f0dc205be4dbd079a13
+
+08714427000163 - HST REPRESENTACOES LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf76269520654d71092f33
+
+40691811000109 - HUBJET TRANSPORTES LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf7665b392e080860bf5b2
+
+07936104000151 - HZ COMUNICACAO E PLANEJAMENTO LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf76a519d9f7a92407ee62
+
+49357720000106 - I F DE JESUS LTDA
+  Status: ✓ OK
+  Mensagem: Atualizado com sucesso (3 campos alterados)
+  Diferenças:
+    - Tributação: '' → 'Simples Nacional - Serviços'
+    - IM: '' → '108117'
+    - E-mail: '' → 'igorferreiradejesus0@gmail.com'
+
+50302692000109 - IMPEROBRA IMPERMEABILIZANTES LTDA
+  Status: ✗ ERRO
+  Mensagem: Regime 'Simples Nacional - Comercio e Serviços' não encontrado no JETTAX
+  Diferenças:
+    - Razão Social: 'BALDUINO IMPERMEABILIZANTES LTDA' → 'IMPEROBRA IMPERMEABILIZANTES LTDA'
+    - Tributação: '' → 'Simples Nacional - Comercio e Serviços'
+    - IE: '' → '200292846'
+    - IM: '' → '109399'
+    - E-mail: '' → 'techdryanapolis@gmail.com'
+
+00769423000170 - INDUSTRIA E COMERCIO DE CARNES OTTO LTDA
+  Status: ✗ ERRO
+  Mensagem: Regime 'Lucro Presumido - Industria e Serviços' não encontrado no JETTAX
+  Diferenças:
+    - Tributação: '' → 'Lucro Presumido - Industria e Serviços'
+    - IE: '' → '102755914'
+    - IM: '' → '38700'
+    - E-mail: '' → 'claudiopavlik@hotmail.com'
+
+57983433000121 - INNOVATION PRODUCOES ARTISTICAS LTDA
+  Status: ✓ OK
+  Mensagem: Atualizado com sucesso (3 campos alterados)
+  Diferenças:
+    - Tributação: '' → 'Simples Nacional - Serviços'
+    - IM: '' → '123377'
+    - E-mail: '' → 'pedroarthur.moura1@gmail.com'
+
+31284081000122 - INSTITUTO GEAN LTDA
+  Status: ✓ OK
+  Mensagem: Atualizado com sucesso (3 campos alterados)
+  Diferenças:
+    - Tributação: '' → 'Simples Nacional - Serviços'
+    - IM: '' → '86993'
+    - E-mail: '' → 'institutogean@gmail.com'
+
+21550795000181 - J S VIEIRA LTDA
+  Status: ✗ ERRO
+  Mensagem: Regime 'Lucro Presumido - Comércio e Serviços' não encontrado no JETTAX
+  Diferenças:
+    - Tributação: '' → 'Lucro Presumido - Comércio e Serviços'
+    - IE: '' → '106228765'
+    - IM: '' → '75751'
+    - E-mail: '' → 'jvieira@venturaeng.com.br'
+
+13144387000100 - JC ESTOFADOS LTDA
+  Status: ✗ ERRO
+  Mensagem: Regime 'Simples Nacional - Comercio e Serviços' não encontrado no JETTAX
+  Diferenças:
+    - Tributação: '' → 'Simples Nacional - Comercio e Serviços'
+    - IE: '' → '201171759'
+    - IM: '' → '62996'
+    - E-mail: '' → 'julianosoaresbranquinho39@gmail.com'
+
+50596981000150 - JCS COMERCIAL DE GAS LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/691b8f5ac0681799a8008f48
+
+63379261000184 - JS MEDICAMENTOS LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/691624543a645e34ac0d57d2
+
+46758047000110 - KAG AGROPECUARIA LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf78e59cfd916c490b6102
+
+34938827000162 - KZA.U ARQUITETURA E ENGENHARIA INTEGRADA LTDA
+  Status: ✓ OK
+  Mensagem: Atualizado com sucesso (4 campos alterados)
+  Diferenças:
+    - Tributação: '' → 'Simples Nacional - Serviços'
+    - IE: '' → '107746611'
+    - IM: '' → '91409'
+    - E-mail: '' → 'contato@kzau.com.br'
+
+03530737000104 - L L DA SILVA OLIVEIRA & CIA LTDA
+  Status: ✗ ERRO
+  Mensagem: Regime 'Lucro Real - Comércio e Industria' não encontrado no JETTAX
+  Diferenças:
+    - Tributação: '' → 'Lucro Real - Comércio e Industria'
+    - IE: '' → '103253033'
+    - IM: '' → 'FALSE'
+    - E-mail: '' → 'linda-oliver@hotmail.com'
+
+59008007000100 - L S MIGLIAVACCA LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf79457f788d462e0e32cc
+
+46038083000109 - LA TRATTORIA DI LANA LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/691b90109be2a11cfb0120f2
+
+52507478000106 - LB SERVICOS DE FONOAUDIOLOGIA LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf79928200f297a5011102
+
+13781288000120 - LC DISTRIBUIDORA DE CIMENTOS LTDA
+  Status: ✗ ERRO
+  Mensagem: Regime 'Lucro Real - Comércio e Industria' não encontrado no JETTAX
+  Diferenças:
+    - Tributação: '' → 'Lucro Real - Comércio e Industria'
+    - IE: '' → '105030899'
+    - IM: '' → '63906'
+    - E-mail: '' → 'lccimentos.financeiro@hotmail.com'
+
+31420247000190 - LEANDRO SARDINHA DE LISBOA SOCIEDADE INDIVIDUAL DE ADVOCACIA
+  Status: ✓ OK
+  Mensagem: Atualizado com sucesso (3 campos alterados)
+  Diferenças:
+    - Tributação: '' → 'Simples Nacional - Serviços'
+    - IM: '' → '86874'
+    - E-mail: '' → 'advocacialsl@gmail.com'
+
+02776664000172 - LEDRA & LEDRA LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf7a4f457053f2f40fe1d2
+
+47680967000125 - LEDRA LOCACOES E SERVICOS LTDA
+  Status: ✓ OK
+  Mensagem: Atualizado com sucesso (3 campos alterados)
+  Diferenças:
+    - Tributação: '' → 'Lucro Presumido - Serviços'
+    - IM: '' → '105642'
+    - E-mail: '' → 'lajesanapolina@hotmail.com'
+
+05589400000106 - LEMOS E OLIVEIRA CONSTRUCAO E MONTAGEM INDUSTRIAL LTDA
+  Status: ✓ OK
+  Mensagem: Atualizado com sucesso (3 campos alterados)
+  Diferenças:
+    - Tributação: '' → 'Simples Nacional - Serviços'
+    - IM: '' → '80479'
+    - E-mail: '' → 'adv.fulviaqueiroz@gmail.com'
+
+42810759000180 - LIVIA M LONGHI CARISIO
+  Status: ✓ OK
+  Mensagem: Atualizado com sucesso (3 campos alterados)
+  Diferenças:
+    - Tributação: '' → 'Simples Nacional - Serviços'
+    - IM: '' → '99338'
+    - E-mail: '' → 'livia_longhi@hotmail.com'
+
+03163171000634 - LL DA SILVA & CIA. LTDA.
+  Status: ✗ ERRO
+  Mensagem: Regime 'Filial - Regime Normal' não encontrado no JETTAX
+  Diferenças:
+    - Tributação: '' → 'Filial - Regime Normal'
+    - IE: '' → '103302786'
+    - IM: '' → '516'
+    - E-mail: '' → 'linda-oliver@hotmail.com'
+
+03163171000804 - LL DA SILVA & CIA. LTDA.
+  Status: ✗ ERRO
+  Mensagem: Regime 'Filial - Regime Normal' não encontrado no JETTAX
+  Diferenças:
+    - Tributação: '' → 'Filial - Regime Normal'
+    - IE: '' → '103719423'
+    - IM: '' → '4501'
+    - E-mail: '' → 'linda-oliver@hotmail.com'
+
+03163171000120 - LL DA SILVA & CIA. LTDA.
+  Status: ✗ ERRO
+  Mensagem: Regime 'Lucro Real - Comércio e Industria' não encontrado no JETTAX
+  Diferenças:
+    - Tributação: '' → 'Lucro Real - Comércio e Industria'
+    - IE: '' → '103153381'
+    - IM: '' → '2200343'
+    - E-mail: '' → 'linda-oliver@hotmail.com'
+
+42427749000160 - LOC E LOG LOCACOES E LOGISTICA LTDA
+  Status: ✗ ERRO
+  Mensagem: Não cadastrado no JETTAX
+
+46343502000116 - LOC E LOG TRANSPORTES LTDA
+  Status: ✗ ERRO
+  Mensagem: Regime 'Lucro Real - Comércio e Industria' não encontrado no JETTAX
+  Diferenças:
+    - Tributação: '' → 'Lucro Real - Comércio e Industria'
+    - IE: '' → '200190180'
+    - IM: '' → '103838'
+    - E-mail: '' → 'raquelrcarvalho@outlook.com'
+
+17873265000105 - LOTERICA PEDRINHO PORTO RICO - JAIARA LTDA
+  Status: ✓ OK
+  Mensagem: Atualizado com sucesso (3 campos alterados)
+  Diferenças:
+    - Tributação: '' → 'Simples Nacional - Serviços'
+    - IM: '' → '69488'
+    - E-mail: '' → 'norke_@hotmail.com'
+
+49775697000161 - M G GRACIA LEITE LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf7c621b8e9ba0320ee9d2
+
+09075184000123 - M.A. GALDEANO & CIA LTDA
+  Status: ✓ OK
+  Mensagem: Atualizado com sucesso (3 campos alterados)
+  Diferenças:
+    - Tributação: '' → 'Lucro Presumido - Serviços'
+    - IM: '' → '56068'
+    - E-mail: '' → 'VIVIANSEABRA@HOTMAIL.COM'
+
+62525534000199 - M3JS ADMINISTRADORA LTDA
+  Status: ✗ ERRO
+  Mensagem: Não cadastrado no JETTAX
+
+32918426000115 - MAQUINAS POR PERTO LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf7d5f2f32c2f24e0f7802
+
+52586943000141 - MARIETTA BAR E RESTAURANTE LTDA
+  Status: ✓ OK
+  Mensagem: Atualizado com sucesso (4 campos alterados)
+  Diferenças:
+    - Tributação: '' → 'Simples Nacional - Comércio e Industria'
+    - IE: '' → '200869523'
+    - IM: '' → '91861866'
+    - E-mail: '' → 'marietta.barrt@gmail.com'
+
+46484292000186 - MARMORANA LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bfb09c961f1cca930b10b4
+
+04836577000199 - MARMORARIA VITORIA LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf7e2b8f133700470d9534
+
+18467652000104 - MASTER AR CONDICIONADO LTDA
+  Status: ✗ ERRO
+  Mensagem: Regime 'Simples Nacional - Comercio e Serviços' não encontrado no JETTAX
+  Diferenças:
+    - Tributação: '' → 'Simples Nacional - Comercio e Serviços'
+    - IE: '' → '105724858'
+    - IM: '' → '70476'
+    - E-mail: '' → 'masterar2013@hotmail.com'
+
+02551753000110 - MASTER CONSTRUCOES LTDA
+  Status: ✓ OK
+  Mensagem: Atualizado com sucesso (3 campos alterados)
+  Diferenças:
+    - Tributação: '' → 'Lucro Presumido - Serviços'
+    - IM: '' → '42801'
+    - E-mail: '' → 'w2mo@terra.com.br'
+
+34589805000134 - MASTOLOGIA CAETANO LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf7eea27f1ae172c034832
+
+49327466000195 - MB CONSULTORIA AMBIENTAL LTDA
+  Status: ✓ OK
+  Mensagem: Atualizado com sucesso (3 campos alterados)
+  Diferenças:
+    - Tributação: '' → 'Simples Nacional - Serviços'
+    - IM: '' → '108246'
+    - E-mail: '' → 'marcobueno_aurelio@hotmail.com'
+
+15709517000121 - MEGATON SERVICOS LTDA
+  Status: ✓ OK
+  Mensagem: Atualizado com sucesso (3 campos alterados)
+  Diferenças:
+    - Tributação: '' → 'Simples Nacional - Serviços'
+    - IM: '' → '66791'
+    - E-mail: '' → 'duarteleandro@yahoo.com.br'
+
+55750096000105 - MERCADI.IN MERCADOS AUTONOMOS LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf7fa53833e47a2e0ce543
+
+00544901000144 - MERCANTIL DISTRIBUIDORA DE ALIMENTOS LTDA
+  Status: ✗ ERRO
+  Mensagem: Não cadastrado no JETTAX
+
+15120838000196 - MERCATOP DISTRIBUIDORA LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf8024229ce9473402cde2
+
+15491548000159 - MIX GAS COMERCIAL LTDA
+  Status: ✗ ERRO
+  Mensagem: Regime 'Lucro Presumido - Comércio e Serviços' não encontrado no JETTAX
+  Diferenças:
+    - Tributação: '' → 'Lucro Presumido - Comércio e Serviços'
+    - IE: '' → '105459704'
+    - IM: '' → '66448'
+    - E-mail: '' → 'Mixgas20@gmail.com'
+
+25064589000112 - MONTSERRAT COMERCIO E SERVICOS LTDA
+  Status: ✗ ERRO
+  Mensagem: Regime 'Simples Nacional - Comercio e Serviços' não encontrado no JETTAX
+  Diferenças:
+    - Tributação: '' → 'Simples Nacional - Comercio e Serviços'
+    - IE: '' → '109559860'
+    - IM: '' → '80258'
+    - E-mail: '' → 'comerciomontserrat@gmail.com'
+
+38135574000140 - MOUSSA CONSTRUTORA LTDA
+  Status: ✓ OK
+  Mensagem: Atualizado com sucesso (4 campos alterados)
+  Diferenças:
+    - Tributação: '' → 'Simples Nacional - Serviços'
+    - IE: '' → '108941710'
+    - IM: '' → '94869'
+    - E-mail: '' → 'moussaengarq1@gmail.com'
+
+02673851000120 - MULTIPECAS REFRIGERACAO E ELETRODOMESTICOS LTDA
+  Status: ✗ ERRO
+  Mensagem: Regime 'Simples Nacional - Comercio e Serviços' não encontrado no JETTAX
+  Diferenças:
+    - Tributação: '' → 'Simples Nacional - Comercio e Serviços'
+    - IE: '' → '103061576'
+    - IM: '' → '42989'
+    - E-mail: '' → 'multipecasrefrigeracao@gmail.com'
+
+45983155000123 - NADO LIVRE LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bfb40f8761247ad40e1da2
+
+11657077000155 - NELIA CARVALHO DE SOUZA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf81a0f32d9a3b6f061862
+
+11760778000115 - NELSON XAVIER DA SILVA SANTOS
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68c03f708bffc6c6920a5c5a
+
+07872563000119 - NETO CONTABILIDADE LTDA
+  Status: ✓ OK
+  Mensagem: Atualizado com sucesso (3 campos alterados)
+  Diferenças:
+    - Tributação: '' → 'Simples Nacional - Serviços'
+    - IM: '' → '54455'
+    - E-mail: '' → 'marco@netocontabilidade.com.br'
+
+46901200000116 - NOBEL LOCACOES E SERVICOS LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf825cf32d9a3b6f061866
+
+45683176000123 - NUNES GAS LTDA
+  Status: ✗ ERRO
+  Mensagem: Não cadastrado no JETTAX
+
+06303814000181 - PALOMA EXPORTS IMPORTADORA E EXPORTADORA LTDA
+  Status: ✗ ERRO
+  Mensagem: Não cadastrado no JETTAX
+
+49640086000106 - PINGUIM ATACADO DE BEBIDAS LTDA
+  Status: ✗ ERRO
+  Mensagem: Regime 'Lucro Real - Comércio e Industria' não encontrado no JETTAX
+  Diferenças:
+    - Tributação: '' → 'Lucro Real - Comércio e Industria'
+    - IE: '' → '200121006'
+    - IM: '' → '108634'
+    - E-mail: '' → 'TIAGOBARCAFERR@HOTMAIL.COM'
+
+57981613000174 - PIRENOPOLIS VEICULOS LTDA
+  Status: ✗ ERRO
+  Mensagem: Regime 'Lucro Presumido - Comércio e Serviços' não encontrado no JETTAX
+  Diferenças:
+    - Razão Social: 'E W ENERGIA SOLAR LTDA' → 'PIRENOPOLIS VEICULOS LTDA'
+    - Tributação: '' → 'Lucro Presumido - Comércio e Serviços'
+    - IE: '' → '203361822'
+    - IM: '' → '10036'
+    - E-mail: '' → 'waldirdasilva1959@gmail.com'
+    - Município: 'ANAPOLIS' → 'PIRENOPOLIS'
+
+20722205000198 - PLIE STUDIO DE DANCA LTDA
+  Status: ✗ ERRO
+  Mensagem: Regime 'Simples Nacional - Comercio e Serviços' não encontrado no JETTAX
+  Diferenças:
+    - Tributação: '' → 'Simples Nacional - Comercio e Serviços'
+    - IE: '' → '200193163'
+    - IM: '' → '74229'
+    - E-mail: '' → 'ludmilla.lima@outlook.com'
+
+15090553000150 - POLISBUILD EMPREENDIMENTOS LTDA
+  Status: ✓ OK
+  Mensagem: Atualizado com sucesso (4 campos alterados)
+  Diferenças:
+    - Tributação: '' → 'Lucro Presumido - Serviços'
+    - IE: '' → '105718645'
+    - IM: '' → '67148'
+    - E-mail: '' → 'ajleitao.adv@gmail.com'
+
+14638098000111 - POLO SERVICOS DE TRANSPORTES LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf839ef6e06b27f10b4752
+
+23595186000174 - PREMIER FOGOS LTDA
+  Status: ✗ ERRO
+  Mensagem: Regime 'Simples Nacional - Comercio e Serviços' não encontrado no JETTAX
+  Diferenças:
+    - Tributação: '' → 'Simples Nacional - Comercio e Serviços'
+    - IE: '' → '106467816'
+    - IM: '' → '78350'
+    - E-mail: '' → 'premierfogos@hotmail.com'
+
+63309522000190 - PREMIER FX LTDA
+  Status: ✗ ERRO
+  Mensagem: Regime 'Simples Nacional - Comercio e Serviços' não encontrado no JETTAX
+  Diferenças:
+    - Tributação: '' → 'Simples Nacional - Comercio e Serviços'
+    - IE: '' → '203329244'
+    - IM: '' → '7393261'
+    - E-mail: '' → 'Premierfxx@hotmail.com'
+
+28604318000109 - PROMIDIA DIGITAL LTDA
+  Status: ✓ OK
+  Mensagem: Atualizado com sucesso (3 campos alterados)
+  Diferenças:
+    - Tributação: '' → 'Lucro Presumido - Serviços'
+    - IM: '' → '106172'
+    - E-mail: '' → 'financeiro1@promidiadigital.com.br'
+
+13962189000145 - PROMOVE PRODUTORA LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf845c1504690bcc0bd302
+
+10501937000102 - QI LIVRE LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf849b6652fc11a10b5d15
+
+51747254000109 - QUALIEND INSPECOES LTDA
+  Status: ✓ OK
+  Mensagem: Atualizado com sucesso (3 campos alterados)
+  Diferenças:
+    - Tributação: '' → 'Simples Nacional - Serviços'
+    - IM: '' → '111256'
+    - E-mail: '' → 'qualiend.end@gmail.com'
+
+51302648000153 - R C DOS SANTOS LTDA
+  Status: ✗ ERRO
+  Mensagem: Não cadastrado no JETTAX
+
+26909655000170 - R. CARVALHO ASSESSORIA LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68c0409f4c941e71ba019957
+
+18775013000106 - RADIAL CONSIGNACOES LTDA
+  Status: ✗ ERRO
+  Mensagem: Regime 'Lucro Presumido - Comércio e Serviços' não encontrado no JETTAX
+  Diferenças:
+    - Tributação: '' → 'Lucro Presumido - Comércio e Serviços'
+    - IE: '' → '107728575'
+    - IM: '' → '70841'
+    - E-mail: '' → 'moema.radial@gmail.com'
+
+34058026000102 - RADIAL VEICULOS LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf85f0b5866bf7490a7fc2
+
+24783367000197 - RADIO CHAO GOIANO FM LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf86304884893a980e14e2
+
+01738210000144 - RADIO MANCHESTER DE ANAPOLIS LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf866fa6b915b4c207c0c2
+
+01481795000160 - RAPIDO GOIAS LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf86aea6b915b4c207c0c6
+
+23444738000143 - REABILITAFACE SERVICOS ODONTOLOGICOS LTDA
+  Status: ✓ OK
+  Mensagem: Atualizado com sucesso (3 campos alterados)
+  Diferenças:
+    - Tributação: '' → 'Simples Nacional - Serviços'
+    - IM: '' → '103454'
+    - E-mail: '' → 'drcassianopereira@gmail.com'
+
+35114102000112 - REZENDE EMPREENDIMENTOS LTDA
+  Status: ✗ ERRO
+  Mensagem: Não cadastrado no JETTAX
+
+52528243000109 - RFC EMPREENDIMENTOS LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf876affadfbe09b0af9f2
+
+55463767000149 - RHEMA MOVEIS PLANEJADOS LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf87a9ffadfbe09b0af9f7
+
+12410870000118 - RIBEIRO CURSOS DE IDIOMAS LTDA
+  Status: ✗ ERRO
+  Mensagem: Não cadastrado no JETTAX
+
+23677415000108 - ROGERIO A DIAS & CIA LTDA
+  Status: ✓ OK
+  Mensagem: Atualizado com sucesso (3 campos alterados)
+  Diferenças:
+    - Tributação: '' → 'Simples Nacional - Serviços'
+    - IM: '' → '78547'
+    - E-mail: '' → 'drrogerioadias@gmail.com'
+
+58696180000178 - S J PRESTACAO DE SERVICOS LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf88412080af8c3d0752e5
+
+09257381000163 - S.J.M. - MAQUINAS LTDA
+  Status: ✗ ERRO
+  Mensagem: Regime 'Lucro Presumido - Industria e Serviços' não encontrado no JETTAX
+  Diferenças:
+    - Tributação: '' → 'Lucro Presumido - Industria e Serviços'
+    - IE: '' → '104208082'
+    - IM: '' → '8549429'
+    - E-mail: '' → 'pedrina@usimaq.com'
+
+10800711000102 - SALLES REPRESENTACAO LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bfbb539ed3eaa6db0c5e02
+
+17922625000103 - SANTANA CONSTRUCOES E SERVICOS LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf890326c7c8c90201b832
+
+47807956000163 - SANTO SAL HAMBURGUERIA, STEAK E PANKEKA LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf8942a1c59a146d0f1ae2
+
+25237578000197 - SAO CAETANO SERVICOS MEDICOS LTDA
+  Status: ✓ OK
+  Mensagem: Atualizado com sucesso (3 campos alterados)
+  Diferenças:
+    - Tributação: '' → 'Lucro Presumido - Serviços'
+    - IM: '' → '80582'
+    - E-mail: '' → 'drkauenio@outlook.com'
+
+24418174000137 - SEARCH OF COMERCIAL LTDA
+  Status: ✓ OK
+  Mensagem: Atualizado com sucesso (4 campos alterados)
+  Diferenças:
+    - Tributação: '' → 'Simples Nacional - Comércio e Industria'
+    - IE: '' → '108651720'
+    - IM: '' → '100406'
+    - E-mail: '' → 'antoniomafonseca16@gmail.com'
+
+05230120000107 - SIAURA & SILVA LTDA
+  Status: ✗ ERRO
+  Mensagem: Regime 'Lucro Presumido - Comércio e Serviços' não encontrado no JETTAX
+  Diferenças:
+    - Tributação: '' → 'Lucro Presumido - Comércio e Serviços'
+    - IE: '' → '103617639'
+    - IM: '' → '51185'
+    - E-mail: '' → 'Mixgas20@gmail.com'
+
+35157649000103 - SILVA TIBURCIO SOCIEDADE INDIVIDUAL DE ADVOCACIA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf8a5cd7bb7a76320fd672
+
+07246086000267 - SILVEIRA & CANEDO LTDA
+  Status: ✗ ERRO
+  Mensagem: Regime 'Filial - Simples Nacional' não encontrado no JETTAX
+  Diferenças:
+    - Tributação: '' → 'Filial - Simples Nacional'
+    - IE: '' → '103933468'
+    - IM: '' → '53913'
+    - E-mail: '' → 'coimmar@yahoo.com.br'
+
+07246086000186 - SILVEIRA & CANEDO LTDA
+  Status: ✗ ERRO
+  Mensagem: Regime 'Simples Nacional - Comercio e Serviços' não encontrado no JETTAX
+  Diferenças:
+    - Tributação: '' → 'Simples Nacional - Comercio e Serviços'
+    - IE: '' → '106083600'
+    - IM: '' → '80549'
+    - E-mail: '' → 'coimmar@yahoo.com.br'
+
+58909382000150 - SIMPLES CONSULTORIA E GESTAO LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf8b194e84dd69430e4126
+
+60575906000166 - SO ELETROFUNK LTDA
+  Status: ✓ OK
+  Mensagem: Atualizado com sucesso (3 campos alterados)
+  Diferenças:
+    - Tributação: '' → 'Lucro Presumido - Serviços'
+    - IM: '' → '125731'
+    - E-mail: '' → 'soeletrofunkbom@gmail.com'
+
+58002293000126 - SOARES DE AZEVEDO CONSTRUCOES LTDA
+  Status: ✓ OK
+  Mensagem: Atualizado com sucesso (4 campos alterados)
+  Diferenças:
+    - Tributação: '' → 'Simples Nacional - Serviços'
+    - IE: '' → '202047458'
+    - IM: '' → '123387'
+    - E-mail: '' → 'fabianolsazevedo@hotmail.com'
+
+01051994000138 - SOCIEDADE CRISTA ORTODOXA BENEFICENTE DE ANAPOLIS
+  Status: ✗ ERRO
+  Mensagem: Não cadastrado no JETTAX
+
+15592526000185 - SOL CONSTRUCOES E TRANSPORTES LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf8bde4e84dd69430e412c
+
+52729432000131 - SORVETERIA SANTO ANTONIO LTDA
+  Status: ✓ OK
+  Mensagem: Atualizado com sucesso (4 campos alterados)
+  Diferenças:
+    - Tributação: '' → 'Simples Nacional - Comércio e Industria'
+    - IE: '' → '200904043'
+    - IM: '' → '112331'
+    - E-mail: '' → 'julianamatos2951@gmail.com'
+
+13987777000133 - TCX BUSINESS LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68c0430f2ae64493d0037cc4
+
+11048846000118 - TERESINHA IMOVEIS LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf8c9bf9ebcb7f91053342
+
+50916012000139 - THG PRESTACAO DE SERVICOS LTDA
+  Status: ✓ OK
+  Mensagem: Atualizado com sucesso (3 campos alterados)
+  Diferenças:
+    - Tributação: '' → 'Simples Nacional - Serviços'
+    - IM: '' → '110265'
+    - E-mail: '' → 'thiagozamel@icloud.com'
+
+52531259000162 - TIGER ADESIVOS LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf8d1815f7c12d6b0c9ec2
+
+49798461000140 - TINAZO AGRONEGOCIOS LTDA
+  Status: ✗ ERRO
+  Mensagem: Regime 'Lucro Presumido - Comércio e Serviços' não encontrado no JETTAX
+  Diferenças:
+    - Tributação: '' → 'Lucro Presumido - Comércio e Serviços'
+    - IE: '' → '200161520'
+    - IM: '' → '108735'
+    - E-mail: '' → 'COMPRASTNZ@GMAIL.COM'
+
+30635357000107 - TORIBAS RESTAURANTE LTDA
+  Status: ✗ ERRO
+  Mensagem: Regime 'Lucro Presumido - Comércio e Serviços' não encontrado no JETTAX
+  Diferenças:
+    - Tributação: '' → 'Lucro Presumido - Comércio e Serviços'
+    - IE: '' → '107313812'
+    - IM: '' → '86814'
+    - E-mail: '' → 'luiztoribas@gmail.com'
+
+36286717000199 - TORNEADORA ANAPOLIS LTDA
+  Status: ✗ ERRO
+  Mensagem: Regime 'Simples Nacional - Comercio e Serviços' não encontrado no JETTAX
+  Diferenças:
+    - Tributação: '' → 'Simples Nacional - Comercio e Serviços'
+    - IE: '' → '107874741'
+    - IM: '' → '93115'
+    - E-mail: '' → 'cintia@torneadoraanapolis.com.br'
+
+10259622000192 - TORNEADORA FERMAX LTDA
+  Status: ✗ ERRO
+  Mensagem: Não cadastrado no JETTAX
+
+55842617000146 - TOSTES ENGENHARIA LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf8e20f9ebcb7f91053346
+
+61411499000114 - TR COMERCIO E SERVICOS LTDA
+  Status: ✗ ERRO
+  Mensagem: Não cadastrado no JETTAX
+
+07939334000174 - TRADICAO COMERCIO E SERVICOS LTDA
+  Status: ✗ ERRO
+  Mensagem: Regime 'Lucro Real - Comércio e Industria' não encontrado no JETTAX
+  Diferenças:
+    - Tributação: '' → 'Lucro Real - Comércio e Industria'
+    - IE: '' → '103993479'
+    - IM: '' → '54613'
+    - E-mail: '' → 'citropel@gmail.com'
+
+07304043000100 - TRANCE CONSTRUCOES LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf8edea73225829c0494c2
+
+50937414000110 - TRASPORTO LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf8f1df5ebc9a383067352
+
+05897072000105 - TRISTAO & SILVA LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf8f5cebf5d77a2e0f3df2
+
+46510176000194 - TW SAUDE MENTAL LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf8f9bf5ebc9a383067356
+
+11324995000162 - VALDIVINO PEREIRA DA SILVA O GOIANO
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf8fdaf5ebc9a38306735a
+
+10480328000106 - VIA INTERIORES MOVEIS LTDA
+  Status: ✗ ERRO
+  Mensagem: Regime 'Simples Nacional - Comercio e Serviços' não encontrado no JETTAX
+  Diferenças:
+    - Tributação: '' → 'Simples Nacional - Comercio e Serviços'
+    - IE: '' → '104419946'
+    - IM: '' → '58821'
+    - E-mail: '' → 'contato@salaodecor.com.br'
+
+30597276000160 - VIA SOLAR COMERCIO E SERVICOS LTDA
+  Status: ✗ ERRO
+  Mensagem: Regime 'Simples Nacional - Comercio e Serviços' não encontrado no JETTAX
+  Diferenças:
+    - Tributação: '' → 'Simples Nacional - Comercio e Serviços'
+    - IE: '' → '107357623'
+    - IM: '' → '86084'
+    - E-mail: '' → 'vendas@viasolar.net.br'
+
+46691352000131 - VILLA B ROUPAS E ACESSORIOS LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf90dcf5ebc9a383067361
+
+05076134000100 - VITORIA AGROPECUARIA E EMPREENDIMENTOS IMOBILIARIOS LTDA
+  Status: ✗ ERRO
+  Mensagem: Não cadastrado no JETTAX
+
+00272583000100 - VITORIA COMERCIO LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf915df5ebc9a383067365
+
+59888270000123 - VP PRESTACAO DE SERVICOS LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf919c62406de9f00dd832
+
+27160744000120 - VPS METALURGICA INDUSTRIAL LTDA
+  Status: ✗ ERRO
+  Mensagem: Não cadastrado no JETTAX
+
+02696221000171 - W J DE ANDRADE
+  Status: ✓ OK
+  Mensagem: Atualizado com sucesso (4 campos alterados)
+  Diferenças:
+    - Tributação: '' → 'Simples Nacional - Serviços'
+    - IE: '' → '103070826'
+    - IM: '' → '56274'
+    - E-mail: '' → 'wa47552@gmail.com'
+
+35438325000135 - WAPHI EMPREENDIMENTOS LTDA
+  Status: ✓ OK
+  Mensagem: Atualizado com sucesso (3 campos alterados)
+  Diferenças:
+    - Tributação: '' → 'Lucro Presumido - Serviços'
+    - IM: '' → '93011'
+    - E-mail: '' → 'anapaulanobel1@gmail.com'
+
+52570038000101 - WELINGTON CARDOSO SOCIEDADE INDIVIDUAL DE ADVOCACIA
+  Status: ✗ ERRO
+  Mensagem: Não cadastrado no JETTAX
+
+09212704000100 - WV POSTO DE LAVAGEM LTDA
+  Status: ✓ OK
+  Mensagem: Atualizado com sucesso (4 campos alterados)
+  Diferenças:
+    - Tributação: '' → 'Simples Nacional - Serviços'
+    - IE: '' → '104204290'
+    - IM: '' → '213501'
+    - E-mail: '' → 'lavajatocentral2011@hotmail.com'
+
+18608090000163 - WVM ENERGIA E EVENTOS LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/6915d8ab6b8c0955da0407f3
+
+18608090000244 - WVM ENERGIA E EVENTOS LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf92ff6a14c8043708ef12
+
+42160692000185 - ZION DENTAL CLINIC LTDA
+  Status: ✗ ERRO
+  Mensagem: Erro: Erro na requisição: 422 Client Error: Unprocessable Content for url: https://api.jettax360.com.br/api/v1/clients/68bf933e0fafc74f1904cc66
+
+04894667000136 - ZOO FOS TRANSPORTES LTDA
+  Status: ✗ ERRO
+  Mensagem: Não cadastrado no JETTAX
+

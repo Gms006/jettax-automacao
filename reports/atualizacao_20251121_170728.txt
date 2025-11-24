@@ -1,0 +1,32 @@
+RELATÓRIO DE ATUALIZAÇÃO
+============================================================
+
+Data: 21/11/2025 17:07:28
+
+Total: 2
+✓ Atualizados: 2
+= Sem alteração: 0
+⚠ Não cadastrados: 0
+✗ Erros: 0
+
+============================================================
+DETALHES
+============================================================
+
+46149398000123 - 3TB PRODUCOES ARTISTICAS LTDA
+  Status: ✓ OK
+  Mensagem: Sucesso (dry-run)
+  Diferenças:
+    - Tributação: '' → 'Simples Nacional - Serviços'
+    - IM: '' → '103416'
+    - E-mail: '' → '3tbproducoesartisticasltda@gmail.com'
+
+29413500000137 - A A DE MATOS RESENDE - SUPERMERCADO SANTO ANTONIO
+  Status: ✓ OK
+  Mensagem: Sucesso (dry-run)
+  Diferenças:
+    - Tributação: '' → 'Simples Nacional - Comércio e Industria'
+    - IE: '' → '107145197'
+    - IM: '' → '85025'
+    - E-mail: '' → 'julianarfmatos85@outlook.com'
+

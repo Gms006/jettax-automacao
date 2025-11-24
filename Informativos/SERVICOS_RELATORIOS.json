@@ -1,0 +1,194 @@
+{
+  "categoria": "Relatórios",
+  "modulo": "Serviços",
+  "descricao": "Relatórios gerenciais e fiscais relacionados a NFS-e, EFD-Reinf e auditorias.",
+  "funcionalidades": [
+    {
+      "nome": "Relatório de Conferência de Documentos",
+      "descricao": "Auditoria completa das notas fiscais de serviço para identificar divergências fiscais.",
+      "tipo_automacao": "API",
+      "fluxo_operacional": [
+        "Selecionar clientes e período.",
+        "Solicitar geração do relatório.",
+        "Aguardar processamento.",
+        "Baixar planilha Excel gerada."
+      ],
+      "detalhes_tecnicos": {
+        "endpoints_principais": [
+          {
+            "metodo": "POST",
+            "url": "https://api.jettax360.com.br/api/v1/fiscal/nfses/conference-report",
+            "descricao": "Solicitar geração do relatório de conferência"
+          },
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/fiscal/nfses/conference-report",
+            "descricao": "Listar relatórios de conferência gerados"
+          },
+          {
+            "metodo": "DELETE",
+            "url": "https://api.jettax360.com.br/api/v1/fiscal/nfses/conference-report/{id}",
+            "descricao": "Excluir relatório de conferência"
+          }
+        ],
+        "payload_exemplo": {
+          "competence": "10/2025",
+          "clients": ["clientId1", "clientId2"]
+        }
+      }
+    },
+    {
+      "nome": "EFD Reinf",
+      "descricao": "Gestão da obrigação acessória EFD-Reinf (Escrituração Fiscal Digital de Retenções).",
+      "tipo_automacao": "API",
+      "fluxo_operacional": [
+        "Consultar status do Reinf.",
+        "Verificar eventos transmitidos.",
+        "Identificar pendências."
+      ],
+      "detalhes_tecnicos": {
+        "endpoints_principais": [
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/fiscal/efdreinf",
+            "descricao": "Dados e status do EFD Reinf"
+          }
+        ],
+        "pontos_atencao": "A transmissão do Reinf pode requerer integração híbrida (API + UI) dependendo da complexidade."
+      }
+    },
+    {
+      "nome": "Relatório de Consumo de NFSe",
+      "descricao": "Relatório de volumetria de notas processadas para controle de uso do sistema.",
+      "tipo_automacao": "API",
+      "fluxo_operacional": [
+        "Solicitar relatório de consumo.",
+        "Especificar período.",
+        "Baixar relatório gerado."
+      ],
+      "detalhes_tecnicos": {
+        "endpoints_principais": [
+          {
+            "metodo": "POST",
+            "url": "https://api.jettax360.com.br/api/v1/fiscal/nfse/report/consumer",
+            "descricao": "Solicitar relatório de consumo"
+          },
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/fiscal/nfse/report/consumer",
+            "descricao": "Consultar/baixar relatórios de consumo"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "Relatório de Notas Alteradas",
+      "descricao": "Identificar notas fiscais que sofreram alterações após emissão (cancelamentos, substituições).",
+      "tipo_automacao": "API",
+      "fluxo_operacional": [
+        "Verificar histórico de alterações.",
+        "Exportar lista de notas modificadas."
+      ],
+      "detalhes_tecnicos": {
+        "informacao": "Baseado na navegação do Freshdesk, este relatório existe na interface. O endpoint específico não foi mapeado no catálogo atual.",
+        "alternativa": "Utilizar filtros de status nos endpoints de listagem de NFS-e (/fiscal/nfses/all/sale ou /purchase) com status='Cancelada' ou similar."
+      }
+    },
+    {
+      "nome": "Recibos de Totalização",
+      "descricao": "Gerar recibos consolidados de serviços prestados ou tomados.",
+      "tipo_automacao": "API",
+      "fluxo_operacional": [
+        "Selecionar tipo (prestados ou tomados).",
+        "Gerar recibo com totalizadores."
+      ],
+      "detalhes_tecnicos": {
+        "endpoints_principais": [
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/fiscal/nfses/receipt/saleReceipt",
+            "descricao": "Recibo de serviços prestados"
+          },
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/fiscal/nfses/receipt/purchaseReceipt",
+            "descricao": "Recibo de serviços tomados"
+          },
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/fiscal/nfses/receipt/totalizers/{id}",
+            "descricao": "Totalizadores de um recibo"
+          }
+        ]
+      }
+    }
+  ],
+  "procedimentos": [
+    {
+      "id": "PROC-SERV-REL-001",
+      "nome": "Gerar Relatório de Conferência",
+      "objetivo": "Auditar notas fiscais de serviço e identificar divergências fiscais.",
+      "passo_a_passo": [
+        {
+          "passo": 1,
+          "acao": "Definir Escopo",
+          "logica_local": "Determine o período (competência) e os clientes a serem auditados."
+        },
+        {
+          "passo": 2,
+          "acao": "Solicitar Relatório",
+          "endpoint": "POST https://api.jettax360.com.br/api/v1/fiscal/nfses/conference-report",
+          "instrucao_ia": "Payload: { 'competence': 'MM/YYYY', 'clients': [array de IDs] }"
+        },
+        {
+          "passo": 3,
+          "acao": "Monitorar Status",
+          "endpoint": "GET https://api.jettax360.com.br/api/v1/fiscal/nfses/conference-report",
+          "instrucao_ia": "Faça polling até o status ser 'Concluído'. O campo 'status' indica o progresso."
+        },
+        {
+          "passo": 4,
+          "acao": "Baixar Planilha",
+          "instrucao_ia": "Extraia a URL do relatório e baixe o arquivo Excel."
+        }
+      ]
+    },
+    {
+      "id": "PROC-SERV-REL-002",
+      "nome": "Verificar Status do EFD-Reinf",
+      "objetivo": "Confirmar se a obrigação foi transmitida corretamente para a Receita Federal.",
+      "passo_a_passo": [
+        {
+          "passo": 1,
+          "acao": "Consultar Dados do Reinf",
+          "endpoint": "GET https://api.jettax360.com.br/api/v1/fiscal/efdreinf",
+          "instrucao_ia": "Verifique o campo 'status' da resposta. Status possíveis: 'Pendente', 'Transmitido', 'Erro'."
+        },
+        {
+          "passo": 2,
+          "acao": "Analisar Pendências (Se Aplicável)",
+          "instrucao_ia": "Se houver erro, extraia o campo 'errorMessage' para diagnóstico."
+        }
+      ]
+    },
+    {
+      "id": "PROC-SERV-REL-003",
+      "nome": "Exportar Relatório de Consumo",
+      "objetivo": "Gerar relatório de volumetria de notas processadas.",
+      "passo_a_passo": [
+        {
+          "passo": 1,
+          "acao": "Solicitar Geração",
+          "endpoint": "POST https://api.jettax360.com.br/api/v1/fiscal/nfse/report/consumer",
+          "instrucao_ia": "Payload: { 'startDate': 'YYYY-MM-DD', 'endDate': 'YYYY-MM-DD' }"
+        },
+        {
+          "passo": 2,
+          "acao": "Baixar Relatório",
+          "endpoint": "GET https://api.jettax360.com.br/api/v1/fiscal/nfse/report/consumer",
+          "instrucao_ia": "Consulte a lista de relatórios e baixe o mais recente."
+        }
+      ]
+    }
+  ]
+}

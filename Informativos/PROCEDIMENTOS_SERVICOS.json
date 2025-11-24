@@ -1,0 +1,112 @@
+{
+  "modulo": "Serviços",
+  "descricao": "Guia procedural para agentes de IA sobre como executar tarefas operacionais e de configuração no módulo de Serviços (NFS-e, ISS, Reinf).",
+  "procedimentos": [
+    {
+      "id": "PROC-SERV-001",
+      "nome": "Monitorar Captura de NFS-e",
+      "objetivo": "Verificar se as notas fiscais de serviço estão sendo capturadas corretamente e identificar falhas.",
+      "passo_a_passo": [
+        {
+          "passo": 1,
+          "acao": "Consultar Dashboard de Serviços",
+          "endpoint": "GET https://api.jettax360.com.br/api/v1/fiscal/dashboard",
+          "instrucao_ia": "Analise os indicadores gerais de notas capturadas no período atual."
+        },
+        {
+          "passo": 2,
+          "acao": "Verificar Status de Carregamento",
+          "endpoint": "GET https://api.jettax360.com.br/api/v1/fiscal/nfses/load-status",
+          "instrucao_ia": "Verifique se há prefeituras ou clientes com status de erro na captura ('status': 'error' ou similar)."
+        },
+        {
+          "passo": 3,
+          "acao": "Listar Notas Recentes (Opcional)",
+          "endpoint": "GET https://api.jettax360.com.br/api/v1/fiscal/nfses/all/purchase",
+          "instrucao_ia": "Liste as notas tomadas ('purchase') para confirmar se as notas esperadas para o mês estão presentes."
+        }
+      ]
+    },
+    {
+      "id": "PROC-SERV-002",
+      "nome": "Auditar Notas Fiscais (Relatório de Conferência)",
+      "objetivo": "Gerar um relatório detalhado para conferir divergências fiscais nas notas de serviço.",
+      "passo_a_passo": [
+        {
+          "passo": 1,
+          "acao": "Solicitar Geração do Relatório",
+          "endpoint": "POST https://api.jettax360.com.br/api/v1/fiscal/nfses/conference-report",
+          "instrucao_ia": "Envie o payload com o período ('competence') e os IDs dos clientes desejados."
+        },
+        {
+          "passo": 2,
+          "acao": "Aguardar Processamento",
+          "logica_local": "Aguarde alguns segundos/minutos dependendo do volume de dados."
+        },
+        {
+          "passo": 3,
+          "acao": "Baixar Relatório",
+          "endpoint": "GET https://api.jettax360.com.br/api/v1/fiscal/nfses/conference-report",
+          "instrucao_ia": "Liste os relatórios gerados e obtenha a URL de download do item mais recente com status 'concluído'."
+        }
+      ]
+    },
+    {
+      "id": "PROC-SERV-003",
+      "nome": "Configurar Automação de Retenção",
+      "objetivo": "Criar regras para que o sistema identifique e aplique retenções de impostos automaticamente.",
+      "passo_a_passo": [
+        {
+          "passo": 1,
+          "acao": "Listar Regras Existentes",
+          "endpoint": "GET https://api.jettax360.com.br/api/v1/fiscal/nfses/retention-rules",
+          "instrucao_ia": "Verifique se já existe uma regra para o serviço ou fornecedor específico para evitar duplicidade."
+        },
+        {
+          "passo": 2,
+          "acao": "Criar Nova Regra",
+          "endpoint": "POST https://api.jettax360.com.br/api/v1/fiscal/nfses/retention-rules",
+          "instrucao_ia": "Envie o payload definindo os critérios (ex: código de serviço, CNPJ do prestador) e as alíquotas de retenção a serem aplicadas."
+        }
+      ]
+    },
+    {
+      "id": "PROC-SERV-004",
+      "nome": "Agendar Captura Automática",
+      "objetivo": "Configurar uma rotina recorrente para buscar notas nas prefeituras.",
+      "passo_a_passo": [
+        {
+          "passo": 1,
+          "acao": "Criar Agendamento",
+          "endpoint": "POST https://api.jettax360.com.br/api/v1/hub/schedule",
+          "instrucao_ia": "Defina o tipo de agendamento (Captura NFS-e), a frequência (ex: diária, semanal) e os clientes alvo no payload."
+        },
+        {
+          "passo": 2,
+          "acao": "Validar Agendamento",
+          "endpoint": "GET https://api.jettax360.com.br/api/v1/hub/schedule/list",
+          "instrucao_ia": "Confirme se o novo agendamento aparece na lista de tarefas ativas."
+        }
+      ]
+    },
+    {
+      "id": "PROC-SERV-005",
+      "nome": "Gerar Apuração de ISS",
+      "objetivo": "Calcular o imposto devido sobre serviços prestados.",
+      "passo_a_passo": [
+        {
+          "passo": 1,
+          "acao": "Solicitar Cálculo",
+          "endpoint": "POST https://api.jettax360.com.br/api/v1/fiscal/nfse-tax/create",
+          "instrucao_ia": "Envie a competência (mês/ano) e o ID do cliente para iniciar o cálculo do ISS."
+        },
+        {
+          "passo": 2,
+          "acao": "Consultar Resultado",
+          "endpoint": "GET https://api.jettax360.com.br/api/v1/fiscal/nfse-tax",
+          "instrucao_ia": "Obtenha os detalhes da apuração gerada, incluindo base de cálculo, alíquota e valor do imposto a pagar."
+        }
+      ]
+    }
+  ]
+}

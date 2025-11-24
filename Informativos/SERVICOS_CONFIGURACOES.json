@@ -1,0 +1,220 @@
+{
+  "categoria": "Configurações",
+  "modulo": "Serviços",
+  "descricao": "Configurações e parametrizações do módulo de Serviços: agendamentos, prefeituras, regras de retenção.",
+  "funcionalidades": [
+    {
+      "nome": "Agendamentos Automáticos",
+      "descricao": "Configurar rotinas recorrentes para captura de notas e geração de guias.",
+      "tipo_automacao": "API",
+      "fluxo_operacional": [
+        "Criar novo agendamento.",
+        "Definir tipo (Captura NFS-e, Apuração ISS, etc).",
+        "Selecionar clientes.",
+        "Configurar frequência (diária, semanal, mensal).",
+        "Ativar/desativar agendamento."
+      ],
+      "detalhes_tecnicos": {
+        "endpoints_principais": [
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/hub/schedule/list",
+            "descricao": "Listar agendamentos existentes"
+          },
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/hub/schedule/{id}",
+            "descricao": "Detalhes de um agendamento"
+          },
+          {
+            "metodo": "POST",
+            "url": "https://api.jettax360.com.br/api/v1/hub/schedule",
+            "descricao": "Criar novo agendamento"
+          },
+          {
+            "metodo": "PUT",
+            "url": "https://api.jettax360.com.br/api/v1/hub/schedule/{id}",
+            "descricao": "Atualizar agendamento existente"
+          },
+          {
+            "metodo": "DELETE",
+            "url": "https://api.jettax360.com.br/api/v1/hub/schedule/{id}",
+            "descricao": "Excluir agendamento"
+          },
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/hub/schedule/loadData",
+            "descricao": "Carregar dados para criar agendamento"
+          }
+        ],
+        "payload_exemplo": {
+          "type": "4",
+          "name": "Captura Mensal NFS-e",
+          "competenceType": "1",
+          "day": 5,
+          "filters": {
+            "invoiceType": "1"
+          }
+        }
+      }
+    },
+    {
+      "nome": "Regras de Retenções",
+      "descricao": "Configurar regras automáticas para aplicar retenções de impostos em notas de serviço.",
+      "tipo_automacao": "API",
+      "fluxo_operacional": [
+        "Criar regra de retenção.",
+        "Definir critérios (código de serviço, fornecedor, município).",
+        "Configurar alíquotas (IRRF, PIS, COFINS, CSLL, INSS, ISS).",
+        "Vincular clientes à regra."
+      ],
+      "detalhes_tecnicos": {
+        "endpoints_principais": [
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/fiscal/nfses/retention-rules",
+            "descricao": "Listar regras de retenção"
+          },
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/fiscal/nfses/retention-rules/load",
+            "descricao": "Carregar dados para formulário"
+          },
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/fiscal/nfses/retention-rules/get-clients/{id}",
+            "descricao": "Listar clientes vinculados a uma regra"
+          },
+          {
+            "metodo": "POST",
+            "url": "https://api.jettax360.com.br/api/v1/fiscal/nfses/retention-rules",
+            "descricao": "Criar regra de retenção"
+          },
+          {
+            "metodo": "PUT",
+            "url": "https://api.jettax360.com.br/api/v1/fiscal/nfses/retention-rules/{id}",
+            "descricao": "Atualizar regra existente"
+          },
+          {
+            "metodo": "POST",
+            "url": "https://api.jettax360.com.br/api/v1/fiscal/nfses/retention-rules/link-clients/{id}",
+            "descricao": "Vincular/desvincular clientes à regra"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "Configuração de Prefeituras",
+      "descricao": "Gerenciar integração com portais de prefeituras para captura automática de NFS-e.",
+      "tipo_automacao": "API",
+      "fluxo_operacional": [
+        "Verificar prefeituras suportadas.",
+        "Configurar credenciais específicas por cidade.",
+        "Ativar/desativar integração."
+      ],
+      "detalhes_tecnicos": {
+        "endpoints_principais": [
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/hub/nfses/integrators/city-configurations",
+            "descricao": "Listar configurações de cidades suportadas"
+          },
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/hub/nfses/integrators/city-personal-configurations/{id}",
+            "descricao": "Configuração específica de uma cidade"
+          }
+        ],
+        "pontos_atencao": "Cada prefeitura pode ter requisitos de autenticação diferentes (usuário/senha, certificado digital, API key)."
+      }
+    },
+    {
+      "nome": "Códigos de Serviço",
+      "descricao": "Consultar tabela de códigos de serviço municipais.",
+      "tipo_automacao": "API",
+      "fluxo_operacional": [
+        "Consultar códigos de serviço de um município específico."
+      ],
+      "detalhes_tecnicos": {
+        "endpoints_principais": [
+          {
+            "metodo": "GET",
+            "url": "https://api.jettax360.com.br/api/v1/cities/service-codes/{id}",
+            "descricao": "Códigos de serviço de uma cidade"
+          }
+        ]
+      }
+    }
+  ],
+  "procedimentos": [
+    {
+      "id": "PROC-SERV-CFG-001",
+      "nome": "Criar Agendamento de Captura Mensal",
+      "objetivo": "Automatizar a busca mensal de notas nas prefeituras.",
+      "passo_a_passo": [
+        {
+          "passo": 1,
+          "acao": "Carregar Dados do Formulário",
+          "endpoint": "GET https://api.jettax360.com.br/api/v1/hub/schedule/loadData",
+          "instrucao_ia": "Obtenha as opções disponíveis para tipo de agendamento, frequência, etc."
+        },
+        {
+          "passo": 2,
+          "acao": "Criar Agendamento",
+          "endpoint": "POST https://api.jettax360.com.br/api/v1/hub/schedule",
+          "instrucao_ia": "Payload: { 'type': '4' (NFS-e), 'name': 'Captura Mensal', 'competenceType': '1', 'day': 5 }"
+        },
+        {
+          "passo": 3,
+          "acao": "Vincular Clientes",
+          "endpoint": "POST https://api.jettax360.com.br/api/v1/hub/schedule/clients-linked/{id}",
+          "instrucao_ia": "Envie array com IDs dos clientes que devem ser incluídos neste agendamento."
+        }
+      ]
+    },
+    {
+      "id": "PROC-SERV-CFG-002",
+      "nome": "Configurar Regra de Retenção Automática",
+      "objetivo": "Criar regra para aplicar retenções de IRRF em notas de serviços específicos.",
+      "passo_a_passo": [
+        {
+          "passo": 1,
+          "acao": "Listar Regras Existentes",
+          "endpoint": "GET https://api.jettax360.com.br/api/v1/fiscal/nfses/retention-rules",
+          "instrucao_ia": "Verifique se já existe regra para evitar duplicidade."
+        },
+        {
+          "passo": 2,
+          "acao": "Criar Nova Regra",
+          "endpoint": "POST https://api.jettax360.com.br/api/v1/fiscal/nfses/retention-rules",
+          "instrucao_ia": "Payload exemplo: { 'name': 'IRRF Consultoria', 'serviceCode': '01.01', 'irrf': 1.5, 'iss': 2.0 }"
+        },
+        {
+          "passo": 3,
+          "acao": "Vincular Clientes",
+          "endpoint": "POST https://api.jettax360.com.br/api/v1/fiscal/nfses/retention-rules/link-clients/{id}",
+          "instrucao_ia": "Envie array com IDs dos clientes que devem usar esta regra."
+        }
+      ]
+    },
+    {
+      "id": "PROC-SERV-CFG-003",
+      "nome": "Verificar Prefeituras Suportadas",
+      "objetivo": "Confirmar se uma cidade específica possui integração ativa.",
+      "passo_a_passo": [
+        {
+          "passo": 1,
+          "acao": "Listar Configurações",
+          "endpoint": "GET https://api.jettax360.com.br/api/v1/hub/nfses/integrators/city-configurations",
+          "instrucao_ia": "Busque pelo nome ou código IBGE da cidade na lista retornada."
+        },
+        {
+          "passo": 2,
+          "acao": "Consultar Detalhes (Se Disponível)",
+          "endpoint": "GET https://api.jettax360.com.br/api/v1/hub/nfses/integrators/city-personal-configurations/{id}",
+          "instrucao_ia": "Verifique os requisitos de autenticação e status da integração."
+        }
+      ]
+    }
+  ]
+}
