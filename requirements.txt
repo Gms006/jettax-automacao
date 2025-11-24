@@ -12,6 +12,7 @@ python-dateutil==2.8.2
 pyyaml==6.0.1
 colorama==0.4.6
 tqdm==4.66.1
+streamlit>=1.30.0
 
 # Certificados digitais
 cryptography==41.0.7
