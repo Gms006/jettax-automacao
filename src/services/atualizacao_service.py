@@ -8,12 +8,12 @@ import pandas as pd
 from pathlib import Path
 
 
-from models.empresa import Empresa
-from core.api_client import JettaxAPI
-from services.regime_mapper import obter_regime_object_id
-from services.comparacao_service import ComparacaoService
-from utils.logger import get_logger
-from utils.cnpj_utils import formatar_cnpj, somente_digitos
+from ..models.empresa import Empresa
+from ..core.api_client import JettaxAPI
+from ..services.regime_mapper import obter_regime_object_id
+from ..services.comparacao_service import ComparacaoService
+from ..utils.logger import get_logger
+from ..utils.cnpj_utils import formatar_cnpj, somente_digitos
 
 logger = get_logger()
 
