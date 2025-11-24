@@ -37,6 +37,15 @@ quebrar instalações em ambientes de produção/hosting:
 pip install -r requirements-dev.txt  # opcional, só para quem for desenvolver
 ```
 
+### Teste rápido das dependências
+
+```bash
+pip install -r requirements.txt
+python -c "import requests, pandas; print('Dependências OK')"
+```
+
+Se o comando acima rodar sem erros, `requests` e `pandas` foram instalados corretamente.
+
 ### 3. Configuração
 
 As configurações já estão prontas no arquivo `config/.env`:
@@ -69,8 +78,4 @@ Execute o script `run_automation.bat`:
 run_automation.bat
 ```
 
-Você verá um menu interativo:
-
-```
-=======
->>>>>>> main
+Um menu interativo será exibido no terminal; escolha as opções desejadas para comparar, cadastrar ou atualizar empresas conforme a necessidade.
