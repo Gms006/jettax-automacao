@@ -8,16 +8,18 @@ from __future__ import annotations
 import json
 import subprocess
 from pathlib import Path
-from typing import Iterable, List
+from typing import Iterable, List, Optional
 
 import pandas as pd
 import streamlit as st
+from dotenv import load_dotenv
 
 BASE_DIR = Path(__file__).resolve().parent
 DEFAULT_PLANILHA = BASE_DIR / "RELAÇÃO DE EMPRESAS.xlsx"
 LOGS_DIR = BASE_DIR / "logs"
 REPORTS_DIR = BASE_DIR / "reports"
 DEBUG_DIR = BASE_DIR / "debug_payloads"
+ENV_CANDIDATES = [BASE_DIR / "config" / ".env", BASE_DIR / ".env"]
 
 
 # ---------------------------------------------------------------------------
@@ -34,6 +36,22 @@ def list_files_safe(path: Path, patterns: Iterable[str] = ("*.log", "*.txt", "*.
         files.extend(path.glob(pattern))
 
     return sorted(files, key=lambda f: f.stat().st_mtime, reverse=True)
+
+
+def locate_env_file() -> Optional[Path]:
+    """Encontra o arquivo .env em locais conhecidos."""
+    for candidate in ENV_CANDIDATES:
+        if candidate.exists():
+            return candidate
+    return None
+
+
+def load_env_if_available() -> Optional[Path]:
+    """Carrega variáveis de ambiente do .env se existir."""
+    env_path = locate_env_file()
+    if env_path:
+        load_dotenv(env_path)
+    return env_path
 
 
 def show_file_content(file_path: Path, is_json: bool = False) -> None:
@@ -247,6 +265,12 @@ def main() -> None:
     st.set_page_config(page_title="JETTAX Automação", layout="wide")
     st.title("Painel de Testes - JETTAX Automação")
     st.caption("Dispare automações e acompanhe logs/relatórios gerados pelo main.py")
+
+    env_path = load_env_if_available()
+    if env_path:
+        st.sidebar.success(f".env detectado em: {env_path}")
+    else:
+        st.sidebar.warning("Nenhum .env encontrado (procura em ./config/.env ou ./.env)")
 
     config = sidebar_controls()
     planilha_path = Path(config["planilha"]) if config["planilha"] else DEFAULT_PLANILHA
