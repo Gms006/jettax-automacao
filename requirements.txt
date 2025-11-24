@@ -1,12 +1,12 @@
 # Core
-pandas>=2.1.4,<2.3 ; python_version < "3.13"
-pandas>=2.2.3 ; python_version >= "3.13"
-openpyxl==3.1.2
-requests==2.31.0
+pandas>=2.2.0
+numpy>=2.1.0
+openpyxl>=3.1.5
+requests>=2.31.0
 python-dotenv==1.0.0
 
 # Validação
-pydantic==2.10.6
+pydantic>=2.7.0,<3.0.0
 python-dateutil==2.8.2
 
 # Utilitários
@@ -16,4 +16,4 @@ tqdm==4.66.1
 streamlit>=1.30.0
 
 # Certificados digitais
-cryptography==41.0.7
+cryptography>=43.0.0
